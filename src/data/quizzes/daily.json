@@ -1,0 +1,41 @@
+{
+  "slug": "daily",
+  "title": "Daily World Cup Quiz",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🔥",
+  "daily": true,
+  "description": "A fresh quiz every match day. Come back daily and keep your streak.",
+  "questions": [
+    {
+      "q": "The 2026 World Cup opening match is played in which city?",
+      "options": ["New York", "Mexico City", "Los Angeles", "Toronto"],
+      "answer": 1,
+      "explain": "The opener is at Estadio Azteca in Mexico City."
+    },
+    {
+      "q": "Who are the defending world champions heading into 2026?",
+      "options": ["France", "Brazil", "Argentina", "Germany"],
+      "answer": 2,
+      "explain": "Argentina won in 2022 and defend their title."
+    },
+    {
+      "q": "Which confederation gets the most guaranteed 2026 slots after expansion?",
+      "options": ["UEFA (Europe)", "CONMEBOL (S. America)", "AFC (Asia)", "CAF (Africa)"],
+      "answer": 0,
+      "explain": "UEFA has 16 direct slots in the 48-team format."
+    },
+    {
+      "q": "How long does the 2026 tournament run?",
+      "options": ["About 3 weeks", "About 5–6 weeks", "Exactly 4 weeks", "2 months"],
+      "answer": 1,
+      "explain": "The expanded format stretches across roughly 5–6 weeks."
+    },
+    {
+      "q": "Lionel Messi made his World Cup debut in which year?",
+      "options": ["2002", "2006", "2010", "2014"],
+      "answer": 1,
+      "explain": "Messi debuted at the 2006 World Cup in Germany."
+    }
+  ]
+}

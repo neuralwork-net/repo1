@@ -1,0 +1,59 @@
+---
+import '../styles/global.css';
+import Analytics from '../components/Analytics.astro';
+import { SITE, INTEGRATIONS } from '../lib/site';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+const { title, description = SITE.description } = Astro.props;
+const fullTitle = title ? `${title} · ${SITE.name}` : `${SITE.name} — ${SITE.tagline}`;
+const { adsenseClient } = INTEGRATIONS;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    {adsenseClient && (
+      <script
+        is:inline
+        async
+        src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseClient}`}
+        crossorigin="anonymous"
+      ></script>
+    )}
+    <Analytics />
+  </head>
+  <body class="flex min-h-screen flex-col">
+    <header class="border-b border-slate-200 bg-white">
+      <div class="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
+        <a href="/" class="flex items-center gap-2 text-lg font-bold text-pitch-dark">
+          <span>🏟️</span><span>{SITE.name}</span>
+        </a>
+        <nav class="text-sm font-medium text-slate-600">
+          <a href="/football/" class="hover:text-pitch">Football</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="mx-auto w-full max-w-3xl flex-1 px-4 py-8">
+      <slot />
+    </main>
+
+    <footer class="border-t border-slate-200 bg-white">
+      <div class="mx-auto max-w-5xl px-4 py-6 text-center text-xs text-slate-400">
+        © {new Date().getFullYear()} {SITE.name} · Just for fun.
+        <a href="/sponsor/" class="ml-2 underline">Advertise</a>
+      </div>
+    </footer>
+  </body>
+</html>

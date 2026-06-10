@@ -1,0 +1,70 @@
+{
+  "slug": "wc-history-legends",
+  "title": "World Cup History & Legends",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🏆",
+  "description": "From 1930 to 2022 — how well do you know the greatest tournament on earth?",
+  "questions": [
+    {
+      "q": "Which country won the 2022 FIFA World Cup in Qatar?",
+      "options": ["France", "Argentina", "Brazil", "Croatia"],
+      "answer": 1,
+      "explain": "Argentina beat France on penalties after a 3–3 final."
+    },
+    {
+      "q": "Which nation has won the most World Cup titles?",
+      "options": ["Germany", "Italy", "Brazil", "Argentina"],
+      "answer": 2,
+      "explain": "Brazil have lifted the trophy 5 times."
+    },
+    {
+      "q": "Who scored the infamous 'Hand of God' goal in 1986?",
+      "options": ["Pelé", "Diego Maradona", "Zico", "Careca"],
+      "answer": 1,
+      "explain": "Maradona punched the ball past England's Peter Shilton."
+    },
+    {
+      "q": "Which country hosted AND won the very first World Cup in 1930?",
+      "options": ["Brazil", "Italy", "Uruguay", "Argentina"],
+      "answer": 2,
+      "explain": "Uruguay beat Argentina 4–2 in the first final."
+    },
+    {
+      "q": "Who is the all-time top scorer in World Cup history?",
+      "options": ["Ronaldo (Brazil)", "Miroslav Klose", "Gerd Müller", "Lionel Messi"],
+      "answer": 1,
+      "explain": "Germany's Klose scored 16 goals across four tournaments."
+    },
+    {
+      "q": "Which country won the 2018 World Cup in Russia?",
+      "options": ["Croatia", "Belgium", "France", "England"],
+      "answer": 2,
+      "explain": "France beat Croatia 4–2 in the final."
+    },
+    {
+      "q": "Spain won their first and only World Cup in which year?",
+      "options": ["2006", "2010", "2014", "2002"],
+      "answer": 1,
+      "explain": "Spain beat the Netherlands 1–0 in 2010 (Iniesta's goal)."
+    },
+    {
+      "q": "Who won the Golden Ball as best player at the 2022 World Cup?",
+      "options": ["Kylian Mbappé", "Lionel Messi", "Luka Modrić", "Emiliano Martínez"],
+      "answer": 1,
+      "explain": "Messi won it as Argentina lifted the trophy."
+    },
+    {
+      "q": "How many World Cup titles has Germany won?",
+      "options": ["2", "3", "4", "5"],
+      "answer": 2,
+      "explain": "Germany have won 4 (1954, 1974, 1990, 2014)."
+    },
+    {
+      "q": "Who won the 2014 World Cup, hosted in Brazil?",
+      "options": ["Brazil", "Argentina", "Germany", "Netherlands"],
+      "answer": 2,
+      "explain": "Germany beat Argentina 1–0 after extra time in Brazil."
+    }
+  ]
+}

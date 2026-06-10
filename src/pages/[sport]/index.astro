@@ -1,0 +1,24 @@
+---
+import Base from '../../layouts/Base.astro';
+import { SPORTS, findSport } from '../../data/sports';
+
+export function getStaticPaths() {
+  return SPORTS.map((sport) => ({ params: { sport: sport.id } }));
+}
+
+const { sport } = Astro.params;
+const data = findSport(sport!)!;
+---
+<Base title={data.name} description={`${data.name} quizzes across every tournament.`}>
+  <h1 class="text-2xl font-bold">{data.emoji} {data.name}</h1>
+  <p class="mt-1 text-slate-500">Pick a tournament to start.</p>
+
+  <div class="mt-6 grid gap-4">
+    {data.tournaments.map((t) => (
+      <a href={`/${data.id}/${t.id}/`} class="block rounded-2xl border border-slate-200 bg-white p-5 hover:border-pitch hover:shadow-md">
+        <h2 class="font-bold text-slate-900">{t.emoji} {t.name}</h2>
+        {t.blurb && <p class="mt-1 text-sm text-slate-600">{t.blurb}</p>}
+      </a>
+    ))}
+  </div>
+</Base>

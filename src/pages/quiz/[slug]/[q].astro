@@ -1,0 +1,100 @@
+---
+import Base from '../../../layouts/Base.astro';
+import AdSlot from '../../../components/AdSlot.astro';
+import { QUIZZES, getQuiz } from '../../../lib/quizzes';
+
+export function getStaticPaths() {
+  return QUIZZES.flatMap((quiz) =>
+    quiz.questions.map((_, i) => ({
+      params: { slug: quiz.slug, q: String(i + 1) },
+    })),
+  );
+}
+
+const { slug, q } = Astro.params;
+const quiz = getQuiz(slug!)!;
+const idx = Number(q) - 1;
+const question = quiz.questions[idx];
+const total = quiz.questions.length;
+const isLast = idx === total - 1;
+const nextHref = isLast
+  ? `/quiz/${quiz.slug}/result/`
+  : `/quiz/${quiz.slug}/${idx + 2}/`;
+const progress = Math.round(((idx + 1) / total) * 100);
+---
+<Base title={`${quiz.title} — Q${idx + 1}`} description={quiz.description}>
+  <a href={`/${quiz.sport}/${quiz.tournament}/`} class="text-sm text-slate-400 hover:text-pitch">← {quiz.title}</a>
+
+  <div class="mt-3 mb-6">
+    <div class="flex justify-between text-xs font-medium text-slate-500">
+      <span>Question {idx + 1} of {total}</span>
+      <span>{quiz.emoji}</span>
+    </div>
+    <div class="mt-1 h-2 w-full rounded-full bg-slate-200">
+      <div class="h-2 rounded-full bg-pitch" style={`width:${progress}%`}></div>
+    </div>
+  </div>
+
+  <h1 class="text-xl font-bold text-slate-900 sm:text-2xl">{question.q}</h1>
+
+  <div id="options" class="mt-6 grid gap-3" data-answer={question.answer} data-explain={question.explain ?? ''}>
+    {question.options.map((opt, i) => (
+      <button
+        type="button"
+        class="opt rounded-xl border border-slate-300 bg-white px-4 py-3 text-left font-medium text-slate-800 transition hover:border-pitch hover:bg-pitch/5"
+        data-i={i}
+      >
+        {opt}
+      </button>
+    ))}
+  </div>
+
+  <p id="explain" class="mt-4 hidden rounded-lg bg-slate-100 p-3 text-sm text-slate-600"></p>
+
+  <a
+    id="next"
+    href={nextHref}
+    class="mt-6 hidden rounded-xl bg-pitch px-6 py-3 text-center font-semibold text-white hover:bg-pitch-dark"
+  >{isLast ? 'See my score →' : 'Next question →'}</a>
+
+  <AdSlot label="In-quiz ad" />
+
+  <script is:inline define:vars={{ slug: quiz.slug, total, qnum: idx + 1, answer: question.answer }}>
+    const KEY = 'wsq:' + slug;
+    // Reset state when starting at question 1.
+    if (qnum === 1) {
+      localStorage.setItem(KEY, JSON.stringify({ total, answers: {}, ts: Date.now() }));
+    }
+    const state = JSON.parse(localStorage.getItem(KEY) || `{"total":${total},"answers":{}}`);
+
+    const box = document.getElementById('options');
+    const explainEl = document.getElementById('explain');
+    const nextBtn = document.getElementById('next');
+    const explainText = box.dataset.explain;
+    let answered = false;
+
+    box.querySelectorAll('.opt').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        if (answered) return;
+        answered = true;
+        const chosen = Number(btn.dataset.i);
+        const correct = chosen === answer;
+        state.answers[qnum] = correct;
+        localStorage.setItem(KEY, JSON.stringify(state));
+
+        box.querySelectorAll('.opt').forEach((b) => {
+          b.disabled = true;
+          const bi = Number(b.dataset.i);
+          if (bi === answer) b.classList.add('!border-pitch', '!bg-pitch/10', 'ring-2', 'ring-pitch');
+          else if (bi === chosen) b.classList.add('!border-red-400', '!bg-red-50');
+        });
+        if (explainText) {
+          explainEl.textContent = explainText;
+          explainEl.classList.remove('hidden');
+        }
+        nextBtn.classList.remove('hidden');
+        if (window.gtag) window.gtag('event', 'answer', { quiz: slug, q: qnum, correct });
+      });
+    });
+  </script>
+</Base>

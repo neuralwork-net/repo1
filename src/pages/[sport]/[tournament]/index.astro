@@ -1,0 +1,35 @@
+---
+import Base from '../../../layouts/Base.astro';
+import AdSlot from '../../../components/AdSlot.astro';
+import QuizCard from '../../../components/QuizCard.astro';
+import { SPORTS, findSport, findTournament } from '../../../data/sports';
+import { quizzesFor } from '../../../lib/quizzes';
+
+export function getStaticPaths() {
+  return SPORTS.flatMap((sport) =>
+    sport.tournaments.map((t) => ({
+      params: { sport: sport.id, tournament: t.id },
+    })),
+  );
+}
+
+const { sport, tournament } = Astro.params;
+const sportData = findSport(sport!)!;
+const tData = findTournament(sport!, tournament!)!;
+const quizzes = quizzesFor(sport!, tournament!);
+---
+<Base title={tData.name} description={tData.blurb ?? `${tData.name} quizzes.`}>
+  <a href={`/${sportData.id}/`} class="text-sm text-slate-400 hover:text-pitch">← {sportData.name}</a>
+  <h1 class="mt-2 text-2xl font-bold">{tData.emoji} {tData.name}</h1>
+  {tData.blurb && <p class="mt-1 text-slate-600">{tData.blurb}</p>}
+
+  <AdSlot label="Top ad" />
+
+  {quizzes.length ? (
+    <div class="mt-4 grid gap-4 sm:grid-cols-2">
+      {quizzes.map((quiz) => <QuizCard quiz={quiz} />)}
+    </div>
+  ) : (
+    <p class="mt-6 text-slate-500">Quizzes coming soon — check back at kickoff.</p>
+  )}
+</Base>

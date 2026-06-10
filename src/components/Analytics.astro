@@ -1,0 +1,18 @@
+---
+import { INTEGRATIONS } from '../lib/site';
+const { ga4Id, plausibleDomain } = INTEGRATIONS;
+---
+{ga4Id && (
+  <>
+    <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${ga4Id}`}></script>
+    <script is:inline define:vars={{ ga4Id }}>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', ga4Id);
+    </script>
+  </>
+)}
+{plausibleDomain && (
+  <script is:inline defer data-domain={plausibleDomain} src="https://plausible.io/js/script.js"></script>
+)}

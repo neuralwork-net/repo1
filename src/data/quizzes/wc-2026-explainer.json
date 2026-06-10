@@ -1,0 +1,73 @@
+{
+  "slug": "wc-2026-explainer",
+  "title": "World Cup 2026: Know the Tournament",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🌎",
+  "description": "Biggest World Cup ever. Three nations, 48 teams. Are you up to speed?",
+  "questions": [
+    {
+      "q": "How many teams compete at the 2026 World Cup?",
+      "options": ["32", "40", "48", "64"],
+      "answer": 2,
+      "explain": "Expanded from 32 to 48 teams for the first time."
+    },
+    {
+      "q": "Which three countries are co-hosting the 2026 World Cup?",
+      "options": [
+        "USA, Canada & Mexico",
+        "USA, Mexico & Brazil",
+        "Canada, USA & Costa Rica",
+        "Mexico, USA & Argentina"
+      ],
+      "answer": 0,
+      "explain": "The first World Cup hosted by three nations."
+    },
+    {
+      "q": "How many total matches will be played at the 2026 World Cup?",
+      "options": ["64", "80", "104", "128"],
+      "answer": 2,
+      "explain": "104 matches, up from 64 in 2022."
+    },
+    {
+      "q": "How are the 48 teams divided in the group stage?",
+      "options": [
+        "8 groups of 6",
+        "12 groups of 4",
+        "16 groups of 3",
+        "6 groups of 8"
+      ],
+      "answer": 1,
+      "explain": "12 groups of 4 teams each."
+    },
+    {
+      "q": "Which stadium hosts the 2026 World Cup final?",
+      "options": [
+        "Estadio Azteca (Mexico City)",
+        "Rose Bowl (Los Angeles)",
+        "MetLife Stadium (New Jersey)",
+        "AT&T Stadium (Dallas)"
+      ],
+      "answer": 2,
+      "explain": "The final is at MetLife Stadium near New York."
+    },
+    {
+      "q": "How many host cities span the 2026 tournament across the three nations?",
+      "options": ["10", "12", "16", "20"],
+      "answer": 2,
+      "explain": "16 host cities across the USA, Canada and Mexico."
+    },
+    {
+      "q": "Which country becomes the first to host the World Cup three times?",
+      "options": ["USA", "Mexico", "Canada", "Brazil"],
+      "answer": 1,
+      "explain": "Mexico hosted in 1970, 1986 and now co-hosts 2026."
+    },
+    {
+      "q": "How many teams advance from the group stage to the knockout rounds?",
+      "options": ["16", "24", "32", "48"],
+      "answer": 2,
+      "explain": "Top 2 of each group plus 8 best third-placed teams = 32."
+    }
+  ]
+}
