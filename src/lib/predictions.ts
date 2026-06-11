@@ -11,6 +11,28 @@ export function getFixture(id: string): Fixture | undefined {
   return FIXTURES.find((f) => f.id === id);
 }
 
+function slugify(s: string): string {
+  return s
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '');
+}
+
+export function fixtureSlug(f: Fixture): string {
+  if (f.tbd) return `match-${f.match}`;
+  return `${slugify(f.home)}-vs-${slugify(f.away)}`;
+}
+
+export function fixtureUrl(f: Fixture): string {
+  return `/predict/world-cup-2026/${fixtureSlug(f)}/`;
+}
+
+export function getFixtureByMatchSlug(matchSlug: string): Fixture | undefined {
+  return FIXTURES.find((f) => fixtureSlug(f) === matchSlug);
+}
+
 export function allFixtures(): Fixture[] {
   return FIXTURES;
 }

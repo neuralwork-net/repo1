@@ -1,17 +1,20 @@
 ---
-import Base from '../../layouts/Base.astro';
-import AdSlot from '../../components/AdSlot.astro';
-import PollWidget from '../../components/PollWidget.astro';
-import EmailCapture from '../../components/EmailCapture.astro';
-import { FIXTURES, getFixture, ROUND_LABELS, isFinished, outcome } from '../../lib/predictions';
-import { SITE } from '../../lib/site';
+import Base from '../../../layouts/Base.astro';
+import AdSlot from '../../../components/AdSlot.astro';
+import PollWidget from '../../../components/PollWidget.astro';
+import EmailCapture from '../../../components/EmailCapture.astro';
+import { FIXTURES, getFixtureByMatchSlug, fixtureUrl, ROUND_LABELS, isFinished, outcome } from '../../../lib/predictions';
+import { SITE } from '../../../lib/site';
+import { fixtureSlug } from '../../../lib/predictions';
 
 export function getStaticPaths() {
-  return FIXTURES.map((f) => ({ params: { id: f.id } }));
+  return FIXTURES.map((f) => ({
+    params: { tournament: 'world-cup-2026', match: fixtureSlug(f) },
+  }));
 }
 
-const { id } = Astro.params;
-const f = getFixture(id!)!;
+const { match } = Astro.params;
+const f = getFixtureByMatchSlug(match!)!;
 const idx = FIXTURES.findIndex((x) => x.id === f.id);
 const prev = FIXTURES[idx - 1];
 const next = FIXTURES[idx + 1];
@@ -28,7 +31,6 @@ const dateLabel = new Date(f.kickoff + 'T00:00:00Z').toLocaleDateString('en-US',
   timeZone: 'UTC',
 });
 
-// Poll options depend on stage. Group matches can draw; knockouts pick a winner.
 const options =
   f.round === 'group'
     ? [
@@ -43,9 +45,9 @@ const options =
 
 const title = f.tbd
   ? `${heading}: ${f.home} v ${f.away}`
-  : `Predict: ${f.home} vs ${f.away}`;
+  : `Predict: ${f.home} vs ${f.away} — FIFA World Cup 2026`;
 const description = `Make your prediction for ${f.home} vs ${f.away} — ${heading}, ${dateLabel} at ${f.venue}. FIFA World Cup 2026.`;
-const shareUrl = `${SITE.url}/predict/${f.id}/`;
+const shareUrl = `${SITE.url}${fixtureUrl(f)}`;
 ---
 <Base title={title} description={description}>
   <a href="/predict/" class="text-sm text-slate-400 hover:text-pitch">← All predictions</a>
@@ -99,8 +101,8 @@ const shareUrl = `${SITE.url}/predict/${f.id}/`;
   <EmailCapture />
 
   <nav class="mt-8 flex justify-between text-sm font-semibold text-pitch">
-    {prev ? <a href={`/predict/${prev.id}/`}>← Match {prev.match}</a> : <span></span>}
-    {next ? <a href={`/predict/${next.id}/`}>Match {next.match} →</a> : <span></span>}
+    {prev ? <a href={fixtureUrl(prev)}>← Match {prev.match}</a> : <span></span>}
+    {next ? <a href={fixtureUrl(next)}>Match {next.match} →</a> : <span></span>}
   </nav>
 
   <script is:inline define:vars={{ home: f.home, away: f.away, shareUrl }}>
