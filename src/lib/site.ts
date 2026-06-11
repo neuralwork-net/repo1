@@ -19,7 +19,7 @@ export const INTEGRATIONS = {
   plausibleDomain: '',
   // Email capture: a third-party form POST endpoint (Formspree/Brevo/etc).
   // Empty disables the form gracefully.
-  emailFormEndpoint: '',
+  emailFormEndpoint: 'https://formspree.io/f/xkoavaqd',
   // Community-vote counter base URL (Cloudflare Worker). e.g.
   // 'https://api.worldsportsquiz.com'. Empty => prediction pages show personal
   // picks + result reveal only, with no community % bar (no errors).
