@@ -14,6 +14,8 @@ export interface Env {
 const ALLOWED_ORIGINS = new Set([
   'https://worldsportsquiz.com',
   'https://www.worldsportsquiz.com',
+  'http://localhost:4321',
+  'http://127.0.0.1:4321',
 ]);
 
 // Guardrails so a single client can't bloat the DB with junk polls/options.
