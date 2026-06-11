@@ -20,6 +20,10 @@ export const INTEGRATIONS = {
   // Email capture: a third-party form POST endpoint (Formspree/Brevo/etc).
   // Empty disables the form gracefully.
   emailFormEndpoint: '',
+  // Community-vote counter base URL (Cloudflare Worker). e.g.
+  // 'https://api.worldsportsquiz.com'. Empty => prediction pages show personal
+  // picks + result reveal only, with no community % bar (no errors).
+  voteApi: '',
 };
 
 // Affiliate links shown on results pages. Geo-gate betting client-side before showing.

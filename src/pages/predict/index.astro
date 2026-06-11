@@ -1,0 +1,67 @@
+---
+import Base from '../../layouts/Base.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import { fixturesByDate, isFinished, outcome, ROUND_LABELS } from '../../lib/predictions';
+import { SITE } from '../../lib/site';
+
+const days = fixturesByDate();
+const today = new Date().toISOString().slice(0, 10);
+
+function fmtDate(d: string) {
+  return new Date(d + 'T00:00:00Z').toLocaleDateString('en-US', {
+    weekday: 'short',
+    month: 'short',
+    day: 'numeric',
+    timeZone: 'UTC',
+  });
+}
+---
+<Base
+  title="World Cup 2026 Predictions"
+  description="Predict every FIFA World Cup 2026 match — all 104 fixtures, plus build your knockout bracket and pick the champion. See how the world votes."
+>
+  <section class="rounded-3xl bg-gradient-to-br from-pitch to-pitch-dark px-6 py-10 text-center text-white">
+    <h1 class="text-2xl font-extrabold sm:text-3xl">World Cup 2026 Predictions</h1>
+    <p class="mx-auto mt-2 max-w-md text-white/80">Call every match. Build your bracket. Pick the champion.</p>
+    <div class="mt-5 flex flex-wrap justify-center gap-3">
+      <a href="/predict/bracket/" class="rounded-xl bg-gold px-5 py-3 font-bold text-slate-900 hover:brightness-105">🗺️ Build your bracket</a>
+      <a href="/predict/champion/" class="rounded-xl bg-white/15 px-5 py-3 font-bold text-white hover:bg-white/25">🏆 Pick the winner</a>
+    </div>
+  </section>
+
+  <AdSlot label="Top ad" />
+
+  <div class="space-y-8">
+    {days.map(({ date, fixtures }) => (
+      <section>
+        <h2 class="sticky top-0 bg-slate-50/90 py-1 text-sm font-bold text-slate-500 backdrop-blur">
+          {fmtDate(date)}
+        </h2>
+        <div class="mt-2 grid gap-2">
+          {fixtures.map((f) => {
+            const fin = isFinished(f);
+            const res = outcome(f);
+            return (
+              <a
+                href={`/predict/${f.id}/`}
+                class="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-3 hover:border-pitch"
+              >
+                <span class="w-16 shrink-0 text-xs font-medium text-slate-400">
+                  {f.round === 'group' ? `Grp ${f.group}` : ROUND_LABELS[f.round]}
+                </span>
+                <span class="flex-1 text-right text-sm font-semibold">{f.home}</span>
+                <span class="shrink-0 rounded bg-slate-100 px-2 py-0.5 text-xs font-bold text-slate-500">
+                  {fin ? `${f.homeScore}–${f.awayScore}` : 'v'}
+                </span>
+                <span class="flex-1 text-left text-sm font-semibold">{f.away}</span>
+                <span class="w-12 shrink-0 text-right text-xs">
+                  {fin ? '✓' : f.tbd ? '·' : '→'}
+                </span>
+              </a>
+            );
+          })}
+        </div>
+      </section>
+    ))}
+  </div>
+</Base>

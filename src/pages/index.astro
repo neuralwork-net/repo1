@@ -13,11 +13,34 @@ const featured = QUIZZES.slice(0, 6);
   <section class="rounded-3xl bg-gradient-to-br from-pitch to-pitch-dark px-6 py-12 text-center text-white">
     <h1 class="text-3xl font-extrabold sm:text-4xl">{SITE.name}</h1>
     <p class="mx-auto mt-3 max-w-md text-pitch-50/90 text-white/80">{SITE.tagline}</p>
-    {daily && (
-      <a href={`/quiz/${daily.slug}/1/`} class="mt-6 inline-block rounded-xl bg-gold px-6 py-3 font-bold text-slate-900 hover:brightness-105">
-        🔥 Play today's quiz →
+    <div class="mt-6 flex flex-wrap justify-center gap-3">
+      {daily && (
+        <a href={`/quiz/${daily.slug}/1/`} class="inline-block rounded-xl bg-gold px-6 py-3 font-bold text-slate-900 hover:brightness-105">
+          🔥 Play today's quiz →
+        </a>
+      )}
+      <a href="/predict/" class="inline-block rounded-xl bg-white/15 px-6 py-3 font-bold text-white hover:bg-white/25">
+        🗺️ Predict the World Cup →
       </a>
-    )}
+    </div>
+  </section>
+
+  <section class="mt-8 grid gap-3 sm:grid-cols-3">
+    <a href="/predict/" class="rounded-xl border border-slate-200 bg-white p-4 hover:border-pitch">
+      <div class="text-2xl">⚽</div>
+      <p class="mt-1 font-semibold">Predict all 104 matches</p>
+      <p class="text-sm text-slate-500">Call every fixture, see how the world votes.</p>
+    </a>
+    <a href="/predict/bracket/" class="rounded-xl border border-slate-200 bg-white p-4 hover:border-pitch">
+      <div class="text-2xl">🗺️</div>
+      <p class="mt-1 font-semibold">Build your bracket</p>
+      <p class="text-sm text-slate-500">Fill the knockouts, crown your champion.</p>
+    </a>
+    <a href="/predict/champion/" class="rounded-xl border border-slate-200 bg-white p-4 hover:border-pitch">
+      <div class="text-2xl">🏆</div>
+      <p class="mt-1 font-semibold">Pick the winner</p>
+      <p class="text-sm text-slate-500">Who lifts the trophy in 2026?</p>
+    </a>
   </section>
 
   <AdSlot label="Top ad" />

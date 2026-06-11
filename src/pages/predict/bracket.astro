@@ -1,0 +1,160 @@
+---
+import Base from '../../layouts/Base.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import { knockoutFixtures } from '../../lib/predictions';
+import { SITE } from '../../lib/site';
+
+// Feed the knockout structure to the client; it builds an interactive bracket.
+const ko = knockoutFixtures().map((f) => ({
+  match: f.match,
+  round: f.round,
+  home: f.home,
+  away: f.away,
+}));
+const shareUrl = `${SITE.url}/predict/bracket/`;
+---
+<Base
+  title="Build your World Cup 2026 bracket"
+  description="Fill in your World Cup 2026 knockout bracket from the Round of 32 to the final, pick your champion, and share it with friends."
+>
+  <a href="/predict/" class="text-sm text-slate-400 hover:text-pitch">← All predictions</a>
+  <h1 class="mt-3 text-2xl font-extrabold">🗺️ Build your bracket</h1>
+  <p class="mt-1 text-slate-600">Tap a team to send it through. Your champion appears up top.</p>
+
+  <div class="mt-4 rounded-2xl bg-gradient-to-br from-pitch to-pitch-dark p-5 text-center text-white">
+    <p class="text-xs uppercase tracking-wide text-white/70">Your champion</p>
+    <p id="champ" class="mt-1 text-2xl font-extrabold">— pick the final —</p>
+    <button id="reset" class="mt-3 rounded-lg bg-white/15 px-4 py-1.5 text-sm font-semibold hover:bg-white/25">Reset bracket</button>
+  </div>
+
+  <AdSlot label="Top ad" />
+
+  <div class="-mx-4 overflow-x-auto px-4">
+    <div id="bracket" class="flex min-w-max gap-4 pb-4"></div>
+  </div>
+
+  <div class="mt-6 grid gap-2">
+    <p class="text-center text-sm font-medium text-slate-600">Share your bracket 👇</p>
+    <div class="grid grid-cols-2 gap-2 sm:grid-cols-4">
+      <a id="sh-wa" target="_blank" rel="noopener" class="rounded-lg bg-green-600 px-3 py-2 text-center text-sm font-semibold text-white">WhatsApp</a>
+      <a id="sh-x" target="_blank" rel="noopener" class="rounded-lg bg-slate-900 px-3 py-2 text-center text-sm font-semibold text-white">X</a>
+      <a id="sh-tg" target="_blank" rel="noopener" class="rounded-lg bg-sky-500 px-3 py-2 text-center text-sm font-semibold text-white">Telegram</a>
+      <button id="copy" class="rounded-lg border border-slate-300 px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50">Copy</button>
+    </div>
+  </div>
+
+  <AdSlot label="Bottom ad" />
+
+  <script is:inline define:vars={{ ko, shareUrl }}>
+    const KEY = 'wsq:bracket';
+    const ROUNDS = [
+      ['r32', 'Round of 32'],
+      ['r16', 'Round of 16'],
+      ['qf', 'Quarter-finals'],
+      ['sf', 'Semi-finals'],
+      ['final', 'Final'],
+    ];
+    const byMatch = Object.fromEntries(ko.map((m) => [m.match, m]));
+    let picks = {};
+    try { picks = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch {}
+
+    const refWinner = (s) => (s.match(/^Winner Match (\d+)$/) || [])[1];
+    const refRunner = (s) => (s.match(/^Runner-up Match (\d+)$/) || [])[1];
+
+    // Resolve a slot label to the team/descriptor currently occupying it.
+    function resolve(label, seen = new Set()) {
+      const w = refWinner(label);
+      if (w) {
+        if (seen.has('w' + w)) return label;
+        seen.add('w' + w);
+        return picks[w] ? picks[w] : label;
+      }
+      const r = refRunner(label);
+      if (r) {
+        if (!picks[r]) return label;
+        const m = byMatch[r];
+        const home = resolve(m.home, seen);
+        const away = resolve(m.away, seen);
+        return picks[r] === home ? away : home; // the one that didn't win
+      }
+      return label;
+    }
+
+    function pick(match, slotLabel) {
+      const team = resolve(slotLabel);
+      if (refWinner(slotLabel) && !picks[refWinner(slotLabel)]) return; // upstream undecided
+      picks[match] = team;
+      localStorage.setItem(KEY, JSON.stringify(picks));
+      render();
+      if (window.gtag) window.gtag('event', 'bracket_pick', { match });
+    }
+
+    function render() {
+      const root = document.getElementById('bracket');
+      root.innerHTML = '';
+      for (const [round, label] of ROUNDS) {
+        const col = document.createElement('div');
+        col.className = 'flex w-44 flex-col justify-around gap-3';
+        const h = document.createElement('p');
+        h.className = 'text-center text-xs font-bold uppercase tracking-wide text-slate-400';
+        h.textContent = label;
+        col.appendChild(h);
+        ko.filter((m) => m.round === round).forEach((m) => {
+          const box = document.createElement('div');
+          box.className = 'rounded-lg border border-slate-200 bg-white text-sm';
+          [m.home, m.away].forEach((slot) => {
+            const team = resolve(slot);
+            const decided = !refWinner(slot) || picks[refWinner(slot)];
+            const chosen = picks[m.match] === team && decided;
+            const btn = document.createElement('button');
+            btn.type = 'button';
+            btn.className =
+              'block w-full truncate px-3 py-2 text-left ' +
+              (chosen ? 'bg-pitch/10 font-bold text-pitch' : 'hover:bg-slate-50') +
+              (decided ? '' : ' text-slate-400 italic');
+            btn.textContent = team;
+            btn.title = team;
+            btn.addEventListener('click', () => pick(m.match, slot));
+            box.appendChild(btn);
+            if (slot === m.home) {
+              const hr = document.createElement('div');
+              hr.className = 'border-t border-slate-100';
+              box.appendChild(hr);
+            }
+          });
+          col.appendChild(box);
+        });
+        root.appendChild(col);
+      }
+      const champ = picks[104];
+      document.getElementById('champ').textContent = champ || '— pick the final —';
+      updateShare(champ);
+    }
+
+    function updateShare(champ) {
+      const text = champ
+        ? `I've got ${champ} winning the World Cup 2026 🏆 Build your bracket:`
+        : `I'm building my World Cup 2026 bracket 🗺️ Make yours:`;
+      const u = encodeURIComponent(shareUrl);
+      const t = encodeURIComponent(text);
+      document.getElementById('sh-wa').href = `https://wa.me/?text=${t}%20${u}`;
+      document.getElementById('sh-x').href = `https://twitter.com/intent/tweet?text=${t}&url=${u}`;
+      document.getElementById('sh-tg').href = `https://t.me/share/url?url=${u}&text=${t}`;
+      document.getElementById('copy').onclick = async (e) => {
+        try {
+          await navigator.clipboard.writeText(text + ' ' + shareUrl);
+          e.target.textContent = 'Copied! ✅';
+          setTimeout(() => (e.target.textContent = 'Copy'), 1500);
+        } catch {}
+      };
+    }
+
+    document.getElementById('reset').addEventListener('click', () => {
+      picks = {};
+      localStorage.removeItem(KEY);
+      render();
+    });
+
+    render();
+  </script>
+</Base>

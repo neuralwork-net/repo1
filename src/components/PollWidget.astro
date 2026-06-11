@@ -1,0 +1,153 @@
+---
+import { INTEGRATIONS } from '../lib/site';
+
+// Reusable prediction poll. Renders option buttons; on pick it stores the choice
+// in localStorage and (if a vote API is configured) POSTs the vote and shows the
+// live community % per option. Degrades gracefully with no API: personal pick is
+// still recorded and highlighted, just without community bars.
+//
+// When `correct` is set (a finished fixture/result), options are colored
+// right/wrong on load and voting is locked.
+interface Option {
+  value: string;
+  label: string;
+  sub?: string;
+}
+interface Props {
+  poll: string; // unique poll id, e.g. fixture id 'm7' or 'champion'
+  options: Option[];
+  /** value of the correct option once known; locks voting + reveals result */
+  correct?: string | null;
+  locked?: boolean; // force read-only (e.g. teams TBD)
+}
+const { poll, options, correct = null, locked = false } = Astro.props;
+const { voteApi } = INTEGRATIONS;
+---
+<div
+  class="poll mt-5 grid gap-2"
+  data-poll={poll}
+  data-api={voteApi}
+  data-correct={correct ?? ''}
+  data-locked={locked ? '1' : ''}
+>
+  {options.map((o) => (
+    <button
+      type="button"
+      class="poll-opt relative overflow-hidden rounded-xl border border-slate-300 bg-white px-4 py-3 text-left font-medium text-slate-800 transition hover:border-pitch enabled:hover:bg-pitch/5 disabled:cursor-default"
+      data-value={o.value}
+    >
+      <span class="bar absolute inset-y-0 left-0 z-0 w-0 bg-pitch/10 transition-all duration-500"></span>
+      <span class="relative z-10 flex items-center justify-between gap-2">
+        <span class="flex flex-col">
+          <span>{o.label}</span>
+          {o.sub && <span class="text-xs font-normal text-slate-400">{o.sub}</span>}
+        </span>
+        <span class="pct hidden text-sm font-semibold text-slate-500"></span>
+      </span>
+    </button>
+  ))}
+</div>
+<p class="poll-note mt-2 text-center text-xs text-slate-400"></p>
+
+<script>
+  // Wire every poll on the page (usually one).
+  document.querySelectorAll('.poll').forEach((el) => {
+    const poll = el.dataset.poll;
+    const api = el.dataset.api || '';
+    const correct = el.dataset.correct || '';
+    const locked = el.dataset.locked === '1';
+    const buttons = [...el.querySelectorAll('.poll-opt')];
+    const note = el.parentElement.querySelector('.poll-note') || el.nextElementSibling;
+    const VKEY = 'wsq:voted:' + poll; // remembers this browser's pick
+
+    const myPick = localStorage.getItem(VKEY);
+
+    function renderTally(counts) {
+      if (!counts) return;
+      const total = Object.values(counts).reduce((a, b) => a + Number(b), 0);
+      buttons.forEach((b) => {
+        const c = Number(counts[b.dataset.value] || 0);
+        const pct = total ? Math.round((c / total) * 100) : 0;
+        const bar = b.querySelector('.bar');
+        const lbl = b.querySelector('.pct');
+        bar.style.width = pct + '%';
+        lbl.textContent = pct + '%';
+        lbl.classList.remove('hidden');
+      });
+      if (total && note) note.textContent = total.toLocaleString() + ' predictions so far';
+    }
+
+    function markCorrect() {
+      if (!correct) return;
+      buttons.forEach((b) => {
+        if (b.dataset.value === correct) b.classList.add('!border-pitch', 'ring-2', 'ring-pitch');
+        else if (b.dataset.value === myPick) b.classList.add('!border-red-400', '!bg-red-50');
+      });
+      if (note && myPick) {
+        note.textContent =
+          (myPick === correct ? '✅ You called it!' : '❌ Not this time.') +
+          (note.textContent ? ' · ' + note.textContent : '');
+      }
+    }
+
+    function lock() {
+      buttons.forEach((b) => (b.disabled = true));
+    }
+
+    function highlightPick() {
+      buttons.forEach((b) =>
+        b.classList.toggle('!border-pitch', !correct && b.dataset.value === myPick),
+      );
+    }
+
+    async function getTally() {
+      if (!api) return null;
+      try {
+        const r = await fetch(`${api}/tally?poll=${encodeURIComponent(poll)}`);
+        if (!r.ok) return null;
+        return await r.json();
+      } catch {
+        return null;
+      }
+    }
+
+    async function sendVote(value) {
+      if (!api) return null;
+      try {
+        const r = await fetch(`${api}/vote`, {
+          method: 'POST',
+          headers: { 'content-type': 'application/json' },
+          body: JSON.stringify({ poll, option: value }),
+        });
+        if (!r.ok) return null;
+        return await r.json();
+      } catch {
+        return null;
+      }
+    }
+
+    // Initial state.
+    if (myPick) highlightPick();
+    if (correct || locked) lock();
+    if (correct) markCorrect();
+
+    // Voting handlers (only if not locked/finished).
+    if (!correct && !locked) {
+      buttons.forEach((b) => {
+        b.addEventListener('click', async () => {
+          if (localStorage.getItem(VKEY)) return; // one vote per browser
+          const value = b.dataset.value;
+          localStorage.setItem(VKEY, value);
+          highlightPick();
+          lock();
+          if (window.gtag) window.gtag('event', 'predict', { poll, option: value });
+          const counts = (await sendVote(value)) || (await getTally());
+          renderTally(counts);
+        });
+      });
+    }
+
+    // Show existing community tally on load (everyone, even before voting).
+    getTally().then(renderTally);
+  });
+</script>

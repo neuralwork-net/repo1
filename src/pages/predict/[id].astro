@@ -1,0 +1,115 @@
+---
+import Base from '../../layouts/Base.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import PollWidget from '../../components/PollWidget.astro';
+import EmailCapture from '../../components/EmailCapture.astro';
+import { FIXTURES, getFixture, ROUND_LABELS, isFinished, outcome } from '../../lib/predictions';
+import { SITE } from '../../lib/site';
+
+export function getStaticPaths() {
+  return FIXTURES.map((f) => ({ params: { id: f.id } }));
+}
+
+const { id } = Astro.params;
+const f = getFixture(id!)!;
+const idx = FIXTURES.findIndex((x) => x.id === f.id);
+const prev = FIXTURES[idx - 1];
+const next = FIXTURES[idx + 1];
+
+const roundLabel = ROUND_LABELS[f.round];
+const heading = f.round === 'group' ? `Group ${f.group}` : roundLabel;
+const finished = isFinished(f);
+const result = outcome(f);
+
+const dateLabel = new Date(f.kickoff + 'T00:00:00Z').toLocaleDateString('en-US', {
+  weekday: 'long',
+  month: 'long',
+  day: 'numeric',
+  timeZone: 'UTC',
+});
+
+// Poll options depend on stage. Group matches can draw; knockouts pick a winner.
+const options =
+  f.round === 'group'
+    ? [
+        { value: 'home', label: `${f.home} win` },
+        { value: 'draw', label: 'Draw' },
+        { value: 'away', label: `${f.away} win` },
+      ]
+    : [
+        { value: 'home', label: f.home },
+        { value: 'away', label: f.away },
+      ];
+
+const title = f.tbd
+  ? `${heading}: ${f.home} v ${f.away}`
+  : `Predict: ${f.home} vs ${f.away}`;
+const description = `Make your prediction for ${f.home} vs ${f.away} — ${heading}, ${dateLabel} at ${f.venue}. FIFA World Cup 2026.`;
+const shareUrl = `${SITE.url}/predict/${f.id}/`;
+---
+<Base title={title} description={description}>
+  <a href="/predict/" class="text-sm text-slate-400 hover:text-pitch">← All predictions</a>
+
+  <div class="mt-3 flex items-center justify-between text-xs font-medium text-slate-500">
+    <span>Match {f.match} · {heading}</span>
+    <span>{dateLabel}</span>
+  </div>
+
+  <div class="mt-3 rounded-2xl border border-slate-200 bg-white p-5 text-center">
+    <div class="flex items-center justify-center gap-4 text-lg font-bold sm:text-xl">
+      <span class="flex-1 text-right">{f.home}</span>
+      <span class="text-slate-300">{finished ? `${f.homeScore}–${f.awayScore}` : 'v'}</span>
+      <span class="flex-1 text-left">{f.away}</span>
+    </div>
+    <p class="mt-2 text-xs text-slate-400">📍 {f.venue}</p>
+    {finished && (
+      <p class="mt-1 text-sm font-semibold text-pitch">
+        Full time{result === 'draw' ? ' — draw' : ` — ${result === 'home' ? f.home : f.away} won`}
+      </p>
+    )}
+  </div>
+
+  <AdSlot label="Top ad" />
+
+  {f.tbd ? (
+    <div class="mt-5 rounded-xl border border-dashed border-slate-300 bg-white/60 p-6 text-center text-sm text-slate-500">
+      Teams to be decided. Check back once the bracket fills in — then make your call.
+    </div>
+  ) : (
+    <>
+      <h1 class="text-lg font-bold text-slate-900">
+        {finished ? 'How the world predicted it' : 'Who wins? Make your prediction'}
+      </h1>
+      <PollWidget poll={f.id} options={options} correct={finished ? result : null} />
+    </>
+  )}
+
+  <AdSlot label="After-pick ad" />
+
+  <div class="mt-6 grid gap-2">
+    <p class="text-center text-sm font-medium text-slate-600">Challenge your friends 👇</p>
+    <div class="grid grid-cols-2 gap-2 sm:grid-cols-4">
+      <a id="sh-wa" target="_blank" rel="noopener" class="rounded-lg bg-green-600 px-3 py-2 text-center text-sm font-semibold text-white">WhatsApp</a>
+      <a id="sh-x" target="_blank" rel="noopener" class="rounded-lg bg-slate-900 px-3 py-2 text-center text-sm font-semibold text-white">X</a>
+      <a id="sh-tg" target="_blank" rel="noopener" class="rounded-lg bg-sky-500 px-3 py-2 text-center text-sm font-semibold text-white">Telegram</a>
+      <a id="sh-fb" target="_blank" rel="noopener" class="rounded-lg bg-blue-600 px-3 py-2 text-center text-sm font-semibold text-white">Facebook</a>
+    </div>
+  </div>
+
+  <EmailCapture />
+
+  <nav class="mt-8 flex justify-between text-sm font-semibold text-pitch">
+    {prev ? <a href={`/predict/${prev.id}/`}>← Match {prev.match}</a> : <span></span>}
+    {next ? <a href={`/predict/${next.id}/`}>Match {next.match} →</a> : <span></span>}
+  </nav>
+
+  <script is:inline define:vars={{ home: f.home, away: f.away, shareUrl }}>
+    const text = `My World Cup 2026 prediction: ${home} vs ${away}. What's yours?`;
+    const u = encodeURIComponent(shareUrl);
+    const t = encodeURIComponent(text);
+    document.getElementById('sh-wa').href = `https://wa.me/?text=${t}%20${u}`;
+    document.getElementById('sh-x').href = `https://twitter.com/intent/tweet?text=${t}&url=${u}`;
+    document.getElementById('sh-tg').href = `https://t.me/share/url?url=${u}&text=${t}`;
+    document.getElementById('sh-fb').href = `https://www.facebook.com/sharer/sharer.php?u=${u}`;
+  </script>
+</Base>
