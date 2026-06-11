@@ -148,6 +148,22 @@ function matchSvg(f) {
 </svg>`;
 }
 
+// ---------- 3b. Mystery Player game image ----------
+
+const mysterySvg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}">
+  ${frame}
+  <circle cx="${W / 2}" cy="160" r="58" fill="rgba(255,255,255,0.1)" />
+  <text x="${W / 2}" y="190" font-size="80" text-anchor="middle"
+        font-family="${FONT}" fill="rgba(244,194,13,0.95)" font-weight="900">?</text>
+  <text x="${W / 2}" y="290" font-size="28" font-weight="700" text-anchor="middle"
+        font-family="${FONT}" fill="rgba(244,194,13,0.95)" letter-spacing="6">DAILY GAME</text>
+  <text x="${W / 2}" y="370" font-size="68" font-weight="900" text-anchor="middle"
+        font-family="${FONT}" fill="white" letter-spacing="-1">Mystery Player</text>
+  <text x="${W / 2}" y="440" font-size="32" text-anchor="middle"
+        font-family="${FONT}" fill="rgba(255,255,255,0.75)">Guess the World Cup star in 6 tries</text>
+  ${urlPill(485)}
+</svg>`;
+
 // ---------- Generate ----------
 
 async function render(svg, path) {
@@ -171,7 +187,8 @@ mkdirSync('public/og', { recursive: true });
 let bytes = await render(homeSvg, 'public/og.png');
 bytes += await render(iconSvg(192), 'public/og/icon-192.png');
 bytes += await render(iconSvg(512), 'public/og/icon-512.png');
-let count = 3;
+bytes += await render(mysterySvg, 'public/og/mystery-player.png');
+let count = 4;
 
 const quizDir = 'src/data/quizzes';
 for (const file of readdirSync(quizDir).filter((f) => f.endsWith('.json'))) {

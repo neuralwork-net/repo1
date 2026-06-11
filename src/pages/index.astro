@@ -46,6 +46,9 @@ const upcomingLabel = upcomingDay?.date === todayStr ? "Today's matches" : `Comi
           🔥 Play today's quiz →
         </a>
       )}
+      <a href="/game/mystery-player/" class="inline-block rounded-xl bg-white px-6 py-3 font-bold text-pitch-dark hover:brightness-95">
+        🕵️ Mystery Player →
+      </a>
       <a href="/predict/" class="inline-block rounded-xl bg-white/15 px-6 py-3 font-bold text-white hover:bg-white/25">
         🗺️ Predict the World Cup →
       </a>
@@ -53,6 +56,11 @@ const upcomingLabel = upcomingDay?.date === todayStr ? "Today's matches" : `Comi
   </section>
 
   <section class="mt-8 grid gap-3 sm:grid-cols-3">
+    <a href="/game/mystery-player/" class="rounded-xl border border-gold bg-white p-4 hover:border-pitch">
+      <div class="text-2xl">🕵️</div>
+      <p class="mt-1 font-semibold">Mystery Player <span class="ml-1 rounded bg-gold px-1.5 py-0.5 text-[10px] font-bold text-slate-900">NEW</span></p>
+      <p class="text-sm text-slate-500">Guess the hidden World Cup star in 6 tries. New player daily.</p>
+    </a>
     <a href="/predict/" class="rounded-xl border border-slate-200 bg-white p-4 hover:border-pitch">
       <div class="text-2xl">⚽</div>
       <p class="mt-1 font-semibold">Predict all 104 matches</p>

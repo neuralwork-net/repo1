@@ -9,6 +9,7 @@
     "preview": "astro preview",
     "gen:daily": "node scripts/generate-daily.mjs",
     "gen:fixtures": "node scripts/generate-fixtures.mjs",
+    "gen:players": "node scripts/generate-players.mjs",
     "gen:og": "node scripts/gen-og.mjs"
   },
   "dependencies": {
