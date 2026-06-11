@@ -21,8 +21,11 @@ export function dailyQuiz(): Quiz | undefined {
   return QUIZZES.find((q) => q.daily);
 }
 
-export function quizzesForTeams(teamNames: string[]): Quiz[] {
-  return QUIZZES.filter((q) =>
+export function quizzesForTeams(teamNames: string[], tournament = 'world-cup-2026'): Quiz[] {
+  const specific = QUIZZES.filter((q) =>
     q.teams?.some((t) => teamNames.includes(t))
-  ).slice(0, 3);
+  );
+  if (specific.length > 0) return specific.slice(0, 3);
+  // Fallback: general quizzes for this tournament (no team tag, not daily)
+  return QUIZZES.filter((q) => q.tournament === tournament && !q.teams && !q.daily).slice(0, 2);
 }
