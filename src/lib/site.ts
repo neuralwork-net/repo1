@@ -14,7 +14,7 @@ export const INTEGRATIONS = {
   // Google AdSense publisher id, e.g. 'ca-pub-1234567890123456'. Empty until approved.
   adsenseClient: '',
   // GA4 measurement id, e.g. 'G-XXXXXXXXXX'. Empty disables analytics.
-  ga4Id: '',
+  ga4Id: 'G-21HGGPKR89',
   // Plausible domain (alternative to GA4). Empty disables.
   plausibleDomain: '',
   // Email capture: a third-party form POST endpoint (Formspree/Brevo/etc).
