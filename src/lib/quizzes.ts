@@ -20,3 +20,9 @@ export function quizzesFor(sport: string, tournament: string): Quiz[] {
 export function dailyQuiz(): Quiz | undefined {
   return QUIZZES.find((q) => q.daily);
 }
+
+export function quizzesForTeams(teamNames: string[]): Quiz[] {
+  return QUIZZES.filter((q) =>
+    q.teams?.some((t) => teamNames.includes(t))
+  ).slice(0, 3);
+}

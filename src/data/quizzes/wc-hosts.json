@@ -9,51 +9,113 @@
   "questions": [
     {
       "q": "Which country hosted the very first World Cup in 1930?",
-      "options": ["Brazil", "Italy", "Uruguay", "Argentina"],
+      "options": [
+        "Brazil",
+        "Italy",
+        "Uruguay",
+        "Argentina"
+      ],
       "answer": 2,
       "explain": "Uruguay hosted and won the inaugural tournament."
     },
     {
       "q": "Which three nations co-host the 2026 World Cup?",
-      "options": ["USA, Canada & Mexico", "USA, Mexico & Brazil", "Canada, USA & Costa Rica", "Mexico, USA & Jamaica"],
+      "options": [
+        "USA, Canada & Mexico",
+        "USA, Mexico & Brazil",
+        "Canada, USA & Costa Rica",
+        "Mexico, USA & Jamaica"
+      ],
       "answer": 0,
       "explain": "The first 48-team World Cup spans the USA, Canada and Mexico."
     },
     {
       "q": "Which two countries co-hosted the 2002 World Cup?",
-      "options": ["China & Japan", "South Korea & Japan", "Japan & Thailand", "South Korea & China"],
+      "options": [
+        "China & Japan",
+        "South Korea & Japan",
+        "Japan & Thailand",
+        "South Korea & China"
+      ],
       "answer": 1,
       "explain": "2002 was the first World Cup held in Asia, and the first co-hosted."
     },
     {
       "q": "Which country hosted the 2010 World Cup?",
-      "options": ["Nigeria", "Morocco", "South Africa", "Egypt"],
+      "options": [
+        "Nigeria",
+        "Morocco",
+        "South Africa",
+        "Egypt"
+      ],
       "answer": 2,
       "explain": "South Africa hosted the first World Cup on the African continent."
     },
     {
       "q": "Where was the 2022 World Cup held?",
-      "options": ["UAE", "Qatar", "Saudi Arabia", "Russia"],
+      "options": [
+        "UAE",
+        "Qatar",
+        "Saudi Arabia",
+        "Russia"
+      ],
       "answer": 1,
       "explain": "Qatar hosted the first winter World Cup, in November–December."
     },
     {
       "q": "Which country hosted the 1966 World Cup?",
-      "options": ["England", "West Germany", "Spain", "Sweden"],
+      "options": [
+        "England",
+        "West Germany",
+        "Spain",
+        "Sweden"
+      ],
       "answer": 0,
       "explain": "England hosted and won their only title in 1966."
     },
     {
       "q": "Mexico has hosted the World Cup in which two years?",
-      "options": ["1970 & 1986", "1970 & 1994", "1986 & 2002", "1962 & 1970"],
+      "options": [
+        "1970 & 1986",
+        "1970 & 1994",
+        "1986 & 2002",
+        "1962 & 1970"
+      ],
       "answer": 0,
       "explain": "Mexico hosted in 1970 and 1986; in 2026 it becomes the first to host three."
     },
     {
       "q": "Which country hosted the 2018 World Cup?",
-      "options": ["Russia", "Poland", "Ukraine", "Germany"],
+      "options": [
+        "Russia",
+        "Poland",
+        "Ukraine",
+        "Germany"
+      ],
       "answer": 0,
       "explain": "Russia hosted in 2018; France won the title."
+    },
+    {
+      "q": "Which country hosted the 1994 World Cup, the first to be decided in a penalty shootout final?",
+      "options": [
+        "Canada",
+        "Mexico",
+        "USA",
+        "Colombia"
+      ],
+      "answer": 2,
+      "explain": "The USA hosted the 1994 World Cup — the first held in North America. Brazil beat Italy 3–2 on penalties in the Rose Bowl, the first World Cup final decided by a shootout."
+    },
+    {
+      "q": "Italy hosted and won the World Cup in which year?",
+      "options": [
+        "1930",
+        "1934",
+        "1950",
+        "1966"
+      ],
+      "answer": 1,
+      "explain": "Italy hosted and won the 1934 World Cup under coach Vittorio Pozzo, becoming the first host nation to win the tournament. They also defended their title in France in 1938."
     }
   ]
 }

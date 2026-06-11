@@ -8,7 +8,12 @@
   "questions": [
     {
       "q": "How many teams compete at the 2026 World Cup?",
-      "options": ["32", "40", "48", "64"],
+      "options": [
+        "32",
+        "40",
+        "48",
+        "64"
+      ],
       "answer": 2,
       "explain": "Expanded from 32 to 48 teams for the first time."
     },
@@ -25,7 +30,12 @@
     },
     {
       "q": "How many total matches will be played at the 2026 World Cup?",
-      "options": ["64", "80", "104", "128"],
+      "options": [
+        "64",
+        "80",
+        "104",
+        "128"
+      ],
       "answer": 2,
       "explain": "104 matches, up from 64 in 2022."
     },
@@ -53,21 +63,58 @@
     },
     {
       "q": "How many host cities span the 2026 tournament across the three nations?",
-      "options": ["10", "12", "16", "20"],
+      "options": [
+        "10",
+        "12",
+        "16",
+        "20"
+      ],
       "answer": 2,
       "explain": "16 host cities across the USA, Canada and Mexico."
     },
     {
       "q": "Which country becomes the first to host the World Cup three times?",
-      "options": ["USA", "Mexico", "Canada", "Brazil"],
+      "options": [
+        "USA",
+        "Mexico",
+        "Canada",
+        "Brazil"
+      ],
       "answer": 1,
       "explain": "Mexico hosted in 1970, 1986 and now co-hosts 2026."
     },
     {
       "q": "How many teams advance from the group stage to the knockout rounds?",
-      "options": ["16", "24", "32", "48"],
+      "options": [
+        "16",
+        "24",
+        "32",
+        "48"
+      ],
       "answer": 2,
       "explain": "Top 2 of each group plus 8 best third-placed teams = 32."
+    },
+    {
+      "q": "How many matches does each team play in the 2026 group stage?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "answer": 1,
+      "explain": "Each team plays 3 group-stage matches. The 48 teams are split into 12 groups of four, with each team facing the other three in their group before the knockout rounds."
+    },
+    {
+      "q": "Canada is a 2026 co-host. How many World Cups had they previously qualified for as a participant?",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 1,
+      "explain": "Canada qualified for just one World Cup before 2026 — the 1986 tournament in Mexico, where they went out in the group stage without scoring a single goal."
     }
   ]
 }

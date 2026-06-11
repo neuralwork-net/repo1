@@ -9,51 +9,113 @@
   "questions": [
     {
       "q": "Which team stunned Argentina 2–1 in their 2022 group opener?",
-      "options": ["Saudi Arabia", "Mexico", "Poland", "Australia"],
+      "options": [
+        "Saudi Arabia",
+        "Mexico",
+        "Poland",
+        "Australia"
+      ],
       "answer": 0,
       "explain": "Saudi Arabia shocked the eventual champions in Qatar."
     },
     {
       "q": "Which team beat both Germany and Spain on their way through the 2022 group stage?",
-      "options": ["South Korea", "Japan", "Morocco", "Australia"],
+      "options": [
+        "South Korea",
+        "Japan",
+        "Morocco",
+        "Australia"
+      ],
       "answer": 1,
       "explain": "Japan came from behind to beat Germany and Spain to top Group E."
     },
     {
       "q": "Who beat England 1–0 in the 1950 World Cup, one of the biggest shocks ever?",
-      "options": ["USA", "Spain", "Chile", "Bolivia"],
+      "options": [
+        "USA",
+        "Spain",
+        "Chile",
+        "Bolivia"
+      ],
       "answer": 0,
       "explain": "The amateur-laden USA stunned England in Belo Horizonte."
     },
     {
       "q": "Which African side beat reigning champions Argentina in the 1990 opener?",
-      "options": ["Nigeria", "Cameroon", "Egypt", "Morocco"],
+      "options": [
+        "Nigeria",
+        "Cameroon",
+        "Egypt",
+        "Morocco"
+      ],
       "answer": 1,
       "explain": "Cameroon beat Argentina 1–0 in Italia '90."
     },
     {
       "q": "Who beat holders France in the opening match of the 2002 World Cup?",
-      "options": ["Senegal", "Denmark", "Uruguay", "South Korea"],
+      "options": [
+        "Senegal",
+        "Denmark",
+        "Uruguay",
+        "South Korea"
+      ],
       "answer": 0,
       "explain": "Senegal beat France 1–0 on their World Cup debut."
     },
     {
       "q": "Which team knocked defending champions Germany out in the 2018 group stage?",
-      "options": ["Mexico", "Sweden", "South Korea", "Both Mexico and South Korea beat them"],
+      "options": [
+        "Mexico",
+        "Sweden",
+        "South Korea",
+        "Both Mexico and South Korea beat them"
+      ],
       "answer": 3,
       "explain": "Germany lost to Mexico and South Korea and finished bottom of their group."
     },
     {
       "q": "Which side caused a shock by beating Italy 1–0 in 1966?",
-      "options": ["North Korea", "Bulgaria", "Chile", "USSR"],
+      "options": [
+        "North Korea",
+        "Bulgaria",
+        "Chile",
+        "USSR"
+      ],
       "answer": 0,
       "explain": "North Korea's win over Italy is among the greatest World Cup upsets."
     },
     {
       "q": "Which nation beat West Germany 2–1 in 1982 in a famous result?",
-      "options": ["Cameroon", "Algeria", "Honduras", "Kuwait"],
+      "options": [
+        "Cameroon",
+        "Algeria",
+        "Honduras",
+        "Kuwait"
+      ],
       "answer": 1,
       "explain": "Algeria stunned West Germany in their opening game."
+    },
+    {
+      "q": "Japan beat both Germany and Spain at the 2022 World Cup. Who did Japan lose to in the same group?",
+      "options": [
+        "Belgium",
+        "Morocco",
+        "Costa Rica",
+        "Canada"
+      ],
+      "answer": 2,
+      "explain": "Japan beat Germany 2–1 and Spain 2–1 to top Group E, but suffered a 1–0 defeat to Costa Rica sandwiched between those historic victories."
+    },
+    {
+      "q": "Which country beat eventual 2010 World Cup champions Spain in the group stage?",
+      "options": [
+        "Chile",
+        "Honduras",
+        "Portugal",
+        "Switzerland"
+      ],
+      "answer": 3,
+      "explain": "Switzerland beat Spain 1–0 in the group stage, one of the biggest group-stage shocks of the tournament. Spain recovered to win all remaining games and lift the trophy."
     }
   ]
 }

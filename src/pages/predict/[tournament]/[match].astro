@@ -6,6 +6,7 @@ import EmailCapture from '../../../components/EmailCapture.astro';
 import { FIXTURES, getFixtureByMatchSlug, fixtureUrl, ROUND_LABELS, isFinished, outcome } from '../../../lib/predictions';
 import { SITE } from '../../../lib/site';
 import { fixtureSlug } from '../../../lib/predictions';
+import { quizzesForTeams } from '../../../lib/quizzes';
 
 export function getStaticPaths() {
   return FIXTURES.map((f) => ({
@@ -48,6 +49,7 @@ const title = f.tbd
   : `Predict: ${f.home} vs ${f.away} — FIFA World Cup 2026`;
 const description = `Make your prediction for ${f.home} vs ${f.away} — ${heading}, ${dateLabel} at ${f.venue}. FIFA World Cup 2026.`;
 const shareUrl = `${SITE.url}${fixtureUrl(f)}`;
+const relatedQuizzes = f.tbd ? [] : quizzesForTeams([f.home, f.away]);
 ---
 <Base title={title} description={description}>
   <a href="/predict/" class="text-sm text-slate-400 hover:text-pitch">← All predictions</a>
@@ -99,6 +101,23 @@ const shareUrl = `${SITE.url}${fixtureUrl(f)}`;
   </div>
 
   <EmailCapture />
+
+  {relatedQuizzes.length > 0 && (
+    <section class="mt-6">
+      <p class="mb-2 text-sm font-semibold text-slate-600">🎯 Test your knowledge</p>
+      <div class="grid gap-2">
+        {relatedQuizzes.map((q) => (
+          <a href={`/quiz/${q.slug}/1/`} class="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-3 hover:border-pitch">
+            <span class="text-2xl">{q.emoji ?? '⚽'}</span>
+            <div>
+              <p class="text-sm font-semibold">{q.title}</p>
+              <p class="text-xs text-slate-400">{q.questions.length} questions</p>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
 
   <nav class="mt-8 flex justify-between text-sm font-semibold text-pitch">
     {prev ? <a href={fixtureUrl(prev)}>← Match {prev.match}</a> : <span></span>}

@@ -9,51 +9,116 @@
   "questions": [
     {
       "q": "How many World Cups have Brazil won?",
-      "options": ["3", "4", "5", "6"],
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
       "answer": 2,
       "explain": "Brazil are record five-time champions."
     },
     {
       "q": "Which World Cup did Brazil NOT win?",
-      "options": ["1970", "1994", "2002", "2006"],
+      "options": [
+        "1970",
+        "1994",
+        "2002",
+        "2006"
+      ],
       "answer": 3,
       "explain": "Brazil won in 1958, 1962, 1970, 1994 and 2002 — not 2006."
     },
     {
       "q": "Brazil are the only country to have done what?",
-      "options": ["Won three in a row", "Appeared at every World Cup", "Hosted three times", "Won on every continent"],
+      "options": [
+        "Won three in a row",
+        "Appeared at every World Cup",
+        "Hosted three times",
+        "Won on every continent"
+      ],
       "answer": 1,
       "explain": "Brazil have featured in every World Cup finals tournament."
     },
     {
       "q": "Who captained Brazil to the trophy in 2002, lifting it as a full-back?",
-      "options": ["Cafu", "Roberto Carlos", "Lúcio", "Dunga"],
+      "options": [
+        "Cafu",
+        "Roberto Carlos",
+        "Lúcio",
+        "Dunga"
+      ],
       "answer": 0,
       "explain": "Cafu captained the 2002 winners and played in three finals."
     },
     {
       "q": "Brazil hosted the 2014 World Cup but suffered which famous semi-final defeat?",
-      "options": ["1–0 to Argentina", "7–1 to Germany", "3–0 to Netherlands", "2–1 to Chile"],
+      "options": [
+        "1–0 to Argentina",
+        "7–1 to Germany",
+        "3–0 to Netherlands",
+        "2–1 to Chile"
+      ],
       "answer": 1,
       "explain": "Germany hammered the hosts 7–1."
     },
     {
       "q": "Who won the Golden Boot for Brazil at the 2002 World Cup?",
-      "options": ["Rivaldo", "Ronaldinho", "Ronaldo", "Romário"],
+      "options": [
+        "Rivaldo",
+        "Ronaldinho",
+        "Ronaldo",
+        "Romário"
+      ],
       "answer": 2,
       "explain": "Ronaldo scored eight goals in 2002."
     },
     {
       "q": "Which Brazilian forward was named best player of the 1994 World Cup?",
-      "options": ["Bebeto", "Romário", "Dunga", "Taffarel"],
+      "options": [
+        "Bebeto",
+        "Romário",
+        "Dunga",
+        "Taffarel"
+      ],
       "answer": 1,
       "explain": "Romário starred as Brazil won in the USA in 1994."
     },
     {
       "q": "In which two consecutive World Cups did Brazil win back-to-back titles?",
-      "options": ["1958 & 1962", "1962 & 1966", "1970 & 1974", "1994 & 1998"],
+      "options": [
+        "1958 & 1962",
+        "1962 & 1966",
+        "1970 & 1974",
+        "1994 & 1998"
+      ],
       "answer": 0,
       "explain": "Brazil won in 1958 and 1962."
+    },
+    {
+      "q": "Who is Brazil's all-time leading scorer at World Cups?",
+      "options": [
+        "Pelé",
+        "Ronaldo",
+        "Rivaldo",
+        "Romário"
+      ],
+      "answer": 1,
+      "explain": "Ronaldo (R9) scored 15 World Cup goals across 1998, 2002 and 2006, making him Brazil's all-time top scorer at the tournament."
+    },
+    {
+      "q": "Brazil famously wear yellow shirts. What colour did they originally wear before changing after a 1950 shock defeat?",
+      "options": [
+        "Green",
+        "White",
+        "Blue",
+        "Red"
+      ],
+      "answer": 1,
+      "explain": "Brazil wore white in the 1950 World Cup final and lost to Uruguay. The public was devastated and the team adopted their iconic yellow kit to symbolise a fresh start."
     }
+  ],
+  "teams": [
+    "Brazil"
   ]
 }

@@ -4,6 +4,7 @@ import AdSlot from '../../../components/AdSlot.astro';
 import EmailCapture from '../../../components/EmailCapture.astro';
 import { QUIZZES, getQuiz } from '../../../lib/quizzes';
 import { SITE } from '../../../lib/site';
+import { FIXTURES, fixtureUrl, isFinished } from '../../../lib/predictions';
 
 export function getStaticPaths() {
   return QUIZZES.map((quiz) => ({ params: { slug: quiz.slug } }));
@@ -14,6 +15,12 @@ const quiz = getQuiz(slug!)!;
 const total = quiz.questions.length;
 const playHref = `/quiz/${quiz.slug}/1/`;
 const shareUrl = `${SITE.url}/quiz/${quiz.slug}/`;
+const relatedFixtures = quiz.teams
+  ? FIXTURES.filter(
+      (f) => !f.tbd && !isFinished(f) &&
+        (quiz.teams!.includes(f.home) || quiz.teams!.includes(f.away))
+    ).slice(0, 2)
+  : [];
 ---
 <Base title={`${quiz.title} — Your score`} description={quiz.description}>
   <div class="text-center">
@@ -38,6 +45,20 @@ const shareUrl = `${SITE.url}/quiz/${quiz.slug}/`;
   <p id="fb-toast" class="hidden mt-2 text-center text-xs text-blue-600 font-medium"></p>
 
   <EmailCapture />
+
+  {relatedFixtures.length > 0 && (
+    <section class="mt-6">
+      <p class="mb-2 text-sm font-semibold text-slate-600">📊 Predict the next match</p>
+      <div class="grid gap-2">
+        {relatedFixtures.map((f) => (
+          <a href={fixtureUrl(f)} class="flex items-center justify-between rounded-xl border border-slate-200 bg-white p-3 hover:border-pitch">
+            <span class="text-sm font-semibold">{f.home} <span class="font-normal text-slate-400">vs</span> {f.away}</span>
+            <span class="text-xs font-medium text-pitch">Predict →</span>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
 
   <div class="mt-6 flex flex-wrap justify-center gap-3">
     <a href={playHref} class="rounded-xl border border-slate-300 px-5 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50">Play again</a>

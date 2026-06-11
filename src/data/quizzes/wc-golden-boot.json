@@ -9,51 +9,113 @@
   "questions": [
     {
       "q": "Who won the Golden Boot at the 2022 World Cup?",
-      "options": ["Lionel Messi", "Kylian Mbappé", "Julián Álvarez", "Olivier Giroud"],
+      "options": [
+        "Lionel Messi",
+        "Kylian Mbappé",
+        "Julián Álvarez",
+        "Olivier Giroud"
+      ],
       "answer": 1,
       "explain": "Mbappé scored eight goals, including a final hat-trick."
     },
     {
       "q": "Who won the Golden Boot at the 2018 World Cup?",
-      "options": ["Harry Kane", "Antoine Griezmann", "Romelu Lukaku", "Denis Cheryshev"],
+      "options": [
+        "Harry Kane",
+        "Antoine Griezmann",
+        "Romelu Lukaku",
+        "Denis Cheryshev"
+      ],
       "answer": 0,
       "explain": "England's Harry Kane scored six."
     },
     {
       "q": "Which Colombian won the Golden Boot at the 2014 World Cup?",
-      "options": ["Radamel Falcao", "James Rodríguez", "Juan Cuadrado", "Carlos Bacca"],
+      "options": [
+        "Radamel Falcao",
+        "James Rodríguez",
+        "Juan Cuadrado",
+        "Carlos Bacca"
+      ],
       "answer": 1,
       "explain": "James Rodríguez scored six, including a stunning volley vs Uruguay."
     },
     {
       "q": "Who won the Golden Boot in 2006 with five goals?",
-      "options": ["Miroslav Klose", "Thierry Henry", "Hernán Crespo", "Lukas Podolski"],
+      "options": [
+        "Miroslav Klose",
+        "Thierry Henry",
+        "Hernán Crespo",
+        "Lukas Podolski"
+      ],
       "answer": 0,
       "explain": "Germany's Klose top-scored on home soil."
     },
     {
       "q": "Which Brazilian won the Golden Boot in 2002?",
-      "options": ["Rivaldo", "Ronaldinho", "Ronaldo", "Roberto Carlos"],
+      "options": [
+        "Rivaldo",
+        "Ronaldinho",
+        "Ronaldo",
+        "Roberto Carlos"
+      ],
       "answer": 2,
       "explain": "Ronaldo scored eight goals as Brazil won the title."
     },
     {
       "q": "Croatia's Davor Šuker won the Golden Boot in which year?",
-      "options": ["1994", "1998", "2002", "1990"],
+      "options": [
+        "1994",
+        "1998",
+        "2002",
+        "1990"
+      ],
       "answer": 1,
       "explain": "Šuker scored six as Croatia finished third in 1998."
     },
     {
       "q": "Who scored a record 13 goals to win the 1958 scoring charts?",
-      "options": ["Pelé", "Just Fontaine", "Garrincha", "Vavá"],
+      "options": [
+        "Pelé",
+        "Just Fontaine",
+        "Garrincha",
+        "Vavá"
+      ],
       "answer": 1,
       "explain": "France's Just Fontaine's 13 goals remain a single-tournament record."
     },
     {
       "q": "The Golden Boot was named the 'Golden Shoe' until being renamed in which decade?",
-      "options": ["1990s", "2000s", "1980s", "2010s"],
+      "options": [
+        "1990s",
+        "2000s",
+        "1980s",
+        "2010s"
+      ],
       "answer": 1,
       "explain": "It was renamed the Golden Boot from the 2010 World Cup."
+    },
+    {
+      "q": "Davor Šuker's six goals in 1998 helped Croatia finish in which position?",
+      "options": [
+        "Champions",
+        "Runners-up",
+        "Third place",
+        "Fourth place"
+      ],
+      "answer": 2,
+      "explain": "Croatia finished third at their debut World Cup in 1998, with Šuker's Golden Boot performance inspiring their remarkable run all the way to the third-place play-off."
+    },
+    {
+      "q": "At the 2010 World Cup, four players finished level on five goals. Who was awarded the Golden Boot?",
+      "options": [
+        "David Villa",
+        "Diego Forlán",
+        "Wesley Sneijder",
+        "Thomas Müller"
+      ],
+      "answer": 3,
+      "explain": "Thomas Müller won the Golden Boot after tiebreakers, having recorded 3 assists alongside his 5 goals — more than the other tied scorers."
     }
   ]
 }

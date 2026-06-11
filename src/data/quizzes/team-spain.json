@@ -9,51 +9,116 @@
   "questions": [
     {
       "q": "In which year did Spain win their only World Cup?",
-      "options": ["2006", "2008", "2010", "2012"],
+      "options": [
+        "2006",
+        "2008",
+        "2010",
+        "2012"
+      ],
       "answer": 2,
       "explain": "Spain won the 2010 World Cup in South Africa."
     },
     {
       "q": "Whose extra-time goal won Spain the 2010 final?",
-      "options": ["David Villa", "Andrés Iniesta", "Fernando Torres", "Xabi Alonso"],
+      "options": [
+        "David Villa",
+        "Andrés Iniesta",
+        "Fernando Torres",
+        "Xabi Alonso"
+      ],
       "answer": 1,
       "explain": "Iniesta scored the winner against the Netherlands."
     },
     {
       "q": "Who captained Spain as goalkeeper in 2010?",
-      "options": ["Iker Casillas", "Pepe Reina", "Víctor Valdés", "David de Gea"],
+      "options": [
+        "Iker Casillas",
+        "Pepe Reina",
+        "Víctor Valdés",
+        "David de Gea"
+      ],
       "answer": 0,
       "explain": "Casillas was captain and kept several clean sheets."
     },
     {
       "q": "As defending champions in 2014, Spain went out at which stage?",
-      "options": ["Group stage", "Round of 16", "Quarter-finals", "Semi-finals"],
+      "options": [
+        "Group stage",
+        "Round of 16",
+        "Quarter-finals",
+        "Semi-finals"
+      ],
       "answer": 0,
       "explain": "Spain were eliminated in the group stage in Brazil 2014."
     },
     {
       "q": "Who managed Spain to the 2010 title?",
-      "options": ["Luis Aragonés", "Vicente del Bosque", "Julen Lopetegui", "Luis Enrique"],
+      "options": [
+        "Luis Aragonés",
+        "Vicente del Bosque",
+        "Julen Lopetegui",
+        "Luis Enrique"
+      ],
       "answer": 1,
       "explain": "Vicente del Bosque led Spain to glory in 2010."
     },
     {
       "q": "Spain's possession-based style of that era is popularly called…",
-      "options": ["Catenaccio", "Tiki-taka", "Gegenpressing", "Total Football"],
+      "options": [
+        "Catenaccio",
+        "Tiki-taka",
+        "Gegenpressing",
+        "Total Football"
+      ],
       "answer": 1,
       "explain": "Tiki-taka defined Spain's dominant 2008–2012 period."
     },
     {
       "q": "Spain were knocked out of the 2022 World Cup on penalties by whom?",
-      "options": ["Morocco", "Japan", "Croatia", "Switzerland"],
+      "options": [
+        "Morocco",
+        "Japan",
+        "Croatia",
+        "Switzerland"
+      ],
       "answer": 0,
       "explain": "Morocco beat Spain on penalties in the round of 16."
     },
     {
       "q": "Which striker is among Spain's all-time leading World Cup scorers?",
-      "options": ["Fernando Torres", "David Villa", "Raúl", "Álvaro Morata"],
+      "options": [
+        "Fernando Torres",
+        "David Villa",
+        "Raúl",
+        "Álvaro Morata"
+      ],
       "answer": 1,
       "explain": "David Villa is Spain's record World Cup goalscorer."
+    },
+    {
+      "q": "Who was Spain's top scorer at the 2010 World Cup with five goals?",
+      "options": [
+        "Fernando Torres",
+        "Andrés Iniesta",
+        "David Villa",
+        "Xavi"
+      ],
+      "answer": 2,
+      "explain": "David Villa was Spain's standout striker with five goals across the tournament, including strikes against Portugal, Paraguay and Chile."
+    },
+    {
+      "q": "Which city hosted the 2010 World Cup final where Spain beat the Netherlands?",
+      "options": [
+        "Cape Town",
+        "Johannesburg",
+        "Durban",
+        "Pretoria"
+      ],
+      "answer": 1,
+      "explain": "The 2010 final was played at Soccer City (now FNB Stadium) in Johannesburg — the largest stadium in Africa — where Iniesta struck in extra time."
     }
+  ],
+  "teams": [
+    "Spain"
   ]
 }

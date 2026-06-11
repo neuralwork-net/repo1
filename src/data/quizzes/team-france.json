@@ -9,51 +9,116 @@
   "questions": [
     {
       "q": "In which years did France win the World Cup?",
-      "options": ["1998 & 2018", "1998 & 2006", "1984 & 2018", "2006 & 2018"],
+      "options": [
+        "1998 & 2018",
+        "1998 & 2006",
+        "1984 & 2018",
+        "2006 & 2018"
+      ],
       "answer": 0,
       "explain": "France won at home in 1998 and again in Russia 2018."
     },
     {
       "q": "Who scored twice as France beat Brazil 3–0 in the 1998 final?",
-      "options": ["Thierry Henry", "Zinedine Zidane", "David Trezeguet", "Emmanuel Petit"],
+      "options": [
+        "Thierry Henry",
+        "Zinedine Zidane",
+        "David Trezeguet",
+        "Emmanuel Petit"
+      ],
       "answer": 1,
       "explain": "Zidane headed in two goals in the final."
     },
     {
       "q": "France beat which team 4–2 in the 2018 final?",
-      "options": ["Belgium", "Croatia", "England", "Brazil"],
+      "options": [
+        "Belgium",
+        "Croatia",
+        "England",
+        "Brazil"
+      ],
       "answer": 1,
       "explain": "France beat Croatia 4–2 in Moscow."
     },
     {
       "q": "Who scored a hat-trick for France in the 2022 final but lost?",
-      "options": ["Olivier Giroud", "Antoine Griezmann", "Kylian Mbappé", "Ousmane Dembélé"],
+      "options": [
+        "Olivier Giroud",
+        "Antoine Griezmann",
+        "Kylian Mbappé",
+        "Ousmane Dembélé"
+      ],
       "answer": 2,
       "explain": "Mbappé scored three but Argentina won on penalties."
     },
     {
       "q": "Which Frenchman scored a record 13 goals at the 1958 World Cup?",
-      "options": ["Just Fontaine", "Raymond Kopa", "Michel Platini", "Jean-Pierre Papin"],
+      "options": [
+        "Just Fontaine",
+        "Raymond Kopa",
+        "Michel Platini",
+        "Jean-Pierre Papin"
+      ],
       "answer": 0,
       "explain": "Just Fontaine's 13 goals in one tournament remains a record."
     },
     {
       "q": "France lost the 2006 final to Italy after Zidane was sent off for what?",
-      "options": ["A two-footed tackle", "A headbutt", "Dissent", "Handball"],
+      "options": [
+        "A two-footed tackle",
+        "A headbutt",
+        "Dissent",
+        "Handball"
+      ],
       "answer": 1,
       "explain": "Zidane headbutted Marco Materazzi in extra time."
     },
     {
       "q": "Who captained and starred for France's golden generation of the early 1980s?",
-      "options": ["Michel Platini", "Marius Trésor", "Alain Giresse", "Didier Deschamps"],
+      "options": [
+        "Michel Platini",
+        "Marius Trésor",
+        "Alain Giresse",
+        "Didier Deschamps"
+      ],
       "answer": 0,
       "explain": "Platini led France to semi-finals in 1982 and 1986."
     },
     {
       "q": "Didier Deschamps won the World Cup as captain in 1998 and as what in 2018?",
-      "options": ["Assistant coach", "Head coach", "Director", "Goalkeeping coach"],
+      "options": [
+        "Assistant coach",
+        "Head coach",
+        "Director",
+        "Goalkeeping coach"
+      ],
       "answer": 1,
       "explain": "He joined a select group to win it as both captain and manager."
+    },
+    {
+      "q": "Who scored France's third goal in the 1998 World Cup final to seal a 3–0 win?",
+      "options": [
+        "Zidane",
+        "Thierry Henry",
+        "Emmanuel Petit",
+        "David Trezeguet"
+      ],
+      "answer": 2,
+      "explain": "Defensive midfielder Emmanuel Petit capped France's historic 3–0 win over Brazil by finishing a counter-attack in the closing minutes."
+    },
+    {
+      "q": "France crashed out of the group stage as defending champions in which two World Cups?",
+      "options": [
+        "2002 and 2010",
+        "2002 and 2014",
+        "1994 and 2010",
+        "2006 and 2014"
+      ],
+      "answer": 0,
+      "explain": "France were eliminated in the group stage in both 2002 (scoring zero goals as holders) and 2010 amid a player revolt that shocked the football world."
     }
+  ],
+  "teams": [
+    "France"
   ]
 }

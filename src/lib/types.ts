@@ -20,6 +20,8 @@ export interface Quiz {
   category?: string;
   /** mark the auto-generated daily quiz */
   daily?: boolean;
+  /** team names this quiz relates to, for cross-linking with fixtures */
+  teams?: string[];
   questions: Question[];
 }
 

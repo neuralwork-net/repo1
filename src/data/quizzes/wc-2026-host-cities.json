@@ -9,51 +9,113 @@
   "questions": [
     {
       "q": "How many host cities will stage 2026 World Cup matches?",
-      "options": ["12", "14", "16", "20"],
+      "options": [
+        "12",
+        "14",
+        "16",
+        "20"
+      ],
       "answer": 2,
       "explain": "16 cities across the USA, Canada and Mexico."
     },
     {
       "q": "How many of the host cities are in the United States?",
-      "options": ["9", "10", "11", "13"],
+      "options": [
+        "9",
+        "10",
+        "11",
+        "13"
+      ],
       "answer": 2,
       "explain": "11 US cities, plus 3 in Mexico and 2 in Canada."
     },
     {
       "q": "Which two Canadian cities are hosting matches?",
-      "options": ["Toronto & Vancouver", "Montreal & Toronto", "Vancouver & Calgary", "Toronto & Ottawa"],
+      "options": [
+        "Toronto & Vancouver",
+        "Montreal & Toronto",
+        "Vancouver & Calgary",
+        "Toronto & Ottawa"
+      ],
       "answer": 0,
       "explain": "Toronto and Vancouver (BC Place) are the Canadian hosts."
     },
     {
       "q": "Which three Mexican cities are hosting?",
-      "options": ["Mexico City, Guadalajara & Monterrey", "Mexico City, Cancún & Tijuana", "Guadalajara, Puebla & Monterrey", "Mexico City, Monterrey & León"],
+      "options": [
+        "Mexico City, Guadalajara & Monterrey",
+        "Mexico City, Cancún & Tijuana",
+        "Guadalajara, Puebla & Monterrey",
+        "Mexico City, Monterrey & León"
+      ],
       "answer": 0,
       "explain": "Mexico City, Guadalajara and Monterrey are the Mexican hosts."
     },
     {
       "q": "In which stadium will the 2026 final be played?",
-      "options": ["Los Angeles Stadium", "New York New Jersey Stadium", "Dallas Stadium", "Mexico City Stadium"],
+      "options": [
+        "Los Angeles Stadium",
+        "New York New Jersey Stadium",
+        "Dallas Stadium",
+        "Mexico City Stadium"
+      ],
       "answer": 1,
       "explain": "The final is at the New York New Jersey Stadium (MetLife)."
     },
     {
       "q": "The opening match is scheduled in which city?",
-      "options": ["Los Angeles", "Mexico City", "Toronto", "New York"],
+      "options": [
+        "Los Angeles",
+        "Mexico City",
+        "Toronto",
+        "New York"
+      ],
       "answer": 1,
       "explain": "Mexico City's stadium hosts the opener."
     },
     {
       "q": "Which of these US cities is NOT a 2026 host?",
-      "options": ["Seattle", "Atlanta", "Chicago", "Kansas City"],
+      "options": [
+        "Seattle",
+        "Atlanta",
+        "Chicago",
+        "Kansas City"
+      ],
       "answer": 2,
       "explain": "Chicago is not hosting; Seattle, Atlanta and Kansas City are."
     },
     {
       "q": "Which Canadian venue is known as BC Place?",
-      "options": ["Toronto Stadium", "Vancouver Stadium", "Montreal Stadium", "Edmonton Stadium"],
+      "options": [
+        "Toronto Stadium",
+        "Vancouver Stadium",
+        "Montreal Stadium",
+        "Edmonton Stadium"
+      ],
       "answer": 1,
       "explain": "BC Place in Vancouver is one of the two Canadian host venues."
+    },
+    {
+      "q": "MetLife Stadium, hosting the 2026 final, is located in which US state?",
+      "options": [
+        "New York",
+        "Connecticut",
+        "New Jersey",
+        "Pennsylvania"
+      ],
+      "answer": 2,
+      "explain": "Despite its New York branding, MetLife Stadium is in East Rutherford, New Jersey — just across the Hudson River from Manhattan."
+    },
+    {
+      "q": "Azteca Stadium in Mexico City has hosted two previous World Cup finals. In which years?",
+      "options": [
+        "1958 and 1970",
+        "1970 and 1986",
+        "1966 and 1970",
+        "1986 and 1994"
+      ],
+      "answer": 1,
+      "explain": "Azteca hosted the 1970 final (Brazil 4–1 Italy) and the 1986 final (Argentina 3–2 West Germany), making it the only stadium to host two World Cup finals."
     }
   ]
 }

@@ -9,51 +9,116 @@
   "questions": [
     {
       "q": "In which year did Messi finally win the World Cup?",
-      "options": ["2014", "2018", "2022", "2010"],
+      "options": [
+        "2014",
+        "2018",
+        "2022",
+        "2010"
+      ],
       "answer": 2,
       "explain": "Messi led Argentina to the title in Qatar 2022."
     },
     {
       "q": "Messi has won the World Cup Golden Ball (best player) how many times?",
-      "options": ["Once", "Twice", "Never", "Three times"],
+      "options": [
+        "Once",
+        "Twice",
+        "Never",
+        "Three times"
+      ],
       "answer": 1,
       "explain": "He won it in 2014 and again in 2022 — the only player to win it twice."
     },
     {
       "q": "At which World Cup did Messi make his tournament debut?",
-      "options": ["2006", "2010", "2014", "2002"],
+      "options": [
+        "2006",
+        "2010",
+        "2014",
+        "2002"
+      ],
       "answer": 0,
       "explain": "Messi debuted as an 18-year-old in Germany 2006."
     },
     {
       "q": "Messi holds the record for most matches played at World Cups, with how many?",
-      "options": ["23", "25", "26", "28"],
+      "options": [
+        "23",
+        "25",
+        "26",
+        "28"
+      ],
       "answer": 2,
       "explain": "He reached 26 World Cup appearances in 2022."
     },
     {
       "q": "Argentina lost the 2014 final, with Messi on the team, to whom?",
-      "options": ["Germany", "Brazil", "Netherlands", "Spain"],
+      "options": [
+        "Germany",
+        "Brazil",
+        "Netherlands",
+        "Spain"
+      ],
       "answer": 0,
       "explain": "Germany won 1–0 after extra time."
     },
     {
       "q": "How many goals did Messi score in the 2022 tournament?",
-      "options": ["5", "6", "7", "8"],
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
       "answer": 2,
       "explain": "Messi scored seven goals on the way to the title."
     },
     {
       "q": "Which team stunned Messi's Argentina in their 2022 opener?",
-      "options": ["Mexico", "Saudi Arabia", "Poland", "Australia"],
+      "options": [
+        "Mexico",
+        "Saudi Arabia",
+        "Poland",
+        "Australia"
+      ],
       "answer": 1,
       "explain": "Saudi Arabia won 2–1 before Argentina recovered to win it all."
     },
     {
       "q": "Messi scored twice in the 2022 final. Who else scored for Argentina?",
-      "options": ["Julián Álvarez", "Ángel Di María", "Lautaro Martínez", "Nicolás Otamendi"],
+      "options": [
+        "Julián Álvarez",
+        "Ángel Di María",
+        "Lautaro Martínez",
+        "Nicolás Otamendi"
+      ],
       "answer": 1,
       "explain": "Di María scored Argentina's second in the 3–3 draw."
+    },
+    {
+      "q": "How many World Cup tournaments has Messi appeared in?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "answer": 2,
+      "explain": "Messi competed at five World Cups: 2006, 2010, 2014, 2018 and 2022 — one of only a handful of players to appear in five editions."
+    },
+    {
+      "q": "At the 2014 World Cup, Messi won which individual award despite Argentina losing the final?",
+      "options": [
+        "Golden Boot",
+        "Golden Glove",
+        "Golden Ball",
+        "Silver Boot"
+      ],
+      "answer": 2,
+      "explain": "Messi was controversially awarded the Golden Ball as the tournament's best player at Brazil 2014, even though Argentina lost the final 1–0 to Germany."
     }
+  ],
+  "teams": [
+    "Argentina"
   ]
 }

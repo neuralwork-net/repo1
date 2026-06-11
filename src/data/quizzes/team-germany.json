@@ -9,51 +9,116 @@
   "questions": [
     {
       "q": "How many World Cups have Germany (incl. West Germany) won?",
-      "options": ["3", "4", "5", "2"],
+      "options": [
+        "3",
+        "4",
+        "5",
+        "2"
+      ],
       "answer": 1,
       "explain": "Titles in 1954, 1974, 1990 and 2014."
     },
     {
       "q": "The 1954 final win over Hungary is known as the…",
-      "options": ["Miracle of Bern", "Battle of Berne", "Wonder of Wankdorf", "Swiss Surprise"],
+      "options": [
+        "Miracle of Bern",
+        "Battle of Berne",
+        "Wonder of Wankdorf",
+        "Swiss Surprise"
+      ],
       "answer": 0,
       "explain": "West Germany's shock 3–2 win is the 'Miracle of Bern'."
     },
     {
       "q": "Whose goal won Germany the 2014 final against Argentina?",
-      "options": ["Thomas Müller", "Mario Götze", "Toni Kroos", "André Schürrle"],
+      "options": [
+        "Thomas Müller",
+        "Mario Götze",
+        "Toni Kroos",
+        "André Schürrle"
+      ],
       "answer": 1,
       "explain": "Götze's extra-time volley settled it 1–0."
     },
     {
       "q": "Which German is the World Cup's all-time top scorer?",
-      "options": ["Gerd Müller", "Miroslav Klose", "Jürgen Klinsmann", "Rudi Völler"],
+      "options": [
+        "Gerd Müller",
+        "Miroslav Klose",
+        "Jürgen Klinsmann",
+        "Rudi Völler"
+      ],
       "answer": 1,
       "explain": "Klose scored 16 across four tournaments."
     },
     {
       "q": "Franz Beckenbauer won the World Cup as a player and as what?",
-      "options": ["Referee", "Manager", "Team doctor", "FIFA president"],
+      "options": [
+        "Referee",
+        "Manager",
+        "Team doctor",
+        "FIFA president"
+      ],
       "answer": 1,
       "explain": "He won in 1974 as captain and 1990 as manager."
     },
     {
       "q": "Germany suffered group-stage exits in which two recent World Cups?",
-      "options": ["2014 & 2018", "2018 & 2022", "2010 & 2014", "2006 & 2018"],
+      "options": [
+        "2014 & 2018",
+        "2018 & 2022",
+        "2010 & 2014",
+        "2006 & 2018"
+      ],
       "answer": 1,
       "explain": "Holders in 2018, they went out in the group in both 2018 and 2022."
     },
     {
       "q": "West Germany hosted and won the World Cup in which year?",
-      "options": ["1970", "1974", "1978", "1966"],
+      "options": [
+        "1970",
+        "1974",
+        "1978",
+        "1966"
+      ],
       "answer": 1,
       "explain": "They beat the Netherlands in the 1974 final on home soil."
     },
     {
       "q": "Which country has reached the most World Cup finals (8)?",
-      "options": ["Brazil", "Italy", "Germany", "Argentina"],
+      "options": [
+        "Brazil",
+        "Italy",
+        "Germany",
+        "Argentina"
+      ],
       "answer": 2,
       "explain": "Germany have appeared in eight finals, a record."
+    },
+    {
+      "q": "Manuel Neuer won which award at the 2014 World Cup?",
+      "options": [
+        "Golden Boot",
+        "Golden Ball",
+        "Golden Glove",
+        "Silver Boot"
+      ],
+      "answer": 2,
+      "explain": "Neuer won the Golden Glove for the tournament's best goalkeeper at Brazil 2014, having revolutionised the role with his sweeper-keeper play."
+    },
+    {
+      "q": "Who scored the winner for West Germany in the 1974 World Cup final against the Netherlands?",
+      "options": [
+        "Franz Beckenbauer",
+        "Sepp Maier",
+        "Gerd Müller",
+        "Berti Vogts"
+      ],
+      "answer": 2,
+      "explain": "Gerd Müller scored the decisive 2–1 winner four minutes from time, completing West Germany's comeback after the Netherlands had taken an early lead."
     }
+  ],
+  "teams": [
+    "Germany"
   ]
 }
