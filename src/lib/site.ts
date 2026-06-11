@@ -23,7 +23,7 @@ export const INTEGRATIONS = {
   // Community-vote counter base URL (Cloudflare Worker). e.g.
   // 'https://api.worldsportsquiz.com'. Empty => prediction pages show personal
   // picks + result reveal only, with no community % bar (no errors).
-  voteApi: '',
+  voteApi: 'https://wsq-votes.maruf-csdu.workers.dev',
 };
 
 // Affiliate links shown on results pages. Geo-gate betting client-side before showing.
