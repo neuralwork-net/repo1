@@ -1,0 +1,72 @@
+{
+  "slug": "team-haiti",
+  "title": "Haiti at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🇭🇹",
+  "category": "Teams",
+  "description": "A proud footballing nation that broke Dino Zoff's record in 1974 — Haiti's World Cup return in 2026 is a long time coming.",
+  "teams": ["Haiti"],
+  "questions": [
+    {
+      "q": "Haiti made their first and only World Cup appearance before 2026 in which year?",
+      "options": ["1966", "1970", "1974", "1978"],
+      "answer": 2,
+      "explain": "Haiti appeared at the 1974 World Cup in West Germany — their first and (until 2026) only World Cup. They qualified from CONCACAF and made a significant impact despite losing all three matches."
+    },
+    {
+      "q": "Haiti's most famous World Cup moment was scoring against Italy to end which goalkeeper's legendary unbeaten run?",
+      "options": ["Gordon Banks", "Dino Zoff", "Sepp Maier", "Jan Tomaszewski"],
+      "answer": 1,
+      "explain": "Emmanuel Sanon scored for Haiti in the 46th minute against Italy at the 1974 World Cup, ending Dino Zoff's remarkable 1,143-minute unbeaten run for Italy (over 14 matches). Italy won 3–1, but Haiti had made their mark on football history."
+    },
+    {
+      "q": "Emmanuel Sanon — Haiti's hero in 1974 — also had a successful club career in which country's league?",
+      "options": ["France", "Belgium", "United States (NASL)", "Spain"],
+      "answer": 2,
+      "explain": "Emmanuel Sanon played in the NASL — the North American Soccer League — which was briefly one of the world's most watched leagues in the 1970s, attracting Pelé, Beckenbauer and other stars. Sanon's goal against Italy boosted his profile internationally."
+    },
+    {
+      "q": "In the 1974 group stage, Haiti also played Poland and Argentina. What was their collective performance?",
+      "options": ["Won one, lost two", "Lost all three matches but scored twice", "Drew with Argentina, lost to Poland and Italy", "Were disqualified for a positive doping test"],
+      "answer": 1,
+      "explain": "Haiti lost all three matches — 3–1 to Italy, 7–0 to Poland and 4–1 to Argentina — but scored twice (Sanon vs Italy, and another goal vs Argentina). Poland went on to finish third in the tournament."
+    },
+    {
+      "q": "Haiti's qualification for the 2026 World Cup is their first in 52 years. What makes this particularly remarkable?",
+      "options": ["Haiti qualified with a 100% win record in their group", "Haiti qualified after a period of repeated near-misses and devastating natural disasters including the 2010 earthquake", "Haiti's team is entirely made up of players born in Haiti", "Haiti won CONCACAF qualifying outright without a play-off"],
+      "answer": 1,
+      "explain": "Haiti's qualification for 2026 is extraordinary given the challenges the country has faced — including the catastrophic 2010 earthquake, ongoing political instability and natural disasters. Football has provided rare national joy."
+    },
+    {
+      "q": "Which CONCACAF competition have Haiti performed well in recently, reaching the final stages multiple times?",
+      "options": ["CONCACAF Gold Cup", "CONCACAF Nations League", "CONCACAF Championship", "Caribbean Cup"],
+      "answer": 0,
+      "explain": "Haiti have been competitive in the CONCACAF Gold Cup in recent years, qualifying consistently and reaching the quarter-finals multiple times. The Gold Cup has been Haiti's main stage for showing their development."
+    },
+    {
+      "q": "Haiti is the first independent Black republic in the world, declaring independence in 1804. How does this history connect to their national team's spirit?",
+      "options": ["The team is named the Lions of the Caribbean", "The team wears black and red — colours of the Haitian flag and revolution", "The team motto references the 1804 revolution", "All of the above"],
+      "answer": 1,
+      "explain": "Haiti wear red and black — the colours of the Haitian flag, which was created during the revolution by tearing the white from the French tricolour. The team's national pride is deeply rooted in Haiti's extraordinary history as the first free Black republic."
+    },
+    {
+      "q": "Haiti's 2026 World Cup qualification was managed under which experienced CONCACAF coach?",
+      "options": ["Marc Collat", "Jean-Jacques Pierre", "Éric Loubeau", "Wagneau Eloi"],
+      "answer": 0,
+      "explain": "Marc Collat, a French coach with experience in Caribbean and African football, guided Haiti through the CONCACAF qualifying process to earn their historic 2026 World Cup place."
+    },
+    {
+      "q": "Many Haitian international players are diaspora members — born or raised abroad. Which country has the largest Haitian diaspora that provides national team talent?",
+      "options": ["Canada", "France", "United States", "Dominican Republic"],
+      "answer": 2,
+      "explain": "The United States has the world's largest Haitian diaspora — with large communities in Miami, New York and Boston. Many of Haiti's best players were born or raised in the USA and play in MLS or lower US leagues."
+    },
+    {
+      "q": "What is Haiti's national team nicknamed?",
+      "options": ["Les Grenadiers", "Les Lions", "Les Éléphants", "Les Rouges"],
+      "answer": 0,
+      "explain": "Haiti are known as Les Grenadiers — 'The Grenadiers' — a reference to the elite soldiers of Haiti's revolutionary army who fought for independence in the early 19th century. The nickname reflects Haiti's proud revolutionary heritage."
+    }
+  ]
+}

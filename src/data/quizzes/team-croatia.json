@@ -1,0 +1,72 @@
+{
+  "slug": "team-croatia",
+  "title": "Croatia at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🇭🇷",
+  "category": "Teams",
+  "description": "A nation of 4 million that reached two World Cup finals — how well do you know Croatia's remarkable story?",
+  "teams": ["Croatia"],
+  "questions": [
+    {
+      "q": "In which year did Croatia make their World Cup debut as an independent nation?",
+      "options": ["1994", "1998", "2002", "2006"],
+      "answer": 1,
+      "explain": "Croatia debuted at France 1998, finishing third on their very first World Cup appearance — one of the greatest debuts in tournament history."
+    },
+    {
+      "q": "Croatia's Davor Šuker won the Golden Boot at the 1998 World Cup. How many goals did he score?",
+      "options": ["4", "5", "6", "7"],
+      "answer": 2,
+      "explain": "Davor Šuker scored 6 goals at France 1998, finishing as the tournament's top scorer. He played his club football for Real Madrid at the time."
+    },
+    {
+      "q": "Luka Modrić won the Ballon d'Or in 2018 after captaining Croatia to the World Cup final. Which club does he play for?",
+      "options": ["Barcelona", "Manchester City", "Paris Saint-Germain", "Real Madrid"],
+      "answer": 3,
+      "explain": "Luka Modrić has spent over a decade at Real Madrid, winning five Champions Leagues. His 2018 Ballon d'Or ended the Messi-Ronaldo duopoly that had lasted a decade."
+    },
+    {
+      "q": "Croatia beat England in the 2018 World Cup semi-final. What was the score after extra time?",
+      "options": ["1–0", "2–1", "2–0", "3–2"],
+      "answer": 1,
+      "explain": "Kieran Trippier gave England the lead but Croatia equalised through Perišić, then won 2–1 through a Modrić-created goal for Mario Mandžukić in extra time — breaking English hearts."
+    },
+    {
+      "q": "Croatia lost the 2018 World Cup final 4–2 to France. Which Croatian player scored both an own goal and a later goal in that match?",
+      "options": ["Ivan Rakitić", "Ivan Perišić", "Domagoj Vida", "Mario Mandžukić"],
+      "answer": 3,
+      "explain": "Mario Mandžukić headed a Griezmann cross into his own net for France's first goal, then later scored a brilliant volley to make it 2–1 — the only player to score an own goal and a regular goal in the same World Cup final."
+    },
+    {
+      "q": "At the 2022 World Cup, Croatia produced a stunning upset by beating which South American giant on penalties in the quarter-finals?",
+      "options": ["Argentina", "Brazil", "Uruguay", "Colombia"],
+      "answer": 1,
+      "explain": "Croatia beat Brazil 4–2 on penalties after a 1–1 draw, with goalkeeper Dominik Livaković saving three penalties. It was Brazil's most shocking exit in years."
+    },
+    {
+      "q": "Croatia finished third at the 2022 World Cup, defeating Morocco 2–1 in the third-place play-off. Who scored the winner?",
+      "options": ["Andrej Kramarić", "Luka Modrić", "Ivan Perišić", "Mislav Oršić"],
+      "answer": 3,
+      "explain": "Mislav Oršić scored the decisive goal as Croatia beat Morocco 2–1 to claim bronze in Qatar, giving them back-to-back third-place finishes (2022) and a runner-up (2018) in consecutive World Cups."
+    },
+    {
+      "q": "Which Croatian manager guided them to the 2018 World Cup final and the 2022 third-place finish?",
+      "options": ["Slaven Bilić", "Niko Kovač", "Zlatko Dalić", "Igor Štimac"],
+      "answer": 2,
+      "explain": "Zlatko Dalić took charge just days before Croatia's crucial 2018 qualifying play-off and went on to mastermind their most successful World Cup campaigns."
+    },
+    {
+      "q": "Croatia's population is around 4 million, making them one of the smallest nations to reach a World Cup final. Which other small nation reached a final in the same era?",
+      "options": ["Iceland", "Uruguay", "Switzerland", "Denmark"],
+      "answer": 0,
+      "explain": "Iceland (population ~370,000) famously qualified for the 2018 World Cup, though they did not reach the final. Uruguay (3.5 million) actually won the World Cup in 1930 and 1950, making them Croatia's closest comparison in recent decades."
+    },
+    {
+      "q": "In the 2022 group stage, Croatia beat which North American team 4–1?",
+      "options": ["USA", "Mexico", "Canada", "Costa Rica"],
+      "answer": 2,
+      "explain": "Croatia beat Canada 4–1, with Andrej Kramarić scoring twice. It was a bruising introduction to the World Cup for Canada, who were making their return to the tournament after 36 years."
+    }
+  ]
+}

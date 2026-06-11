@@ -1,0 +1,72 @@
+{
+  "slug": "team-bosnia",
+  "title": "Bosnia and Herzegovina at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🇧🇦",
+  "category": "Teams",
+  "description": "A new nation with old footballing roots — Bosnia reached the World Cup in 2014 with some of Europe's finest talent.",
+  "teams": ["Bosnia and Herzegovina"],
+  "questions": [
+    {
+      "q": "Bosnia and Herzegovina made their first World Cup appearance in which year?",
+      "options": ["2010", "2014", "2018", "2022"],
+      "answer": 1,
+      "explain": "Bosnia qualified for their first World Cup in 2014 in Brazil, after gaining independence from Yugoslavia in 1992. The achievement was celebrated as a national milestone."
+    },
+    {
+      "q": "Which striker — one of Europe's best — led Bosnia's attack at the 2014 World Cup?",
+      "options": ["Vedad Ibišević", "Miralem Pjanić", "Haris Medunjanin", "Edin Džeko"],
+      "answer": 3,
+      "explain": "Edin Džeko — who played for Manchester City, Roma and later Inter Milan — is Bosnia's all-time top scorer and greatest player. He was the focal point of their attack at Brazil 2014."
+    },
+    {
+      "q": "Bosnia's first ever World Cup match was against Argentina in 2014. What happened in that game?",
+      "options": ["Bosnia won 2–1 to complete a famous debut upset", "Bosnia lost 2–1 — an own goal gave Argentina a 2–0 lead before Džeko pulled one back", "Messi scored a hat-trick and Argentina won 3–0", "The match ended 1–1"],
+      "answer": 1,
+      "explain": "Bosnia's debut was a 2–1 loss to Argentina. An early Sead Kolašinac own goal, combined with a Messi strike, put Argentina 2–0 up. Džeko scored a late consolation for Bosnia — who showed they belonged at this level."
+    },
+    {
+      "q": "Which Bosnian midfielder, renowned for his passing and technique, played for Barcelona, Juventus and Paris Saint-Germain?",
+      "options": ["Zvjezdan Misimović", "Senad Lulić", "Miralem Pjanić", "Haris Medunjanin"],
+      "answer": 2,
+      "explain": "Miralem Pjanić was one of the most technically gifted midfielders of his generation, winning Serie A titles with Juventus before moving to Barcelona and PSG. He is Bosnia's most decorated club player."
+    },
+    {
+      "q": "Bosnia and Herzegovina became independent in 1992 following the breakup of Yugoslavia. Their players previously represented Yugoslavia — including which era's talented teams?",
+      "options": ["The 1960s Yugoslav golden generation", "The 1990 World Cup squad that reached the round of 16", "The 1982 World Cup squad", "The 1987 Under-20 World Cup winners"],
+      "answer": 1,
+      "explain": "Many Bosnian players were part of Yugoslavia's talented 1990 World Cup squad that reached the round of 16 — including the generation that also produced Serbia and Croatia's best players from that era."
+    },
+    {
+      "q": "Bosnia's qualification for the 2026 World Cup came through European qualifying. What made this achievement particularly significant?",
+      "options": ["It was their second consecutive World Cup", "It ended a 12-year absence after only reaching one previous tournament (2014)", "They qualified unbeaten", "They knocked out a major rival in the play-offs"],
+      "answer": 1,
+      "explain": "Bosnia's 2026 qualification ends a 12-year wait since their debut in 2014. They failed to qualify for 2018 and 2022, making 2026 an important step in establishing themselves as a regular World Cup nation."
+    },
+    {
+      "q": "What is Bosnia's national team's colourful nickname?",
+      "options": ["The Zmajevi (Dragons)", "The Lions", "The Eagles", "The Golden Lilies"],
+      "answer": 0,
+      "explain": "Bosnia are known as the Zmajevi — 'the Dragons' in Bosnian. The dragon is a symbol of fierce competition and national pride for a team that has defied the odds for a relatively young football nation."
+    },
+    {
+      "q": "Džeko scored Bosnia's only goal at the 2014 World Cup group stage against Iran. What was the final score?",
+      "options": ["1–0", "2–0", "3–1", "1–1"],
+      "answer": 2,
+      "explain": "Bosnia beat Iran 3–1 in their final group game, with Džeko and Vedad Ibišević scoring alongside an Uroš Spajić strike. It was too late to advance but gave Bosnia their first World Cup win."
+    },
+    {
+      "q": "Which Bosnian player scored the historic first-ever goal for Bosnia in a competitive World Cup match?",
+      "options": ["Edin Džeko", "Miralem Pjanić", "Avdija Vršajević", "Senad Lulić"],
+      "answer": 0,
+      "explain": "Edin Džeko scored Bosnia's first competitive World Cup goal — against Argentina in their opening game of the 2014 tournament. Despite the 2–1 loss, Džeko's goal was a historic moment for Bosnian football."
+    },
+    {
+      "q": "Edin Džeko is Bosnia's all-time top scorer. Approximately how many international goals has he scored?",
+      "options": ["30–35", "40–45", "50–55", "60–65"],
+      "answer": 2,
+      "explain": "Edin Džeko has scored over 60 goals for Bosnia — a remarkable tally for a small nation. His combination of physicality, technique and finishing made him one of Europe's most complete strikers during his prime."
+    }
+  ]
+}

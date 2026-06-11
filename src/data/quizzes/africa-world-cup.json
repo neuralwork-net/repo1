@@ -1,0 +1,72 @@
+{
+  "slug": "africa-world-cup",
+  "title": "Africa at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🌍",
+  "category": "History",
+  "description": "From Zaire's debut to Morocco's semi-final — how much do you know about African football's World Cup story?",
+  "teams": [],
+  "questions": [
+    {
+      "q": "Which was the first African nation to win a match at a World Cup — in 1978?",
+      "options": ["Morocco", "Tunisia", "Egypt", "Zaire"],
+      "answer": 1,
+      "explain": "Tunisia beat Mexico 3–1 at the 1978 World Cup — the first victory by an African nation in World Cup history. Morocco had previously made history in 1970 as the first sub-Saharan African team to qualify."
+    },
+    {
+      "q": "Which African nation was the first to reach the World Cup quarter-finals — in 1990?",
+      "options": ["Nigeria", "Ghana", "Egypt", "Cameroon"],
+      "answer": 3,
+      "explain": "Cameroon's Indomitable Lions — led by Roger Milla — reached the 1990 quarter-finals in Italy, beating Argentina in the group stage and Colombia in the round of 16. They lost narrowly to England 3–2 in extra time."
+    },
+    {
+      "q": "Roger Milla was Cameroon's hero at the 1990 World Cup. What made his performances even more remarkable?",
+      "options": ["He had been brought out of retirement to play at age 38", "He was making his World Cup debut at age 34", "He scored while playing with a bandaged broken rib", "He played despite having just lost a family member"],
+      "answer": 0,
+      "explain": "Roger Milla came out of retirement at 38 to play at the 1990 World Cup after Cameroon's president personally requested it. He scored 4 goals and celebrated each one with his iconic wiggling dance around the corner flag."
+    },
+    {
+      "q": "Morocco's 2022 World Cup run was historic. They became the first African nation to reach the semi-finals. How far had African teams reached before 2022?",
+      "options": ["Final", "Third place", "Semi-finals", "Quarter-finals"],
+      "answer": 3,
+      "explain": "Before Morocco in 2022, the furthest an African nation had reached was the quarter-finals — achieved by Cameroon (1990), Senegal (2002) and Ghana (2010). Morocco smashed that barrier by reaching the semis."
+    },
+    {
+      "q": "How many African nations qualified for the 2026 World Cup — the largest ever African representation?",
+      "options": ["5", "7", "9", "10"],
+      "answer": 2,
+      "explain": "CAF received 9 places at the 2026 World Cup — up from 5 at the previous editions. This is the largest African representation in World Cup history, reflecting the tournament's expansion to 48 teams."
+    },
+    {
+      "q": "Nigeria have never won the Africa Cup of Nations, but are one of Africa's most feared teams at World Cups. In which year did they famously beat Spain in the group stage?",
+      "options": ["1994", "1998", "2002", "2010"],
+      "answer": 1,
+      "explain": "Nigeria beat Spain 3–2 at the 1998 World Cup group stage — one of the Super Eagles' greatest wins. They also topped their group ahead of Spain and Paraguay. They reached the round of 16 before losing to Denmark."
+    },
+    {
+      "q": "Which African nation's World Cup appearance in 1974 is remembered for a bizarre free-kick incident — and heavy defeats?",
+      "options": ["Morocco", "Zambia", "Senegal", "Zaire"],
+      "answer": 3,
+      "explain": "Zaire (now DR Congo) played at the 1974 World Cup — including the infamous moment where Mwepu Ilunga kicked the ball away during a Brazil free kick. They lost 9–0 to Yugoslavia, 3–0 to Brazil and 2–0 to Scotland."
+    },
+    {
+      "q": "The 2010 World Cup was held in South Africa — the first on African soil. Which African nation also performed well at that tournament, reaching the round of 16?",
+      "options": ["Nigeria", "Algeria", "Ghana", "Both Ghana and Algeria"],
+      "answer": 2,
+      "explain": "Ghana reached the quarter-finals of the 2010 World Cup — further than the host nation South Africa, who went out in the group stage. Ghana's run to the last eight, stopped only by Suárez's handball, was the standout African performance."
+    },
+    {
+      "q": "Ivory Coast's Didier Drogba made a famous speech after qualifying for which World Cup that helped bring about a ceasefire in their country's civil war?",
+      "options": ["2002 World Cup", "2006 World Cup", "2010 World Cup", "2014 World Cup"],
+      "answer": 1,
+      "explain": "After Ivory Coast qualified for the 2006 World Cup, Drogba made a passionate televised speech begging all factions to 'lay down your weapons'. It is widely credited with contributing to a ceasefire in the Ivorian Civil War — football at its most powerful."
+    },
+    {
+      "q": "In 2026, how many African nations are making their World Cup debut?",
+      "options": ["0", "1 (Cape Verde)", "2 (Cape Verde and DR Congo)", "3 (Cape Verde, DR Congo and Cabo Verde)"],
+      "answer": 1,
+      "explain": "Cape Verde (Cabo Verde) are making their World Cup debut at 2026, representing Africa's smallest qualifying nation. DR Congo returns after a 52-year absence (as Zaire in 1974). Multiple nations are returning rather than debuting."
+    }
+  ]
+}

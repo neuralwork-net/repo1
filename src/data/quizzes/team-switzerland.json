@@ -1,0 +1,72 @@
+{
+  "slug": "team-switzerland",
+  "title": "Switzerland at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🇨🇭",
+  "category": "Teams",
+  "description": "Neutral on the pitch? Hardly — Switzerland have a habit of causing World Cup upsets. Test your knowledge.",
+  "teams": ["Switzerland"],
+  "questions": [
+    {
+      "q": "Switzerland hosted the 1954 World Cup. That tournament featured a record-breaking match — Switzerland vs Austria. What was the score?",
+      "options": ["4–3 to Austria", "5–4 to Switzerland", "7–5 to Austria", "6–4 to Switzerland"],
+      "answer": 2,
+      "explain": "Austria beat Switzerland 7–5 in the quarter-final of the 1954 World Cup — still the highest-scoring match in World Cup history. The match saw 12 goals in 90 minutes of extraordinary football."
+    },
+    {
+      "q": "Switzerland reached the round of 16 at the 2022 World Cup. Which Portuguese player scored a hat-trick as Portugal knocked them out?",
+      "options": ["Cristiano Ronaldo", "Bernardo Silva", "Bruno Fernandes", "Gonçalo Ramos"],
+      "answer": 3,
+      "explain": "Gonçalo Ramos — starting in place of the dropped Ronaldo — scored a hat-trick in a 6–1 rout of Switzerland. It was Portugal's biggest ever World Cup win and announced Ramos as a star of the future."
+    },
+    {
+      "q": "Switzerland beat France in the 2021 European Championship in a penalty shootout, having come back from 3–1 down. What was the final score after extra time?",
+      "options": ["3–3", "4–4", "3–4 after pens", "Won 5–4 on pens"],
+      "answer": 0,
+      "explain": "Switzerland drew 3–3 with France after extra time and then won 5–4 on penalties in one of Euro 2020's greatest upsets. Kylian Mbappé missed the decisive penalty for France."
+    },
+    {
+      "q": "Swiss midfielder Granit Xhaka is of which ethnic background, making him one of many 'hyphenated' Swiss players?",
+      "options": ["Turkish-Swiss", "Kosovar-Albanian-Swiss", "Moroccan-Swiss", "Bosnian-Swiss"],
+      "answer": 1,
+      "explain": "Granit Xhaka was born in Switzerland to Albanian-Kosovar parents. Switzerland's squad famously includes many players of Balkan heritage — Xhaka, Shaqiri, Zuber — reflecting Swiss immigration history."
+    },
+    {
+      "q": "Xherdan Shaqiri scored one of the 2014 World Cup's most spectacular goals — a bicycle kick against Honduras. Which Swiss city is he originally from?",
+      "options": ["Zurich", "Geneva", "Augsburg", "Basel"],
+      "answer": 3,
+      "explain": "Shaqiri grew up in Basel, the city where FC Basel is based — the club that launched his career before moves to Bayern Munich, Liverpool and elsewhere. He was born in Kosovo to Albanian parents."
+    },
+    {
+      "q": "Switzerland won their first World Cup match in how many years when they beat Cameroon at Qatar 2022?",
+      "options": ["4 years", "8 years", "12 years", "16 years"],
+      "answer": 1,
+      "explain": "Switzerland beat Cameroon 1–0 to open their 2022 campaign, their first World Cup win in 8 years after struggling to get out of the group in Russia 2018."
+    },
+    {
+      "q": "How many official languages does Switzerland have — reflecting its multicultural make-up?",
+      "options": ["2", "3", "4", "5"],
+      "answer": 2,
+      "explain": "Switzerland has four official languages — German, French, Italian and Romansh — reflecting its unique multicultural identity. This diversity is also reflected in its multinational football squad."
+    },
+    {
+      "q": "Switzerland's best World Cup finish was fourth place. In which year?",
+      "options": ["1934", "1938", "1954", "1966"],
+      "answer": 2,
+      "explain": "Switzerland finished fourth at the 1954 World Cup on home soil, losing the third-place play-off to Austria 3–1. It remains their best ever finish."
+    },
+    {
+      "q": "At the 2018 World Cup, Switzerland's group stage win over Serbia was marked by a controversial celebration. What did Shaqiri and Xhaka do that caused a political storm?",
+      "options": ["Pointed at the camera to protest racism", "Made a double-headed eagle gesture symbolising Albania", "Celebrated in front of the Serbian bench", "Refused to shake hands with Serbian players"],
+      "answer": 1,
+      "explain": "Shaqiri and Xhaka made the two-handed eagle gesture — a symbol of the Albanian flag — after scoring against Serbia, reflecting the Kosovo conflict. Both were fined but not suspended by FIFA."
+    },
+    {
+      "q": "Switzerland qualified for every World Cup between 2006 and 2022 except one. Which tournament did they miss?",
+      "options": ["2010", "2014", "2018", "They qualified for all of them"],
+      "answer": 3,
+      "explain": "Switzerland qualified for the World Cup in 2006, 2010, 2014, 2018 and 2022 — five consecutive tournaments. Their consistent qualification makes them one of Europe's most reliable World Cup teams."
+    }
+  ]
+}

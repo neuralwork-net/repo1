@@ -1,0 +1,72 @@
+{
+  "slug": "team-ghana",
+  "title": "Ghana at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🇬🇭",
+  "category": "Teams",
+  "description": "From the Black Stars' debut to that Suárez handball — how well do you know Ghana's dramatic World Cup story?",
+  "teams": ["Ghana"],
+  "questions": [
+    {
+      "q": "Ghana made their World Cup debut in which year?",
+      "options": ["1998", "2002", "2006", "2010"],
+      "answer": 2,
+      "explain": "Ghana debuted at the 2006 World Cup in Germany, reaching the round of 16 where they were beaten 3–0 by Brazil. It was an impressive debut and announced African football's growing strength."
+    },
+    {
+      "q": "Ghana reached the quarter-finals of the 2010 World Cup, coming agonisingly close to the semi-finals. What stopped them?",
+      "options": ["A controversial refereeing decision against Ivory Coast", "Luis Suárez's deliberate handball and Asamoah Gyan's missed penalty", "An injury to their key striker in extra time", "A penalty shootout loss to Germany"],
+      "answer": 1,
+      "explain": "In the final seconds of extra time, Uruguay's Luis Suárez deliberately handled a goal-bound shot. He was sent off, but Asamoah Gyan struck the resulting penalty against the crossbar — Ghana lost the shootout and Africa's semi-final dream was crushed."
+    },
+    {
+      "q": "Which midfielder, known as 'The Bison', was Ghana's engine in the 2006 and 2010 World Cups?",
+      "options": ["Asamoah Gyan", "Andre Dede Ayew", "Michael Essien", "Sulley Muntari"],
+      "answer": 2,
+      "explain": "Michael Essien — nicknamed 'The Bison' — was one of the best midfielders in the world during this era, playing for Chelsea. He was a driving force in Ghana's rise as an African football power."
+    },
+    {
+      "q": "Asamoah Gyan is Ghana's all-time top scorer and Africa's top scorer in World Cup history. How many World Cup goals has he scored?",
+      "options": ["4", "6", "8", "10"],
+      "answer": 1,
+      "explain": "Asamoah Gyan scored 6 World Cup goals across three tournaments (2006, 2010, 2014) — the most by any African player in World Cup history. His miss against Uruguay in 2010 remains one of football's most heartbreaking moments."
+    },
+    {
+      "q": "Ghana faced a controversy in 2014 over a pay dispute that overshadowed their World Cup. What was the issue?",
+      "options": ["Players refused to train without a new contract", "A government cash-in-hand payment was flown in a private jet to players mid-tournament", "Players staged a sit-down strike before a match", "The coach resigned over unpaid bonuses"],
+      "answer": 1,
+      "explain": "Ghana's 2014 World Cup was marred by a bonus dispute that led the Ghanaian government to fly $3 million in cash on a private jet to Brazil to pay the players. The story became one of the most bizarre in World Cup history."
+    },
+    {
+      "q": "What is Ghana's national team nickname?",
+      "options": ["The Elephants", "The Desert Foxes", "The Black Stars", "The Lions"],
+      "answer": 2,
+      "explain": "Ghana are called the Black Stars — a name inspired by the black star on the Ghanaian flag, which itself is a tribute to Marcus Garvey's Black Star Line shipping company."
+    },
+    {
+      "q": "Which Ghanaian club legend became Africa's record appearance maker and captained Ghana across four decades?",
+      "options": ["Abedi Pelé", "Asamoah Gyan", "Opoku Afriyie", "Tony Yeboah"],
+      "answer": 1,
+      "explain": "Asamoah Gyan captained Ghana across their 2006, 2010 and 2014 World Cups — three tournaments in which he was their most important player and scorer. He retired as Ghana's all-time top scorer with 51 international goals."
+    },
+    {
+      "q": "Jordan Ayew and Andre Ayew are key Ghana players — they are brothers. Their father also played for Ghana. Who is he?",
+      "options": ["Abedi Ayew (Abedi Pelé)", "Charles Gyamfi", "Osei Kofi", "Samuel Osei"],
+      "answer": 0,
+      "explain": "Abedi Pelé — full name Abedi Ayew — is widely considered the greatest African footballer of his era, winning the African Player of the Year three times. His sons André and Jordan have followed him into the Ghana national team."
+    },
+    {
+      "q": "At the 2022 World Cup, Ghana managed to beat which Asian team in the group stage?",
+      "options": ["Australia", "Japan", "South Korea", "Iran"],
+      "answer": 2,
+      "explain": "Ghana beat South Korea 3–2 in a thrilling group stage match at Qatar 2022, with Mohammed Kudus scoring twice. Ghana were eventually eliminated in the group stage, finishing third behind Portugal and South Korea."
+    },
+    {
+      "q": "Which Ghanaian player scored against his former club Juventus in the 2006 World Cup round of 16 for Ghana before they lost to Brazil?",
+      "options": ["Michael Essien", "Sulley Muntari", "Derek Boateng", "Haminu Draman"],
+      "answer": 1,
+      "explain": "Sulley Muntari scored for Ghana in the 2006 round of 16 against Brazil, but Ghana lost 3–1. It was still a creditable result for their debut World Cup knockout match."
+    }
+  ]
+}

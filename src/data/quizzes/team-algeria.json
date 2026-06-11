@@ -1,0 +1,72 @@
+{
+  "slug": "team-algeria",
+  "title": "Algeria at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🇩🇿",
+  "category": "Teams",
+  "description": "From the Anfa scandal to scaring Germany in 2014 — Algeria's World Cup story is full of injustice and triumph.",
+  "teams": ["Algeria"],
+  "questions": [
+    {
+      "q": "Algeria famously beat West Germany 2–1 at the 1982 World Cup in one of the biggest upsets in history. Which player scored for Algeria?",
+      "options": ["Lakhdar Belloumi", "Rabah Madjer", "Both Belloumi and Madjer scored", "Salah Assad"],
+      "answer": 2,
+      "explain": "Rabah Madjer and Lakhdar Belloumi both scored as Algeria beat West Germany 2–1 in Gijón — one of the greatest World Cup upsets. The win counts even more given what followed in that tournament."
+    },
+    {
+      "q": "Algeria's famous 1982 win over West Germany was ultimately worthless — why?",
+      "options": ["Algeria were disqualified for fielding an ineligible player", "West Germany and Austria played a match that eliminated Algeria with a suspicious 1–0 scoreline", "Algeria were found to have used banned substances", "Algeria withdrew from the remaining group games"],
+      "answer": 1,
+      "explain": "In the final group game, West Germany and Austria played out a 1–0 result that eliminated Algeria on goal difference. The match — known as the 'Disgrace of Gijón' — led directly to FIFA changing the rules so final group games are now played simultaneously."
+    },
+    {
+      "q": "At the 2014 World Cup, Algeria beat which European nation 4–2 in the group stage?",
+      "options": ["England", "Russia", "Switzerland", "South Korea"],
+      "answer": 1,
+      "explain": "Algeria beat Russia 4–2 in their final group match to advance to the round of 16 for the first time since 1982 — a 32-year wait. It was a statement win for African football."
+    },
+    {
+      "q": "Algeria came incredibly close to beating Germany in the 2014 World Cup round of 16. What was the final score?",
+      "options": ["0–1 in normal time", "1–2 in normal time", "1–2 after extra time", "0–1 after extra time"],
+      "answer": 2,
+      "explain": "Germany needed extra time to beat Algeria 2–1, with goals from Mesut Özil and André Schürrle. Islam Slimani had equalised for Algeria. Germany went on to win the World Cup — Algeria had pushed them all the way."
+    },
+    {
+      "q": "Riyad Mahrez is Algeria's star player. Which Premier League club did he win the league title with?",
+      "options": ["Liverpool", "Arsenal", "Chelsea", "Manchester City"],
+      "answer": 3,
+      "explain": "Riyad Mahrez won multiple Premier League titles with Manchester City under Pep Guardiola, having previously won the title at Leicester City in their miraculous 2015–16 campaign — one of sport's greatest fairytales."
+    },
+    {
+      "q": "Algeria won the Africa Cup of Nations (AFCON) for the second time in which year?",
+      "options": ["2013", "2015", "2019", "2021"],
+      "answer": 2,
+      "explain": "Algeria won the 2019 AFCON in Egypt, beating Senegal 1–0 in the final. Mahrez scored a stunning free-kick winner. It was their first title since 1990 and a breakthrough moment for this golden generation."
+    },
+    {
+      "q": "What is Algeria's national team nickname?",
+      "options": ["The Elephants", "The Eagles", "The Desert Foxes", "The Scorpions"],
+      "answer": 2,
+      "explain": "Algeria are known as the Desert Foxes — a reference to the famous WWII Desert Fox Erwin Rommel? No — the nickname pre-dates that and simply refers to the fennec fox, native to the Algerian desert. The fennec is also Algeria's national animal."
+    },
+    {
+      "q": "Which Algerian player, who played for Liverpool and Aston Villa, was part of the 2014 World Cup squad?",
+      "options": ["Samir Nasri", "Yacine Brahimi", "Nabil Bentaleb", "Sofiane Feghouli"],
+      "answer": 3,
+      "explain": "Sofiane Feghouli was a key player in Algeria's 2014 World Cup campaign, playing for Valencia at the time. He scored Algeria's first penalty in the group stage against Belgium."
+    },
+    {
+      "q": "Algeria's first World Cup appearance was in 1982. Which confederation do they represent?",
+      "options": ["UEFA", "AFC", "CAF", "CONCACAF"],
+      "answer": 2,
+      "explain": "Algeria are members of CAF — the Confederation of African Football. They have represented Africa at multiple World Cups: 1982, 1986, 2010, 2014 and 2026."
+    },
+    {
+      "q": "Algeria's 2010 World Cup ended with a famous 91st-minute goal against them. Who scored it to send the USA through instead?",
+      "options": ["Clint Dempsey", "Tim Howard", "Landon Donovan", "Jozy Altidore"],
+      "answer": 2,
+      "explain": "Landon Donovan scored in the 91st minute to give the USA a 1–0 win, topping Group C ahead of England on goal difference and eliminating Algeria. It was one of the 2010 World Cup's most dramatic moments."
+    }
+  ]
+}

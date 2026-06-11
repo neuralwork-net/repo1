@@ -1,0 +1,72 @@
+{
+  "slug": "team-netherlands",
+  "title": "Netherlands at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🇳🇱",
+  "category": "Teams",
+  "description": "Three finals, zero wins — the greatest team never to lift the trophy? Test your knowledge of Dutch football history.",
+  "teams": ["Netherlands"],
+  "questions": [
+    {
+      "q": "How many World Cup finals has the Netherlands appeared in?",
+      "options": ["1", "2", "3", "4"],
+      "answer": 2,
+      "explain": "The Netherlands reached the final in 1974 (lost to West Germany 2–1), 1978 (lost to Argentina 3–1 AET) and 2010 (lost to Spain 1–0 AET) — three finals, zero wins."
+    },
+    {
+      "q": "Which team beat the Netherlands in the 1974 World Cup final?",
+      "options": ["Brazil", "Argentina", "Italy", "West Germany"],
+      "answer": 3,
+      "explain": "West Germany beat the Netherlands 2–1 in Munich. Johan Neeskens put the Dutch ahead with a penalty before a ball was touched by Germany — but goals from Breitner and Müller turned it around."
+    },
+    {
+      "q": "Johan Cruyff was at his peak but famously withdrew from the 1978 World Cup squad. Why?",
+      "options": ["Injury", "Wage dispute with the Dutch FA", "Personal reasons after a kidnapping attempt on his family", "Retirement"],
+      "answer": 2,
+      "explain": "Cruyff cited a traumatic kidnapping attempt on his family in Barcelona as the reason he withdrew. The Netherlands reached the final without him — losing to Argentina 3–1 AET."
+    },
+    {
+      "q": "What revolutionary football philosophy, invented in the Netherlands, did the 1974 World Cup team showcase?",
+      "options": ["Catenaccio", "Tiki-taka", "Gegenpressing", "Total Football"],
+      "answer": 3,
+      "explain": "Total Football — in which any outfield player could take over the role of any other — was pioneered by Ajax and the Dutch national team under coach Rinus Michels. It transformed how the world thought about football."
+    },
+    {
+      "q": "Robin van Persie scored one of the World Cup's greatest ever goals — a stunning diving header — against which team in 2014?",
+      "options": ["Germany", "Brazil", "Argentina", "Spain"],
+      "answer": 3,
+      "explain": "Van Persie's arching header from a Daley Blind long ball made it 1–1 against defending champions Spain in their 2014 group opener. The Netherlands went on to win 5–1 in one of the most shocking results in WC history."
+    },
+    {
+      "q": "In the 2010 World Cup final, Netherlands lost to Spain 1–0 after extra time. Who scored the winning goal?",
+      "options": ["David Villa", "Fernando Torres", "Xavi", "Andrés Iniesta"],
+      "answer": 3,
+      "explain": "Andrés Iniesta scored in the 116th minute to give Spain their first World Cup title, breaking Dutch hearts for the third time in a final."
+    },
+    {
+      "q": "How many times did Johan Cruyff win the Ballon d'Or?",
+      "options": ["1", "2", "3", "4"],
+      "answer": 2,
+      "explain": "Cruyff won the Ballon d'Or three times — in 1971, 1973 and 1974 — cementing his status as one of the greatest players of all time."
+    },
+    {
+      "q": "Arjen Robben missed a famous one-on-one in the 2010 World Cup final against Spain. Which goalkeeper saved his shot?",
+      "options": ["David De Gea", "Iker Casillas", "Victor Valdés", "Pepe Reina"],
+      "answer": 1,
+      "explain": "Iker Casillas produced a crucial save with his feet to deny Robben's through-ball run in the second half of the 0–0 regulation match. Spain won in extra time."
+    },
+    {
+      "q": "The Netherlands reached the 2022 World Cup quarter-finals but were eliminated on penalties by which team?",
+      "options": ["Brazil", "France", "Argentina", "Croatia"],
+      "answer": 2,
+      "explain": "Argentina beat the Netherlands 4–3 on penalties after a 2–2 draw, in a fractious quarter-final that saw multiple yellow cards. Lautaro Martínez scored the winning penalty."
+    },
+    {
+      "q": "Which Dutch manager coached the Netherlands to the 1974 World Cup final, and is credited as the founder of Total Football?",
+      "options": ["Louis van Gaal", "Guus Hiddink", "Frank Rijkaard", "Rinus Michels"],
+      "answer": 3,
+      "explain": "Rinus Michels — nicknamed 'The General' — was elected FIFA's Coach of the Century in 1999 for his work with Ajax and the Dutch national team, where he built the Total Football philosophy."
+    }
+  ]
+}

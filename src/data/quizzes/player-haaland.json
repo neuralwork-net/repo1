@@ -1,0 +1,72 @@
+{
+  "slug": "player-haaland",
+  "title": "Erling Haaland at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🇳🇴",
+  "category": "Players",
+  "description": "The goal machine who waited his whole career for a World Cup — how well do you know Erling Haaland?",
+  "teams": ["Norway"],
+  "questions": [
+    {
+      "q": "Erling Haaland was born in which English city, while his father was playing there?",
+      "options": ["Manchester", "Leeds", "Sheffield", "Middlesbrough"],
+      "answer": 0,
+      "explain": "Erling Haaland was born in Leeds in 2000 while his father Alfie Haaland was playing for Manchester City. Alfie later moved to Man City, but Erling was born in Leeds."
+    },
+    {
+      "q": "Which club did Haaland play for before joining Borussia Dortmund?",
+      "options": ["FC Midtjylland", "Rosenborg", "Red Bull Salzburg", "Brann"],
+      "answer": 2,
+      "explain": "Haaland played for Red Bull Salzburg in Austria before joining Borussia Dortmund in January 2020. He scored a hat-trick on his Champions League debut for Salzburg — the first teenager to do so."
+    },
+    {
+      "q": "Haaland set a new Premier League scoring record in his first season at Manchester City in 2022–23. How many goals did he score?",
+      "options": ["28", "32", "36", "44"],
+      "answer": 2,
+      "explain": "Haaland scored 36 Premier League goals in his debut season at Manchester City — shattering the previous record of 34, held by Andrew Cole and Alan Shearer. He also won the treble (PL, FA Cup, Champions League)."
+    },
+    {
+      "q": "What happened to Erling's father Alfie Haaland in a notorious incident against Manchester United's Roy Keane?",
+      "options": ["He was sent off for a reckless foul on Keane", "Keane deliberately fouled him causing a career-ending knee injury", "He suffered a hamstring injury while trying to tackle Keane", "He scored a winner against Keane's United"],
+      "answer": 1,
+      "explain": "Roy Keane deliberately fouled Alfie Haaland in April 2001 in revenge for a previous incident. Keane admitted it in his autobiography. The knee injury effectively ended Alfie's career — something Erling has grown up knowing."
+    },
+    {
+      "q": "At the 2026 World Cup, it is Erling Haaland's first tournament. Why has Norway never qualified before during his career?",
+      "options": ["Haaland was too young for the 2022 qualification campaign", "Norway failed to qualify for 2018 and 2022 despite Haaland's goals", "Haaland was injured during both qualifying campaigns", "Norway chose not to enter qualification in 2018"],
+      "answer": 1,
+      "explain": "Norway failed to qualify for both the 2018 and 2022 World Cups despite Haaland's goals. They narrowly missed out in European qualifying, making 2026 his first — and possibly only — chance to play at a World Cup."
+    },
+    {
+      "q": "Haaland scored a hat-trick on his Champions League debut. Which club was he playing for?",
+      "options": ["Borussia Dortmund", "Manchester City", "Molde", "Red Bull Salzburg"],
+      "answer": 3,
+      "explain": "Haaland scored a hat-trick for Red Bull Salzburg against Genk in September 2019 — becoming the first teenager to score a hat-trick on their Champions League debut. He was 19 years old."
+    },
+    {
+      "q": "Haaland plays for Manchester City. What shirt number does he wear?",
+      "options": ["7", "9", "11", "23"],
+      "answer": 1,
+      "explain": "Haaland wears the number 9 shirt at Manchester City — the traditional centre-forward number. It was previously worn by Gabriel Jesus and is one of football's most iconic shirt numbers."
+    },
+    {
+      "q": "What unusual dietary habit has Haaland publicly discussed, explaining it as key to his performance?",
+      "options": ["He eats no carbohydrates whatsoever", "He carefully controls his sleep, recovery routines and meals including avoiding exposure to blue light at night", "He fasts every Monday", "He eats only raw foods"],
+      "answer": 1,
+      "explain": "Haaland has spoken extensively about his meticulous approach to recovery — including wearing blue-light-blocking glasses at night, carefully managing his sleep, and following specific nutrition protocols. His off-pitch discipline mirrors his on-pitch dedication."
+    },
+    {
+      "q": "How many goals did Haaland score in the 2022–23 Champions League — the season City won the competition?",
+      "options": ["7", "9", "12", "14"],
+      "answer": 2,
+      "explain": "Haaland scored 12 Champions League goals in 2022–23, helping Manchester City win their first-ever Champions League title. He scored in the final against Inter Milan."
+    },
+    {
+      "q": "Norway's World Cup qualification for 2026 was sealed in which stage of European qualifying?",
+      "options": ["Group stage directly", "A play-off against another European nation", "An intercontinental play-off against an Asian nation", "By winning their group outright"],
+      "answer": 0,
+      "explain": "Norway qualified for 2026 through the UEFA qualifying group stage, finishing in a qualifying position to book their first World Cup since 1998. Haaland's goals were central to the campaign."
+    }
+  ]
+}

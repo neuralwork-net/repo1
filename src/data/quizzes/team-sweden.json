@@ -1,0 +1,72 @@
+{
+  "slug": "team-sweden",
+  "title": "Sweden at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🇸🇪",
+  "category": "Teams",
+  "description": "From Zlatan's hat-tricks to 1994's golden generation — how well do you know Sweden's World Cup history?",
+  "teams": ["Sweden"],
+  "questions": [
+    {
+      "q": "Sweden's best-ever World Cup result was third place. In which year did they achieve this?",
+      "options": ["1958", "1978", "1994", "2018"],
+      "answer": 2,
+      "explain": "Sweden finished third at the 1994 World Cup in the USA, beating Bulgaria 4–0 in the third-place play-off. Tomas Brolin and Martin Dahlin were their star players during a golden era for Swedish football."
+    },
+    {
+      "q": "Sweden also reached the final of the 1958 World Cup, losing to Brazil. Which legendary player scored two goals in that final?",
+      "options": ["Garrincha", "Vavá", "Pelé", "Didi"],
+      "answer": 2,
+      "explain": "A 17-year-old Pelé scored twice as Brazil beat Sweden 5–2 in the 1958 final in Stockholm — his first of three World Cup wins. It was Sweden's finest World Cup run until 1994."
+    },
+    {
+      "q": "Sweden reached the quarter-finals of the 2018 World Cup. Which English team knocked them out?",
+      "options": ["Wales", "Scotland", "England", "Northern Ireland"],
+      "answer": 2,
+      "explain": "England beat Sweden 2–0 in the 2018 quarter-final, with Harry Maguire and Dele Alli scoring. It was the first time England had beaten Sweden in a competitive match."
+    },
+    {
+      "q": "Zlatan Ibrahimović is widely regarded as Sweden's greatest ever player. How many goals did he score for Sweden?",
+      "options": ["42", "52", "62", "72"],
+      "answer": 2,
+      "explain": "Zlatan Ibrahimović scored 62 goals for Sweden — a national record. He retired from international football after Euro 2016, briefly returned during 2022 qualifying, but Sweden did not qualify for that tournament."
+    },
+    {
+      "q": "Zlatan scored a famous overhead bicycle kick from 25 metres to win the 2012 Solna friendly against England. How did he follow up that goal?",
+      "options": ["He scored a hat-trick in that game", "He scored a further 2 goals — completing a 4-goal haul in the match", "He was immediately substituted", "It was his only goal of the game"],
+      "answer": 1,
+      "explain": "Zlatan scored four goals in Sweden's 4–2 win over England in November 2012, capped by the stunning 25-metre overhead kick voted BBC Goal of the Year. He called it 'a goal for the gods'."
+    },
+    {
+      "q": "At the 1994 World Cup, which Brazilian striker was Sweden's nemesis, scoring the semi-final winner?",
+      "options": ["Romário", "Bebeto", "Cafu", "Leonardo"],
+      "answer": 0,
+      "explain": "Romário scored the only goal in Brazil's 1–0 semi-final win over Sweden. Sweden bounced back to beat Bulgaria 4–0 in the third-place match — it remains Sweden's best World Cup run since hosting in 1958."
+    },
+    {
+      "q": "Archie Gemmill scored a famous goal for Scotland but Sweden also had a memorable 1978 moment. Which player scored a trademark 'Swedish Bulldozer' goal at that tournament?",
+      "options": ["Thomas Ravelli", "Bjorn Nordqvist", "Thomas Brolin", "Ralf Edstrom"],
+      "answer": 3,
+      "explain": "Ralf Edström was known as the 'Swedish Bulldozer' — a powerful striker who terrorised defences in the 1970s. Sweden reached the second group stage of the 1978 World Cup."
+    },
+    {
+      "q": "Sweden missed two consecutive World Cups due to failing qualifying play-offs. Which years did they miss?",
+      "options": ["2006 and 2010", "2010 and 2014", "2014 and 2018", "2018 and 2022"],
+      "answer": 1,
+      "explain": "Sweden missed the 2010 World Cup, then were famously beaten by Portugal (Ronaldo hat-trick) in the 2014 qualifying play-off. They returned for 2018 but missed 2022 — a stop-start pattern typical of a team that qualified as good but not elite."
+    },
+    {
+      "q": "Sweden hosted Euro 1992 — one of the tournament's most surprising championships. Which outsiders won it in Stockholm?",
+      "options": ["Yugoslavia", "Denmark", "Norway", "Czech Republic"],
+      "answer": 1,
+      "explain": "Denmark famously won Euro 1992 on home soil in Sweden after being called up as late replacements for Yugoslavia. Sweden reached the semi-finals before losing to Germany, who then lost the final to Denmark in a stunning upset."
+    },
+    {
+      "q": "Henrik Larsson is regarded as one of Sweden's greatest ever players. Which Scottish club made him a legend?",
+      "options": ["Rangers", "Hearts", "Hibernian", "Celtic"],
+      "answer": 3,
+      "explain": "Henrik Larsson became a legend at Celtic, scoring over 200 goals including two in the 2003 UEFA Cup final. He also played at the 2002 and 2006 World Cups, finishing Sweden's run in 2006 with a goal."
+    }
+  ]
+}

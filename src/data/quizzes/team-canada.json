@@ -1,0 +1,72 @@
+{
+  "slug": "team-canada",
+  "title": "Canada at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🇨🇦",
+  "category": "Teams",
+  "description": "From a 36-year absence to co-hosting in 2026 — Canada's World Cup journey is just getting started.",
+  "teams": ["Canada"],
+  "questions": [
+    {
+      "q": "Canada's only previous World Cup before 2022 was in 1986. How did they fare?",
+      "options": ["Won the group", "Reached the round of 16", "Were eliminated in the group stage without scoring a goal", "Finished third"],
+      "answer": 2,
+      "explain": "Canada were eliminated in the group stage at Mexico 1986 without scoring a single goal, conceding 5 across three matches against France, Hungary and the Soviet Union."
+    },
+    {
+      "q": "After qualifying for Qatar 2022 — their first World Cup in 36 years — how did Canada do?",
+      "options": ["Reached the round of 16", "Won one match and exited", "Were eliminated in the group stage without a win", "Reached the quarter-finals"],
+      "answer": 2,
+      "explain": "Canada were eliminated in the group stage of Qatar 2022, losing all three matches — 1–0 to Belgium, 4–1 to Croatia and 2–1 to Morocco. They did score their first ever World Cup goals in that tournament."
+    },
+    {
+      "q": "Which Canada winger, born in a Ghanaian refugee camp to Liberian parents, has become one of the world's best left-backs at Bayern Munich?",
+      "options": ["Jonathan David", "Cyle Larin", "Junior Hoilett", "Alphonso Davies"],
+      "answer": 3,
+      "explain": "Alphonso Davies' story is one of football's most remarkable — born in a Ghanaian refugee camp, he moved to Canada as a child and became a World Cup finalist with Bayern Munich before age 20."
+    },
+    {
+      "q": "Canada are one of three co-hosts of the 2026 World Cup. Which two other nations share hosting duties?",
+      "options": ["USA and Mexico", "USA and Brazil", "Mexico and Costa Rica", "USA and Panama"],
+      "answer": 0,
+      "explain": "Canada, the USA and Mexico co-host the 2026 World Cup — making it the first World Cup to be hosted by three nations simultaneously. Canada is hosting matches in Toronto and Vancouver."
+    },
+    {
+      "q": "Which Canadian striker plays in France's Ligue 1 and is consistently among Europe's top goal-scorers?",
+      "options": ["Cyle Larin", "Lucas Cavallini", "Jonathan David", "Tajon Buchanan"],
+      "answer": 2,
+      "explain": "Jonathan David has been one of the most prolific strikers in Ligue 1, scoring heavily for Lille for several years. He is Canada's most dangerous attacker and a key figure for the 2026 campaign."
+    },
+    {
+      "q": "Canada qualified for the 2022 World Cup through CONCACAF. How did they perform in qualifying?",
+      "options": ["Scraped through in a play-off", "Won the Hexagonal in style, finishing top", "Finished second after the USA", "Qualified via inter-confederation play-off"],
+      "answer": 1,
+      "explain": "Canada topped the CONCACAF final qualifying round, finishing ahead of the USA and Mexico in impressive fashion — their first World Cup qualification since 1986 was achieved with some conviction."
+    },
+    {
+      "q": "Who managed Canada to their 2022 World Cup qualification and 2026 preparation?",
+      "options": ["John Herdman", "Benito Floro", "Colin Miller", "Stephen Hart"],
+      "answer": 0,
+      "explain": "John Herdman, previously the coach of the Canadian women's team (winning Olympic bronze twice), transformed the men's team into World Cup contenders — a remarkable double achievement."
+    },
+    {
+      "q": "Which Canadian city has a Major League Soccer team named the 'TFC' — one of the country's biggest football clubs?",
+      "options": ["Vancouver", "Montreal", "Toronto", "Calgary"],
+      "answer": 2,
+      "explain": "Toronto FC (TFC) is one of Canada's most prominent football clubs, competing in MLS. They won the MLS Cup in 2017, the same year they won the treble of Canadian Championship, MLS Supporters' Shield and MLS Cup."
+    },
+    {
+      "q": "Canada scored their first ever World Cup goal at the 2022 tournament. Who scored it?",
+      "options": ["Alphonso Davies", "Jonathan David", "Cyle Larin", "Atiba Hutchinson"],
+      "answer": 1,
+      "explain": "Jonathan David scored Canada's first ever World Cup goal in their match against Croatia — a historical moment for Canadian football, even though Canada lost that match 4–1."
+    },
+    {
+      "q": "The 2026 World Cup final will be held in which city, one of Canada's co-hosting cities being excluded from hosting the final?",
+      "options": ["Toronto", "New York/New Jersey (USA)", "Vancouver", "Mexico City"],
+      "answer": 1,
+      "explain": "The 2026 World Cup final is scheduled to be held at MetLife Stadium in East Rutherford, New Jersey (New York/New Jersey area). Canadian cities Toronto and Vancouver host group and knockout matches but not the final."
+    }
+  ]
+}

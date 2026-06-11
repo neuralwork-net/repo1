@@ -1,0 +1,72 @@
+{
+  "slug": "team-austria",
+  "title": "Austria at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🇦🇹",
+  "category": "Teams",
+  "description": "The Wunderteam, the 1954 third-place finish, and a modern revival — Austria's World Cup history spans a century.",
+  "teams": ["Austria"],
+  "questions": [
+    {
+      "q": "Austria's best World Cup finish was third place. In which year did they achieve this?",
+      "options": ["1934", "1938", "1954", "1978"],
+      "answer": 2,
+      "explain": "Austria finished third at the 1954 World Cup in Switzerland, beating Uruguay 3–1 in the third-place play-off. It remains their best World Cup result and came during a period of excellent Austrian football."
+    },
+    {
+      "q": "Austria played in the famous 7–5 match at the 1954 World Cup — the highest-scoring game in World Cup history. Which team did they play?",
+      "options": ["West Germany", "Brazil", "Uruguay", "Switzerland"],
+      "answer": 3,
+      "explain": "Austria beat Switzerland 7–5 in the quarter-final of the 1954 World Cup — still the highest-scoring match in the tournament's history. The match is nicknamed 'The Battle of Lausanne'."
+    },
+    {
+      "q": "Austria's 'Wunderteam' of the early 1930s is regarded as one of football's first great national sides. Who was their legendary manager?",
+      "options": ["Ernst Happel", "Hugo Meisl", "Karl Rappan", "Vilmos Hirschl"],
+      "answer": 1,
+      "explain": "Hugo Meisl created the Austrian Wunderteam of 1930–34, built around the genius of Matthias Sindelar. They won 14 matches in a row and were considered the world's best team, but finished fourth at the 1934 World Cup."
+    },
+    {
+      "q": "The 1978 'Disgrace of Córdoba' involved Austria beating which nation in a notorious match?",
+      "options": ["Argentina", "West Germany", "Brazil", "Netherlands"],
+      "answer": 1,
+      "explain": "Austria beat West Germany 3–2 in 1978 in what became known as the 'Disgrace of Córdoba' — Austria's greatest ever win, though it came in a group stage where both teams had already qualified. The result eliminated West Germany from the group."
+    },
+    {
+      "q": "Which Austrian striker was one of Europe's most feared forwards in the 1970s and scored crucial goals at the 1978 World Cup?",
+      "options": ["Anton Polster", "Erich Hof", "Hans Krankl", "Walter Schachner"],
+      "answer": 2,
+      "explain": "Hans Krankl was Austria's star at the 1978 World Cup, scoring 4 goals including the winner in the famous 3–2 victory over West Germany. He was European top scorer in 1977–78."
+    },
+    {
+      "q": "Austria last appeared at a World Cup before 2026 in which year?",
+      "options": ["1994", "1998", "2002", "2006"],
+      "answer": 1,
+      "explain": "Austria's last World Cup before 2026 was France 1998, where they were eliminated in the group stage. They failed to qualify for every World Cup from 2002 to 2022 — a 28-year gap before 2026."
+    },
+    {
+      "q": "Matthias Sindelar — the legendary player of Austria's Wunderteam — had a tragic end. What happened to him?",
+      "options": ["He was killed in WWII fighting", "He died in mysterious circumstances in 1939, shortly after refusing to play for Nazi Germany", "He was executed by the Nazi regime", "He emigrated to South America and disappeared"],
+      "answer": 1,
+      "explain": "Matthias Sindelar — nicknamed 'The Paperman' for his slender build — died in 1939 in suspicious circumstances. He had famously refused to play for the German team after Austria's annexation and scored a deliberately slow goal in a propaganda match before celebrating in front of Nazi officials."
+    },
+    {
+      "q": "Which Austrian club has provided the most World Cup players over the decades?",
+      "options": ["Austria Wien", "Sturm Graz", "LASK", "Rapid Wien"],
+      "answer": 3,
+      "explain": "Rapid Wien and Austria Wien have historically provided the most Austrian national team players. Rapid Wien, founded in 1899, is Austria's most successful club and has been the nursery for generations of national team players."
+    },
+    {
+      "q": "Austria's 2026 World Cup squad is led by which prolific RB Leipzig and Austria striker?",
+      "options": ["Marko Arnautović", "Ercan Kara", "Andreas Weimann", "Marcel Sabitzer"],
+      "answer": 0,
+      "explain": "Marko Arnautović has been Austria's most important forward for over a decade, playing in the Bundesliga, Premier League, Serie A and finally RB Leipzig. His combination of skill and controversy has made him Austria's most recognisable footballer."
+    },
+    {
+      "q": "Austria qualified for Euro 2024 and showed they belong among Europe's top teams. Which group did they top at that tournament?",
+      "options": ["Group A", "Group B", "Group C", "Group D"],
+      "answer": 3,
+      "explain": "Austria topped Group D at Euro 2024, beating Poland 3–1 and France 1–0 — a remarkable result against one of Europe's giants. The team, built around players from the German Bundesliga, showed real quality heading into the 2026 World Cup cycle."
+    }
+  ]
+}

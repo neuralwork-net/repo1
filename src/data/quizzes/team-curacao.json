@@ -1,0 +1,72 @@
+{
+  "slug": "team-curacao",
+  "title": "Curaçao at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🇨🇼",
+  "category": "Teams",
+  "description": "A tiny Caribbean island that punches well above its weight — Curaçao's World Cup debut in 2026 is truly remarkable.",
+  "teams": ["Curaçao"],
+  "questions": [
+    {
+      "q": "Curaçao are making their World Cup debut in 2026. What is their approximate population?",
+      "options": ["50,000", "150,000", "500,000", "1 million"],
+      "answer": 1,
+      "explain": "Curaçao has a population of approximately 150,000 — making their World Cup qualification one of the most remarkable achievements in football history by a small nation. They are one of the smallest countries ever to qualify."
+    },
+    {
+      "q": "Curaçao is part of which country's Kingdom — explaining why some Curaçaoan players are eligible for European club football?",
+      "options": ["France", "United Kingdom", "Belgium", "Netherlands"],
+      "answer": 3,
+      "explain": "Curaçao is an autonomous country within the Kingdom of the Netherlands — similar to how Puerto Rico relates to the USA. This means Curaçaoan-born players have Dutch passports and can work freely in European clubs."
+    },
+    {
+      "q": "Curaçao qualified for the 2026 World Cup through which confederation?",
+      "options": ["CAF", "UEFA", "CONCACAF", "OFC"],
+      "answer": 2,
+      "explain": "Curaçao qualified through CONCACAF — the Confederation of North, Central America and Caribbean Association Football. Despite their tiny size, they compete against the likes of the USA, Mexico and Canada."
+    },
+    {
+      "q": "Which famous Dutch football surname is shared by a Curaçaoan international who plays in Europe?",
+      "options": ["Van Persie", "Robben", "Van Dijk", "Davids"],
+      "answer": 3,
+      "explain": "Edgar Davids — the famous dreadlocked Dutch midfielder known as 'The Pitbull' — is of Curaçaoan heritage (born in Suriname, but of Curaçaoan family). Several Dutch internationals have Curaçaoan roots, reflecting the Caribbean-Dutch football connection."
+    },
+    {
+      "q": "Curaçao has seen a rapid rise in FIFA rankings in recent years. What was key to their improvement?",
+      "options": ["A foreign coaching appointment that restructured their youth system", "Convincing Dutch-eligible players to switch international allegiance to Curaçao", "Hosting a large training complex funded by the Dutch government", "Winning the Caribbean Cup three times in a row"],
+      "answer": 1,
+      "explain": "Curaçao's rise has been driven by convincing Dutch-eligible players — men with Curaçaoan heritage who qualified for the Netherlands — to choose Curaçao instead. This 'talent capture' strategy dramatically improved their squad quality."
+    },
+    {
+      "q": "Leandro Bacuna has been one of Curaçao's standout players. In which English league did he play the most of his career?",
+      "options": ["Premier League", "Championship", "League One", "League Two"],
+      "answer": 1,
+      "explain": "Leandro Bacuna played much of his English career in the Championship, notably at Aston Villa, Reading and Cardiff City. He is one of several Dutch-eligible players who chose to represent Curaçao."
+    },
+    {
+      "q": "Curaçao is also known by which colonial name that reflects its history as a Dutch colony?",
+      "options": ["Netherlands Antilles", "Dutch Caribbean", "Bonaire", "Aruba"],
+      "answer": 0,
+      "explain": "Curaçao was formerly part of the Netherlands Antilles — a Dutch colonial grouping that dissolved in 2010. Curaçao became an autonomous country within the Kingdom of the Netherlands, while Bonaire and others became special municipalities of the Netherlands itself."
+    },
+    {
+      "q": "Curaçao's FIFA ranking improved dramatically after attracting diaspora players. Approximately what ranking did they achieve at their peak?",
+      "options": ["Under 50", "50–80", "80–100", "100–150"],
+      "answer": 1,
+      "explain": "Curaçao climbed into the top 75 of the FIFA world rankings at their peak — an extraordinary achievement for a nation of 150,000. Their ranking reflects genuine quality rather than just small-nation bonus points."
+    },
+    {
+      "q": "What language is primarily spoken in Curaçao?",
+      "options": ["Dutch", "Spanish", "Papiamentu", "English"],
+      "answer": 2,
+      "explain": "Papiamentu (or Papiamento) is the native Creole language of Curaçao — a blend of Portuguese, Spanish, Dutch, African languages and English. Dutch is the official language, but Papiamentu is the language of everyday life."
+    },
+    {
+      "q": "Curaçao's World Cup debut comes as part of CONCACAF's expanded allocation. How many CONCACAF places are there at the 2026 World Cup?",
+      "options": ["3", "4.5", "6", "6 plus a play-off spot"],
+      "answer": 3,
+      "explain": "CONCACAF received 6 automatic places at the 2026 World Cup (up from 3.5) plus an intercontinental play-off spot — a near-doubling of their allocation. This expansion opened the door for smaller CONCACAF nations like Curaçao."
+    }
+  ]
+}

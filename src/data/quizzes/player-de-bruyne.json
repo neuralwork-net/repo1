@@ -1,0 +1,72 @@
+{
+  "slug": "player-de-bruyne",
+  "title": "Kevin De Bruyne at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🇧🇪",
+  "category": "Players",
+  "description": "Belgium's assist king and one of the greatest midfielders of all time — how well do you know KDB?",
+  "teams": ["Belgium"],
+  "questions": [
+    {
+      "q": "Kevin De Bruyne is considered one of the world's best midfielders. Which English club has he spent the peak of his career at?",
+      "options": ["Chelsea", "Arsenal", "Liverpool", "Manchester City"],
+      "answer": 3,
+      "explain": "De Bruyne joined Manchester City from Wolfsburg in 2015 for around £55 million. Under Pep Guardiola, he has become one of the most decorated midfielders in Premier League history, winning multiple titles and the Champions League."
+    },
+    {
+      "q": "De Bruyne started his European career at Chelsea but barely played. Which manager gave him so few opportunities?",
+      "options": ["Carlo Ancelotti", "Rafael Benítez", "José Mourinho", "Roberto Di Matteo"],
+      "answer": 2,
+      "explain": "José Mourinho gave De Bruyne almost no opportunities at Chelsea during his 2012–14 spell. Mourinho later admitted it was a mistake. De Bruyne left for Wolfsburg where he had two outstanding seasons before City came calling."
+    },
+    {
+      "q": "At the 2018 World Cup, Belgium finished third. How did De Bruyne perform individually?",
+      "options": ["He was suspended for the third-place play-off", "He won the Silver Ball as second-best player of the tournament", "He scored 4 goals and 5 assists", "He was the tournament's best passer of the ball according to statistics"],
+      "answer": 1,
+      "explain": "De Bruyne was awarded the Silver Ball — the second-best player trophy — at the 2018 World Cup, behind only Luka Modrić. He was central to Belgium's run to third place, their best-ever finish."
+    },
+    {
+      "q": "De Bruyne set a Premier League record for assists in a single season. How many did he record?",
+      "options": ["15", "17", "19", "21"],
+      "answer": 2,
+      "explain": "De Bruyne set the Premier League record for assists in a season with 20 in 2019–20 — breaking the previous record of 19 set by Thierry Henry. His vision and passing range are unmatched in modern English football."
+    },
+    {
+      "q": "De Bruyne won the Champions League with Manchester City in which year?",
+      "options": ["2021", "2022", "2023", "2024"],
+      "answer": 2,
+      "explain": "De Bruyne won the Champions League with Manchester City in 2022–23, completing a remarkable treble (PL, FA Cup, CL). He scored in the final against Inter Milan."
+    },
+    {
+      "q": "De Bruyne has suffered significant injuries throughout his career. Which injury affected his 2022 World Cup — Belgium's controversial group stage exit?",
+      "options": ["Hamstring injury that kept him out of the tournament", "A hamstring injury sustained during the tournament that limited his effectiveness", "He was not injured — Belgium's exit was purely tactical", "A shoulder injury from the Champions League"],
+      "answer": 1,
+      "explain": "De Bruyne played through an injury at the 2022 World Cup but was clearly not at his best. Belgium were shockingly eliminated in the group stage, with many blaming tactical decisions and the team's failure to click around KDB."
+    },
+    {
+      "q": "Which position does De Bruyne typically play?",
+      "options": ["Defensive midfielder", "Central attacking midfielder / box-to-box midfielder", "Left winger", "Second striker"],
+      "answer": 1,
+      "explain": "De Bruyne plays as a central attacking midfielder — often described as a 'number 8' or 'number 10'. His ability to score, assist, press and organise makes him one of the most complete midfielders in football history."
+    },
+    {
+      "q": "How many Premier League titles had De Bruyne won with Manchester City as of 2024?",
+      "options": ["3", "4", "5", "6"],
+      "answer": 3,
+      "explain": "De Bruyne has won six Premier League titles with Manchester City under Pep Guardiola — an extraordinary level of domestic dominance. City won four consecutive titles from 2018–19 to 2023–24."
+    },
+    {
+      "q": "De Bruyne has been named PFA Players' Player of the Year multiple times. How does this award differ from the FWA Footballer of the Year?",
+      "options": ["The PFA award is voted by managers, the FWA by journalists", "The PFA award is voted by professional players themselves, the FWA by football writers", "There is no difference — it is the same award", "The PFA award considers European performances, the FWA is Premier League only"],
+      "answer": 1,
+      "explain": "The PFA Players' Player of the Year is voted by professional footballers themselves — considered the most meaningful peer recognition. The FWA Footballer of the Year is voted by football journalists. De Bruyne has won the PFA award twice (2020, 2022)."
+    },
+    {
+      "q": "Belgium's golden generation failed to win a major trophy — a fact that haunts De Bruyne. What is De Bruyne's international trophy cabinet?",
+      "options": ["One EURO title", "Empty — no international titles despite reaching the World Cup semi-final stage", "One UEFA Nations League title", "One Copa América equivalent"],
+      "answer": 1,
+      "explain": "Despite Belgium reaching the World Cup semi-finals in 2018 and being ranked FIFA number one for years, De Bruyne and Belgium's golden generation never won a major international trophy. The 2026 World Cup represents a final opportunity for the veteran squad."
+    }
+  ]
+}

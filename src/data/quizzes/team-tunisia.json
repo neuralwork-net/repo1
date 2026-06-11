@@ -1,0 +1,72 @@
+{
+  "slug": "team-tunisia",
+  "title": "Tunisia at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🇹🇳",
+  "category": "Teams",
+  "description": "The first African team to win a World Cup match — Tunisia's contribution to football history is underappreciated.",
+  "teams": ["Tunisia"],
+  "questions": [
+    {
+      "q": "Tunisia became the first African nation to win a match at a World Cup in 1978. Who did they beat?",
+      "options": ["West Germany", "Brazil", "Mexico", "France"],
+      "answer": 2,
+      "explain": "Tunisia beat Mexico 3–1 at the 1978 World Cup in Argentina — the first victory by an African nation in World Cup history. It was a landmark moment for African football."
+    },
+    {
+      "q": "At the 2022 World Cup, Tunisia caused a shock by beating which former world champion with a weakened lineup?",
+      "options": ["Germany", "France", "Brazil", "Spain"],
+      "answer": 1,
+      "explain": "Tunisia beat France 1–0 at the 2022 World Cup, with Wahbi Khazri scoring the winner. France had already qualified and were resting players, but it was still a famous result — Tunisia's best World Cup win since 1978."
+    },
+    {
+      "q": "Despite beating France in 2022, why did Tunisia still go out of the group stage?",
+      "options": ["They had been docked points for fielding an ineligible player", "Their other results meant they finished third in the group on goal difference", "Their win was disallowed after a late VAR review", "They were eliminated on disciplinary points"],
+      "answer": 1,
+      "explain": "Tunisia lost to Denmark and Australia in their other group games, meaning the France win wasn't enough. They finished third in Group D, behind France and Australia, and were eliminated."
+    },
+    {
+      "q": "Which Tunisian forward is their all-time top scorer and led the team at recent World Cups?",
+      "options": ["Sami Trabelsi", "Francileudo Santos", "Wahbi Khazri", "Issam Jemâa"],
+      "answer": 2,
+      "explain": "Wahbi Khazri is Tunisia's most prolific and creative forward of the modern era, scoring crucial goals at both the 2018 and 2022 World Cups. He played club football in France and England."
+    },
+    {
+      "q": "Tunisia's best run at a World Cup came in 1978 and 2022. How many times have they qualified overall?",
+      "options": ["3", "4", "5", "6"],
+      "answer": 3,
+      "explain": "Tunisia have qualified for the World Cup six times — 1978, 1998, 2002, 2006, 2018 and 2022. They are one of Africa's most consistent qualifiers but have only once advanced beyond the group stage."
+    },
+    {
+      "q": "At the 2018 World Cup, Tunisia scored twice against which European giant despite losing the match 5–2?",
+      "options": ["Spain", "France", "Belgium", "England"],
+      "answer": 2,
+      "explain": "Belgium beat Tunisia 5–2 in the 2018 group stage, with goals from Mertens, Lukaku (twice), Hazard and Chadli for Belgium, and Fakhreddine Ben Youssef and Dylan Bronn for Tunisia. A heavy defeat, but Tunisia contributed to an entertaining match."
+    },
+    {
+      "q": "What is Tunisia's national team nickname?",
+      "options": ["The Eagles of Carthage", "The Desert Foxes", "The Lions of North Africa", "The Corsairs"],
+      "answer": 0,
+      "explain": "Tunisia are known as the Eagles of Carthage — a reference to the ancient Carthaginian civilisation centred in modern-day Tunisia, whose symbol was the eagle."
+    },
+    {
+      "q": "In which African Championship did Tunisia win the title for the only time, ending a long drought?",
+      "options": ["AFCON 2001", "AFCON 2004", "AFCON 2012", "AFCON 2019"],
+      "answer": 1,
+      "explain": "Tunisia won the Africa Cup of Nations in 2004 — their first and only title — on home soil in Tunis. They beat Morocco 2–1 in the final, with Francileudo Santos and Ziad Jaziri scoring."
+    },
+    {
+      "q": "Tunisia's 1978 World Cup debut was notable not just for their victory. What else made them historic?",
+      "options": ["First African team to score a World Cup hat-trick", "First African team to qualify for a World Cup through regular CAF qualifying", "First non-European team to qualify from a group containing multiple European nations", "First African team to draw a World Cup match against a European side"],
+      "answer": 1,
+      "explain": "Tunisia were the first African team to qualify for a World Cup through the standard CAF qualifying process (previous African World Cup teams had qualified differently), making their appearance in 1978 a true milestone for continental football."
+    },
+    {
+      "q": "Striker Issam Jemâa was a key player for Tunisia in 2006. Which North African rival did they famously draw with in that tournament?",
+      "options": ["Algeria", "Egypt", "Morocco", "Saudi Arabia"],
+      "answer": 2,
+      "explain": "Tunisia drew 2–2 with Saudi Arabia and lost to Spain and Ukraine at the 2006 World Cup. They faced no other North African team directly at those finals, but their 2006 presence alongside Morocco (who qualified separately) represented a strong North African showing."
+    }
+  ]
+}

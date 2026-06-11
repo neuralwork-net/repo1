@@ -1,0 +1,72 @@
+{
+  "slug": "team-paraguay",
+  "title": "Paraguay at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🇵🇾",
+  "category": "Teams",
+  "description": "Penalty shootout specialists and quarter-final regulars — how well do you know Paraguay's World Cup history?",
+  "teams": ["Paraguay"],
+  "questions": [
+    {
+      "q": "Paraguay's best World Cup result was reaching the quarter-finals. In which year?",
+      "options": ["1986", "1998", "2002", "2010"],
+      "answer": 3,
+      "explain": "Paraguay reached the quarter-finals of the 2010 World Cup in South Africa — their best result. They beat Japan on penalties in the round of 16 before losing 1–0 to Spain in the quarter-final."
+    },
+    {
+      "q": "Paraguay beat Japan on penalties in the 2010 round of 16. Who scored the decisive penalty?",
+      "options": ["Roque Santa Cruz", "Nelson Valdez", "Oscar Cardozo", "Edgar Barreto"],
+      "answer": 2,
+      "explain": "Óscar Cardozo scored the winning penalty as Paraguay beat Japan 5–3 on penalties after a 0–0 draw. It was a landmark result for Paraguayan football."
+    },
+    {
+      "q": "In the 2010 quarter-final against Spain, Paraguay had a huge chance to score from the spot. Who missed the penalty?",
+      "options": ["Roque Santa Cruz", "Salvador Cabañas", "Oscar Cardozo", "Cristian Riveros"],
+      "answer": 2,
+      "explain": "Óscar Cardozo missed a penalty for Paraguay against Spain in the quarter-final. David Villa then scored to put Spain through 1–0. It was an agonising exit — Cardozo had been the hero against Japan days earlier."
+    },
+    {
+      "q": "Which Paraguayan striker was shot in the head in Mexico City in 2010 in a tragic incident that effectively ended his career?",
+      "options": ["Roque Santa Cruz", "Edgar Benítez", "Salvador Cabañas", "Jonathan Santana"],
+      "answer": 2,
+      "explain": "Salvador Cabañas was shot in the head in a Mexico City nightclub in January 2010, just months before the World Cup. He survived but could never play at the highest level again — one of football's most tragic stories."
+    },
+    {
+      "q": "Paraguay are renowned as penalty shootout specialists. At the 2010 World Cup, how many shootouts did they win?",
+      "options": ["1", "2", "3", "0"],
+      "answer": 0,
+      "explain": "Paraguay won one penalty shootout at the 2010 World Cup — against Japan in the round of 16. Their reputation as shootout specialists comes from multiple victories across Copa América and World Cup qualifying over the years."
+    },
+    {
+      "q": "Roque Santa Cruz was Paraguay's most famous player of his era. Which English club was he associated with?",
+      "options": ["Arsenal", "Chelsea", "Manchester City", "Blackburn Rovers"],
+      "answer": 3,
+      "explain": "Roque Santa Cruz had an excellent spell at Blackburn Rovers before moving to Manchester City. His time at Bayern Munich earlier in his career was hampered by injuries — he was considered one of the world's most talented strikers when fit."
+    },
+    {
+      "q": "Paraguay's national team is known for which playing style?",
+      "options": ["Free-flowing attacking football", "Extremely defensive, disciplined and resilient football", "High-pressing gegenpressing", "Tiki-taka possession football"],
+      "answer": 1,
+      "explain": "Paraguay have built a reputation as one of football's most defensive and resilient teams — a 'difficult to beat' side that relies on organisation, discipline and set-pieces rather than flair."
+    },
+    {
+      "q": "In which year did Paraguay first qualify for a World Cup?",
+      "options": ["1930", "1950", "1958", "1966"],
+      "answer": 0,
+      "explain": "Paraguay were one of the original participants at the inaugural 1930 World Cup in Uruguay. As a CONMEBOL nation, they were invited to compete in the tournament's first edition."
+    },
+    {
+      "q": "Paraguay have appeared at multiple World Cups but struggled to qualify recently. How many years passed between their 2010 World Cup and qualification for 2026?",
+      "options": ["4 years", "8 years", "12 years", "16 years"],
+      "answer": 3,
+      "explain": "Paraguay last played at a World Cup in 2010 and failed to qualify for 2014, 2018 and 2022. Their 2026 qualification ends a 16-year absence from the tournament."
+    },
+    {
+      "q": "Paraguay's national stadium is in Asunción. What is it called?",
+      "options": ["Estadio Defensores del Chaco", "Estadio Manuel Ferreira", "Estadio Estadio La Nuevo Olla", "Estadio Bicentenario"],
+      "answer": 0,
+      "explain": "The Estadio Defensores del Chaco in Asunción is Paraguay's national stadium, known for its altitude and difficult conditions for visiting teams. It has been the fortress for Paraguayan home qualifying matches."
+    }
+  ]
+}

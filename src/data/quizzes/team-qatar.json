@@ -1,0 +1,72 @@
+{
+  "slug": "team-qatar",
+  "title": "Qatar at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🇶🇦",
+  "category": "Teams",
+  "description": "They built a team from scratch to host the World Cup — how well do you know Qatar's extraordinary football journey?",
+  "teams": ["Qatar"],
+  "questions": [
+    {
+      "q": "Qatar hosted the 2022 World Cup — but how did the host nation perform?",
+      "options": ["They won the group and reached the round of 16", "They were eliminated in the group stage without winning a match", "They reached the quarter-finals as hosts", "They finished second in their group"],
+      "answer": 1,
+      "explain": "Qatar became the first host nation to be eliminated in the group stage without winning a single match — losing to Ecuador, Senegal and the Netherlands. It was a harsh introduction to World Cup football."
+    },
+    {
+      "q": "Qatar built their football programme through which famous youth academy that has produced many national team players?",
+      "options": ["Al-Sadd Academy", "Aspire Academy", "Al-Rayyan Football School", "Gulf Sports Institute"],
+      "answer": 1,
+      "explain": "The Aspire Academy in Doha is one of the world's best-funded sports academies, designed to create elite Qatari athletes. It was central to Qatar's football development plan and produced several key 2022 World Cup squad members."
+    },
+    {
+      "q": "Qatar won the AFC Asian Cup in 2019. What was significant about this?",
+      "options": ["It was their first ever continental title", "They became the first host nation to win the Asian Cup", "They beat Japan in the final", "All of the above"],
+      "answer": 0,
+      "explain": "Qatar won the 2019 AFC Asian Cup in the UAE — their first ever continental title. They beat Japan 3–1 in the final, with Akram Afif scoring twice. It validated their long-term football development programme."
+    },
+    {
+      "q": "Qatar also won the 2023 AFC Asian Cup. Where was it held?",
+      "options": ["Saudi Arabia", "Japan", "Qatar", "South Korea"],
+      "answer": 2,
+      "explain": "Qatar hosted and won the 2023 AFC Asian Cup on home soil, making them back-to-back Asian Cup winners. Akram Afif won the Golden Ball as best player, cementing his status as Asia's best footballer."
+    },
+    {
+      "q": "Which Qatari striker is regarded as the best player ever produced by the country?",
+      "options": ["Hassan Al-Haydos", "Almoez Ali", "Akram Afif", "Abdulaziz Hatem"],
+      "answer": 2,
+      "explain": "Akram Afif is Qatar's standout player — a left-footed winger of Yemeni heritage who plays for Al-Sadd. He won the Golden Ball at the 2023 Asian Cup and is the driving force behind Qatar's improved performances."
+    },
+    {
+      "q": "In the 2022 World Cup opening ceremony and match, Qatar played Ecuador. What was the atmosphere described as?",
+      "options": ["The most watched opening match in World Cup history", "The first World Cup opening held indoors due to the heat", "Played in the state-of-the-art Al Bayt Stadium designed to look like a traditional Bedouin tent", "A ceremony involving 5,000 performers"],
+      "answer": 2,
+      "explain": "The 2022 World Cup opening match was played at Al Bayt Stadium — designed to resemble a traditional Qatari Bedouin tent. Qatar lost 2–0 to Ecuador in what was a disappointing start for the hosts."
+    },
+    {
+      "q": "Qatar qualified for the 2026 World Cup through which route?",
+      "options": ["As hosts (automatic)", "Through the standard AFC qualifying process", "Through a CONMEBOL/AFC intercontinental play-off", "Through winning the Asian Cup"],
+      "answer": 1,
+      "explain": "Unlike 2022 (where they qualified as hosts), Qatar earned their 2026 place through standard AFC qualifying — a meaningful achievement that shows genuine progress beyond the host advantage."
+    },
+    {
+      "q": "Qatar is one of the world's smallest nations. What is their approximate population?",
+      "options": ["500,000", "1 million", "3 million", "6 million"],
+      "answer": 2,
+      "explain": "Qatar's population is approximately 2.9–3 million, though the majority are expatriate workers. The Qatari citizen population is much smaller — around 300,000 — making their World Cup hosting and back-to-back Asian Cup wins extraordinary."
+    },
+    {
+      "q": "The 2022 World Cup was the first held in the Middle East and the first held in winter. Why was it held in November-December?",
+      "options": ["To avoid Ramadan scheduling conflicts", "Because Qatar's summer temperatures regularly exceed 40°C, making outdoor football dangerous", "Due to commercial broadcasting agreements", "To coincide with the FIFA centenary"],
+      "answer": 1,
+      "explain": "Qatar's summer temperatures regularly exceed 45°C, making playing football outdoors dangerous. Moving the tournament to November-December — with mild temperatures around 20–25°C — was a major logistical departure from World Cup tradition."
+    },
+    {
+      "q": "Almoez Ali scored one of the great goals of the 2019 Asian Cup — an overhead kick in the final against Japan. What was particularly special about his tournament overall?",
+      "options": ["He scored in every match", "He broke the Asian Cup scoring record with 9 goals in one tournament", "He scored a hat-trick in the semi-final", "He became the youngest player to score in an Asian Cup final"],
+      "answer": 1,
+      "explain": "Almoez Ali broke the Asian Cup record by scoring 9 goals in the 2019 tournament — surpassing the previous record of 8. His overhead kick in the final against Japan was the highlight of an extraordinary individual performance."
+    }
+  ]
+}

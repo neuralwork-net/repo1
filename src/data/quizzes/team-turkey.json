@@ -1,0 +1,72 @@
+{
+  "slug": "team-turkey",
+  "title": "Turkey at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🇹🇷",
+  "category": "Teams",
+  "description": "The 2002 semi-finalists and holders of a record you can never forget — how well do you know Turkey's World Cup history?",
+  "teams": ["Türkiye"],
+  "questions": [
+    {
+      "q": "Turkey finished third at the 2002 World Cup. What is their second World Cup appearance — the first was in 1954?",
+      "options": ["That was their second World Cup appearance — the first was in 1954", "That was their third appearance — after 1954 and 1974", "That was their fifth appearance", "That was only their first appearance"],
+      "answer": 0,
+      "explain": "Turkey's second World Cup was in 2002 — their first had been in 1954 (Switzerland), where they lost 7–2 to West Germany in a brutal play-off. The 48-year gap is a testament to the difficulty of European qualifying."
+    },
+    {
+      "q": "Turkey scored the fastest goal in World Cup history in the 2002 third-place play-off against South Korea. How fast was it?",
+      "options": ["10 seconds", "11 seconds", "20 seconds", "30 seconds"],
+      "answer": 1,
+      "explain": "Hakan Şükür scored after just 11 seconds against South Korea in the 2002 third-place match — the fastest goal in World Cup history. Turkey won the match 3–2 to claim bronze."
+    },
+    {
+      "q": "Who scored that fastest-ever World Cup goal for Turkey against South Korea in 2002?",
+      "options": ["İlhan Mansız", "Bülent Korkmaz", "Yıldıray Baştürk", "Hakan Şükür"],
+      "answer": 3,
+      "explain": "Hakan Şükür — Turkey's all-time top scorer — scored after 11 seconds after kick-off. Turkey won the match 3–2 and finished third, still Turkey's best ever World Cup result."
+    },
+    {
+      "q": "Turkey lost their 2002 World Cup semi-final to Brazil 1–0. Who scored the winning goal?",
+      "options": ["Ronaldo", "Ronaldinho", "Rivaldo", "Cafu"],
+      "answer": 0,
+      "explain": "Ronaldo scored the only goal in the semi-final, sending Brazil to the final where they would beat Germany 2–0. Ronaldo finished the tournament with 8 goals, winning the Golden Boot."
+    },
+    {
+      "q": "Turkey's goalkeeper Rüştü Reçber had an extraordinary 2002 World Cup. What notable honour did he receive?",
+      "options": ["Golden Boot", "Golden Ball", "Golden Glove (best goalkeeper)", "Fair Play Award"],
+      "answer": 2,
+      "explain": "Rüştü Reçber won the Golden Glove as the best goalkeeper at the 2002 World Cup, conceding only 3 goals in 6 matches. He was famous for wearing his distinctive blonde-streaked hair."
+    },
+    {
+      "q": "Turkey qualified for the 2026 World Cup — their first since 2002. How many years is that between appearances?",
+      "options": ["16 years", "20 years", "24 years", "28 years"],
+      "answer": 2,
+      "explain": "Turkey last played at a World Cup in 2002 and qualified for 2026 — a 24-year wait. Despite strong players and consistent Euro qualification, they repeatedly fell short in World Cup qualifying."
+    },
+    {
+      "q": "What is the official name of the Turkish national football team as recognised by FIFA?",
+      "options": ["Turkey", "Türkiye", "Ottoman FC", "Turkestan"],
+      "answer": 1,
+      "explain": "FIFA officially recognises the team as 'Türkiye' — the Turkish spelling — following a request by the Turkish government in 2021 to use the native name rather than the English 'Turkey'."
+    },
+    {
+      "q": "Which Turkish striker scored a famous winner for Turkey against Senegal in the 2002 quarter-final?",
+      "options": ["Hakan Şükür", "Arif Erdem", "İlhan Mansız", "Nihat Kahveci"],
+      "answer": 2,
+      "explain": "İlhan Mansız scored the golden goal winner in extra time as Turkey beat Senegal 1–0 to reach the semi-finals. It was a golden goal (sudden death extra time), still used in World Cups at that point."
+    },
+    {
+      "q": "Turkey's current star is a creative attacking midfielder who plays in Germany's Bundesliga. Who is he?",
+      "options": ["Cengiz Ünder", "Kenan Yıldız", "Arda Güler", "Hakan Çalhanoğlu"],
+      "answer": 2,
+      "explain": "Arda Güler burst onto the scene at Real Madrid and became a key figure for Turkey at Euro 2024 with a stunning goal against Georgia. He is seen as Turkey's brightest talent heading into 2026."
+    },
+    {
+      "q": "Turkey reached the semi-finals of Euro 2008, held in Austria and Switzerland. Who knocked them out?",
+      "options": ["Spain", "Germany", "Russia", "Croatia"],
+      "answer": 1,
+      "explain": "Germany beat Turkey 3–2 in a thrilling semi-final at Euro 2008. Turkey had scored multiple dramatic late winners throughout the tournament before finally being eliminated."
+    }
+  ]
+}

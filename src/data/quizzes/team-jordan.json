@@ -1,0 +1,72 @@
+{
+  "slug": "team-jordan",
+  "title": "Jordan at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🇯🇴",
+  "category": "Teams",
+  "description": "Jordan's World Cup debut in 2026 is the culmination of decades of development. How well do you know the Nashama?",
+  "teams": ["Jordan"],
+  "questions": [
+    {
+      "q": "Jordan are making their World Cup debut in 2026. Which Asian championship final did they reach just before qualifying?",
+      "options": ["2019 AFC Asian Cup", "2023 AFC Asian Cup", "2021 AFC Asian Cup", "2017 AFC Asian Cup"],
+      "answer": 1,
+      "explain": "Jordan reached the final of the 2023 AFC Asian Cup — their best ever continental result — before losing to host nation Qatar 3–1. The run showed Jordan's emergence as a genuine Asian football power."
+    },
+    {
+      "q": "Jordan's national team is nicknamed the Nashama. What does this word mean in Arabic?",
+      "options": ["Lions", "Brave/Courageous Ones", "Desert Eagles", "Warriors"],
+      "answer": 1,
+      "explain": "Nashama means 'brave' or 'courageous' in Arabic — a fitting nickname for a team that has punched above their weight in Asian football and qualified for the World Cup for the first time."
+    },
+    {
+      "q": "Mousa Al-Taamari is Jordan's most dynamic attacker. Which European league does he compete in?",
+      "options": ["Serie A (Italy)", "Ligue 1 (France)", "Bundesliga (Germany)", "La Liga (Spain)"],
+      "answer": 1,
+      "explain": "Mousa Al-Taamari has played Ligue 1 football in France, bringing European experience to Jordan's national team. His pace and technique make him one of the most exciting players in Jordanian football history."
+    },
+    {
+      "q": "Jordan qualified for the 2026 World Cup through the AFC qualifying process. How many AFC teams qualify automatically for the 2026 World Cup?",
+      "options": ["4", "6", "8", "10"],
+      "answer": 2,
+      "explain": "The AFC received 8 automatic World Cup places for 2026 — up from 4.5 in previous cycles. This expansion was key to Jordan qualifying, as it increased Asia's representation at the 50-year 48-team tournament."
+    },
+    {
+      "q": "Jordan's football has developed rapidly under the patronage of the Royal family. Which member of the Royal family is heavily involved in Jordanian football development?",
+      "options": ["King Abdullah II", "Prince Feisal Al-Hussein", "Prince Ali bin Al-Hussein", "Queen Rania"],
+      "answer": 2,
+      "explain": "Prince Ali bin Al-Hussein has been a major figure in Jordanian and international football administration, serving on FIFA's executive committee and championing football development in Jordan."
+    },
+    {
+      "q": "Jordan's home matches are played in Amman. What is the national stadium called?",
+      "options": ["Amman International Stadium", "King Abdullah II International Stadium", "Prince Mohammed Stadium", "Jordan International Arena"],
+      "answer": 1,
+      "explain": "King Abdullah II International Stadium in Amman is Jordan's national football venue, hosting home qualifiers and international matches. Its modern facilities reflect Jordan's investment in football infrastructure."
+    },
+    {
+      "q": "In the 2023 AFC Asian Cup semi-final, Jordan beat which nation on the way to the final?",
+      "options": ["South Korea", "Japan", "Australia", "Iraq"],
+      "answer": 1,
+      "explain": "Jordan beat Japan in the 2023 AFC Asian Cup semi-final — one of the tournament's biggest shocks. Japan were one of Asia's elite nations; Jordan's win showed their rise to a new level in Asian football."
+    },
+    {
+      "q": "Jordan's 2026 World Cup qualification ended how many years without a World Cup appearance for the country?",
+      "options": ["Jordan has never appeared at a World Cup before 2026", "32 years since 1994", "24 years since 2002", "16 years since 2010"],
+      "answer": 0,
+      "explain": "2026 is Jordan's first ever World Cup appearance. They have come close to qualifying before — including an intercontinental play-off defeat to Uruguay in 2013 — but 2026 marks their historic debut."
+    },
+    {
+      "q": "Jordan's Baha' Faisal scored a memorable goal in the 2023 Asian Cup — what type of goal was it that went viral?",
+      "options": ["A spectacular bicycle kick", "A half-way line lob over the goalkeeper", "A long-range free kick", "A solo dribble from his own half"],
+      "answer": 1,
+      "explain": "Baha' Faisal's stunning lob from near the halfway line — spotting the goalkeeper off his line — went viral and became one of Asian football's most memorable goals of recent years, showcasing Jordan's increasing quality."
+    },
+    {
+      "q": "Which confederation does Jordan belong to?",
+      "options": ["CAF", "UEFA", "AFC", "CONCACAF"],
+      "answer": 2,
+      "explain": "Jordan are members of the Asian Football Confederation (AFC). Their qualification through Asian qualifying for 2026 is a landmark achievement for the Hashemite Kingdom of Jordan."
+    }
+  ]
+}

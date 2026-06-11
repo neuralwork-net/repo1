@@ -1,0 +1,72 @@
+{
+  "slug": "team-czech-republic",
+  "title": "Czech Republic at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🇨🇿",
+  "category": "Teams",
+  "description": "From Czechoslovakia's two finals to Pavel Nedvěd's legacy — a nation with a rich but underappreciated football history.",
+  "teams": ["Czechia"],
+  "questions": [
+    {
+      "q": "Czechoslovakia reached two World Cup finals. Which years?",
+      "options": ["1930 and 1938", "1934 and 1962", "1938 and 1954", "1962 and 1966"],
+      "answer": 1,
+      "explain": "Czechoslovakia reached the World Cup final in 1934 (losing to Italy 2–1 after extra time) and 1962 (losing to Brazil 3–1). They are one of only a few nations to have appeared in two finals."
+    },
+    {
+      "q": "Czechoslovakia's 1962 World Cup run was inspired by which striker, nicknamed 'the Czechoslovak Pelé'?",
+      "options": ["Josef Masopust", "Antonín Panenka", "Jan Popluhar", "Ján Popluhar"],
+      "answer": 0,
+      "explain": "Josef Masopust was the star of the 1962 World Cup for Czechoslovakia, scoring in the final. He won the 1962 Ballon d'Or — the only Czechoslovak player to win the award."
+    },
+    {
+      "q": "The 'Panenka penalty' — chipping the ball down the middle — is named after which Czech/Czechoslovak player?",
+      "options": ["Pavel Nedvěd", "Antonín Panenka", "Petr Čech", "Jan Koller"],
+      "answer": 1,
+      "explain": "Antonín Panenka scored the decisive penalty in the Euro 1976 final by chipping the ball gently down the middle as the keeper dived. This 'Panenka' technique is now imitated worldwide — including by Zidane in the 2006 WC final."
+    },
+    {
+      "q": "At the 2006 World Cup, Czech Republic had a notable star — which midfielder won the Ballon d'Or in 2003?",
+      "options": ["Tomáš Rosický", "Marek Jankulovski", "Pavel Nedvěd", "Jan Koller"],
+      "answer": 2,
+      "explain": "Pavel Nedvěd won the 2003 Ballon d'Or while at Juventus — the only Czech Republic player to win the award. He was famous for his hard running, long-range shooting and was one of Europe's best midfielders."
+    },
+    {
+      "q": "Czech Republic reached the quarter-finals of Euro 1996, losing to Germany in the final. What iconic penalty technique did Germany use to win?",
+      "options": ["A Panenka by Matthias Sammer", "A golden goal from Oliver Bierhoff after a Panenka attempt failed", "A golden goal from Oliver Bierhoff", "A penalty shootout win"],
+      "answer": 2,
+      "explain": "Germany beat Czech Republic 2–1 in the Euro 1996 final with a golden goal from Oliver Bierhoff — the first final decided by sudden-death extra time. Czech Republic had been huge underdogs who stunned everyone to reach the final."
+    },
+    {
+      "q": "Czech Republic's goalkeeper Petr Čech holds a Premier League record. What is it?",
+      "options": ["Most saves in a season", "Most clean sheets in Premier League history", "Most assists by a goalkeeper", "Most penalty saves"],
+      "answer": 1,
+      "explain": "Petr Čech holds the record for most clean sheets in Premier League history, accumulated during his time at Chelsea and Arsenal. He is widely regarded as one of the greatest goalkeepers of his generation."
+    },
+    {
+      "q": "Czech Republic qualified for the 2026 World Cup under which manager who rebuilt the team after years of underperformance?",
+      "options": ["Jaroslav Šilhavý", "Ivan Hašek", "Michal Bílek", "Karel Brückner"],
+      "answer": 1,
+      "explain": "Ivan Hašek took charge of Czech Republic and guided them through a challenging European qualifying campaign to reach the 2026 World Cup — only their second qualification as an independent nation after 2006."
+    },
+    {
+      "q": "Czech Republic last appeared at a World Cup in 2006. What was their result in Germany?",
+      "options": ["Group stage exit", "Round of 16", "Quarter-finals", "Semi-finals"],
+      "answer": 0,
+      "explain": "Czech Republic were eliminated in the group stage of the 2006 World Cup, losing to Italy and Ghana despite a win over USA. Jan Koller's early goal vs USA was a rare highlight."
+    },
+    {
+      "q": "The Czech Republic has produced several great midfielders. Which one was nicknamed 'the Little Mozart' for his creative play?",
+      "options": ["Pavel Nedvěd", "Tomáš Rosický", "Vladimír Šmicer", "Radoslav Látal"],
+      "answer": 1,
+      "explain": "Tomáš Rosický was nicknamed 'the Little Mozart' for his elegant, creative midfield play — principally at Borussia Dortmund and Arsenal. Injury robbed him of many of his best years but he remains one of Czech football's finest players."
+    },
+    {
+      "q": "Czech Republic produced a legendary club team in the late 1990s — Sparta Prague and Slavia Prague regularly featured in European competition. Which Czech club has the most domestic titles?",
+      "options": ["Slavia Prague", "Sparta Prague", "Bohemians 1905", "Baník Ostrava"],
+      "answer": 1,
+      "explain": "Sparta Prague are the most successful Czech club with the most domestic league titles. Their rivalry with Slavia Prague — the 'Prague Derby' or 'El Clásico of Czech football' — is one of Central Europe's most passionate club rivalries."
+    }
+  ]
+}

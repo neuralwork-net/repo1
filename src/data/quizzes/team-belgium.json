@@ -1,0 +1,72 @@
+{
+  "slug": "team-belgium",
+  "title": "Belgium at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🇧🇪",
+  "category": "Teams",
+  "description": "The Red Devils and the golden generation — how well do you know Belgium's World Cup story?",
+  "teams": ["Belgium"],
+  "questions": [
+    {
+      "q": "What is Belgium's best-ever result at a World Cup?",
+      "options": ["Winners", "Runners-up", "Third place", "Quarter-finals"],
+      "answer": 2,
+      "explain": "Belgium finished third at the 2018 World Cup in Russia, beating England 2–0 in the third-place play-off. It remains the high-water mark of their 'golden generation'."
+    },
+    {
+      "q": "In one of the 2018 World Cup's greatest moments, Belgium came back from 2–0 down to beat Japan 3–2. Who scored the last-minute winner?",
+      "options": ["Romelu Lukaku", "Eden Hazard", "Dries Mertens", "Nacer Chadli"],
+      "answer": 3,
+      "explain": "Nacer Chadli converted a Lukaku counter-attack in the 94th minute to complete a stunning comeback, sending Belgium into the quarter-finals."
+    },
+    {
+      "q": "Belgium spent a record consecutive period ranked number one in the FIFA World Rankings. Roughly how many years did this last?",
+      "options": ["2 years", "4 years", "6 years", "8 years"],
+      "answer": 2,
+      "explain": "Belgium held the FIFA #1 ranking from September 2018 to October 2022 — nearly four years uninterrupted, the longest any nation had held top spot at that point."
+    },
+    {
+      "q": "Who is Belgium's all-time top scorer?",
+      "options": ["Eden Hazard", "Dries Mertens", "Romelu Lukaku", "Jan Ceulemans"],
+      "answer": 2,
+      "explain": "Romelu Lukaku has scored more goals for Belgium than any other player in history, passing Dries Mertens' record to become their all-time leading scorer."
+    },
+    {
+      "q": "Belgium also finished fourth at the 1986 World Cup. Which team beat them in the semi-final?",
+      "options": ["West Germany", "Argentina", "France", "Brazil"],
+      "answer": 1,
+      "explain": "Argentina, inspired by Maradona, beat Belgium 2–0 in the semi-final at the 1986 World Cup in Mexico. Belgium lost the third-place play-off 4–2 to France."
+    },
+    {
+      "q": "Which Belgian goalkeeper, widely regarded as one of the best in the world, won the Golden Glove at the 2018 World Cup?",
+      "options": ["Simon Mignolet", "Matz Sels", "Thibaut Courtois", "Jean-François Gillet"],
+      "answer": 2,
+      "explain": "Thibaut Courtois won the Golden Glove at Russia 2018, conceding only 3 goals in 7 matches. He plays his club football for Real Madrid."
+    },
+    {
+      "q": "What is the nickname of the Belgian national football team?",
+      "options": ["The Reds", "The Red Devils", "The Falcons", "The Black Stars"],
+      "answer": 1,
+      "explain": "Belgium are known as the Red Devils — De Rode Duivels in Dutch or Les Diables Rouges in French — named after their distinctive red kit and passionate style."
+    },
+    {
+      "q": "Kevin De Bruyne is regarded as one of the world's best midfielders. Which English club does he play for?",
+      "options": ["Liverpool", "Chelsea", "Arsenal", "Manchester City"],
+      "answer": 3,
+      "explain": "Kevin De Bruyne has spent the prime of his career at Manchester City, where he has won multiple Premier League titles and the Champions League under Pep Guardiola."
+    },
+    {
+      "q": "At the 2022 World Cup, Belgium were shockingly eliminated in the group stage — beaten by which African nation?",
+      "options": ["Senegal", "Ghana", "Morocco", "Cameroon"],
+      "answer": 2,
+      "explain": "Morocco beat Belgium 2–0 in a famous 2022 upset, with goals from Abdelhamid Sabiri and Zakaria Aboukhlal. Belgium's golden generation bowed out without reaching the knockout stage."
+    },
+    {
+      "q": "Eden Hazard announced his retirement from international football after which tournament?",
+      "options": ["Euro 2020", "2022 World Cup", "2021 Nations League", "2023 Nations League"],
+      "answer": 1,
+      "explain": "Hazard retired from international football after Belgium's group-stage exit at the 2022 World Cup in Qatar, ending a glittering but ultimately trophy-less international career."
+    }
+  ]
+}

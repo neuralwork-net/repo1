@@ -1,0 +1,72 @@
+{
+  "slug": "player-mane",
+  "title": "Sadio Mané at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🇸🇳",
+  "category": "Players",
+  "description": "Senegal's AFCON-winning captain and Liverpool legend — how well do you know Sadio Mané's World Cup journey?",
+  "teams": ["Senegal"],
+  "questions": [
+    {
+      "q": "Sadio Mané played at the 2022 World Cup for Senegal but suffered a significant blow before the tournament. What happened?",
+      "options": ["He was suspended for the first two matches", "He suffered a knee injury that ruled him out of most of the tournament", "He was involved in a dispute with the Senegal FA over his role", "He was carrying a muscle injury but played through it the whole tournament"],
+      "answer": 1,
+      "explain": "Mané suffered a leg injury while playing for Bayern Munich shortly before Qatar 2022. He rushed back to participate but played limited minutes and was clearly not at full fitness — a massive blow to Senegal's hopes."
+    },
+    {
+      "q": "Mané won the Africa Cup of Nations with Senegal in 2021 (played in 2022). He had previously missed a decisive penalty in the 2019 AFCON final. What happened in the 2021 final?",
+      "options": ["Mané scored the winning penalty in the shootout against Egypt", "Mané scored the only goal in normal time", "Mané was awarded the Golden Ball as best player", "Mané missed another penalty but Senegal still won"],
+      "answer": 0,
+      "explain": "In a remarkable moment of redemption, Mané scored the decisive penalty in the 2021 AFCON final shootout against Egypt — the same nation he had failed against in 2019 — to give Senegal their first ever AFCON title. The transformation from villain to hero was extraordinary."
+    },
+    {
+      "q": "Mané was a key part of Liverpool's greatest era. Which trophy did he help them win in 2019?",
+      "options": ["Premier League", "Champions League", "FA Cup", "All three in the same year"],
+      "answer": 1,
+      "explain": "Mané helped Liverpool win the 2018–19 Champions League, scoring crucial goals on the road to the final in Madrid, where Liverpool beat Tottenham 2–0. Divock Origi scored the winner but Mané was central to the campaign."
+    },
+    {
+      "q": "Mané won the Premier League Golden Boot jointly in 2018–19. Who did he share the award with?",
+      "options": ["Raheem Sterling and Mohamed Salah", "Pierre-Emerick Aubameyang and Mohamed Salah", "Mohamed Salah only", "Harry Kane and Mohamed Salah"],
+      "answer": 1,
+      "explain": "Mané shared the 2018–19 Premier League Golden Boot with Mohamed Salah and Pierre-Emerick Aubameyang — all three scoring 22 goals. It was a remarkable three-way tie, the first time three players had shared the award."
+    },
+    {
+      "q": "Mané left Liverpool in 2022 to join which German club?",
+      "options": ["Borussia Dortmund", "RB Leipzig", "Bayern Munich", "Bayer Leverkusen"],
+      "answer": 2,
+      "explain": "Mané joined Bayern Munich in June 2022 for around £35 million. His time in Germany was mixed — he won the Bundesliga but had a much-publicised altercation with Leroy Sané after a Champions League match, overshadowing his first season."
+    },
+    {
+      "q": "Before Liverpool, Mané played for which English club where he first showed his explosive pace and finishing?",
+      "options": ["Swansea City", "Crystal Palace", "Stoke City", "Southampton"],
+      "answer": 3,
+      "explain": "Mané joined Southampton in 2014 and scored 25 goals in two seasons, setting a Premier League record for fastest hat-trick (2 minutes 56 seconds against Aston Villa in 2015). Liverpool bought him for £34 million in 2016."
+    },
+    {
+      "q": "Mané was born in which Senegalese village — so small it had no electricity — before moving to Dakar to pursue football?",
+      "options": ["Bambali", "Saint-Louis", "Thiès", "Kaolack"],
+      "answer": 0,
+      "explain": "Mané was born in Bambali — a small village without reliable electricity when he was growing up. His journey from that village to the Champions League winner's podium is one of football's greatest stories of determination and talent."
+    },
+    {
+      "q": "In which season did Mané win the Ballon d'Or — the pinnacle individual football award — for his performances with Liverpool and Senegal?",
+      "options": ["2018", "2019", "2021", "He has not won the Ballon d'Or"],
+      "answer": 3,
+      "explain": "Mané has never won the Ballon d'Or, despite being consistently among the world's best players. He finished in the top 10 multiple times and won the African Player of the Year award twice — but the Ballon d'Or eluded him."
+    },
+    {
+      "q": "What is Mané famous for doing with his money in his home village of Bambali?",
+      "options": ["Funding a professional football academy", "Building a school, hospital and funding youth development in his village", "Sponsoring Senegal's national football federation", "Investing in a sports media company"],
+      "answer": 1,
+      "explain": "Mané has used his wealth to transform Bambali — funding a school, a hospital and youth programmes in the village. He reportedly pays the salaries of local workers and has become a symbol of charitable giving in African football."
+    },
+    {
+      "q": "Mané moved from Bayern Munich to which Saudi Pro League club — making him a teammate of Cristiano Ronaldo?",
+      "options": ["Al-Hilal", "Al-Nassr", "Al-Ittihad", "Al-Ahli"],
+      "answer": 1,
+      "explain": "Mané joined Al-Nassr in 2023, where Cristiano Ronaldo was already playing. The two legends — both African and European football icons in their own right — shared a dressing room in Riyadh in a remarkable late-career chapter."
+    }
+  ]
+}

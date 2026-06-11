@@ -1,0 +1,72 @@
+{
+  "slug": "team-cabo-verde",
+  "title": "Cape Verde at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🇨🇻",
+  "category": "Teams",
+  "description": "An island nation of 500,000 that produces world-class talent — Cape Verde's World Cup debut in 2026 is a football fairytale.",
+  "teams": ["Cabo Verde"],
+  "questions": [
+    {
+      "q": "Cape Verde are making their World Cup debut in 2026. What is their population — making their qualification extraordinary?",
+      "options": ["Around 200,000", "Around 500,000", "Around 1 million", "Around 2 million"],
+      "answer": 1,
+      "explain": "Cape Verde has a population of approximately 500,000 — one of the smallest nations to ever qualify for a World Cup. Their achievement is remarkable given limited resources and infrastructure compared to larger football nations."
+    },
+    {
+      "q": "Cape Verde punched well above their weight by reaching the Africa Cup of Nations quarter-finals in 2013. Who did they beat in the group stage?",
+      "options": ["Nigeria", "Egypt", "Morocco", "Tunisia"],
+      "answer": 0,
+      "explain": "Cape Verde beat Nigeria in the 2013 AFCON group stage — one of the competition's biggest shocks. They reached the quarter-finals before being eliminated, and the run brought them global attention."
+    },
+    {
+      "q": "Many Cape Verdean players represent other nations due to dual nationality. Which European footballing power has produced the most Cape Verdean-heritage players?",
+      "options": ["Spain", "France", "Portugal", "Netherlands"],
+      "answer": 2,
+      "explain": "Portugal has a deep historical and linguistic connection to Cape Verde (a former Portuguese colony), and many Cabo Verdean-heritage players have represented Portugal rather than Cape Verde at senior international level."
+    },
+    {
+      "q": "What is the official language of Cape Verde, reflecting its colonial history?",
+      "options": ["Spanish", "French", "Portuguese", "English"],
+      "answer": 2,
+      "explain": "Portuguese is the official language of Cape Verde — a legacy of Portuguese colonisation. The islands gained independence in 1975. Their football federation is affiliated with both CAF and FIFA."
+    },
+    {
+      "q": "Cape Verde qualified for the 2026 World Cup through which confederation?",
+      "options": ["UEFA", "CAF", "CONCACAF", "AFC"],
+      "answer": 1,
+      "explain": "Cape Verde qualified through CAF — the Confederation of African Football. Despite being Atlantic islands geographically close to West Africa, they are affiliated with the African football confederation."
+    },
+    {
+      "q": "Which Cape Verdean-born player won multiple European trophies at top clubs while representing Portugal?",
+      "options": ["Pelé Varela", "Heldon", "Ryan Mendes", "Nani"],
+      "answer": 3,
+      "explain": "Nani — born in Cape Verde but raised in Portugal — played for Manchester United and other top clubs, winning the Premier League and Champions League. He represented Portugal rather than Cape Verde at international level."
+    },
+    {
+      "q": "Cape Verde's national team is nicknamed the Blue Sharks. What does this reference?",
+      "options": ["The blue colour of the Atlantic Ocean surrounding their island nation", "Their aggressive pressing style", "The shark-like determination of a small nation", "The blue of the Portuguese flag in their heritage"],
+      "answer": 0,
+      "explain": "The Blue Sharks — Tubarões Azuis in Portuguese — refers to the blue Atlantic Ocean surrounding the Cape Verde archipelago. The nickname perfectly captures the island nation's identity."
+    },
+    {
+      "q": "In which African qualification round did Cape Verde clinch their historic 2026 World Cup spot?",
+      "options": ["Round 1", "Round 2 (group stage)", "Round 3 (play-offs)", "They qualified as CAF's automatic representative"],
+      "answer": 1,
+      "explain": "Cape Verde qualified through CAF's group stage qualifying — an extraordinary achievement for one of Africa's smallest and least-resourced nations. They finished in the top two of their qualifying group to earn their historic debut."
+    },
+    {
+      "q": "Cape Verde has produced a remarkably high number of professional players relative to their population. Where do most Cape Verdean players develop their careers?",
+      "options": ["Domestic Cape Verde league", "Portuguese Liga and lower leagues", "West African leagues", "French Ligue 2 and lower leagues"],
+      "answer": 1,
+      "explain": "The linguistic and cultural connection means most Cape Verdean players develop through the Portuguese football pyramid — from youth academies in Lisbon and Porto to the lower leagues — before returning to represent Cape Verde internationally."
+    },
+    {
+      "q": "Cape Verde won the CECAFA Cup (East and Central Africa championship) multiple times. Does this seem unusual — and why?",
+      "options": ["Yes — because Cape Verde is a West African/Atlantic island, not East African", "No — Cape Verde is part of the East African football zone", "Yes — because Cape Verde had only recently joined CAF", "No — Cape Verde is close to East Africa geographically"],
+      "answer": 0,
+      "explain": "Cape Verde is an Atlantic archipelago off the West African coast and is in CAF's WAFU zone, not CECAFA. Their success in various African competitions nonetheless reflects their growing football quality relative to the continent."
+    }
+  ]
+}

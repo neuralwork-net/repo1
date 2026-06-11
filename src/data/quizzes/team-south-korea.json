@@ -1,0 +1,72 @@
+{
+  "slug": "team-south-korea",
+  "title": "South Korea at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🇰🇷",
+  "category": "Teams",
+  "description": "From 2002 semi-finalists to 2022 giant-killers — how well do you know South Korea's World Cup history?",
+  "teams": ["Korea Republic"],
+  "questions": [
+    {
+      "q": "South Korea co-hosted the 2002 World Cup with Japan. What was their extraordinary result?",
+      "options": ["Group stage exit", "Round of 16", "Quarter-finals", "Semi-finals"],
+      "answer": 3,
+      "explain": "South Korea reached the semi-finals of the 2002 World Cup as co-hosts, beating Poland, USA, Portugal (group stage), then Spain and Italy in the knockout rounds — the best ever result by an Asian nation."
+    },
+    {
+      "q": "South Korea beat Italy in the 2002 round of 16 through a dramatic golden goal. Who scored it?",
+      "options": ["Park Ji-sung", "Lee Young-pyo", "Ahn Jung-hwan", "Choi Jin-cheul"],
+      "answer": 2,
+      "explain": "Ahn Jung-hwan headed the golden goal winner in extra time. Ironically, Ahn played for Italian club Perugia, whose president famously sacked him after the goal — calling it 'a deadly sin against Italian football'."
+    },
+    {
+      "q": "How did South Korea beat Spain in the 2002 quarter-finals?",
+      "options": ["2–1 after extra time", "1–0 after a golden goal", "On penalties after a 0–0 draw", "3–2 in normal time"],
+      "answer": 2,
+      "explain": "South Korea and Spain drew 0–0 after extra time, with South Korea winning 5–3 on penalties. Spain had two goals controversially ruled out for offside, adding to the drama."
+    },
+    {
+      "q": "South Korea lost the 2002 semi-final to Germany. Who scored the only goal?",
+      "options": ["Miroslav Klose", "Oliver Neuville", "Michael Ballack", "Oliver Kahn"],
+      "answer": 2,
+      "explain": "Michael Ballack scored in the 75th minute to give Germany a 1–0 win. South Korea then lost the third-place play-off 3–2 to Turkey, finishing fourth overall."
+    },
+    {
+      "q": "At the 2022 World Cup, South Korea qualified for the round of 16 by beating which European nation in the group stage?",
+      "options": ["Germany", "Spain", "Portugal", "France"],
+      "answer": 2,
+      "explain": "South Korea beat Portugal 2–1 in their final group game, with Hwang Hee-chan scoring a last-minute winner to send them into the knockout stage. They were eventually eliminated by Brazil 4–1."
+    },
+    {
+      "q": "Which South Korean player — a long-serving captain — plays his club football for Tottenham Hotspur?",
+      "options": ["Hwang Hee-chan", "Kim Min-jae", "Lee Kang-in", "Son Heung-min"],
+      "answer": 3,
+      "explain": "Son Heung-min has been South Korea's captain and talisman, as well as a Premier League star at Tottenham Hotspur where he has consistently finished among the league's top scorers."
+    },
+    {
+      "q": "South Korea's first ever World Cup appearance was in 1954. What record did they hold for years after that tournament?",
+      "options": ["First Asian nation to score a WC goal", "First Asian nation to reach the knockout rounds", "Heaviest defeat in World Cup history", "First WC hat-trick by an Asian player"],
+      "answer": 2,
+      "explain": "South Korea suffered a 16–0 defeat to Hungary at the 1954 World Cup — at the time the heaviest defeat in World Cup history. Hungary also beat them 7–0 the same tournament."
+    },
+    {
+      "q": "Park Ji-sung was South Korea's greatest player of his era. Which English club did he play for from 2005–2012?",
+      "options": ["Chelsea", "Arsenal", "Manchester United", "Liverpool"],
+      "answer": 2,
+      "explain": "Park Ji-sung played for Manchester United under Sir Alex Ferguson, winning four Premier League titles and a Champions League. He was a vital, tireless midfielder famous for his work rate."
+    },
+    {
+      "q": "South Korea's national team is known by which nickname?",
+      "options": ["The Red Devils", "The Tigers of Asia", "The Blue Dragons", "The Taeguk Warriors"],
+      "answer": 0,
+      "explain": "South Korea are known as the Red Devils (붉은 악마) — a reference to their red home kits and passionate support. The name gained global recognition during their 2002 home World Cup run."
+    },
+    {
+      "q": "In which year did South Korea first qualify for the World Cup without co-hosting — confirming their status as a true football nation?",
+      "options": ["1986", "1990", "1998", "2006"],
+      "answer": 0,
+      "explain": "South Korea qualified for the 1986 World Cup in Mexico — their first qualification on merit (excluding 1954 where they were placed directly). They have qualified for every World Cup since, a record of consistency in Asian football."
+    }
+  ]
+}

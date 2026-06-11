@@ -1,0 +1,72 @@
+{
+  "slug": "team-uzbekistan",
+  "title": "Uzbekistan at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🇺🇿",
+  "category": "Teams",
+  "description": "The White Wolves of Central Asia make their World Cup debut in 2026 — discover Uzbekistan's remarkable football rise.",
+  "teams": ["Uzbekistan"],
+  "questions": [
+    {
+      "q": "Uzbekistan are making their World Cup debut in 2026. When did they first compete as an independent nation in international football?",
+      "options": ["1980 (as part of the Soviet Union)", "1992 (after gaining independence from the USSR)", "1996 (joining AFC after a transition period)", "2000 (after founding their national federation)"],
+      "answer": 1,
+      "explain": "Uzbekistan declared independence from the Soviet Union in 1991 and began competing as an independent nation in 1992. They joined the AFC and have been building their football programme ever since."
+    },
+    {
+      "q": "Uzbekistan qualified for the 2026 World Cup through AFC qualifying. Which round did they navigate to secure their place?",
+      "options": ["First round only", "First and second rounds", "Third round (the final group stage)", "Through an intercontinental play-off"],
+      "answer": 2,
+      "explain": "Uzbekistan qualified by finishing in the top 8 of the AFC Third Round qualifying groups — the final group stage of Asian qualifying. Their consistent performances across the campaign confirmed their status as one of Asia's improved nations."
+    },
+    {
+      "q": "Uzbekistan have a strong football culture inherited from which era?",
+      "options": ["The Ottoman Empire's sporting tradition", "The Soviet era, which produced strong football teams representing Uzbek cities", "A British colonial sporting legacy", "Post-independence investment by Gulf nations"],
+      "answer": 1,
+      "explain": "Uzbekistan's football culture is deeply rooted in the Soviet era, when clubs like Pakhtakor Tashkent competed in the Soviet Top League. The tragic 1979 Pakhtakor air disaster — which killed the entire squad — is a poignant part of football history."
+    },
+    {
+      "q": "A tragedy in 1979 affected Uzbek football deeply when which club's squad was killed in an air disaster?",
+      "options": ["Lokomotiv Tashkent", "Bunyodkor", "AGMK", "Pakhtakor Tashkent"],
+      "answer": 3,
+      "explain": "Pakhtakor Tashkent — then competing in the Soviet Top League — lost their entire squad in the 1979 Aeroflot flight 65 crash. The Soviet football federation subsequently gave Pakhtakor a unique exemption from relegation for two seasons."
+    },
+    {
+      "q": "Uzbekistan's star player is Jasur Yaxshiboev. Which physical attribute makes him a feared striker?",
+      "options": ["His extraordinary pace", "His heading ability and strength in the air", "His long-range shooting", "His dribbling ability"],
+      "answer": 0,
+      "explain": "Jasur Yaxshiboev and other Uzbek forwards are known for their pace and direct running, making them difficult to handle on the counter. Uzbekistan's physical and direct style has made them hard to beat in Asian qualifying."
+    },
+    {
+      "q": "Uzbekistan's national team is nicknamed the White Wolves. What colours do they play in?",
+      "options": ["All white", "Blue and white", "White shirts, blue shorts", "Red and white"],
+      "answer": 0,
+      "explain": "Uzbekistan traditionally play in white — hence the White Wolves nickname. The wolf is a symbol of strength and courage in Central Asian culture, fitting for a team that has been an emerging force in Asian football."
+    },
+    {
+      "q": "What is the capital city of Uzbekistan, where their national stadium is located?",
+      "options": ["Samarkand", "Bukhara", "Tashkent", "Namangan"],
+      "answer": 2,
+      "explain": "Tashkent is the capital of Uzbekistan and home to the Milliy Stadium — the national football ground. Tashkent is one of Central Asia's largest cities and the centre of Uzbek football."
+    },
+    {
+      "q": "Uzbekistan have been improving steadily in the AFC Asian Cup. What was their best result in the 2023 edition?",
+      "options": ["Group stage", "Quarter-finals", "Semi-finals", "Runners-up"],
+      "answer": 1,
+      "explain": "Uzbekistan reached the quarter-finals of the 2023 AFC Asian Cup before being eliminated. It was a significant achievement for a team that has been consistently improving and confirmed their credentials as genuine World Cup contenders."
+    },
+    {
+      "q": "Which Uzbek forward plays in the Russian Premier League and has been their most consistent scorer?",
+      "options": ["Eldor Shomurodov", "Sherzod Nasrullayev", "Otabek Shukurov", "Dostonbek Tursunov"],
+      "answer": 0,
+      "explain": "Eldor Shomurodov has been Uzbekistan's most prominent forward of the modern era, playing in Russia and later Italy (Roma, Genoa). His goals and work rate have been central to Uzbekistan's rise in Asian football."
+    },
+    {
+      "q": "2026 is Uzbekistan's first World Cup. How does this compare to other former Soviet Central Asian republics at World Cups?",
+      "options": ["They are the first Central Asian republic to qualify", "Kazakhstan qualified before them", "Tajikistan qualified for 2022", "All Central Asian republics have now qualified at least once"],
+      "answer": 0,
+      "explain": "Uzbekistan are the first Central Asian republic to qualify for a FIFA World Cup as an independent nation. Other former Soviet Central Asian states — Kazakhstan, Kyrgyzstan, Tajikistan and Turkmenistan — have not yet qualified."
+    }
+  ]
+}

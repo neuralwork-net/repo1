@@ -1,0 +1,72 @@
+{
+  "slug": "team-ecuador",
+  "title": "Ecuador at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🇪🇨",
+  "category": "Teams",
+  "description": "From their shock debut to opening the 2022 World Cup — Ecuador are one of South America's rising forces.",
+  "teams": ["Ecuador"],
+  "questions": [
+    {
+      "q": "Ecuador made their World Cup debut in which year?",
+      "options": ["1998", "2002", "2006", "2010"],
+      "answer": 1,
+      "explain": "Ecuador made their World Cup debut at the 2002 tournament in South Korea and Japan, reaching the group stage. They qualified from Group G and were eliminated in the round of 16."
+    },
+    {
+      "q": "Ecuador reached the round of 16 at the 2006 World Cup. Which English team knocked them out?",
+      "options": ["Germany", "Portugal", "England", "Sweden"],
+      "answer": 2,
+      "explain": "England beat Ecuador 1–0 in the round of 16 at Germany 2006, with David Beckham scoring a free kick. It was Ecuador's deepest World Cup run to date."
+    },
+    {
+      "q": "Ecuador opened the 2022 World Cup with a 2–0 win over the hosts. Who were the hosts they beat in the opening game?",
+      "options": ["Brazil", "Argentina", "Qatar", "Saudi Arabia"],
+      "answer": 2,
+      "explain": "Ecuador beat hosts Qatar 2–0 in the tournament's opening match, with Enner Valencia scoring both goals. A first goal was disallowed for offside — a controversial call that remains disputed."
+    },
+    {
+      "q": "Who is Ecuador's all-time top scorer and was their hero at the 2022 World Cup?",
+      "options": ["Agustín Delgado", "Christian Benítez", "Felipe Caicedo", "Enner Valencia"],
+      "answer": 3,
+      "explain": "Enner Valencia scored 3 of Ecuador's 4 goals at the 2022 World Cup and is their all-time top scorer in international football. He was the tournament's top scorer after the group stage."
+    },
+    {
+      "q": "Before the 2022 World Cup, Ecuador survived an attempt by Chile to have them disqualified. What was the controversy?",
+      "options": ["A positive doping test for a key player", "The eligibility of player Byron Castillo, who Chile claimed had a false nationality", "Allegations of match-fixing in qualifying", "A bribery claim against their manager"],
+      "answer": 1,
+      "explain": "Chile attempted to have Ecuador disqualified from the 2022 World Cup, claiming player Byron Castillo was actually Colombian. FIFA and the Court of Arbitration for Sport both rejected the challenge and Ecuador competed."
+    },
+    {
+      "q": "Ecuador's national team plays in yellow shirts. What is their common nickname?",
+      "options": ["La Tricolor", "La Roja", "La Naranja", "La Amarilla"],
+      "answer": 0,
+      "explain": "Ecuador are nicknamed La Tricolor — 'the three-colour' — referring to the yellow, blue and red of the Ecuadorian flag. Their yellow home shirt gives rise to other popular nicknames too."
+    },
+    {
+      "q": "Which Ecuadorian midfielder became one of the Premier League's most sought-after players at Brighton before joining a top club?",
+      "options": ["Renato Ibarra", "Antonio Valencia", "Moisés Caicedo", "Ángelo Preciado"],
+      "answer": 2,
+      "explain": "Moisés Caicedo became one of the world's most coveted midfielders at Brighton, setting a British transfer record when he joined Chelsea in 2023 for around £115 million — a remarkable rise for Ecuadorian football."
+    },
+    {
+      "q": "Which Ecuadorian player had a distinguished career at Manchester United, winning trophies across nearly a decade at Old Trafford?",
+      "options": ["Ulises de la Cruz", "Christian Benítez", "Edison Méndez", "Antonio Valencia"],
+      "answer": 3,
+      "explain": "Antonio Valencia played for Manchester United from 2009 to 2019, winning multiple Premier League titles and becoming club captain. He is one of Ecuador's most successful players ever."
+    },
+    {
+      "q": "Ecuador is geographically unique — it lies on the equator. Its capital Quito sits at what extraordinary altitude?",
+      "options": ["1,000 metres", "2,000 metres", "2,800 metres", "4,000 metres"],
+      "answer": 2,
+      "explain": "Quito sits at 2,850 metres above sea level — one of the highest capital cities in the world. Home matches in Quito are notoriously difficult for visiting teams due to the altitude."
+    },
+    {
+      "q": "Ecuador qualified for the 2026 World Cup through CONMEBOL qualifying. Which South American nation did they need to beat to secure their place?",
+      "options": ["Chile", "Venezuela", "Bolivia", "Peru"],
+      "answer": 0,
+      "explain": "Ecuador secured their 2026 World Cup place through the CONMEBOL qualifying campaign, which included crucial matches against rivals including Chile. CONMEBOL had 6 automatic spots for the 48-team tournament."
+    }
+  ]
+}

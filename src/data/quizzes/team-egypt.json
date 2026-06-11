@@ -1,0 +1,72 @@
+{
+  "slug": "team-egypt",
+  "title": "Egypt at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🇪🇬",
+  "category": "Teams",
+  "description": "Africa's most successful AFCON nation — but World Cup appearances have been rare. How well do you know the Pharaohs?",
+  "teams": ["Egypt"],
+  "questions": [
+    {
+      "q": "How many times has Egypt won the Africa Cup of Nations (AFCON) — the most of any nation?",
+      "options": ["5", "7", "9", "11"],
+      "answer": 1,
+      "explain": "Egypt have won the AFCON seven times — more than any other nation. Their wins came in 1957, 1959, 1986, 1998, 2006, 2008 and 2010, including three in a row from 2006."
+    },
+    {
+      "q": "Egypt first appeared at a World Cup in which year — making them one of Africa's earliest World Cup participants?",
+      "options": ["1930", "1934", "1938", "1950"],
+      "answer": 1,
+      "explain": "Egypt appeared at the 1934 World Cup in Italy — the first African nation to play at a World Cup. They lost 4–2 to Hungary in the first round and were eliminated."
+    },
+    {
+      "q": "Egypt made a World Cup return in 1990 after a 56-year absence. How did they perform in Italy?",
+      "options": ["Won the group", "Reached the round of 16", "Were eliminated in the group stage", "Reached the quarter-finals"],
+      "answer": 2,
+      "explain": "Egypt were eliminated in the group stage of Italia 1990, finishing third in a group with England, Ireland and the Netherlands. They drew all three matches and went out on goal difference."
+    },
+    {
+      "q": "Egypt's Mohamed Salah suffered a controversial shoulder injury in the Champions League final weeks before the 2018 World Cup. Who caused it?",
+      "options": ["Cristiano Ronaldo", "Sergio Ramos", "Luka Modrić", "Marcelo"],
+      "answer": 1,
+      "explain": "Real Madrid captain Sergio Ramos put Salah in an armlock during a challenge in the 2018 Champions League final, causing Salah to land on his shoulder. Salah left the pitch in tears and his World Cup was severely affected."
+    },
+    {
+      "q": "Egypt were eliminated in the 2018 World Cup group stage. How many goals did Mohamed Salah score?",
+      "options": ["0", "1", "2", "3"],
+      "answer": 2,
+      "explain": "Salah scored 2 goals in 2018 — a penalty against Russia (Egypt's first World Cup goal in 28 years) and another against Saudi Arabia. Egypt lost all three group matches."
+    },
+    {
+      "q": "Who is Egypt's all-time top scorer in international football?",
+      "options": ["Mohamed Salah", "Hossam Hassan", "Mido", "Emad Moteab"],
+      "answer": 1,
+      "explain": "Hossam Hassan scored 69 goals in 169 international appearances for Egypt — a record that stood for decades as one of the highest in world football. He played at the 1990 and 2006 World Cups."
+    },
+    {
+      "q": "Egypt played at the 2006 World Cup — their last before 2026. How did they qualify that time?",
+      "options": ["Through African qualifying", "As African champion after winning AFCON 2006", "Via a play-off with Asian teams", "As hosts"],
+      "answer": 0,
+      "explain": "Egypt qualified for 2006 through the regular CAF qualifying process, finishing top of their qualifying group. They were eliminated in the group stage, losing to Italy, Czech Republic and the USA."
+    },
+    {
+      "q": "Mohamed Salah has spent much of his club career at which English club, where he became the Premier League's most prolific scorer?",
+      "options": ["Chelsea", "Manchester City", "Arsenal", "Liverpool"],
+      "answer": 3,
+      "explain": "Mohamed Salah joined Liverpool in 2017 and became one of the Premier League's greatest scorers, winning the Champions League in 2019 and the league title in 2020. He is Egypt's most famous modern footballer."
+    },
+    {
+      "q": "What is the nickname of the Egyptian national football team?",
+      "options": ["The Desert Foxes", "The Eagles", "The Pharaohs", "The Lions"],
+      "answer": 2,
+      "explain": "Egypt are known as The Pharaohs — a reference to the ancient rulers who built the pyramids. The nickname reflects Egypt's deep history and national pride."
+    },
+    {
+      "q": "Egypt qualified for the 2026 World Cup — their first since 2006. Which confederation do they belong to?",
+      "options": ["AFC", "CAF", "UEFA", "CONCACAF"],
+      "answer": 1,
+      "explain": "Egypt are members of CAF — the Confederation of African Football. CAF has 9 places at the 2026 World Cup, and Egypt qualified through the CAF qualifying campaign, making their return after a 20-year absence."
+    }
+  ]
+}

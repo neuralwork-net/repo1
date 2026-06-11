@@ -1,0 +1,72 @@
+{
+  "slug": "team-australia",
+  "title": "Australia at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🇦🇺",
+  "category": "Teams",
+  "description": "The Socceroos — from long-suffering qualification battles to knocking out Argentina. How well do you know Australia's World Cup story?",
+  "teams": ["Australia"],
+  "questions": [
+    {
+      "q": "Australia's first World Cup was in 1974. How long did they wait for their next appearance?",
+      "options": ["8 years", "16 years", "24 years", "32 years"],
+      "answer": 3,
+      "explain": "Australia qualified in 1974 but then endured 32 years without a World Cup, finally returning in 2006. The brutal Oceania qualifying pathway and the absence of an automatic berth kept them out."
+    },
+    {
+      "q": "Australia's 2006 World Cup was inspired by which legendary Dutch manager?",
+      "options": ["Louis van Gaal", "Johan Cruyff", "Guus Hiddink", "Frank de Boer"],
+      "answer": 2,
+      "explain": "Guus Hiddink guided Australia to the 2006 World Cup after masterminding South Korea's semi-final run in 2002. He became a hero in multiple countries for his World Cup coaching exploits."
+    },
+    {
+      "q": "Australia made it to the round of 16 at their 2006 return. How were they eliminated by Italy?",
+      "options": ["1–0 via a controversial late penalty", "2–0 in normal time", "On penalties after a 1–1 draw", "1–0 via a golden goal"],
+      "answer": 0,
+      "explain": "Francesco Totti converted a controversial stoppage-time penalty to give Italy a 1–0 win in the round of 16. Many felt the penalty was soft — Australia were furious."
+    },
+    {
+      "q": "Which iconic Australian striker scored crucial goals at the 2006 and 2014 World Cups, including a famous bicycle kick?",
+      "options": ["Harry Kewell", "Mark Viduka", "Brett Emerton", "Tim Cahill"],
+      "answer": 3,
+      "explain": "Tim Cahill scored against Japan in 2006 (coming off the bench) and scored two stunning bicycle-kick goals against the Netherlands in 2014. He is Australia's all-time top scorer."
+    },
+    {
+      "q": "At the 2022 World Cup, Australia qualified from their group alongside France. Which team eliminated them in the round of 16?",
+      "options": ["France", "Netherlands", "Croatia", "Argentina"],
+      "answer": 3,
+      "explain": "Argentina beat Australia 2–1 in the round of 16, with goals from Messi and Julián Álvarez. Australia gave the eventual champions a genuine scare and scored a goal back, but were knocked out."
+    },
+    {
+      "q": "Australia had to beat Peru in an intercontinental play-off to qualify for the 2022 World Cup. How did the tie end?",
+      "options": ["2–0 to Australia in normal time", "1–0 AET", "On penalties after a 0–0 draw", "3–1 to Australia"],
+      "answer": 2,
+      "explain": "Australia beat Peru 5–4 on penalties after a goalless draw to qualify for Qatar 2022, ending their fears of another World Cup absence after missing Russia 2018."
+    },
+    {
+      "q": "Harry Kewell is one of Australia's greatest ever players. Which English club was he most famous for?",
+      "options": ["Manchester United", "Everton", "Liverpool", "Tottenham"],
+      "answer": 2,
+      "explain": "Harry Kewell was a creative left winger who played for Leeds United and Liverpool, winning the Champions League with Liverpool in 2005. He scored in the 2006 World Cup group stage."
+    },
+    {
+      "q": "Australia moved from the Oceania Football Confederation to which confederation in 2006, dramatically improving their World Cup qualifying path?",
+      "options": ["UEFA", "CAF", "CONCACAF", "AFC"],
+      "answer": 3,
+      "explain": "Australia joined the Asian Football Confederation (AFC) in 2006, giving them a more direct path to World Cup qualification instead of a play-off against a South American team as the OFC representative."
+    },
+    {
+      "q": "Tim Cahill's two volleys against the Netherlands in 2014 are regarded as some of the best goals in World Cup history. What was the final score of that match?",
+      "options": ["2–2 draw", "2–3 loss for Australia", "3–2 loss for Australia", "1–3 loss for Australia"],
+      "answer": 1,
+      "explain": "Australia lost 3–2 to the Netherlands but Cahill's two stunning overhead volleys made the scoreline almost secondary. The goals are frequently included in lists of the greatest World Cup goals ever."
+    },
+    {
+      "q": "What is Australia's national football team commonly known as?",
+      "options": ["The Kangaroos", "The Wallabies", "The Socceroos", "The Matildas"],
+      "answer": 2,
+      "explain": "The Socceroos is the nickname of the Australian men's national football team — a portmanteau of 'soccer' and 'kangaroo'. The Matildas is the nickname of the women's team."
+    }
+  ]
+}

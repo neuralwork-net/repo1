@@ -1,0 +1,72 @@
+{
+  "slug": "player-mbappe",
+  "title": "Kylian Mbappé at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🇫🇷",
+  "category": "Players",
+  "description": "Two finals, a winner's medal and a hat-trick in defeat — Mbappé's World Cup story is already legendary.",
+  "teams": ["France"],
+  "questions": [
+    {
+      "q": "How old was Kylian Mbappé when France won the 2018 World Cup?",
+      "options": ["17", "18", "19", "20"],
+      "answer": 2,
+      "explain": "Mbappé was 19 years old when France beat Croatia 4–2 in the 2018 final. He became only the second teenager (after Pelé in 1958) to score in a World Cup final, netting France's fourth goal."
+    },
+    {
+      "q": "At the 2022 World Cup final, Mbappé scored a stunning hat-trick but France still lost. Why?",
+      "options": ["France lost on penalties after Mbappé's hat-trick made it 3–3", "Argentina scored a fifth goal in extra time after Mbappé's hat-trick made it 3–3... wait, Mbappé's hat-trick made it 3-3 in regular time? No — made it 3-3 in regular... in extra time?", "Argentina led 2–0 before Mbappé's hat-trick in the second half and won on penalties", "Mbappé scored three but France's defence conceded four"],
+      "answer": 2,
+      "explain": "Argentina led 2–0 before Mbappé's penalty (80') and volley (81') made it 2–2. In extra time, Mbappé scored a third penalty (118') to make it 3–3, but Argentina won 4–2 on penalties. Mbappé was the first player to score a hat-trick in a World Cup final."
+    },
+    {
+      "q": "Which club did Mbappé join in 2024 after leaving Paris Saint-Germain?",
+      "options": ["Barcelona", "Manchester City", "Bayern Munich", "Real Madrid"],
+      "answer": 3,
+      "explain": "Mbappé joined Real Madrid as a free agent in summer 2024 after years of speculation — fulfilling his lifelong dream of playing for the club he had supported since childhood. He joined on a multi-year contract."
+    },
+    {
+      "q": "Mbappé came through the youth academy of which French club before joining Monaco?",
+      "options": ["PSG", "Lyon", "Bondy/AS Bondy (local club)", "Marseille"],
+      "answer": 2,
+      "explain": "Mbappé grew up in Bondy, in the suburbs of Paris, and played for AS Bondy before being spotted by Monaco's scouts. He turned down offers from Real Madrid and Chelsea as a teenager to join Monaco's academy."
+    },
+    {
+      "q": "Mbappé was the top scorer at the 2022 World Cup. How many goals did he score in Qatar?",
+      "options": ["6", "7", "8", "9"],
+      "answer": 2,
+      "explain": "Mbappé scored 8 goals at the 2022 World Cup — winning the Golden Boot by a distance. His hat-trick in the final means he scored 8 goals in 7 matches, one of the greatest individual World Cup performances ever."
+    },
+    {
+      "q": "Mbappé became PSG's all-time top scorer. Roughly how many goals did he score for the club?",
+      "options": ["Around 100", "Around 150", "Around 200", "Around 250"],
+      "answer": 2,
+      "explain": "Mbappé scored over 250 goals for Paris Saint-Germain across all competitions during his time at the club (2017–2024), making him comfortably their all-time top scorer. His partnership with Neymar and Messi brought European headlines but no Champions League title."
+    },
+    {
+      "q": "What is unusual about Mbappé's contract situation at PSG for many years — and his subsequent departure?",
+      "options": ["He was the world's most expensive player when PSG bought him", "He extended his PSG contract to 2025 amid Real Madrid interest, then left on a free transfer in 2024", "He had a clause allowing him to leave for Champions League clubs only", "He was loaned back to Monaco after falling out with the coach"],
+      "answer": 1,
+      "explain": "In 2022, Mbappé stunned the football world by turning down Real Madrid and signing a new PSG contract (reportedly the richest in football history). He then left for free in 2024 when his contract expired — joining Real Madrid after all."
+    },
+    {
+      "q": "Mbappé has stated that 2026 will be the World Cup where France will peak. What age will he be at the 2026 tournament?",
+      "options": ["25", "27", "28", "30"],
+      "answer": 1,
+      "explain": "Born in December 1998, Mbappé will turn 27 in December 2026 — meaning he will be 27 for the majority of the tournament. This is widely considered to be the prime age for a top striker."
+    },
+    {
+      "q": "Which famous Pelé record did Mbappé's 2018 World Cup performance match?",
+      "options": ["Most goals in a single World Cup final", "Youngest player to score in a World Cup semi-final", "Youngest player to score in a World Cup final", "Most goals by a teenager at a World Cup"],
+      "answer": 2,
+      "explain": "Mbappé became only the second teenager to score in a World Cup final, matching Pelé who scored twice as a 17-year-old in the 1958 final. Mbappé was 19 when he scored in the 2018 final."
+    },
+    {
+      "q": "France mentor Didier Deschamps has described Mbappé as generational. In which French suburb was Mbappé born and raised?",
+      "options": ["Banlieue Nord, Marseille", "Bondy, Seine-Saint-Denis (Paris suburbs)", "Lens, Nord-Pas-de-Calais", "Rouen, Normandy"],
+      "answer": 1,
+      "explain": "Mbappé grew up in Bondy in Seine-Saint-Denis — the same heavily multicultural Paris suburb that has produced many French footballers. This community background is central to his identity and the story of French football's diverse talent pool."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "slug": "player-salah",
+  "title": "Mohamed Salah at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🇪🇬",
+  "category": "Players",
+  "description": "Egypt's greatest modern player — but the World Cup has been elusive. How well do you know Salah's international story?",
+  "teams": ["Egypt"],
+  "questions": [
+    {
+      "q": "Mohamed Salah plays for which English Premier League club?",
+      "options": ["Chelsea", "Arsenal", "Manchester United", "Liverpool"],
+      "answer": 3,
+      "explain": "Mohamed Salah joined Liverpool from Roma in 2017 for around £37 million — a fee that quickly looked extraordinary value as he broke multiple Premier League records. He has won the league title, Champions League, FA Cup and League Cup with Liverpool."
+    },
+    {
+      "q": "Salah set the Premier League record for goals in a single season. How many did he score in 2017–18?",
+      "options": ["28", "30", "32", "34"],
+      "answer": 2,
+      "explain": "Salah scored 32 Premier League goals in his debut season at Liverpool (2017–18) — a new record for a 38-game season. He also won the PFA Players' Player of the Year and FWA Footballer of the Year."
+    },
+    {
+      "q": "At the 2018 World Cup, Salah was injured and missed Egypt's first match. How did he get the injury?",
+      "options": ["A tackle in a pre-tournament friendly", "A shoulder injury caused by Sergio Ramos in the Champions League final against Real Madrid", "A training ground accident at Egypt's pre-tournament camp", "A back injury that had troubled him all season"],
+      "answer": 1,
+      "explain": "Sergio Ramos wrestled Salah to the ground in the 2018 Champions League final (weeks before the World Cup), dislocating his shoulder. Salah left the pitch in tears — and his World Cup campaign was severely affected as a result."
+    },
+    {
+      "q": "Despite the injury, Salah still managed to play at the 2018 World Cup. How many goals did he score?",
+      "options": ["0", "1", "2", "4"],
+      "answer": 2,
+      "explain": "Salah scored 2 goals — a penalty against Russia (Egypt's first World Cup goal in 28 years) and a goal against Saudi Arabia. Egypt lost all three group matches and were eliminated."
+    },
+    {
+      "q": "Salah started his career at which Egyptian club before moving to Europe?",
+      "options": ["Al-Ahly", "Zamalek", "Ismaily", "El Gouna"],
+      "answer": 2,
+      "explain": "Salah began his professional career at Ismaily SC in Egypt before joining Swiss club Basel at 18. His European career then took him to Chelsea (limited opportunities), Fiorentina (loan), Roma and finally Liverpool."
+    },
+    {
+      "q": "Salah was involved in a tense situation at Chelsea. Why did his Chelsea career not work out?",
+      "options": ["Injury throughout his time at the club", "He was primarily a substitute who rarely started under José Mourinho", "He fell out with the manager and was sold immediately", "He requested a transfer after one season"],
+      "answer": 1,
+      "explain": "Salah joined Chelsea in 2014 but was rarely given opportunities under José Mourinho, making only limited appearances. He was loaned to Fiorentina and then Roma, where his performances finally caught Liverpool's attention."
+    },
+    {
+      "q": "Salah scored a goal of the year contender in the 2021–22 Premier League season against which goalkeeper?",
+      "options": ["Nick Pope (Newcastle)", "Ederson (Man City)", "Alisson (Liverpool own goal... obviously not)", "Jordan Pickford (Everton)"],
+      "answer": 0,
+      "explain": "Salah's individual goal against Newcastle — cutting in from the right and firing low across Nick Pope — was a contender for Premier League goal of the season in 2021–22, as he and Son Heung-min tied for the Golden Boot with 23 goals."
+    },
+    {
+      "q": "Salah's nationality record: he has been Africa's top scorer in European club football. Which of these records does he hold?",
+      "options": ["Most goals by an African player in Premier League history", "Most goals by an African player in the Champions League in a single season", "First African player to win the Ballon d'Or", "Both A and B"],
+      "answer": 0,
+      "explain": "Mohamed Salah has become the all-time leading Premier League scorer among African players — surpassing Andrew Cole and other legends. His Premier League record is extraordinary for consistency as much as total goals."
+    },
+    {
+      "q": "Salah has been critical of inequality in football administration. What did he once famously say about the Champions League draw?",
+      "options": ["He complained about fixture scheduling affecting African international breaks", "He publicly criticised the draw being rigged", "He said Egyptian players are paid less than European counterparts at his club", "He refused to attend a Champions League ceremony in protest"],
+      "answer": 0,
+      "explain": "Salah has been vocal about the FIFA international calendar and how African Cup of Nations clashes with club competitions disadvantage African players compared to Europeans. He has been one of football's more outspoken advocates on representation issues."
+    },
+    {
+      "q": "Egypt's 2026 World Cup qualification is their first since 2006. Salah will be at the tournament — how old will he be?",
+      "options": ["30", "32", "34", "36"],
+      "answer": 2,
+      "explain": "Mohamed Salah was born in June 1992 and will be 34 at the 2026 World Cup — likely his final chance to make a major impact at the tournament. Egypt's 2026 participation gives Salah the send-off his career deserves."
+    }
+  ]
+}

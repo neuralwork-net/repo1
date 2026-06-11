@@ -1,0 +1,72 @@
+{
+  "slug": "team-panama",
+  "title": "Panama at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🇵🇦",
+  "category": "Teams",
+  "description": "Los Canaleros — a tiny nation that finally reached the World Cup in 2018 and is back for more in 2026.",
+  "teams": ["Panama"],
+  "questions": [
+    {
+      "q": "Panama made their World Cup debut in which year?",
+      "options": ["2014", "2018", "2022", "2026"],
+      "answer": 1,
+      "explain": "Panama made their World Cup debut at Russia 2018, becoming the first Central American nation outside Mexico to qualify in the CONCACAF era. Their qualification was celebrated with a national holiday."
+    },
+    {
+      "q": "Panama's World Cup debut in 2018 resulted in three group stage defeats. But one match produced a historic moment — what was it?",
+      "options": ["Their goalkeeper saved a world-record five penalties", "Felipe Baloy scored Panama's first ever World Cup goal against England", "A crowd of 200,000 watched in Panama City", "They came back from 4–0 to draw 4–4 against Belgium"],
+      "answer": 1,
+      "explain": "Felipe Baloy scored Panama's first ever World Cup goal in the 88th minute of their 6–1 defeat to England. The veteran defender's goal prompted scenes of wild celebration among Panama fans despite the heavy defeat."
+    },
+    {
+      "q": "How old was Felipe Baloy when he scored Panama's first World Cup goal in 2018?",
+      "options": ["28", "32", "37", "41"],
+      "answer": 2,
+      "explain": "Felipe Baloy was 37 years old when he scored Panama's historic first World Cup goal — one of the oldest players to score their nation's first ever World Cup goal. It was a fitting reward for a veteran who had fought so hard to reach the tournament."
+    },
+    {
+      "q": "Panama qualified for the 2018 World Cup in dramatic fashion. How did they secure the final CONCACAF qualification spot?",
+      "options": ["They won a two-legged play-off against Trinidad and Tobago", "A last-minute goal in the final qualifying round sent the USA home and put Panama through", "They beat Mexico on goal difference on the final day", "They won through an intercontinental play-off against a South American side"],
+      "answer": 1,
+      "explain": "Panama's Roman Torres scored a 88th-minute header on the final day of CONCACAF qualifying to beat Costa Rica 2–1. Simultaneously, Trinidad and Tobago beat the USA 2–1, sending the USA home and giving Panama their historic spot."
+    },
+    {
+      "q": "Panama's nickname is Los Canaleros. What does this reference?",
+      "options": ["Their famous forward line who play quick counter-attacks", "The Panama Canal — one of the world's most important shipping routes", "The canals in Panama City's historic district", "Their national bird the Harpy Eagle"],
+      "answer": 1,
+      "explain": "Los Canaleros — 'The Canal Workers' — references the Panama Canal, the engineering marvel that links the Atlantic and Pacific Oceans and is the defining feature of Panama's geography and economy."
+    },
+    {
+      "q": "Panama qualified for the 2026 World Cup through CONCACAF. Which player led them through qualifying as their captain and key creative force?",
+      "options": ["Alberto Quintero", "Rolando Blackburn", "Cristian Martínez", "Adalberto Carrasquilla"],
+      "answer": 3,
+      "explain": "Adalberto Carrasquilla has been Panama's creative heartbeat in recent years, playing his club football in the USA's MLS. He brings quality and creativity to a tough, organised Panamanian team."
+    },
+    {
+      "q": "In the 2018 World Cup, Panama faced England in a historic clash. What was the final score?",
+      "options": ["1–0 to England", "3–1 to England", "6–1 to England", "2–0 to England"],
+      "answer": 2,
+      "explain": "England beat Panama 6–1 with Harry Kane scoring a hat-trick. Despite the heavy defeat, Panama's fans were in full celebration throughout — including at the moment Baloy scored their historic first World Cup goal."
+    },
+    {
+      "q": "Panama are known for their physical, organised defensive style. Which player is their all-time top scorer?",
+      "options": ["Blas Pérez", "Rolando Blackburn", "Gabriel Torres", "Luis Tejada"],
+      "answer": 3,
+      "explain": "Luis Tejada is Panama's all-time top scorer in international football, with over 40 goals. He played most of his career in South American leagues and was a consistent goal-scorer for a nation not historically known for attacking flair."
+    },
+    {
+      "q": "Panama's domestic football is managed by which federation?",
+      "options": ["CONCACAF directly", "Federación Panameña de Fútbol (FEPAFUT)", "Central American Football Union", "Panama Soccer Association"],
+      "answer": 1,
+      "explain": "FEPAFUT — the Federación Panameña de Fútbol — governs football in Panama and is a member of CONCACAF. Their consistent investment in youth development has helped Panama punch above their weight internationally."
+    },
+    {
+      "q": "2026 will be Panama's second World Cup. The 2026 tournament being held partly in the USA, Canada and Mexico is particularly significant for Panama because:",
+      "options": ["Panama shares a border with a co-host nation and has strong cultural ties to the region", "Many Panamanians live in the USA and will be able to watch in person", "Panama's players are based in MLS clubs in the USA", "All of the above"],
+      "answer": 3,
+      "explain": "Panama's geographic proximity to Mexico, large diaspora in the USA and the growing number of Panamanian MLS players all make the 2026 World Cup a uniquely accessible tournament for Panamanian supporters."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "slug": "team-iraq",
+  "title": "Iraq at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🇮🇶",
+  "category": "Teams",
+  "description": "From their sole 1986 appearance to qualifying for 2026 — Iraq's football journey has overcome extraordinary challenges.",
+  "teams": ["Iraq"],
+  "questions": [
+    {
+      "q": "Iraq made their only World Cup appearance before 2026 in which year?",
+      "options": ["1978", "1982", "1986", "1990"],
+      "answer": 2,
+      "explain": "Iraq competed at the 1986 World Cup in Mexico — their first and only World Cup before 2026. They were eliminated in the group stage, losing all three matches."
+    },
+    {
+      "q": "At the 1986 World Cup, Iraq held which European nation to a 1–1 draw — their only point of the tournament?",
+      "options": ["West Germany", "Belgium", "Spain", "Poland"],
+      "answer": 1,
+      "explain": "Iraq drew 1–1 with Belgium at the 1986 World Cup — earning their only point of the tournament. It was a creditable result against a Belgium side that would finish fourth in the same tournament."
+    },
+    {
+      "q": "Iraq has won the AFC Asian Cup how many times?",
+      "options": ["0", "1", "2", "3"],
+      "answer": 1,
+      "explain": "Iraq won the AFC Asian Cup in 2007, hosted across four Southeast Asian countries. Beating Saudi Arabia in the final was a moment of national joy during an extraordinarily difficult period in Iraq's history."
+    },
+    {
+      "q": "Iraq's 2007 Asian Cup win was especially significant because it came during which period in the country's history?",
+      "options": ["The Iran-Iraq War of the 1980s", "The Gulf War aftermath of the 1990s", "During the Iraq War and intense sectarian violence of the mid-2000s", "During international sanctions following the 1990 Kuwait invasion"],
+      "answer": 2,
+      "explain": "Iraq's 2007 Asian Cup triumph came while the country was experiencing intense sectarian violence and the aftermath of the Iraq War. Celebrations erupted across Baghdad despite security dangers — the team united a divided nation."
+    },
+    {
+      "q": "Which Iraqi player is regarded as one of the best in Asian football history and played in Europe for multiple clubs?",
+      "options": ["Haris Haider", "Younis Mahmoud", "Nashat Akram", "Ahmad Salah"],
+      "answer": 1,
+      "explain": "Younis Mahmoud is Iraq's most iconic modern player — the striker who scored the 2007 Asian Cup final winner against Saudi Arabia. He played his club career mainly in Asia and the Middle East."
+    },
+    {
+      "q": "Iraq qualified for the 2026 World Cup — their first in 40 years. Through which confederation?",
+      "options": ["CAF", "CONMEBOL", "AFC", "UEFA"],
+      "answer": 2,
+      "explain": "Iraq qualified through AFC qualifying for the 2026 World Cup — ending a 40-year absence from the tournament. The expanded 48-team format gave more Asian nations a pathway to qualification."
+    },
+    {
+      "q": "Iraq's national team nicknamed 'Lions of Mesopotamia' is named after which ancient civilisation that flourished in modern-day Iraq?",
+      "options": ["Babylonian civilisation (Mesopotamia)", "Persian Empire", "Ottoman Empire", "Arab Caliphate"],
+      "answer": 0,
+      "explain": "Iraq are called the Lions of Mesopotamia — a reference to the ancient civilisation of Mesopotamia, centred on modern-day Iraq and considered one of the world's earliest civilisations, founded along the Tigris and Euphrates rivers."
+    },
+    {
+      "q": "Iraq faced significant challenges in qualifying for World Cups due to international sanctions and conflict. Which period saw them banned from international football?",
+      "options": ["1988–1992 following the Iran-Iraq War", "1991–1994 following the Gulf War and UN sanctions", "2003–2007 during the Iraq War", "There was no formal ban — they simply failed to qualify"],
+      "answer": 3,
+      "explain": "Iraq were never formally banned from international football but faced enormous practical difficulties — including security issues, inability to host matches, and limited training resources — that made World Cup qualification nearly impossible for decades."
+    },
+    {
+      "q": "Which Iraqi forward has been their most prolific scorer in recent AFC qualifying campaigns ahead of 2026?",
+      "options": ["Aymen Hussein", "Mohanad Ali", "Justin Meram", "Ahmed Yasin"],
+      "answer": 0,
+      "explain": "Aymen Hussein has been Iraq's standout striker in the 2026 qualifying campaign, leading the scoring charts. His club career in the Iraqi league has seen consistent goal-scoring that has translated to international level."
+    },
+    {
+      "q": "Iraq will play 2026 World Cup group stage matches at venues across North America. This will be the first time Iraqi fans can attend matches in a relatively accessible location. Which host country are they least likely to encounter visa difficulties for?",
+      "options": ["USA", "Canada", "Mexico", "All three present similar challenges for Iraqi passport holders"],
+      "answer": 3,
+      "explain": "Iraqi passport holders face visa requirements for all three 2026 host nations (USA, Canada and Mexico), but the World Cup typically facilitates easier fan travel. The tournament will nonetheless be a historic opportunity for Iraqi football supporters."
+    }
+  ]
+}

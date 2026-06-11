@@ -1,0 +1,84 @@
+{
+  "slug": "wc-2026-groups",
+  "title": "World Cup 2026 Groups",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "📋",
+  "category": "2026",
+  "description": "Which teams are in which group? Test your knowledge of the 2026 World Cup draw.",
+  "teams": [],
+  "questions": [
+    {
+      "q": "Mexico are in Group A of the 2026 World Cup. Which other team joins them alongside Czechia and South Africa?",
+      "options": ["Japan", "South Korea", "Australia", "Croatia"],
+      "answer": 1,
+      "explain": "Group A features Mexico, South Africa, Czechia and South Korea — a balanced group with the North American co-host, an African qualifier, a Central European side and an Asian powerhouse."
+    },
+    {
+      "q": "Canada, as a co-host nation, are in Group B. Which European dark horse joins them alongside Bosnia and Qatar?",
+      "options": ["Netherlands", "Switzerland", "Belgium", "Turkey"],
+      "answer": 1,
+      "explain": "Group B contains Canada, Switzerland, Bosnia and Herzegovina, and Qatar — featuring the co-host Canada, a consistently tricky Swiss outfit, Edin Džeko's Bosnia in their second World Cup, and hosts-turned-qualifiers Qatar."
+    },
+    {
+      "q": "Group C is one of the toughest. Brazil, Morocco and Scotland are in it — who is the fourth team?",
+      "options": ["Senegal", "Algeria", "Haiti", "Ivory Coast"],
+      "answer": 2,
+      "explain": "Group C features Brazil, Morocco, Scotland and Haiti — a fascinating mix of a football giant, the 2022 semi-finalists, Scotland returning after 28 years, and Haiti making their second World Cup appearance."
+    },
+    {
+      "q": "The USA, as a co-host, are in Group D. Which team joins them alongside Australia and Paraguay?",
+      "options": ["Mexico", "Iran", "Turkey", "Croatia"],
+      "answer": 2,
+      "explain": "Group D features the USA, Turkey, Australia and Paraguay — all teams with points to prove. The USA are on home soil; Turkey return after a 24-year absence; Australia are consistent AFC qualifiers; Paraguay end a 16-year wait."
+    },
+    {
+      "q": "Germany headline Group E. Which African nation joins them alongside Ecuador and Curaçao?",
+      "options": ["Senegal", "Ghana", "Ivory Coast", "Algeria"],
+      "answer": 2,
+      "explain": "Group E contains Germany, Ecuador, Ivory Coast (Côte d'Ivoire) and Curaçao. Germany look to bounce back after 2022's group exit; Ivory Coast bring African Cup of Nations form; Ecuador have real pace up front; and Curaçao make their historic debut."
+    },
+    {
+      "q": "The Netherlands, Japan and Sweden are all in Group F. Which African team completes the group?",
+      "options": ["Egypt", "Senegal", "Tunisia", "Morocco"],
+      "answer": 2,
+      "explain": "Group F features the Netherlands, Japan, Sweden and Tunisia — a competitive group. The Dutch aim for their fourth final; Japan arrive as 2022 giant-killers; Sweden return after a 2022 absence; Tunisia make their sixth World Cup appearance."
+    },
+    {
+      "q": "Belgium headline Group G alongside Iran, Egypt and which Oceania debutant?",
+      "options": ["Australia", "Fiji", "New Zealand", "Solomon Islands"],
+      "answer": 2,
+      "explain": "Group G features Belgium, Iran, Egypt and New Zealand — the latter returning after 16 years. Belgium's golden generation has one last chance at glory; Iran meet their familiar rivals; Egypt and Salah finally return after 20 years."
+    },
+    {
+      "q": "Group H features Spain and Uruguay — two World Cup powerhouses. Who are the other two teams?",
+      "options": ["Saudi Arabia and Cape Verde", "Argentina and Morocco", "Colombia and Chile", "Portugal and Senegal"],
+      "answer": 0,
+      "explain": "Group H contains Spain, Uruguay, Saudi Arabia and Cape Verde (Cabo Verde). Spain are defending European champions; Uruguay bring CONMEBOL quality; Saudi Arabia arrive after shocking Argentina in 2022; and Cabo Verde make their historic debut."
+    },
+    {
+      "q": "France, featuring Mbappé, are in Group I. Which fellow 2022 World Cup quarter-finalist is also in their group?",
+      "options": ["Morocco", "Croatia", "Senegal", "Netherlands"],
+      "answer": 2,
+      "explain": "Group I features France, Senegal, Norway and Iraq. France are defending runner-up; Senegal bring AFCON quality; Norway arrive with Haaland for their first WC since 1998; Iraq make only their second World Cup appearance."
+    },
+    {
+      "q": "Argentina, as defending World Cup champions, are in Group J. Which European nation are they alongside alongside Algeria and Jordan?",
+      "options": ["Italy", "Austria", "Switzerland", "Denmark"],
+      "answer": 1,
+      "explain": "Group J contains Argentina, Austria, Algeria and Jordan — with the world champions facing an Austrian revival, Algeria's consistent North African quality, and Jordan making their historic debut."
+    },
+    {
+      "q": "Portugal, Colombia and DR Congo are in Group K. Which Central Asian nation making their debut joins them?",
+      "options": ["Kazakhstan", "Uzbekistan", "Kyrgyzstan", "Tajikistan"],
+      "answer": 1,
+      "explain": "Group K features Portugal, Colombia, DR Congo and Uzbekistan. Portugal look strong; Colombia bring James and Caicedo; DR Congo return after 52 years as Zaire; and Uzbekistan make Central Asian football history with their debut."
+    },
+    {
+      "q": "Group L is dubbed by some as the 'Group of Death' — which four teams are in it?",
+      "options": ["England, France, Brazil, Argentina", "England, Croatia, Ghana, Panama", "Germany, Spain, Italy, Netherlands", "Brazil, Portugal, Argentina, France"],
+      "answer": 1,
+      "explain": "Group L contains England, Croatia, Ghana and Panama — recreating past World Cup encounters. England face their 2018 semi-final opponents Croatia again; Ghana aim to avenge the 2010 Suárez handball exit; and Panama play their second World Cup."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "slug": "asia-world-cup",
+  "title": "Asia at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🌏",
+  "category": "History",
+  "description": "From North Korea's 1966 shock to South Korea's 2002 semi-final — Asian football has produced World Cup moments to remember.",
+  "teams": [],
+  "questions": [
+    {
+      "q": "North Korea caused one of the greatest World Cup shocks in 1966. What was their extraordinary result?",
+      "options": ["They beat the Soviet Union 1–0", "They beat Italy 1–0 and reached the quarter-finals", "They drew with Brazil in the group stage", "They beat Chile to win their group"],
+      "answer": 1,
+      "explain": "North Korea beat Italy 1–0 in the 1966 group stage — one of the biggest upsets in World Cup history — and reached the quarter-finals. They led Portugal 3–0 before Eusébio scored four to win 5–3 in one of the greatest comebacks ever."
+    },
+    {
+      "q": "Japan and South Korea co-hosted the 2002 World Cup. What was unique about this arrangement?",
+      "options": ["It was the first World Cup co-hosted by two nations", "It was the first World Cup held in Asia", "Both A and B", "It was the first World Cup in the southern hemisphere"],
+      "answer": 2,
+      "explain": "The 2002 World Cup was both the first co-hosted World Cup and the first held in Asia — two historic milestones in one tournament. South Korea's semi-final run and Senegal beating France made it one of football's most surprising World Cups."
+    },
+    {
+      "q": "South Korea's 2002 semi-final run is Asia's best World Cup performance. Who were the two European nations they beat in the knockout rounds?",
+      "options": ["Spain and Germany", "Spain and Italy", "Italy and Germany", "England and Spain"],
+      "answer": 1,
+      "explain": "South Korea beat Italy in the round of 16 (Ahn Jung-hwan's golden goal) and Spain in the quarter-final (penalties after 0–0). They lost the semi-final to Germany 1–0 and the third-place match to Turkey 3–2."
+    },
+    {
+      "q": "At the 2022 World Cup, Japan shocked which European giant with an extraordinary comeback?",
+      "options": ["Spain only", "Germany only", "Both Germany (2–1) and Spain (2–1)", "France (1–0)"],
+      "answer": 2,
+      "explain": "Japan beat both Germany 2–1 and Spain 2–1 in the 2022 group stage — coming from behind both times — to top a group that also contained Costa Rica. It was one of the most remarkable group stage performances in World Cup history."
+    },
+    {
+      "q": "Iran hold the record for Asia's most World Cup appearances overall as of 2026. How many times have they qualified?",
+      "options": ["4", "5", "6", "7"],
+      "answer": 2,
+      "explain": "Iran have qualified for 6 World Cups: 1978, 1998, 2006, 2014, 2018 and 2022. They are joint-leaders in Asian World Cup qualification history alongside Japan and South Korea."
+    },
+    {
+      "q": "The 2022 World Cup expanded to how many teams — giving Asia more places for the first time since 2002?",
+      "options": ["32", "36", "40", "The 2022 WC was still 32 teams — 48 teams starts in 2026"],
+      "answer": 3,
+      "explain": "The 2022 World Cup in Qatar still had 32 teams. The expansion to 48 teams begins at the 2026 World Cup, with the AFC receiving 8 automatic places (up from 4.5 in 2022)."
+    },
+    {
+      "q": "Saudi Arabia pulled off one of the greatest World Cup upsets ever in 2022. Who did they beat?",
+      "options": ["Germany", "Spain", "Argentina", "France"],
+      "answer": 2,
+      "explain": "Saudi Arabia beat Argentina 2–1 in the 2022 group stage — one of the biggest World Cup upsets in history. Goals from Al-Shehri and Al-Dawsari shocked the eventual champions."
+    },
+    {
+      "q": "South Korea's 2022 round of 16 was a 4–1 defeat to Brazil. Who scored South Korea's goal?",
+      "options": ["Son Heung-min", "Hwang Hee-chan", "Paik Seung-ho", "Kim Young-gwon"],
+      "answer": 1,
+      "explain": "Hwang Hee-chan — who had scored the decisive goal to send South Korea through in the group stage — scored their consolation goal against Brazil in the 2022 round of 16. Brazil won 4–1 and were later knocked out by Croatia."
+    },
+    {
+      "q": "The 2026 World Cup sees several Asian nations make their debut. Which of these is making a historic first appearance?",
+      "options": ["Iran", "Saudi Arabia", "Jordan", "All three are making debuts"],
+      "answer": 2,
+      "explain": "Jordan are making their World Cup debut in 2026, having qualified through AFC qualifying after reaching the 2023 Asian Cup final. Iran and Saudi Arabia have appeared at multiple World Cups previously."
+    },
+    {
+      "q": "Australia moved from the OFC (Oceania) to the AFC (Asia) in 2006. How has this affected their World Cup record?",
+      "options": ["They have qualified for every World Cup since joining the AFC", "They qualified for 2006, 2010, 2014, missed 2018, qualified 2022 and 2026 through the AFC", "They have qualified for every World Cup from 2006 to 2026", "The move had no impact — they would have qualified through OFC anyway"],
+      "answer": 2,
+      "explain": "Since joining the AFC in 2006, Australia qualified for 2006, 2010, 2014, 2022 and 2026 — missing only the 2018 World Cup (where they lost to Honduras in an intercontinental play-off). The move gave them a much more direct qualifying path than the OFC offered."
+    }
+  ]
+}

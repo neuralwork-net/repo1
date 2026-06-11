@@ -1,0 +1,72 @@
+{
+  "slug": "player-son",
+  "title": "Son Heung-min at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🇰🇷",
+  "category": "Players",
+  "description": "South Korea's captain and one of the Premier League's greatest — how well do you know Sonny's World Cup journey?",
+  "teams": ["Korea Republic"],
+  "questions": [
+    {
+      "q": "Son Heung-min plays club football for which English Premier League club?",
+      "options": ["Arsenal", "Chelsea", "Manchester City", "Tottenham Hotspur"],
+      "answer": 3,
+      "explain": "Son Heung-min joined Tottenham Hotspur from Bayer Leverkusen in 2015 and has been one of their most important players for a decade, scoring over 150 goals and becoming the club captain."
+    },
+    {
+      "q": "Son shared the Premier League Golden Boot in the 2021–22 season. Which Egyptian star did he tie with?",
+      "options": ["Riyad Mahrez", "Pierre-Emerick Aubameyang", "Mohamed Salah", "Sadio Mané"],
+      "answer": 2,
+      "explain": "Son Heung-min and Mohamed Salah both scored 23 Premier League goals in 2021–22, sharing the Golden Boot. Son scored the 23rd in the final game of the season to draw level — a remarkable achievement."
+    },
+    {
+      "q": "Son played his first seasons of professional European football in Germany. Which club was it before Leverkusen?",
+      "options": ["Borussia Dortmund", "Hamburg SV", "Schalke 04", "Wolfsburg"],
+      "answer": 1,
+      "explain": "Son began his European career at Hamburg SV, joining their youth academy at 16. He made his senior debut for Hamburg in the Bundesliga before moving to Bayer Leverkusen in 2013."
+    },
+    {
+      "q": "Son Heung-min completed mandatory South Korean military service — which is compulsory — through which achievement?",
+      "options": ["Playing 100 caps for South Korea", "Winning an Asian Games gold medal with South Korea", "Winning the K-League with Jeonbuk", "Being named Asian Football Confederation Player of the Year"],
+      "answer": 1,
+      "explain": "South Korean military service is compulsory, but exemptions exist for sporting achievement. Son qualified for an exemption by winning the Asian Games gold medal with South Korea in 2018, allowing him to continue his Tottenham career uninterrupted."
+    },
+    {
+      "q": "At the 2022 World Cup, South Korea qualified from a group that included Portugal. Son had a back-of-the-net moment in that match. What was the score that sent South Korea through?",
+      "options": ["1–0", "2–1", "2–0", "3–2"],
+      "answer": 1,
+      "explain": "South Korea beat Portugal 2–1, with Hwang Hee-chan scoring a last-minute winner. Son contributed to the team's performance as captain, and the result sent South Korea into the round of 16 ahead of Uruguay."
+    },
+    {
+      "q": "Son's father has played a unique role in his career. Who is Son Woong-jung?",
+      "options": ["Son's first professional manager", "His father, also a professional footballer, who has been his personal coach since childhood", "The founder of the club Son first played for in Korea", "Son's agent who negotiated his Tottenham move"],
+      "answer": 1,
+      "explain": "Son's father, Son Woong-jung, was a professional footballer and has been involved in his development since childhood — putting him through intense training from a very young age. The relationship is central to the story of Son's rise."
+    },
+    {
+      "q": "In what position does Son primarily play?",
+      "options": ["Centre-forward", "Left winger or second striker", "Central midfielder", "Right back"],
+      "answer": 1,
+      "explain": "Son primarily plays as a left winger or in a supporting striker role, using his pace, two-footedness and finishing ability to threaten defences from wide areas. His left-foot shot and ability to cut inside and shoot are particularly deadly."
+    },
+    {
+      "q": "Son scored a stunning solo goal voted the Premier League Goal of the Season in 2019–20. Which team did he score it against?",
+      "options": ["Arsenal", "Burnley", "Leicester City", "Aston Villa"],
+      "answer": 1,
+      "explain": "Son's solo goal against Burnley in December 2019 — running from his own half and beating multiple players — won the Premier League Goal of the Season. It was one of the finest individual goals in recent Premier League history."
+    },
+    {
+      "q": "How many goals has Son scored for South Korea in international football — making him their all-time top scorer?",
+      "options": ["50+", "60+", "70+", "He is not their top scorer"],
+      "answer": 0,
+      "explain": "Son surpassed the previous South Korean scoring records to become their all-time top scorer, with over 50 international goals. He overtook Cha Bum-kun's longstanding record."
+    },
+    {
+      "q": "South Korea reached the quarter-finals of the 2002 World Cup on home soil. Son was only 10 years old at the time — but how has that run influenced his career?",
+      "options": ["It had no influence — Son grew up watching European football only", "The 2002 run inspired a generation of South Korean footballers including Son, who has spoken about watching the games as a child", "Son's father played in the 2002 tournament and the experience directly shaped Son's development", "Son was not born in 2002"],
+      "answer": 1,
+      "explain": "Son has spoken about watching South Korea's 2002 World Cup semi-final run as a child and being inspired to become a professional footballer. The 2002 tournament created a generation of South Korean players who dreamed of repeating that success."
+    }
+  ]
+}

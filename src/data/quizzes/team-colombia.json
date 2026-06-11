@@ -1,0 +1,72 @@
+{
+  "slug": "team-colombia",
+  "title": "Colombia at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🇨🇴",
+  "category": "Teams",
+  "description": "From Valderrama's afro to James's Golden Boot — Colombia's World Cup story is full of drama.",
+  "teams": ["Colombia"],
+  "questions": [
+    {
+      "q": "What is Colombia's best-ever World Cup result?",
+      "options": ["Semi-finals", "Quarter-finals", "Round of 16", "Group stage"],
+      "answer": 1,
+      "explain": "Colombia reached the quarter-finals in 2014, losing to Brazil 2–1. It remains their deepest run at the tournament."
+    },
+    {
+      "q": "Who won the Golden Boot at the 2014 World Cup playing for Colombia?",
+      "options": ["Radamel Falcao", "Jackson Martínez", "Carlos Bacca", "James Rodríguez"],
+      "answer": 3,
+      "explain": "James Rodríguez won the Golden Boot with 6 goals, including a stunning chest-and-volley against Uruguay that won the FIFA Puskás Award for goal of the year."
+    },
+    {
+      "q": "Colombian star Andrés Escobar scored an own goal against the USA at the 1994 World Cup. What tragic event followed his return home?",
+      "options": ["He was banned from football for life", "He was shot and killed", "He was imprisoned", "He fled the country and never returned"],
+      "answer": 1,
+      "explain": "Andrés Escobar was shot dead in Medellín on July 2, 1994, just days after Colombia's group-stage exit. The murder shocked the football world and highlighted the dangers facing Colombian players amid the country's drug cartel violence."
+    },
+    {
+      "q": "Carlos Valderrama is one of Colombia's most iconic players, known for his skill — and what else?",
+      "options": ["His incredible long-range shooting", "His distinctive large blond afro hairstyle", "His record as all-time top scorer", "His World Cup winner's medal"],
+      "answer": 1,
+      "explain": "Carlos Valderrama — nicknamed 'El Pibe' (The Kid) — was as famous for his huge blond afro as for his brilliant passing. He captained Colombia at the 1990, 1994 and 1998 World Cups."
+    },
+    {
+      "q": "In which year did Colombia make their World Cup debut?",
+      "options": ["1958", "1962", "1966", "1970"],
+      "answer": 1,
+      "explain": "Colombia made their World Cup debut at Chile 1962, where they drew 4–4 with the Soviet Union in an extraordinary match but were eliminated in the group stage."
+    },
+    {
+      "q": "Which Colombian striker was considered one of the world's best before a serious knee injury ruled him out of the 2014 World Cup?",
+      "options": ["Jackson Martínez", "Teófilo Gutiérrez", "Carlos Bacca", "Radamel Falcao"],
+      "answer": 3,
+      "explain": "Radamel Falcao tore his anterior cruciate ligament in January 2014 and missed the World Cup entirely. He had been expected to lead Colombia's attack after scoring 72 goals in four seasons for Porto and Atlético Madrid."
+    },
+    {
+      "q": "Colombia won the Copa América in which year, on home soil?",
+      "options": ["1995", "2001", "2007", "2016"],
+      "answer": 1,
+      "explain": "Colombia won the Copa América in 2001 on home soil, beating Mexico 1–0 in the final. It remains their only Copa América title."
+    },
+    {
+      "q": "James Rodríguez's famous volley goal at the 2014 World Cup was scored against which team?",
+      "options": ["Japan", "Ivory Coast", "Greece", "Uruguay"],
+      "answer": 3,
+      "explain": "In the round of 16 against Uruguay, Rodríguez controlled a high ball on his chest and fired an audacious volley into the top corner from the edge of the area — widely voted the goal of the tournament."
+    },
+    {
+      "q": "Colombia beat which team 4–1 in their opening group game at the 2014 World Cup?",
+      "options": ["Ivory Coast", "Greece", "Japan", "Honduras"],
+      "answer": 2,
+      "explain": "Colombia beat Japan 4–1 in their opening game, with James Rodríguez among the scorers. It announced Colombia as genuine dark horses for the tournament."
+    },
+    {
+      "q": "At the 2026 World Cup, Colombia are grouped in a particularly tough pool. What confederation does Colombia belong to?",
+      "options": ["CONCACAF", "AFC", "CONMEBOL", "CAF"],
+      "answer": 2,
+      "explain": "Colombia are members of CONMEBOL, the South American football confederation, which has 6 of the 48 places at the 2026 World Cup. They qualified through the same competition as Argentina, Brazil and Uruguay."
+    }
+  ]
+}

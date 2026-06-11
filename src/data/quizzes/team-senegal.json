@@ -1,0 +1,72 @@
+{
+  "slug": "team-senegal",
+  "title": "Senegal at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🇸🇳",
+  "category": "Teams",
+  "description": "From beating France on debut to winning the AFCON — the Lions of Teranga have made their mark on world football.",
+  "teams": ["Senegal"],
+  "questions": [
+    {
+      "q": "In which year did Senegal make a stunning World Cup debut?",
+      "options": ["1998", "2002", "2006", "2010"],
+      "answer": 1,
+      "explain": "Senegal made their World Cup debut at the 2002 tournament in South Korea and Japan — and they made it memorable by beating the reigning champions France in their very first match."
+    },
+    {
+      "q": "Senegal beat defending champions France 1–0 in their 2002 World Cup debut. Who scored the only goal?",
+      "options": ["El-Hadji Diouf", "Salif Diao", "Khalilou Fadiga", "Papa Bouba Diop"],
+      "answer": 3,
+      "explain": "Papa Bouba Diop — nicknamed 'The Wardrobe' for his imposing physique — scored the goal. His celebration, where teammates waved shirts around the corner flag, became one of the tournament's iconic moments."
+    },
+    {
+      "q": "How far did Senegal reach at the 2002 World Cup on their debut?",
+      "options": ["Round of 16", "Quarter-finals", "Semi-finals", "Runners-up"],
+      "answer": 1,
+      "explain": "Senegal reached the quarter-finals on their debut — beating Sweden 2–1 in the round of 16 with a golden goal by Henri Camara, before losing 1–0 to Turkey in the quarter-final."
+    },
+    {
+      "q": "Senegal won the Africa Cup of Nations (AFCON) for the first time in which year?",
+      "options": ["2019", "2021 (played 2022)", "2023", "2017"],
+      "answer": 1,
+      "explain": "Senegal won their first AFCON title at the 2021 tournament (held in January 2022), beating Egypt on penalties in the final. Sadio Mané — who had missed the decisive penalty at the 2019 AFCON final — this time scored the winning spot-kick."
+    },
+    {
+      "q": "Who is Senegal's most famous modern player — a Liverpool and Bayern Munich forward who led them to AFCON glory?",
+      "options": ["El-Hadji Diouf", "Idrissa Gueye", "Cheikhou Kouyaté", "Sadio Mané"],
+      "answer": 3,
+      "explain": "Sadio Mané won the Premier League with Liverpool, scored the winning penalty in the 2022 AFCON final and is Senegal's all-time top scorer. He moved to Bayern Munich in 2022."
+    },
+    {
+      "q": "Senegal's coach who guided them to the 2022 AFCON and 2022 World Cup was a member of the 2002 World Cup squad. Who is he?",
+      "options": ["Henri Camara", "Salifou Badji", "El-Hadji Diouf", "Aliou Cissé"],
+      "answer": 3,
+      "explain": "Aliou Cissé captained Senegal in 2002 and later became their manager, guiding them to both the AFCON and the 2022 World Cup. It's a remarkable story of continuity for Senegalese football."
+    },
+    {
+      "q": "At the 2022 World Cup, Senegal reached the round of 16. Which team knocked them out?",
+      "options": ["Netherlands", "France", "England", "USA"],
+      "answer": 2,
+      "explain": "England beat Senegal 3–0 in the round of 16, with goals from Jordan Henderson, Harry Kane and Bukayo Saka. Sadio Mané was missing injured for much of the tournament."
+    },
+    {
+      "q": "Senegal are sometimes called Africa's best team. How many times have they qualified for the World Cup?",
+      "options": ["2", "3", "4", "5"],
+      "answer": 1,
+      "explain": "As of 2026, Senegal have qualified for the World Cup three times — 2002 (QF), 2018 (group stage) and 2022 (R16). They missed 2006, 2010 and 2014."
+    },
+    {
+      "q": "Which Senegalese player was controversially sent off and banned from playing for West Ham after the 2002 World Cup?",
+      "options": ["Khalilou Fadiga", "Pape Thiaw", "El-Hadji Diouf", "Tony Sylva"],
+      "answer": 2,
+      "explain": "El-Hadji Diouf was involved in a spitting incident during the 2002 World Cup and was later banned. His World Cup performances were brilliant — his off-field behaviour was not."
+    },
+    {
+      "q": "What is the nickname of the Senegal national football team?",
+      "options": ["The Desert Foxes", "The Eagles", "The Lions of Teranga", "The Elephants"],
+      "answer": 2,
+      "explain": "Senegal are known as the Lions of Teranga — 'Teranga' meaning 'hospitality' in Wolof, reflecting the famous warmth and generosity of Senegalese culture."
+    }
+  ]
+}

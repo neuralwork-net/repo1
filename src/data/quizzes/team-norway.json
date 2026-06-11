@@ -1,0 +1,72 @@
+{
+  "slug": "team-norway",
+  "title": "Norway at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🇳🇴",
+  "category": "Teams",
+  "description": "Erling Haaland's Norway return to the World Cup after nearly 30 years. How well do you know the Norsemen's story?",
+  "teams": ["Norway"],
+  "questions": [
+    {
+      "q": "Norway's most famous World Cup result was a shock 2–1 win over which team at the 1998 World Cup?",
+      "options": ["Italy", "Germany", "Brazil", "France"],
+      "answer": 2,
+      "explain": "Norway beat Brazil 2–1 in the 1998 group stage — one of the tournament's biggest upsets. Kjetil Rekdal scored a late winner from the penalty spot to stun the eventual champions."
+    },
+    {
+      "q": "Which Manchester City striker is regarded as the best player in Norway's history and is leading their 2026 campaign?",
+      "options": ["Jan Aage Fjortoft", "Ole Gunnar Solskjær", "John Carew", "Erling Haaland"],
+      "answer": 3,
+      "explain": "Erling Haaland — the son of former Norway and Manchester City player Alfie Haaland — has become one of the world's greatest strikers, setting goal-scoring records at Man City. His presence at a World Cup will be historic."
+    },
+    {
+      "q": "In which year did Norway last appear at a World Cup before 2026?",
+      "options": ["1994", "1998", "2002", "2006"],
+      "answer": 1,
+      "explain": "Norway's last World Cup was France 1998, where they drew with Morocco and Scotland before their famous win over Brazil. They failed to qualify for 2002 and have been absent ever since — until 2026."
+    },
+    {
+      "q": "Which famous Norwegian striker had a memorable World Cup career scoring goals across multiple tournaments in the 1990s?",
+      "options": ["Jan Aage Fjortoft", "Ole Gunnar Solskjær", "Tore André Flo", "Jostein Flo"],
+      "answer": 2,
+      "explain": "Tore André Flo — a tall, powerful striker who played for Chelsea and Rangers — was Norway's most dangerous attacker at the 1998 World Cup, scoring and causing havoc for defenders."
+    },
+    {
+      "q": "Norway's national team is known by which nickname?",
+      "options": ["The Vikings", "The Norsemen", "The Polar Bears", "The Northern Stars"],
+      "answer": 0,
+      "explain": "Norway's national team are commonly called the Vikings — a fitting nickname for the Scandinavian nation, referencing their Norse heritage. Their home shirts are red and white."
+    },
+    {
+      "q": "Erling Haaland's father Alfie Haaland also played for Norway and had a famous injury caused by which Manchester United midfielder?",
+      "options": ["Paul Scholes", "David Beckham", "Roy Keane", "Nicky Butt"],
+      "answer": 2,
+      "explain": "Roy Keane deliberately fouled Alfie Haaland in a Premier League match in 2001, causing a career-ending knee injury. Keane later admitted the tackle was deliberate in his autobiography. Erling Haaland grew up with this story."
+    },
+    {
+      "q": "Norway made their World Cup debut in which year — also being one of the original entrants to the first World Cup?",
+      "options": ["1934", "1938", "1954", "1958"],
+      "answer": 1,
+      "explain": "Norway appeared at the 1938 World Cup in France — only their second World Cup. They lost 2–1 to Italy, the eventual champions. Norway also played in the very first World Cup in 1930."
+    },
+    {
+      "q": "In the 1994 World Cup qualifying, Norway famously beat which major European nation home and away?",
+      "options": ["France", "England", "Netherlands", "Italy"],
+      "answer": 1,
+      "explain": "Norway beat England 2–0 at Wembley in June 1993 — a famous result. Commentator Bjørge Lillelien's ecstatic 'Your boys took a hell of a beating!' speech became one of sport's most iconic moments."
+    },
+    {
+      "q": "Which Norwegian club has produced the most top international players including Haaland, Solskjær and others?",
+      "options": ["Brann", "Molde", "Rosenborg", "Stabæk"],
+      "answer": 2,
+      "explain": "Rosenborg BK in Trondheim is Norway's most successful club, winning the league over 20 times and regularly qualifying for the Champions League. They have been the breeding ground for many Norwegian internationals."
+    },
+    {
+      "q": "Norway qualified for the 2026 World Cup through European qualifying. Which confederation do they belong to?",
+      "options": ["AFC", "CONMEBOL", "UEFA", "CAF"],
+      "answer": 2,
+      "explain": "Norway are UEFA members, competing in European qualifying groups. With 16 places allocated to UEFA at the 2026 World Cup, Norway finally ended their long qualification drought."
+    }
+  ]
+}

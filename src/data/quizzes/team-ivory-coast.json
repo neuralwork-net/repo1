@@ -1,0 +1,72 @@
+{
+  "slug": "team-ivory-coast",
+  "title": "Ivory Coast at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🇨🇮",
+  "category": "Teams",
+  "description": "Drogba's passionate speech, the 'Group of Death' and an AFCON on home soil — Ivory Coast's football story is extraordinary.",
+  "teams": ["Côte d'Ivoire"],
+  "questions": [
+    {
+      "q": "Didier Drogba made an extraordinary speech after Ivory Coast qualified for their first World Cup. What was unusual about it?",
+      "options": ["He announced his retirement on camera", "He begged rival factions to lay down their weapons and end the country's civil war", "He announced he was defecting to another country's team", "He gave a speech entirely in another language"],
+      "answer": 1,
+      "explain": "After Ivory Coast qualified in 2005, Drogba fell to his knees on the pitch and pleaded live on TV: 'We beg you on our knees. Please lay down your weapons.' His speech is credited with helping bring a ceasefire in Ivory Coast's civil war."
+    },
+    {
+      "q": "Ivory Coast made their World Cup debut at Germany 2006, landing in what was nicknamed the 'Group of Death'. Which giants were in their group?",
+      "options": ["Germany, Brazil, Australia", "Argentina, Netherlands, Serbia", "England, Sweden, Paraguay", "Spain, Ukraine, Tunisia"],
+      "answer": 1,
+      "explain": "Ivory Coast's debut group in 2006 contained Argentina and the Netherlands — two of the world's strongest teams. They lost both matches and were eliminated despite being highly regarded going into the tournament."
+    },
+    {
+      "q": "How many times has Ivory Coast (Côte d'Ivoire) won the Africa Cup of Nations (AFCON)?",
+      "options": ["1", "2", "3", "4"],
+      "answer": 2,
+      "explain": "Ivory Coast have won the AFCON three times — in 1992, 2015 and 2023 (held in early 2024 on home soil). The 2023 triumph was especially dramatic, with a late comeback against Nigeria in the final."
+    },
+    {
+      "q": "Didier Drogba is Ivory Coast's all-time great. Which English club did he become a legend for?",
+      "options": ["Arsenal", "Manchester United", "Chelsea", "Liverpool"],
+      "answer": 2,
+      "explain": "Didier Drogba is Chelsea's all-time top scorer and one of the most beloved players in the club's history. He scored the equaliser in the 2012 Champions League final before Chelsea won on penalties."
+    },
+    {
+      "q": "At the 2022 World Cup, Ivory Coast failed to qualify. In which tournament did they return to the World Cup stage?",
+      "options": ["2018 World Cup", "2022 World Cup", "2026 World Cup", "2014 World Cup"],
+      "answer": 2,
+      "explain": "After missing the 2022 World Cup, Ivory Coast qualified for the 2026 edition. Combined with their 2023 AFCON home triumph, 2026 represents a new golden era for Ivorian football."
+    },
+    {
+      "q": "Which two Ivory Coast strikers formed a fearsome partnership at the 2010 and 2014 World Cups alongside Drogba?",
+      "options": ["Gnégnéri Yaya Touré and Didier Zokora", "Salomon Kalou and Gervinho", "Arouna Koné and Wilfried Bony", "Lacina Traoré and Max-Alain Gradel"],
+      "answer": 1,
+      "explain": "Salomon Kalou (Chelsea) and Gervinho (Arsenal/Roma) partnered Drogba in Ivory Coast's attack, forming a potent trio. Despite having world-class players, Ivory Coast never advanced past the group stage at their World Cup appearances."
+    },
+    {
+      "q": "Yaya Touré was Ivory Coast's midfield maestro and a record holder. How many times did he win the African Player of the Year award?",
+      "options": ["2", "3", "4", "5"],
+      "answer": 2,
+      "explain": "Yaya Touré won the African Player of the Year award four consecutive times from 2011 to 2014 — a record at the time. He was an all-action midfielder who starred for Barcelona and Manchester City."
+    },
+    {
+      "q": "At the 2014 World Cup, Ivory Coast came close in their group. Which team beat them in a crucial match to send them home?",
+      "options": ["Japan", "Greece", "Colombia", "Portugal"],
+      "answer": 1,
+      "explain": "Greece beat Ivory Coast 2–1 in their final group game at the 2014 World Cup, with a late winner knocking Ivory Coast out. Ivory Coast had beaten Japan 2–1 earlier, but Greece's win ended their campaign."
+    },
+    {
+      "q": "Ivory Coast's nickname refers to their national symbol. What is it?",
+      "options": ["The Lions", "The Elephants", "The Eagles", "The Panthers"],
+      "answer": 1,
+      "explain": "Ivory Coast are known as the Elephants — Les Éléphants in French — a fitting symbol for the nation known as the Ivory Coast (from the ivory trade that shaped its history)."
+    },
+    {
+      "q": "Which Ivory Coast player scored against Greece to equalise in the 2014 World Cup before Greece's late winner?",
+      "options": ["Gervinho", "Yaya Touré", "Wilfried Bony", "Giovanni Sio"],
+      "answer": 1,
+      "explain": "Yaya Touré equalised for Ivory Coast against Greece, but a late Greek winner sent Ivory Coast home. It was a bitter end for an experienced squad that had underperformed across three consecutive World Cups."
+    }
+  ]
+}

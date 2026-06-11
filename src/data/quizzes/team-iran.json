@@ -1,0 +1,72 @@
+{
+  "slug": "team-iran",
+  "title": "Iran at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🇮🇷",
+  "category": "Teams",
+  "description": "Asia's most decorated World Cup nation — Iran have a remarkable record of qualification. How well do you know Team Melli?",
+  "teams": ["IR Iran"],
+  "questions": [
+    {
+      "q": "Iran made their World Cup debut in which year?",
+      "options": ["1974", "1978", "1982", "1986"],
+      "answer": 1,
+      "explain": "Iran debuted at the 1978 World Cup in Argentina — their first and only under the Shah. They drew with Scotland 1–1 and lost to Peru and the Netherlands, but qualified as the representative of the AFC for only the second time."
+    },
+    {
+      "q": "Iran's most famous World Cup moment is their politically charged 2–1 victory over the USA in 1998. What was the political backdrop?",
+      "options": ["Two nations competing for the first time since the 1979 Iranian Revolution", "A sanctions dispute was ongoing between the two nations", "Iran's government had threatened to boycott the match", "The USA had withdrawn Iran's diplomatic recognition"],
+      "answer": 0,
+      "explain": "Iran and the USA had no diplomatic relations since the 1979 Revolution. Their 1998 World Cup meeting was the most politically loaded match in history — but was marked by gestures of goodwill, with Iranian players giving US opponents flowers before kick-off. Iran won 2–1."
+    },
+    {
+      "q": "Which Iranian player held the world record for international goals before Ronaldo overtook him in 2021?",
+      "options": ["Mehdi Taremi", "Sardar Azmoun", "Ali Karimi", "Ali Daei"],
+      "answer": 3,
+      "explain": "Ali Daei scored 109 international goals for Iran — a world record that stood for over 15 years. He held the record until Cristiano Ronaldo overtook him in 2021. Daei also managed Iran and is their most celebrated footballer."
+    },
+    {
+      "q": "Iran qualified for consecutive World Cups from 1978 onwards. How many times have they qualified overall?",
+      "options": ["4", "5", "6", "7"],
+      "answer": 2,
+      "explain": "Iran have qualified for six World Cups: 1978, 1998, 2006, 2014, 2018 and 2022. They are Asia's most consistent World Cup qualifiers alongside South Korea and Japan."
+    },
+    {
+      "q": "At the 2022 World Cup, Iran suffered a heavy opening defeat. Which team beat them 6–2?",
+      "options": ["France", "Spain", "England", "USA"],
+      "answer": 2,
+      "explain": "England beat Iran 6–2 in their 2022 group opener, with Jude Bellingham, Bukayo Saka and Marcus Rashford among the scorers. Iran's Mehdi Taremi scored twice in injury time but it was a difficult start."
+    },
+    {
+      "q": "Iran bounced back at the 2022 World Cup to beat which European nation 2–0 in the group stage?",
+      "options": ["Scotland", "Austria", "Wales", "Serbia"],
+      "answer": 2,
+      "explain": "Iran beat Wales 2–0 with two late goals — both in injury time — from Roozbeh Cheshmi and Ramin Rezaeian. It was a remarkable comeback performance that briefly kept Iran's qualification hopes alive."
+    },
+    {
+      "q": "Iran's star striker Mehdi Taremi plays for which Italian Serie A club?",
+      "options": ["AC Milan", "Juventus", "Roma", "Inter Milan"],
+      "answer": 3,
+      "explain": "Mehdi Taremi joined Inter Milan from Porto, where he had been one of the most productive strikers in the Champions League. He is Iran's key player heading into the 2026 World Cup."
+    },
+    {
+      "q": "Iran's national team is commonly called 'Team Melli'. What does 'Melli' mean in Farsi?",
+      "options": ["National", "Persian", "Lions", "Desert Eagles"],
+      "answer": 0,
+      "explain": "'Melli' means 'national' in Farsi (Persian). Team Melli — the National Team — is how Iranians refer to their football squad, reflecting the deep national pride invested in the team."
+    },
+    {
+      "q": "At the 2014 World Cup, Iran held Argentina to what score before Messi's last-minute winner?",
+      "options": ["0–0 until the 90th minute, then lost 1–0", "1–1, then lost after extra time", "0–1 from early in the second half", "Drew 1–1"],
+      "answer": 0,
+      "explain": "Iran held Argentina to 0–0 until the 91st minute, when Messi curled in a stunning individual goal. Iran had been inches away from a famous draw. The match is remembered as one of the tightest at the 2014 World Cup."
+    },
+    {
+      "q": "Iran qualified for the 2026 World Cup through AFC qualifying. How many places does the Asian confederation get at the 2026 tournament?",
+      "options": ["5", "7", "8", "9"],
+      "answer": 3,
+      "explain": "The AFC has 8 automatic places at the 2026 World Cup (up from 4.5 at previous editions), plus an intercontinental play-off spot. The expansion to 48 teams significantly benefited Asian football."
+    }
+  ]
+}

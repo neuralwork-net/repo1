@@ -1,0 +1,72 @@
+{
+  "slug": "team-saudi-arabia",
+  "title": "Saudi Arabia at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🇸🇦",
+  "category": "Teams",
+  "description": "From Al-Owairan's goal of the century contender to beating Argentina — Saudi Arabia have made their mark on World Cup history.",
+  "teams": ["Saudi Arabia"],
+  "questions": [
+    {
+      "q": "Saudi Arabia made their World Cup debut in 1994. What remarkable result did they achieve in their first tournament?",
+      "options": ["They won the group", "They reached the quarter-finals", "They won their group opener with a famous goal and reached the round of 16", "They drew all three group games"],
+      "answer": 2,
+      "explain": "Saudi Arabia beat Belgium and Morocco in the group stage — including a stunning solo goal by Saeed Al-Owairan — and reached the round of 16 in their debut tournament. It remains one of the great World Cup debut performances."
+    },
+    {
+      "q": "Saeed Al-Owairan scored arguably the greatest goal of the 1994 World Cup — a solo run from his own half. Against which team?",
+      "options": ["Belgium", "Morocco", "Netherlands", "Iran"],
+      "answer": 0,
+      "explain": "Al-Owairan ran from his own half past five Belgian players before scoring — a goal often compared to Maradona's 1986 wonder goal. Saudi Arabia won 1–0 and advanced to the round of 16 where they lost to Sweden."
+    },
+    {
+      "q": "At the 2022 World Cup, Saudi Arabia caused one of the biggest upsets in tournament history. Which team did they beat?",
+      "options": ["Brazil", "France", "Germany", "Argentina"],
+      "answer": 3,
+      "explain": "Saudi Arabia beat Argentina 2–1 at Qatar 2022 — one of the greatest World Cup upsets. Saleh Al-Shehri and Salem Al-Dawsari scored, and Lionel Messi's team, strong favourites, were stunned."
+    },
+    {
+      "q": "Despite beating Argentina in 2022, Saudi Arabia were eliminated in the group stage. Why?",
+      "options": ["They were disqualified for fielding an ineligible player", "They lost their next two matches against Poland and Mexico", "They had a player sent off in their next match and lost by too many goals", "FIFA ruled their win over Argentina invalid"],
+      "answer": 1,
+      "explain": "After the Argentina shock, Saudi Arabia lost to Poland 2–0 and Mexico 2–1, finishing third in the group. Argentina won the tournament, making Saudi Arabia's win even more remarkable in hindsight."
+    },
+    {
+      "q": "How many times has Saudi Arabia won the AFC Asian Cup?",
+      "options": ["1", "2", "3", "4"],
+      "answer": 2,
+      "explain": "Saudi Arabia have won the AFC Asian Cup three times — in 1984, 1988 and 1996 — making them one of Asia's most successful nations in the continental championship."
+    },
+    {
+      "q": "Which Saudi Arabia player scored the stunning second goal in their 2022 victory over Argentina — a curling long-range effort?",
+      "options": ["Saleh Al-Shehri", "Mohammed Al-Burayk", "Salem Al-Dawsari", "Ali Al-Bulaihi"],
+      "answer": 2,
+      "explain": "Salem Al-Dawsari's curling 53rd-minute strike — a right-footed effort from outside the box — was voted one of the goals of the 2022 World Cup. It completed Saudi Arabia's stunning comeback from 0–1 down."
+    },
+    {
+      "q": "Saudi Arabia's domestic league has become one of the world's most watched. Which Portuguese star plays there, linking the country to global football?",
+      "options": ["Karim Benzema", "Neymar", "Cristiano Ronaldo", "All of the above"],
+      "answer": 3,
+      "explain": "Cristiano Ronaldo joined Al-Nassr in 2023, followed by Karim Benzema (Al-Ittihad) and Neymar (Al-Hilal), making the Saudi Pro League a global attraction and boosting the national team's profile ahead of 2026."
+    },
+    {
+      "q": "Saudi Arabia qualified for the 2026 World Cup through which confederation?",
+      "options": ["CONMEBOL", "UEFA", "AFC", "CAF"],
+      "answer": 2,
+      "explain": "Saudi Arabia are AFC members, competing in Asian qualifying. With 8 automatic AFC spots at the 2026 World Cup, Saudi Arabia's strong CONCACAF performances made them one of Asia's top qualifiers."
+    },
+    {
+      "q": "In which Saudi Arabian city is the main national football stadium located?",
+      "options": ["Mecca", "Medina", "Riyadh", "Jeddah"],
+      "answer": 2,
+      "explain": "The King Fahd International Stadium in Riyadh — the Saudi capital — is the country's main football venue and the home of the national team. It was also the venue for the 1984 and 1988 AFC Asian Cup finals."
+    },
+    {
+      "q": "What is the nickname of the Saudi Arabia national football team?",
+      "options": ["The Falcons", "The Green Falcons", "The Desert Eagles", "The Golden Hawks"],
+      "answer": 1,
+      "explain": "Saudi Arabia are known as the Green Falcons — a reference to their distinctive green home kit and the falcon, a revered bird in Arabian culture and a symbol of speed and power."
+    }
+  ]
+}

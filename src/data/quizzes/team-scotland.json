@@ -1,0 +1,72 @@
+{
+  "slug": "team-scotland",
+  "title": "Scotland at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+  "category": "Teams",
+  "description": "Eight World Cup appearances, never past the group stage — Scotland's story is glorious, dramatic and heartbreaking.",
+  "teams": ["Scotland"],
+  "questions": [
+    {
+      "q": "Scotland qualified for the 1950 World Cup but didn't go. Why?",
+      "options": ["Financial reasons", "They refused to go unless they won the British Championship outright", "A players' strike", "War-related travel restrictions"],
+      "answer": 1,
+      "explain": "Scotland finished second in the British Championship in 1950 — which doubled as qualifying. The Scottish FA had declared they would only go as British champions. England won; Scotland stayed home, famously missing out on the first post-war World Cup."
+    },
+    {
+      "q": "Scotland played their first World Cup in 1954. How did they fare against Uruguay — the defending champions?",
+      "options": ["Won 1–0", "Drew 2–2", "Lost 7–0", "Lost 2–1"],
+      "answer": 2,
+      "explain": "Scotland lost 7–0 to Uruguay at the 1954 World Cup — still Scotland's heaviest ever defeat. Combined with a 1–0 loss to Austria, they went home without a point."
+    },
+    {
+      "q": "Scotland qualified for eight World Cups in a row from 1974 to 1998. What notable record did they set during this period?",
+      "options": ["They scored in every match", "They never advanced past the group stage despite qualifying eight consecutive times", "They set the record for most shots without scoring", "They produced the tournament's top scorer three times"],
+      "answer": 1,
+      "explain": "Scotland qualified for every World Cup from 1974 to 1998 — eight consecutive tournaments — but never once progressed beyond the group stage. They were eliminated on goal difference from multiple tournaments."
+    },
+    {
+      "q": "Archie Gemmill scored one of the World Cup's greatest ever goals at the 1978 tournament. Against which team?",
+      "options": ["Brazil", "Argentina", "Peru", "Netherlands"],
+      "answer": 3,
+      "explain": "Archie Gemmill weaved past three Dutch defenders before chipping the goalkeeper to score a stunning individual goal against the Netherlands at Argentina 1978. Despite winning 3–2, Scotland still went out on goal difference."
+    },
+    {
+      "q": "Scotland were eliminated from the 1978 World Cup despite beating the Netherlands 3–2. What went wrong?",
+      "options": ["They were disqualified for a doping violation", "They had lost too heavily to Peru and drawn with Iran, leaving them with negative goal difference", "A points deduction for crowd trouble", "A controversial refereeing decision"],
+      "answer": 1,
+      "explain": "Scotland lost 3–1 to Peru, then drew 1–1 with Iran. Despite the heroic win over the Netherlands, their goal difference was -1 and they went home. Willie Johnston was also sent home early after testing positive for banned stimulants."
+    },
+    {
+      "q": "Which famous Scottish midfielder opened Scotland's account at the 1986 World Cup with a goal against Denmark?",
+      "options": ["Charlie Nicholas", "Gordon Strachan", "Roy Aitken", "Steve Nicol"],
+      "answer": 1,
+      "explain": "Gordon Strachan scored a crisp volley to give Scotland the lead against Denmark in 1986. Scotland drew 1–1 but, following their usual pattern, failed to advance from the group."
+    },
+    {
+      "q": "Scotland's last World Cup appearance was in 1998. Who scored their goal in a memorable 2–1 loss to Brazil in the opening game?",
+      "options": ["John Collins", "Kevin Gallacher", "Darren Jackson", "Craig Burley"],
+      "answer": 0,
+      "explain": "John Collins scored a penalty to equalise for Scotland against Brazil in the 1998 tournament opener, before Tom Boyd's own goal gave Brazil a 2–1 win. Scotland were eliminated despite that brave performance."
+    },
+    {
+      "q": "Scotland qualified for the 2026 World Cup — ending a 28-year absence. Which key player has spearheaded the modern revival?",
+      "options": ["Scott McTominay", "Andrew Robertson", "Kieran Tierney", "Ryan Christie"],
+      "answer": 0,
+      "explain": "Scott McTominay has been Scotland's hero in recent qualifying campaigns, scoring crucial goals to clinch important victories. The Manchester United midfielder is Scotland's modern talisman."
+    },
+    {
+      "q": "Scotland's national stadium is Hampden Park in Glasgow. What is the largest attendance ever recorded there?",
+      "options": ["100,000", "128,000", "149,415", "180,000"],
+      "answer": 2,
+      "explain": "Hampden Park holds the European record for stadium attendance — 149,415 for the 1937 Scotland vs England match. The current capacity is around 52,000 after being rebuilt as an all-seater venue."
+    },
+    {
+      "q": "Scotland famously never advanced past the group stage in eight World Cup appearances. Which country shares a similar record of consistent qualification without knockout stage progress?",
+      "options": ["Mexico", "Cameroon", "Morocco", "Ireland"],
+      "answer": 1,
+      "explain": "Cameroon qualified for multiple World Cups (1982–2014) and only once advanced to the quarter-finals (1990). Like Scotland, they were perennial qualifiers who rarely got out of the group stage — though Cameroon did have that memorable 1990 run."
+    }
+  ]
+}

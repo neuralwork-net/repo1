@@ -1,0 +1,72 @@
+{
+  "slug": "team-new-zealand",
+  "title": "New Zealand at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🇳🇿",
+  "category": "Teams",
+  "description": "The All Whites — unbeaten at the 2010 World Cup and finally back for 2026. How well do you know New Zealand's football story?",
+  "teams": ["New Zealand"],
+  "questions": [
+    {
+      "q": "New Zealand made their first World Cup appearance in which year?",
+      "options": ["1974", "1978", "1982", "1986"],
+      "answer": 2,
+      "explain": "New Zealand appeared at their first World Cup at Spain 1982, losing all three group matches against Scotland, Soviet Union and Brazil. The achievement was significant for football in the South Pacific."
+    },
+    {
+      "q": "At the 2010 World Cup, New Zealand achieved a remarkable unbeaten record. What was their record?",
+      "options": ["Won all three group games", "Drew all three group games and were eliminated", "Won one, drew two and were eliminated", "Drew two and won one, advancing to the round of 16"],
+      "answer": 1,
+      "explain": "New Zealand drew all three group games — 1–1 with Slovakia, 1–1 with Italy and 0–0 with Paraguay — becoming one of the few teams to go unbeaten at a World Cup without advancing. Italy were the eventual runners-up."
+    },
+    {
+      "q": "New Zealand's goal against Italy at the 2010 World Cup was scored by which player?",
+      "options": ["Shane Smeltz", "Winston Reid", "Ryan Nelsen", "Chris Wood"],
+      "answer": 1,
+      "explain": "Winston Reid headed New Zealand level against Italy — who had won the World Cup in 2006 — in a famous 1–1 draw. It was one of the 2010 World Cup's great upsets."
+    },
+    {
+      "q": "What is the nickname of New Zealand's national football team?",
+      "options": ["The Kiwis", "The All Blacks", "The All Whites", "The Silver Ferns"],
+      "answer": 2,
+      "explain": "New Zealand football are the All Whites — a nod to their traditional white home kit and a play on the rugby team's famous name. Football distinguishes itself with 'whites' instead of 'blacks'."
+    },
+    {
+      "q": "New Zealand qualified for 2026 through which confederation?",
+      "options": ["AFC", "CONCACAF", "OFC", "CAF"],
+      "answer": 2,
+      "explain": "New Zealand are members of the Oceania Football Confederation (OFC), which has one automatic spot at the 2026 World Cup — an improvement from previous editions where Oceania only had a play-off place."
+    },
+    {
+      "q": "Which New Zealand striker is their all-time top scorer and plays in the English Premier League?",
+      "options": ["Shane Smeltz", "Rory Fallon", "Chris Wood", "Tim Brown"],
+      "answer": 2,
+      "explain": "Chris Wood is New Zealand's all-time top scorer, having played in the Premier League for Burnley and Nottingham Forest. He is by far the most prominent New Zealand footballer of the modern era."
+    },
+    {
+      "q": "New Zealand's 2010 team was managed by which Ricki Herbert — but who was the legendary figure who managed them at the 1982 World Cup?",
+      "options": ["John Adshead", "Barry Hulshoff", "Dave MacLaren", "Keith Millard"],
+      "answer": 0,
+      "explain": "John Adshead managed New Zealand to the 1982 World Cup — their first — and oversaw their three group stage matches against Scotland, Soviet Union and Brazil. It was a landmark achievement for New Zealand football."
+    },
+    {
+      "q": "In the 2010 group stage, New Zealand famously held Italy to 1–1. Which Italian star, a World Cup winner in 2006, played in that match?",
+      "options": ["Andrea Pirlo", "Gianluigi Buffon", "Both Pirlo and Buffon played", "Fabio Cannavaro"],
+      "answer": 2,
+      "explain": "Andrea Pirlo and Gianluigi Buffon both played for Italy against New Zealand in 2010. Despite Italy's obvious superiority on paper, New Zealand's disciplined defending and Winston Reid's header earned them a famous draw."
+    },
+    {
+      "q": "New Zealand's women's team — the Football Ferns — co-hosted the 2023 Women's World Cup with Australia. How did New Zealand perform?",
+      "options": ["Won the tournament", "Reached the semi-finals", "Were eliminated in the group stage", "Reached the quarter-finals"],
+      "answer": 2,
+      "explain": "The Football Ferns were eliminated in the group stage of the 2023 Women's World Cup despite playing at home. However, co-hosting the tournament gave New Zealand football an enormous profile boost nationally."
+    },
+    {
+      "q": "2026 is New Zealand's first World Cup since 2010. How long is that gap?",
+      "options": ["8 years", "12 years", "16 years", "20 years"],
+      "answer": 2,
+      "explain": "New Zealand last played at a World Cup in 2010 and qualified for 2026 — a 16-year absence. Their path through OFC qualifying, often requiring intercontinental play-offs, has made consistent qualification difficult."
+    }
+  ]
+}

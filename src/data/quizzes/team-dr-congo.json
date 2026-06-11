@@ -1,0 +1,72 @@
+{
+  "slug": "team-dr-congo",
+  "title": "DR Congo at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🇨🇩",
+  "category": "Teams",
+  "description": "From Zaire's chaotic 1974 debut to DR Congo's return in 2026 — 52 years in the making.",
+  "teams": ["Congo DR"],
+  "questions": [
+    {
+      "q": "DR Congo competed at their only World Cup before 2026 under a different name. What were they called then?",
+      "options": ["Belgian Congo", "Republic of Congo", "Zaire", "Congo-Brazzaville"],
+      "answer": 2,
+      "explain": "DR Congo competed as Zaire at the 1974 World Cup in West Germany — the first sub-Saharan African nation to appear at a World Cup. The country was renamed from Zaire to the Democratic Republic of Congo in 1997."
+    },
+    {
+      "q": "Zaire's 1974 World Cup campaign is remembered for a bizarre incident against Brazil. What happened?",
+      "options": ["Their players refused to take the field after an argument over pay", "A Zaire defender ran out of the defensive wall and kicked the ball before Brazil took a free kick", "Their goalkeeper scored an own goal from his own penalty area", "A player removed his shirt in protest and was sent off"],
+      "answer": 1,
+      "explain": "Mwepu Ilunga sprinted out of the defensive wall and kicked the ball away before Brazil could take a free kick. The bizarre moment may have been a deliberate protest — reports suggest the team had been threatened by President Mobutu if they conceded more than 3 goals against Yugoslavia."
+    },
+    {
+      "q": "Zaire conceded the most goals in a single World Cup group stage match when they lost to Yugoslavia. What was the score?",
+      "options": ["0–5", "0–7", "0–9", "0–11"],
+      "answer": 2,
+      "explain": "Yugoslavia beat Zaire 9–0 in the 1974 group stage — still one of the heaviest defeats in World Cup history. Zaire also lost to Scotland 2–0 and Brazil 3–0 in the same group."
+    },
+    {
+      "q": "DR Congo is one of Africa's largest nations by area and population. Which African trophy have they won multiple times, showing their domestic football strength?",
+      "options": ["AFCON", "CAF Champions League", "African Nations Championship (CHAN)", "WAFU Cup"],
+      "answer": 2,
+      "explain": "DR Congo have won the African Nations Championship (CHAN) — a tournament for players based in their domestic league — multiple times, reflecting the quality of domestic football in the country. They have also won the AFCON twice (1968 and 1974 as Zaire)."
+    },
+    {
+      "q": "DR Congo's star player is a fast attacker who plays in Europe. Who is the most prominent Congolese player in current European football?",
+      "options": ["Dieumerci Mbokani", "Cédric Bakambu", "Chancel Mbemba", "Yannick Bolasie"],
+      "answer": 2,
+      "explain": "Chancel Mbemba is one of DR Congo's most prominent European-based players, having played in the Premier League (Newcastle) and France. Yannick Bolasie and Cédric Bakambu have also been important players for the national team."
+    },
+    {
+      "q": "DR Congo last won the Africa Cup of Nations in which year?",
+      "options": ["1968", "1974", "1998", "2015"],
+      "answer": 1,
+      "explain": "DR Congo (then known as Zaire) last won the AFCON in 1974 — the same year they appeared at the World Cup. They won previously in 1968, also as the Democratic Republic of Congo. Their two titles represent a proud football history."
+    },
+    {
+      "q": "DR Congo qualified for the 2026 World Cup through CAF. Which round of qualifying secured their spot?",
+      "options": ["Round 1 group stage", "Round 2 (final group stage)", "An intercontinental play-off", "As Africa's host-nation representative"],
+      "answer": 1,
+      "explain": "DR Congo qualified through CAF's second round — the final group stage of African qualifying — ending their 52-year World Cup absence. The 2026 tournament's expanded format gave more African nations a path."
+    },
+    {
+      "q": "What is DR Congo's national team nicknamed?",
+      "options": ["The Leopards", "The Eagles", "The Lions", "The Gorillas"],
+      "answer": 0,
+      "explain": "DR Congo are known as the Leopards — Les Léopards — a reference to the leopard, which was a key symbol during the Mobutu era (when the team was called Zaire). The leopard remains a powerful symbol of strength in Congolese culture."
+    },
+    {
+      "q": "In which African city is DR Congo's main football stadium located?",
+      "options": ["Lubumbashi", "Goma", "Kinshasa", "Mbuji-Mayi"],
+      "answer": 2,
+      "explain": "The Stade des Martyrs in Kinshasa — the capital of DR Congo — is the national football venue, with a capacity of around 80,000. It has hosted key AFCON qualifiers and the national team's home matches."
+    },
+    {
+      "q": "DR Congo's 1974 World Cup team was politically controlled by President Mobutu Sese Seko. How did this affect the players?",
+      "options": ["They were given enormous bonuses for winning", "They faced threats of punishment if results were poor, creating psychological pressure", "They were prohibited from playing club football abroad", "They had military guards assigned to each player"],
+      "answer": 1,
+      "explain": "Mobutu's regime placed enormous pressure on the Zaire team, reportedly threatening consequences for poor results. This political interference — combined with a lack of experience — contributed to the team's chaotic performances, including the famous free-kick incident."
+    }
+  ]
+}
