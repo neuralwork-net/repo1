@@ -8,7 +8,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "gen:daily": "node scripts/generate-daily.mjs",
-    "gen:fixtures": "node scripts/generate-fixtures.mjs"
+    "gen:fixtures": "node scripts/generate-fixtures.mjs",
+    "gen:og": "node scripts/gen-og.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.3",
@@ -16,6 +17,7 @@
   },
   "devDependencies": {
     "@tailwindcss/vite": "^4.1.0",
+    "sharp": "^0.35.0",
     "tailwindcss": "^4.1.0"
   }
 }

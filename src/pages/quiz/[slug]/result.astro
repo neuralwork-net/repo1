@@ -58,23 +58,24 @@ const shareUrl = `${SITE.url}/quiz/${quiz.slug}/`;
       'Ouch. Time to brush up! 📚';
     document.getElementById('verdict').textContent = verdict;
 
-    const text = `I scored ${score}/${total} on the "${title}" quiz! Can you beat me?`;
+    const emoji = pct === 1 ? '🐐' : pct >= 0.7 ? '🔥' : pct >= 0.4 ? '💪' : '📚';
+    const text = `⚽ I scored ${score}/${total} on the "${title}" quiz! ${emoji} Can you beat me? 🏆`;
     const u = encodeURIComponent(shareUrl);
     const t = encodeURIComponent(text);
     document.getElementById('sh-wa').href = `https://wa.me/?text=${t}%20${u}`;
     document.getElementById('sh-x').href = `https://twitter.com/intent/tweet?text=${t}&url=${u}`;
     document.getElementById('sh-tg').href = `https://t.me/share/url?url=${u}&text=${t}`;
-    document.getElementById('sh-fb').addEventListener('click', async () => {
+    document.getElementById('sh-fb').addEventListener('click', () => {
+      const fbWin = window.open(`https://www.facebook.com/sharer/sharer.php?u=${u}`, '_blank', 'noopener');
       const toast = document.getElementById('fb-toast');
-      try {
-        await navigator.clipboard.writeText(text);
-        toast.textContent = '✅ Score copied! Paste it into your Facebook post.';
-      } catch {
-        toast.textContent = 'Opening Facebook — paste your score manually.';
-      }
-      toast.classList.remove('hidden');
-      setTimeout(() => toast.classList.add('hidden'), 5000);
-      window.open(`https://www.facebook.com/sharer/sharer.php?u=${u}`, '_blank', 'noopener');
+      navigator.clipboard.writeText(text).then(() => {
+        toast.textContent = '✅ Score copied to clipboard! Paste it into your Facebook post.';
+      }).catch(() => {
+        toast.textContent = '📋 Copy your score above and paste it into your Facebook post.';
+      }).finally(() => {
+        toast.classList.remove('hidden');
+        setTimeout(() => toast.classList.add('hidden'), 6000);
+      });
     });
 
     document.getElementById('copy').addEventListener('click', async (e) => {
