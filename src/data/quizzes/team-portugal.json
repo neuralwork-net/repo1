@@ -1,0 +1,72 @@
+{
+  "slug": "team-portugal",
+  "title": "Portugal at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🇵🇹",
+  "category": "Teams",
+  "description": "From Eusébio's brilliance to Ronaldo's legacy — how well do you know Portugal's World Cup story?",
+  "teams": ["Portugal"],
+  "questions": [
+    {
+      "q": "What is Portugal's best ever World Cup finish?",
+      "options": ["Runners-up", "Third place", "Fourth place", "Quarter-finals"],
+      "answer": 1,
+      "explain": "Portugal finished third at the 1966 World Cup in England, beating the Soviet Union 2–1 in the third-place play-off."
+    },
+    {
+      "q": "Who won the Golden Boot at the 1966 World Cup?",
+      "options": ["Pelé", "Eusébio", "Bobby Charlton", "Garrincha"],
+      "answer": 1,
+      "explain": "Eusébio was the tournament's top scorer with 9 goals, including four in one match against North Korea."
+    },
+    {
+      "q": "How many goals did Eusébio score at the 1966 World Cup?",
+      "options": ["7", "8", "9", "10"],
+      "answer": 2,
+      "explain": "Eusébio scored 9 goals — a remarkable haul that included a stunning solo effort in the quarter-final comeback against North Korea."
+    },
+    {
+      "q": "In which year did Portugal make their World Cup debut?",
+      "options": ["1954", "1958", "1966", "1970"],
+      "answer": 2,
+      "explain": "Portugal qualified for their first ever World Cup in 1966 and immediately made an impact, finishing third."
+    },
+    {
+      "q": "Against which team did Cristiano Ronaldo score his first World Cup hat-trick?",
+      "options": ["Morocco", "Uruguay", "Iran", "Spain"],
+      "answer": 3,
+      "explain": "Ronaldo scored three goals in a dramatic 3–3 draw with Spain at the 2018 World Cup, including a stunning free kick in stoppage time."
+    },
+    {
+      "q": "Who scored a hat-trick as Portugal thrashed Switzerland 6–1 at the 2022 World Cup?",
+      "options": ["Cristiano Ronaldo", "Bernardo Silva", "João Félix", "Goncalo Ramos"],
+      "answer": 3,
+      "explain": "Goncalo Ramos replaced the dropped Ronaldo in the starting XI and scored a sensational hat-trick in Portugal's biggest ever World Cup win."
+    },
+    {
+      "q": "Which team knocked Portugal out of the 2022 World Cup quarter-finals?",
+      "options": ["France", "Spain", "Morocco", "Brazil"],
+      "answer": 2,
+      "explain": "Morocco beat Portugal 1–0 with a header from Youssef En-Nesyri, becoming the first African nation to reach the World Cup semi-finals."
+    },
+    {
+      "q": "At the 2006 World Cup, Wayne Rooney was sent off and Cristiano Ronaldo was controversially seen winking. What was the result?",
+      "options": ["Portugal won on penalties", "England won 1–0", "Portugal won 1–0 in extra time", "The match ended 0–0"],
+      "answer": 0,
+      "explain": "After Rooney's red card and a 0–0 draw, Portugal beat England on penalties. Ronaldo's wink to the bench after Rooney's sending-off became iconic."
+    },
+    {
+      "q": "Who managed Portugal to their third-place finish at the 2006 World Cup?",
+      "options": ["Carlos Queiroz", "Luiz Felipe Scolari", "Fernando Santos", "Paulo Bento"],
+      "answer": 1,
+      "explain": "Luiz Felipe Scolari (Big Phil) managed Portugal from 2002 to 2008, guiding them to the semis in 2006 where they lost to France 1–0."
+    },
+    {
+      "q": "Who did Portugal beat in the third-place play-off at the 1966 World Cup?",
+      "options": ["Soviet Union", "Brazil", "West Germany", "Chile"],
+      "answer": 0,
+      "explain": "Portugal defeated the Soviet Union 2–1 in the third-place match, with Eusébio scoring a penalty."
+    }
+  ]
+}

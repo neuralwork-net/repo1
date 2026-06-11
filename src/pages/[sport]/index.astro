@@ -8,8 +8,9 @@ export function getStaticPaths() {
 
 const { sport } = Astro.params;
 const data = findSport(sport!)!;
+const breadcrumbs = [{ label: data.name, href: '' }];
 ---
-<Base title={data.name} description={`${data.name} quizzes across every tournament.`}>
+<Base title={data.name} description={`${data.name} quizzes across every tournament.`} breadcrumbs={breadcrumbs}>
   <h1 class="text-2xl font-bold">{data.emoji} {data.name}</h1>
   <p class="mt-1 text-slate-500">Pick a tournament to start.</p>
 

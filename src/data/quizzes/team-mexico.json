@@ -1,0 +1,72 @@
+{
+  "slug": "team-mexico",
+  "title": "Mexico at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🇲🇽",
+  "category": "Teams",
+  "description": "El Tri, the Azteca, and the infamous Quinto Partido — test your knowledge of Mexico's World Cup history.",
+  "teams": ["Mexico"],
+  "questions": [
+    {
+      "q": "What is Mexico's best ever World Cup result?",
+      "options": ["Semi-finals", "Quarter-finals", "Round of 16", "Group stage"],
+      "answer": 1,
+      "explain": "Mexico reached the quarter-finals twice — in 1970 and 1986, both times as hosts. They were eliminated 4–1 by Italy in 1970 and on penalties by West Germany in 1986."
+    },
+    {
+      "q": "Mexico has hosted the World Cup in 1970 and in which other year?",
+      "options": ["1978", "1982", "1986", "1990"],
+      "answer": 2,
+      "explain": "Mexico hosted the 1986 World Cup after Colombia withdrew. It produced some of the tournament's greatest moments, including Maradona's 'Hand of God' and 'Goal of the Century'."
+    },
+    {
+      "q": "How many consecutive Round of 16 exits did Mexico suffer between 1994 and 2018?",
+      "options": ["5", "6", "7", "8"],
+      "answer": 2,
+      "explain": "Mexico were eliminated in the Round of 16 in 1994, 1998, 2002, 2006, 2010, 2014 and 2018 — seven straight tournaments, a run known as the 'Quinto Partido' (fifth match) curse."
+    },
+    {
+      "q": "Who is Mexico's all-time top scorer at World Cups?",
+      "options": ["Hugo Sanchez", "Cuauhtemoc Blanco", "Jared Borgetti", "Javier Hernandez"],
+      "answer": 3,
+      "explain": "Javier 'Chicharito' Hernandez scored 4 World Cup goals — 1 in 2010 against Argentina, and 3 in 2014 including a brace against Croatia."
+    },
+    {
+      "q": "Hirving 'Chucky' Lozano scored the winner as Mexico famously beat which team 1–0 at the 2018 World Cup?",
+      "options": ["Brazil", "South Korea", "Germany", "Argentina"],
+      "answer": 2,
+      "explain": "Mexico beat reigning champions Germany 1–0 in their opening game at Russia 2018. Lozano's 35th-minute strike caused wild celebrations in Mexico City — literally an earthquake."
+    },
+    {
+      "q": "Mexico was controversially eliminated from the 2022 World Cup group stage despite beating Saudi Arabia. Why?",
+      "options": ["Poland advanced on goal difference", "Mexico was docked points", "Argentina's result was disqualified", "They were eliminated on fair play"],
+      "answer": 0,
+      "explain": "Mexico beat Saudi Arabia 2–1 but needed a 3-goal win to progress. Poland, who drew 0–0 with Argentina, advanced ahead of Mexico on goal difference."
+    },
+    {
+      "q": "Diego Maradona's 'Hand of God' and 'Goal of the Century' against England in 1986 were scored at which Mexican stadium?",
+      "options": ["Estadio Azteca", "Estadio Universitario", "Estadio Jalisco", "Estadio Akron"],
+      "answer": 0,
+      "explain": "Both goals were scored at the Estadio Azteca in Mexico City during the 1986 quarter-final, in what is widely regarded as the greatest individual performance in World Cup history."
+    },
+    {
+      "q": "What is Mexico's famous national stadium, which hosted two World Cup finals (1970 and 1986)?",
+      "options": ["Estadio Azteca", "Estadio Jalisco", "Estadio Universitario", "Estadio BBVA"],
+      "answer": 0,
+      "explain": "The Estadio Azteca in Mexico City is the only stadium to host two World Cup finals — Brazil vs Italy in 1970 and Argentina vs West Germany in 1986."
+    },
+    {
+      "q": "USA fans coined the term 'Dos a Cero' for their rivalry with Mexico. What does it refer to?",
+      "options": ["Mexico often beat USA by that score", "USA repeatedly beat Mexico 2–0 in qualifying", "The first World Cup match between them ended 2–0", "A Copa America classic ended 2–0"],
+      "answer": 1,
+      "explain": "'Dos a Cero' (two to zero) became a running joke after the USA beat Mexico by that exact scoreline in four consecutive World Cup qualifying matches at home between 2001 and 2013."
+    },
+    {
+      "q": "Mexico's nickname is 'El Tri'. What does this refer to?",
+      "options": ["The three biggest cities in Mexico", "The three greatest players in Mexican history", "The three colours of the Mexican flag", "The three times they reached the quarter-finals"],
+      "answer": 2,
+      "explain": "El Tri (short for El Tricolor) refers to the three colours of the Mexican flag — green, white and red."
+    }
+  ]
+}

@@ -34,7 +34,7 @@ function fmtDate(d: string) {
 
   <div class="space-y-8">
     {days.map(({ date, fixtures }) => (
-      <section>
+      <section id={`day-${date}`}>
         <h2 class="sticky top-0 bg-slate-50/90 py-1 text-sm font-bold text-slate-500 backdrop-blur">
           {fmtDate(date)}
         </h2>
@@ -66,3 +66,17 @@ function fmtDate(d: string) {
     ))}
   </div>
 </Base>
+
+<script is:inline>
+  (function () {
+    const today = new Date().toISOString().slice(0, 10);
+    const sections = document.querySelectorAll('[id^="day-"]');
+    for (const section of sections) {
+      const date = section.id.replace('day-', '');
+      if (date >= today) {
+        setTimeout(() => section.scrollIntoView({ behavior: 'smooth', block: 'start' }), 150);
+        break;
+      }
+    }
+  })();
+</script>

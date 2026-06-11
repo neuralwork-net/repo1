@@ -2,6 +2,8 @@
 import Base from '../../../layouts/Base.astro';
 import AdSlot from '../../../components/AdSlot.astro';
 import { QUIZZES, getQuiz } from '../../../lib/quizzes';
+import { findSport, findTournament } from '../../../data/sports';
+import { SITE } from '../../../lib/site';
 
 export function getStaticPaths() {
   return QUIZZES.flatMap((quiz) =>
@@ -21,8 +23,37 @@ const nextHref = isLast
   ? `/quiz/${quiz.slug}/result/`
   : `/quiz/${quiz.slug}/${idx + 2}/`;
 const progress = Math.round(((idx + 1) / total) * 100);
+
+const sportData = findSport(quiz.sport);
+const tData = findTournament(quiz.sport, quiz.tournament);
+const breadcrumbs = [
+  { label: sportData?.name ?? 'Quizzes', href: `/${quiz.sport}/` },
+  { label: tData?.name ?? 'World Cup 2026', href: `/${quiz.sport}/${quiz.tournament}/` },
+  { label: quiz.title, href: '' },
+];
+
+const quizSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Quiz',
+  name: quiz.title,
+  url: `${SITE.url}/quiz/${quiz.slug}/1/`,
+  hasPart: {
+    '@type': 'Question',
+    name: question.q,
+    text: question.q,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: question.options[question.answer],
+    },
+  },
+};
 ---
-<Base title={`${quiz.title} — Q${idx + 1}`} description={quiz.description}>
+<Base
+  title={`${quiz.title} — Q${idx + 1}`}
+  description={`Test your knowledge of ${quiz.title}. ${total} questions — how many can you get right?`}
+  breadcrumbs={breadcrumbs}
+>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(quizSchema)} />
   <a href={`/${quiz.sport}/${quiz.tournament}/`} class="text-sm text-slate-400 hover:text-pitch">← {quiz.title}</a>
 
   <div class="mt-3 mb-6">

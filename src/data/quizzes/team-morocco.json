@@ -1,0 +1,72 @@
+{
+  "slug": "team-morocco",
+  "title": "Morocco at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🇲🇦",
+  "category": "Teams",
+  "description": "The Atlas Lions shocked the world in 2022 — how well do you know Morocco's extraordinary World Cup journey?",
+  "teams": ["Morocco"],
+  "questions": [
+    {
+      "q": "Morocco became the first African nation to reach the World Cup semi-finals in which year?",
+      "options": ["1986", "1994", "2018", "2022"],
+      "answer": 3,
+      "explain": "Morocco's stunning 2022 campaign in Qatar saw them beat Belgium, Spain, and Portugal to become the first African side to reach the World Cup semis."
+    },
+    {
+      "q": "Which team did Morocco beat in the 2022 World Cup quarter-finals?",
+      "options": ["Brazil", "Spain", "France", "Portugal"],
+      "answer": 3,
+      "explain": "Morocco beat Portugal 1–0, ending Cristiano Ronaldo's World Cup dream and shocking the footballing world."
+    },
+    {
+      "q": "Who scored Morocco's winning header against Portugal in the 2022 quarter-final?",
+      "options": ["Achraf Hakimi", "Youssef En-Nesyri", "Hakim Ziyech", "Sofiane Boufal"],
+      "answer": 1,
+      "explain": "Youssef En-Nesyri leapt to meet a cross and headed home the only goal, sending Morocco into an historic semi-final."
+    },
+    {
+      "q": "Morocco was the first African team to top a World Cup group. In which year did this happen?",
+      "options": ["1970", "1982", "1986", "1998"],
+      "answer": 2,
+      "explain": "At Mexico 1986, Morocco topped Group F ahead of England, Poland and Portugal — a historic first for African football."
+    },
+    {
+      "q": "How did Achraf Hakimi score the decisive penalty as Morocco beat Spain in the 2022 round of 16?",
+      "options": ["Low left corner", "Top right corner", "Panenka — chipped down the middle", "Low right corner"],
+      "answer": 2,
+      "explain": "With nerves of steel, Hakimi chipped a Panenka straight down the middle as the keeper dived away — one of the most audacious penalties in World Cup history."
+    },
+    {
+      "q": "Who was Morocco's coach who guided them to the 2022 World Cup semi-finals?",
+      "options": ["Vahid Halilhodzic", "Herve Renard", "Walid Regragui", "Badou Zaki"],
+      "answer": 2,
+      "explain": "Walid Regragui replaced Vahid Halilhodzic just weeks before the tournament and inspired Morocco to their historic run."
+    },
+    {
+      "q": "Which European nation defeated Morocco in the 2022 World Cup semi-final?",
+      "options": ["France", "Croatia", "England", "Spain"],
+      "answer": 0,
+      "explain": "France beat Morocco 2–0 in the semi-final, with goals from Theo Hernandez and Randal Kolo Muani."
+    },
+    {
+      "q": "Morocco lost the 2022 third-place match to which team?",
+      "options": ["France", "Portugal", "Croatia", "Belgium"],
+      "answer": 2,
+      "explain": "Croatia beat Morocco 2–1 in the third-place play-off, with Ivan Perisic and Mislav Orsic scoring."
+    },
+    {
+      "q": "In which year did Morocco first appear at a World Cup?",
+      "options": ["1966", "1970", "1974", "1978"],
+      "answer": 1,
+      "explain": "Morocco qualified for their debut World Cup in 1970 in Mexico, the same tournament Brazil won their third title."
+    },
+    {
+      "q": "In the 2022 group stage, Morocco held Croatia to a goalless draw before going on to beat Belgium and Canada. Which group were they in?",
+      "options": ["Group E", "Group F", "Group G", "Group H"],
+      "answer": 1,
+      "explain": "Morocco topped Group F, which also contained Belgium, Croatia and Canada — beating Belgium 2–0 and Canada 2–1."
+    }
+  ]
+}

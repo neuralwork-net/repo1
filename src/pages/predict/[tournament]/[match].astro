@@ -50,8 +50,26 @@ const title = f.tbd
 const description = `Make your prediction for ${f.home} vs ${f.away} — ${heading}, ${dateLabel} at ${f.venue}. FIFA World Cup 2026.`;
 const shareUrl = `${SITE.url}${fixtureUrl(f)}`;
 const relatedQuizzes = f.tbd ? [] : quizzesForTeams([f.home, f.away]);
+
+const breadcrumbs = [
+  { label: 'Predict', href: '/predict/' },
+  { label: f.tbd ? `${f.home} vs ${f.away}` : `${f.home} vs ${f.away}`, href: '' },
+];
+
+const sportsEventSchema = f.tbd ? null : {
+  '@context': 'https://schema.org',
+  '@type': 'SportsEvent',
+  name: `${f.home} vs ${f.away}`,
+  startDate: f.kickoff,
+  location: { '@type': 'Place', name: f.venue },
+  sport: 'Football',
+  homeTeam: { '@type': 'SportsTeam', name: f.home },
+  awayTeam: { '@type': 'SportsTeam', name: f.away },
+  url: shareUrl,
+};
 ---
-<Base title={title} description={description}>
+<Base title={title} description={description} breadcrumbs={breadcrumbs}>
+  {sportsEventSchema && <script slot="head" type="application/ld+json" set:html={JSON.stringify(sportsEventSchema)} />}
   <a href="/predict/" class="text-sm text-slate-400 hover:text-pitch">← All predictions</a>
 
   <div class="mt-3 flex items-center justify-between text-xs font-medium text-slate-500">

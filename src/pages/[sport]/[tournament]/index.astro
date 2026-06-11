@@ -17,8 +17,16 @@ const { sport, tournament } = Astro.params;
 const sportData = findSport(sport!)!;
 const tData = findTournament(sport!, tournament!)!;
 const quizzes = quizzesFor(sport!, tournament!);
+const breadcrumbs = [
+  { label: sportData.name, href: `/${sportData.id}/` },
+  { label: tData.name, href: '' },
+];
 ---
-<Base title={tData.name} description={tData.blurb ?? `${tData.name} quizzes.`}>
+<Base
+  title={tData.name}
+  description={`Free ${tData.name} quizzes — teams, players, history and more. Test your knowledge and challenge your friends!`}
+  breadcrumbs={breadcrumbs}
+>
   <a href={`/${sportData.id}/`} class="text-sm text-slate-400 hover:text-pitch">← {sportData.name}</a>
   <h1 class="mt-2 text-2xl font-bold">{tData.emoji} {tData.name}</h1>
   {tData.blurb && <p class="mt-1 text-slate-600">{tData.blurb}</p>}

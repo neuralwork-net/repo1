@@ -7,11 +7,35 @@ interface Props {
   title?: string;
   description?: string;
   image?: string;
+  breadcrumbs?: { label: string; href: string }[];
 }
-const { title, description = SITE.description, image = `${SITE.url}/og.png` } = Astro.props;
+const { title, description = SITE.description, image = `${SITE.url}/og.png`, breadcrumbs } = Astro.props;
 const fullTitle = title ? `${title} · ${SITE.name}` : `${SITE.name} — ${SITE.tagline}`;
 const { adsenseClient } = INTEGRATIONS;
 const canonical = new URL(Astro.url.pathname, SITE.url).href;
+const isHome = Astro.url.pathname === '/';
+
+const crumbSchema = breadcrumbs && breadcrumbs.length > 0 ? {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE.url}/` },
+    ...breadcrumbs.map((b, i) => ({
+      '@type': 'ListItem',
+      position: i + 2,
+      name: b.label,
+      ...(b.href ? { item: `${SITE.url}${b.href}` } : {}),
+    })),
+  ],
+} : null;
+
+const orgSchema = isHome ? {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: SITE.name,
+  url: SITE.url,
+  logo: { '@type': 'ImageObject', url: `${SITE.url}/og.png` },
+} : null;
 ---
 <!doctype html>
 <html lang="en">
@@ -33,6 +57,9 @@ const canonical = new URL(Astro.url.pathname, SITE.url).href;
     <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image" content={image} />
+    {crumbSchema && <script type="application/ld+json" set:html={JSON.stringify(crumbSchema)} />}
+    {orgSchema && <script type="application/ld+json" set:html={JSON.stringify(orgSchema)} />}
+    <slot name="head" />
     {adsenseClient && (
       <script
         is:inline
@@ -57,6 +84,20 @@ const canonical = new URL(Astro.url.pathname, SITE.url).href;
     </header>
 
     <main class="mx-auto w-full max-w-3xl flex-1 px-4 py-8">
+      {breadcrumbs && breadcrumbs.length > 0 && (
+        <nav aria-label="breadcrumb" class="mb-4 flex flex-wrap items-center gap-1 text-xs text-slate-400">
+          <a href="/" class="hover:text-pitch">Home</a>
+          {breadcrumbs.map((b) => (
+            <Fragment>
+              <span class="mx-0.5">›</span>
+              {b.href
+                ? <a href={b.href} class="hover:text-pitch">{b.label}</a>
+                : <span class="font-medium text-slate-600">{b.label}</span>
+              }
+            </Fragment>
+          ))}
+        </nav>
+      )}
       <slot />
     </main>
 

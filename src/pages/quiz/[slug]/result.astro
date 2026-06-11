@@ -3,6 +3,7 @@ import Base from '../../../layouts/Base.astro';
 import AdSlot from '../../../components/AdSlot.astro';
 import EmailCapture from '../../../components/EmailCapture.astro';
 import { QUIZZES, getQuiz } from '../../../lib/quizzes';
+import { findSport, findTournament } from '../../../data/sports';
 import { SITE } from '../../../lib/site';
 import { FIXTURES, fixtureUrl, isFinished } from '../../../lib/predictions';
 
@@ -21,8 +22,25 @@ const relatedFixtures = quiz.teams
         (quiz.teams!.includes(f.home) || quiz.teams!.includes(f.away))
     ).slice(0, 2)
   : [];
+
+const others = QUIZZES.filter((q) => q.slug !== slug && !q.daily);
+const sameCategory = others.filter((q) => q.category === quiz.category);
+const nextQuizzes = (sameCategory.length >= 2 ? sameCategory : others).slice(0, 2);
+
+const sportData = findSport(quiz.sport);
+const tData = findTournament(quiz.sport, quiz.tournament);
+const breadcrumbs = [
+  { label: sportData?.name ?? 'Quizzes', href: `/${quiz.sport}/` },
+  { label: tData?.name ?? 'World Cup 2026', href: `/${quiz.sport}/${quiz.tournament}/` },
+  { label: quiz.title, href: `/quiz/${quiz.slug}/1/` },
+  { label: 'Result', href: '' },
+];
 ---
-<Base title={`${quiz.title} — Your score`} description={quiz.description}>
+<Base
+  title={`${quiz.title} — Your score`}
+  description={`How well do you know ${quiz.title}? ${total} questions — share your score and challenge your friends!`}
+  breadcrumbs={breadcrumbs}
+>
   <div class="text-center">
     <div class="text-5xl">{quiz.emoji ?? '🏆'}</div>
     <h1 class="mt-3 text-2xl font-bold">Your score</h1>
@@ -60,9 +78,27 @@ const relatedFixtures = quiz.teams
     </section>
   )}
 
+  {nextQuizzes.length > 0 && (
+    <section class="mt-6">
+      <p class="mb-2 text-sm font-semibold text-slate-600">🎯 Play next</p>
+      <div class="grid gap-2">
+        {nextQuizzes.map((q) => (
+          <a href={`/quiz/${q.slug}/1/`} class="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-3 hover:border-pitch">
+            <span class="text-2xl">{q.emoji ?? '⚽'}</span>
+            <div class="flex-1">
+              <p class="text-sm font-semibold">{q.title}</p>
+              <p class="text-xs text-slate-400">{q.questions.length} questions</p>
+            </div>
+            <span class="text-xs font-medium text-pitch">Play →</span>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
+
   <div class="mt-6 flex flex-wrap justify-center gap-3">
     <a href={playHref} class="rounded-xl border border-slate-300 px-5 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50">Play again</a>
-    <a href={`/${quiz.sport}/${quiz.tournament}/`} class="rounded-xl bg-pitch px-5 py-2 text-sm font-semibold text-white hover:bg-pitch-dark">More quizzes</a>
+    <a href={`/${quiz.sport}/${quiz.tournament}/`} class="rounded-xl bg-pitch px-5 py-2 text-sm font-semibold text-white hover:bg-pitch-dark">All quizzes</a>
   </div>
 
   <script is:inline define:vars={{ slug: quiz.slug, total, title: quiz.title, shareUrl }}>
