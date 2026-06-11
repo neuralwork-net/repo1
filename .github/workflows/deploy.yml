@@ -34,6 +34,10 @@ jobs:
         env:
           API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
         run: npm run gen:daily
+      - name: Refresh fixtures + results
+        env:
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+        run: npm run gen:fixtures
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
         with:

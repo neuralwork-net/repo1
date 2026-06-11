@@ -15,8 +15,16 @@ npm run preview  # preview the built site
 
 ## Add content (no code)
 
-- **A quiz:** drop a JSON file in `src/data/quizzes/` (copy an existing one). Set `daily: true` for the homepage daily quiz. It auto-appears in routes, hubs, and the landing page.
+- **A quiz:** drop a JSON file in `src/data/quizzes/` (copy an existing one). Set `daily: true` for the homepage daily quiz, optional `category` to group it. It auto-appears in routes, hubs, and the landing page.
 - **A sport / tournament:** add an entry in `src/data/sports.ts`, then add matching quiz JSON.
+- **Fixtures / predictions:** the 104 World Cup 2026 matches live in `src/data/fixtures.json` and drive `/predict/*` (one page per match + bracket + champion poll). Scores/status refresh at build via `scripts/generate-fixtures.mjs` when `API_FOOTBALL_KEY` is set.
+
+## Predictions community counter (optional)
+
+`/predict/*` pages can show live community vote percentages via a free
+Cloudflare Worker + D1. See `worker/README.md` to deploy, then set
+`INTEGRATIONS.voteApi` in `src/lib/site.ts`. Left empty, prediction pages still
+record personal picks and reveal results — just without the community bar.
 
 ## Go-live checklist (do in order)
 
@@ -38,6 +46,7 @@ npm run preview  # preview the built site
    - `adsenseClient` (`ca-pub-…`) once AdSense approves
    - `ga4Id` or `plausibleDomain` for analytics
    - `emailFormEndpoint` (Formspree/Brevo form POST URL)
+   - `voteApi` (Cloudflare Worker URL for prediction community votes — see `worker/README.md`)
    - `AFFILIATES` links on results pages
 7. **Daily quiz auto-refresh (optional):** add repo secret `API_FOOTBALL_KEY` (api-sports.io). The scheduled Action rebuilds daily and injects the latest match result. Without the key it safely no-ops.
 
