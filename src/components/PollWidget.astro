@@ -1,10 +1,10 @@
 ---
 import { INTEGRATIONS } from '../lib/site';
 
-// Reusable prediction poll. Renders option buttons; on pick it stores the choice
-// in localStorage and (if a vote API is configured) POSTs the vote and shows the
-// live community % per option. Degrades gracefully with no API: personal pick is
-// still recorded and highlighted, just without community bars.
+// Reusable prediction poll. On pick it stores the choice in localStorage and (if
+// a vote API is configured) POSTs the vote and shows live community % per option.
+// Degrades gracefully with no API: the personal pick is still recorded and
+// clearly highlighted, just without community bars.
 //
 // When `correct` is set (a finished fixture/result), options are colored
 // right/wrong on load and voting is locked.
@@ -24,7 +24,7 @@ const { poll, options, correct = null, locked = false } = Astro.props;
 const { voteApi } = INTEGRATIONS;
 ---
 <div
-  class="poll mt-5 grid gap-2"
+  class="poll mt-5 grid gap-3"
   data-poll={poll}
   data-api={voteApi}
   data-correct={correct ?? ''}
@@ -33,60 +33,91 @@ const { voteApi } = INTEGRATIONS;
   {options.map((o) => (
     <button
       type="button"
-      class="poll-opt relative overflow-hidden rounded-xl border border-slate-300 bg-white px-4 py-3 text-left font-medium text-slate-800 transition hover:border-pitch enabled:hover:bg-pitch/5 disabled:cursor-default"
+      class="poll-opt relative flex items-center gap-3 overflow-hidden rounded-xl border-2 border-slate-200 bg-white px-4 py-3 text-left font-medium text-slate-800 transition enabled:hover:border-pitch enabled:hover:bg-pitch/5 disabled:cursor-default"
       data-value={o.value}
     >
-      <span class="bar absolute inset-y-0 left-0 z-0 w-0 bg-pitch/10 transition-all duration-500"></span>
-      <span class="relative z-10 flex items-center justify-between gap-2">
+      <span class="bar absolute inset-y-0 left-0 z-0 w-0 bg-pitch/20 transition-all duration-700"></span>
+      <span class="check relative z-10 hidden h-5 w-5 shrink-0 items-center justify-center rounded-full bg-pitch text-xs text-white">✓</span>
+      <span class="relative z-10 flex flex-1 items-center justify-between gap-2">
         <span class="flex flex-col">
-          <span>{o.label}</span>
+          <span class="label-text">{o.label}</span>
           {o.sub && <span class="text-xs font-normal text-slate-400">{o.sub}</span>}
         </span>
-        <span class="pct hidden text-sm font-semibold text-slate-500"></span>
+        <span class="pct hidden text-sm font-bold tabular-nums text-slate-500"></span>
       </span>
     </button>
   ))}
 </div>
-<p class="poll-note mt-2 text-center text-xs text-slate-400"></p>
+<p class="poll-note mt-3 text-center text-sm font-medium text-slate-500"></p>
 
 <script>
-  // Wire every poll on the page (usually one).
   document.querySelectorAll('.poll').forEach((el) => {
     const poll = el.dataset.poll;
-    const api = el.dataset.api || '';
+    const api = (el.dataset.api || '').replace(/\/$/, '');
     const correct = el.dataset.correct || '';
     const locked = el.dataset.locked === '1';
     const buttons = [...el.querySelectorAll('.poll-opt')];
-    const note = el.parentElement.querySelector('.poll-note') || el.nextElementSibling;
-    const VKEY = 'wsq:voted:' + poll; // remembers this browser's pick
+    const note = el.parentElement.querySelector('.poll-note');
+    const VKEY = 'wsq:voted:' + poll;
 
-    const myPick = localStorage.getItem(VKEY);
+    let myPick = localStorage.getItem(VKEY);
+    let voted = !!myPick;
+
+    const SELECTED = ['border-pitch', 'bg-pitch/5', 'font-bold', 'text-pitch'];
+    const WRONG = ['border-red-400', 'bg-red-50', 'text-red-600'];
+
+    function setBar(btn, pct) {
+      btn.querySelector('.bar').style.width = pct + '%';
+      const lbl = btn.querySelector('.pct');
+      lbl.textContent = pct + '%';
+      lbl.classList.remove('hidden');
+    }
 
     function renderTally(counts) {
       if (!counts) return;
       const total = Object.values(counts).reduce((a, b) => a + Number(b), 0);
+      if (!total) return; // nothing to show yet
       buttons.forEach((b) => {
         const c = Number(counts[b.dataset.value] || 0);
-        const pct = total ? Math.round((c / total) * 100) : 0;
-        const bar = b.querySelector('.bar');
-        const lbl = b.querySelector('.pct');
-        bar.style.width = pct + '%';
-        lbl.textContent = pct + '%';
-        lbl.classList.remove('hidden');
+        setBar(b, Math.round((c / total) * 100));
       });
-      if (total && note) note.textContent = total.toLocaleString() + ' predictions so far';
+      if (note) {
+        const n = total.toLocaleString();
+        note.textContent = `${n} prediction${total === 1 ? '' : 's'} so far`;
+      }
+    }
+
+    function showCheck(btn) {
+      btn.querySelector('.check').classList.remove('hidden');
+      btn.querySelector('.check').classList.add('flex');
+    }
+
+    function highlightPick() {
+      buttons.forEach((b) => {
+        if (b.dataset.value === myPick) {
+          b.classList.add(...SELECTED);
+          showCheck(b);
+        }
+      });
     }
 
     function markCorrect() {
-      if (!correct) return;
       buttons.forEach((b) => {
-        if (b.dataset.value === correct) b.classList.add('!border-pitch', 'ring-2', 'ring-pitch');
-        else if (b.dataset.value === myPick) b.classList.add('!border-red-400', '!bg-red-50');
+        if (b.dataset.value === correct) {
+          b.classList.add(...SELECTED);
+          showCheck(b);
+        } else if (b.dataset.value === myPick) {
+          b.classList.remove(...SELECTED);
+          b.classList.add(...WRONG);
+        }
       });
-      if (note && myPick) {
-        note.textContent =
-          (myPick === correct ? '✅ You called it!' : '❌ Not this time.') +
-          (note.textContent ? ' · ' + note.textContent : '');
+      if (note) {
+        const verdict = myPick
+          ? myPick === correct
+            ? '✅ You called it! '
+            : '❌ Not this time. '
+          : '';
+        note.textContent = verdict + (note.textContent || '');
       }
     }
 
@@ -94,18 +125,11 @@ const { voteApi } = INTEGRATIONS;
       buttons.forEach((b) => (b.disabled = true));
     }
 
-    function highlightPick() {
-      buttons.forEach((b) =>
-        b.classList.toggle('!border-pitch', !correct && b.dataset.value === myPick),
-      );
-    }
-
     async function getTally() {
       if (!api) return null;
       try {
         const r = await fetch(`${api}/tally?poll=${encodeURIComponent(poll)}`);
-        if (!r.ok) return null;
-        return await r.json();
+        return r.ok ? await r.json() : null;
       } catch {
         return null;
       }
@@ -119,8 +143,7 @@ const { voteApi } = INTEGRATIONS;
           headers: { 'content-type': 'application/json' },
           body: JSON.stringify({ poll, option: value }),
         });
-        if (!r.ok) return null;
-        return await r.json();
+        return r.ok ? await r.json() : null;
       } catch {
         return null;
       }
@@ -131,23 +154,24 @@ const { voteApi } = INTEGRATIONS;
     if (correct || locked) lock();
     if (correct) markCorrect();
 
-    // Voting handlers (only if not locked/finished).
     if (!correct && !locked) {
       buttons.forEach((b) => {
         b.addEventListener('click', async () => {
-          if (localStorage.getItem(VKEY)) return; // one vote per browser
-          const value = b.dataset.value;
-          localStorage.setItem(VKEY, value);
+          if (voted) return; // one vote per browser
+          voted = true;
+          myPick = b.dataset.value;
+          localStorage.setItem(VKEY, myPick);
           highlightPick();
           lock();
-          if (window.gtag) window.gtag('event', 'predict', { poll, option: value });
-          const counts = (await sendVote(value)) || (await getTally());
+          if (window.gtag) window.gtag('event', 'predict', { poll, option: myPick });
+          // Optimistic: if API is unreachable, still show the user's own pick at 100%.
+          const counts = (await sendVote(myPick)) || (await getTally()) || { [myPick]: 1 };
           renderTally(counts);
         });
       });
     }
 
-    // Show existing community tally on load (everyone, even before voting).
+    // Show any existing community tally on load.
     getTally().then(renderTally);
   });
 </script>
