@@ -1,0 +1,59 @@
+{
+  "slug": "legends-maradona-pele",
+  "title": "Maradona & Pelé",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "👑",
+  "category": "Players",
+  "description": "Two icons who defined the World Cup — test your legend knowledge.",
+  "questions": [
+    {
+      "q": "How many World Cups did Pelé win with Brazil?",
+      "options": ["1", "2", "3", "4"],
+      "answer": 2,
+      "explain": "Pelé won in 1958, 1962 and 1970."
+    },
+    {
+      "q": "Pelé became the youngest World Cup winner in 1958 at what age?",
+      "options": ["16", "17", "18", "19"],
+      "answer": 1,
+      "explain": "He was 17 and scored twice in the final."
+    },
+    {
+      "q": "Maradona captained Argentina to the title in which year?",
+      "options": ["1978", "1982", "1986", "1990"],
+      "answer": 2,
+      "explain": "He led Argentina to the 1986 trophy in Mexico."
+    },
+    {
+      "q": "Maradona's 'Hand of God' and 'Goal of the Century' both came against whom?",
+      "options": ["Brazil", "England", "Germany", "Italy"],
+      "answer": 1,
+      "explain": "Both came in the 1986 quarter-final against England."
+    },
+    {
+      "q": "Which country did Pelé represent?",
+      "options": ["Argentina", "Brazil", "Portugal", "Uruguay"],
+      "answer": 1,
+      "explain": "Pelé is Brazil's most iconic footballer."
+    },
+    {
+      "q": "Maradona's Argentina lost the 1990 final to which team?",
+      "options": ["Italy", "West Germany", "Brazil", "Netherlands"],
+      "answer": 1,
+      "explain": "West Germany won 1–0 in Rome."
+    },
+    {
+      "q": "Pelé scored in the final of which World Cup as a teenager?",
+      "options": ["1954", "1958", "1962", "1966"],
+      "answer": 1,
+      "explain": "He scored twice in the 1958 final against Sweden."
+    },
+    {
+      "q": "Diego Maradona represented which national team?",
+      "options": ["Argentina", "Uruguay", "Brazil", "Chile"],
+      "answer": 0,
+      "explain": "Maradona is Argentina's most celebrated player."
+    }
+  ]
+}

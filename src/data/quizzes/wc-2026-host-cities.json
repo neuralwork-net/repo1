@@ -1,0 +1,59 @@
+{
+  "slug": "wc-2026-host-cities",
+  "title": "World Cup 2026 Host Cities",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🏙️",
+  "category": "2026",
+  "description": "16 cities, 3 countries, one tournament. Know where the action is.",
+  "questions": [
+    {
+      "q": "How many host cities will stage 2026 World Cup matches?",
+      "options": ["12", "14", "16", "20"],
+      "answer": 2,
+      "explain": "16 cities across the USA, Canada and Mexico."
+    },
+    {
+      "q": "How many of the host cities are in the United States?",
+      "options": ["9", "10", "11", "13"],
+      "answer": 2,
+      "explain": "11 US cities, plus 3 in Mexico and 2 in Canada."
+    },
+    {
+      "q": "Which two Canadian cities are hosting matches?",
+      "options": ["Toronto & Vancouver", "Montreal & Toronto", "Vancouver & Calgary", "Toronto & Ottawa"],
+      "answer": 0,
+      "explain": "Toronto and Vancouver (BC Place) are the Canadian hosts."
+    },
+    {
+      "q": "Which three Mexican cities are hosting?",
+      "options": ["Mexico City, Guadalajara & Monterrey", "Mexico City, Cancún & Tijuana", "Guadalajara, Puebla & Monterrey", "Mexico City, Monterrey & León"],
+      "answer": 0,
+      "explain": "Mexico City, Guadalajara and Monterrey are the Mexican hosts."
+    },
+    {
+      "q": "In which stadium will the 2026 final be played?",
+      "options": ["Los Angeles Stadium", "New York New Jersey Stadium", "Dallas Stadium", "Mexico City Stadium"],
+      "answer": 1,
+      "explain": "The final is at the New York New Jersey Stadium (MetLife)."
+    },
+    {
+      "q": "The opening match is scheduled in which city?",
+      "options": ["Los Angeles", "Mexico City", "Toronto", "New York"],
+      "answer": 1,
+      "explain": "Mexico City's stadium hosts the opener."
+    },
+    {
+      "q": "Which of these US cities is NOT a 2026 host?",
+      "options": ["Seattle", "Atlanta", "Chicago", "Kansas City"],
+      "answer": 2,
+      "explain": "Chicago is not hosting; Seattle, Atlanta and Kansas City are."
+    },
+    {
+      "q": "Which Canadian venue is known as BC Place?",
+      "options": ["Toronto Stadium", "Vancouver Stadium", "Montreal Stadium", "Edmonton Stadium"],
+      "answer": 1,
+      "explain": "BC Place in Vancouver is one of the two Canadian host venues."
+    }
+  ]
+}

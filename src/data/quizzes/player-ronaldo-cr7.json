@@ -1,0 +1,59 @@
+{
+  "slug": "player-ronaldo-cr7",
+  "title": "Cristiano Ronaldo at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🇵🇹",
+  "category": "Players",
+  "description": "Portugal's all-time great across five World Cups.",
+  "questions": [
+    {
+      "q": "Cristiano Ronaldo became the first player to score at how many different World Cups?",
+      "options": ["Three", "Four", "Five", "Six"],
+      "answer": 2,
+      "explain": "He scored at the 2006, 2010, 2014, 2018 and 2022 tournaments."
+    },
+    {
+      "q": "At which World Cup did Ronaldo make his debut?",
+      "options": ["2002", "2006", "2010", "2014"],
+      "answer": 1,
+      "explain": "He debuted for Portugal at Germany 2006."
+    },
+    {
+      "q": "How many World Cups has Ronaldo won?",
+      "options": ["0", "1", "2", "3"],
+      "answer": 0,
+      "explain": "Despite his greatness, Ronaldo never won the World Cup."
+    },
+    {
+      "q": "Ronaldo scored a memorable hat-trick against which team in 2018?",
+      "options": ["Spain", "Morocco", "Iran", "Uruguay"],
+      "answer": 0,
+      "explain": "His hat-trick earned a 3–3 draw with Spain in Portugal's opener."
+    },
+    {
+      "q": "Portugal's best World Cup finish, with Ronaldo's debut, was reaching the…",
+      "options": ["Final", "Semi-finals (2006)", "Quarter-finals only", "Group stage"],
+      "answer": 1,
+      "explain": "Portugal reached the 2006 semi-finals, losing to France."
+    },
+    {
+      "q": "At the 2022 World Cup, Portugal were knocked out in the quarter-finals by whom?",
+      "options": ["Morocco", "France", "Switzerland", "Spain"],
+      "answer": 0,
+      "explain": "Morocco beat Portugal 1–0 on their run to the semi-finals."
+    },
+    {
+      "q": "Ronaldo was controversially benched for a 2022 knockout game won 6–1 against whom?",
+      "options": ["Switzerland", "Ghana", "South Korea", "Uruguay"],
+      "answer": 0,
+      "explain": "Gonçalo Ramos starred with a hat-trick against Switzerland."
+    },
+    {
+      "q": "Which country does Cristiano Ronaldo represent?",
+      "options": ["Brazil", "Spain", "Portugal", "Argentina"],
+      "answer": 2,
+      "explain": "Ronaldo is Portugal's all-time leading scorer and captain."
+    }
+  ]
+}

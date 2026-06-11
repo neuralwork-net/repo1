@@ -1,0 +1,59 @@
+{
+  "slug": "wc-records",
+  "title": "World Cup Records & Firsts",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "📊",
+  "category": "History",
+  "description": "Most goals, most titles, fastest strikes — the record books of the World Cup.",
+  "questions": [
+    {
+      "q": "Which country has won the most World Cup titles?",
+      "options": ["Germany", "Italy", "Brazil", "Argentina"],
+      "answer": 2,
+      "explain": "Brazil have lifted the trophy five times."
+    },
+    {
+      "q": "Who is the all-time top scorer in World Cup history?",
+      "options": ["Ronaldo (Brazil)", "Miroslav Klose", "Gerd Müller", "Just Fontaine"],
+      "answer": 1,
+      "explain": "Germany's Klose scored 16 goals across four tournaments."
+    },
+    {
+      "q": "Who scored a record 13 goals at a single World Cup (1958)?",
+      "options": ["Pelé", "Just Fontaine", "Sándor Kocsis", "Gerd Müller"],
+      "answer": 1,
+      "explain": "France's Just Fontaine scored 13 in one tournament — still a record."
+    },
+    {
+      "q": "Who scored the fastest goal in World Cup history (about 11 seconds)?",
+      "options": ["Hakan Şükür", "Clint Dempsey", "Christian Eriksen", "Pelé"],
+      "answer": 0,
+      "explain": "Turkey's Hakan Şükür scored after ~11 seconds in 2002."
+    },
+    {
+      "q": "Which player has played the most World Cup matches?",
+      "options": ["Lothar Matthäus", "Paolo Maldini", "Lionel Messi", "Cristiano Ronaldo"],
+      "answer": 2,
+      "explain": "Messi passed Matthäus, reaching 26 World Cup matches in 2022."
+    },
+    {
+      "q": "Who is the only player to win the World Cup three times?",
+      "options": ["Diego Maradona", "Pelé", "Franz Beckenbauer", "Cafu"],
+      "answer": 1,
+      "explain": "Pelé won in 1958, 1962 and 1970 with Brazil."
+    },
+    {
+      "q": "In which year was the first World Cup held?",
+      "options": ["1924", "1930", "1934", "1928"],
+      "answer": 1,
+      "explain": "The first tournament was held in Uruguay in 1930."
+    },
+    {
+      "q": "How many teams will play at the 2026 World Cup?",
+      "options": ["32", "40", "48", "64"],
+      "answer": 2,
+      "explain": "2026 expands the finals to 48 teams for the first time."
+    }
+  ]
+}

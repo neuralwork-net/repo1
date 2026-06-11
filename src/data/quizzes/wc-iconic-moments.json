@@ -1,0 +1,59 @@
+{
+  "slug": "wc-iconic-moments",
+  "title": "Iconic World Cup Moments",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "✨",
+  "category": "History",
+  "description": "The goals, dramas and images burned into World Cup memory.",
+  "questions": [
+    {
+      "q": "Who scored the 'Hand of God' and the 'Goal of the Century' in the same 1986 match?",
+      "options": ["Pelé", "Diego Maradona", "Zico", "Careca"],
+      "answer": 1,
+      "explain": "Maradona did both against England in the quarter-final."
+    },
+    {
+      "q": "Who scored a hat-trick in the 2022 final — the first in a final since 1966?",
+      "options": ["Lionel Messi", "Kylian Mbappé", "Olivier Giroud", "Julián Álvarez"],
+      "answer": 1,
+      "explain": "Mbappé scored three but still finished on the losing side."
+    },
+    {
+      "q": "Who scored a hat-trick in the 1966 final for England?",
+      "options": ["Bobby Charlton", "Geoff Hurst", "Martin Peters", "Roger Hunt"],
+      "answer": 1,
+      "explain": "Geoff Hurst's hat-trick beat West Germany 4–2."
+    },
+    {
+      "q": "Which goalkeeper made a legendary save from Pelé's header in 1970?",
+      "options": ["Gordon Banks", "Dino Zoff", "Lev Yashin", "Sepp Maier"],
+      "answer": 0,
+      "explain": "England's Gordon Banks produced 'the save of the century'."
+    },
+    {
+      "q": "Whose extra-time goal won Spain their first World Cup in 2010?",
+      "options": ["David Villa", "Andrés Iniesta", "Fernando Torres", "Xavi"],
+      "answer": 1,
+      "explain": "Iniesta scored late in extra time against the Netherlands."
+    },
+    {
+      "q": "Which player famously cried during the 1990 semi-final after a booking?",
+      "options": ["Gary Lineker", "Paul Gascoigne", "David Platt", "Chris Waddle"],
+      "answer": 1,
+      "explain": "Gazza's tears came after a yellow card that would have ruled him out of the final."
+    },
+    {
+      "q": "Brazil's stunning 2014 semi-final defeat to Germany ended with what scoreline?",
+      "options": ["5–0", "6–1", "7–1", "4–0"],
+      "answer": 2,
+      "explain": "Germany beat the hosts 7–1 in Belo Horizonte."
+    },
+    {
+      "q": "Which striker scored five goals across the 2002 tournament to win it for Brazil?",
+      "options": ["Rivaldo", "Ronaldinho", "Ronaldo", "Adriano"],
+      "answer": 2,
+      "explain": "Ronaldo scored eight in 2002, including both goals in the final."
+    }
+  ]
+}

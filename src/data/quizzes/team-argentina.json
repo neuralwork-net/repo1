@@ -1,0 +1,59 @@
+{
+  "slug": "team-argentina",
+  "title": "Argentina at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🇦🇷",
+  "category": "Teams",
+  "description": "From Maradona to Messi — La Albiceleste's World Cup story.",
+  "questions": [
+    {
+      "q": "How many World Cups have Argentina won?",
+      "options": ["1", "2", "3", "4"],
+      "answer": 2,
+      "explain": "Argentina won in 1978, 1986 and 2022."
+    },
+    {
+      "q": "Who captained Argentina to the 1986 title?",
+      "options": ["Daniel Passarella", "Diego Maradona", "Jorge Valdano", "Oscar Ruggeri"],
+      "answer": 1,
+      "explain": "Maradona led and inspired the 1986 winners in Mexico."
+    },
+    {
+      "q": "Argentina won their first title in 1978 while doing what?",
+      "options": ["Beating Brazil in the final", "Hosting the tournament", "Winning every game", "Without conceding a goal"],
+      "answer": 1,
+      "explain": "Argentina hosted and won the 1978 World Cup."
+    },
+    {
+      "q": "In the 2022 final, Argentina beat France how?",
+      "options": ["2–0", "On penalties after 3–3", "3–1 in extra time", "1–0"],
+      "answer": 1,
+      "explain": "A 3–3 thriller was settled 4–2 on penalties."
+    },
+    {
+      "q": "Who won the Golden Ball as best player of the 2022 World Cup?",
+      "options": ["Kylian Mbappé", "Lionel Messi", "Julián Álvarez", "Emiliano Martínez"],
+      "answer": 1,
+      "explain": "Messi won it as Argentina lifted the trophy."
+    },
+    {
+      "q": "Argentina lost the 1990 final to which team?",
+      "options": ["West Germany", "Italy", "Brazil", "Netherlands"],
+      "answer": 0,
+      "explain": "West Germany won 1–0 in Rome, a rematch of 1986."
+    },
+    {
+      "q": "Argentina also lost the 2014 final — to whom?",
+      "options": ["Spain", "Netherlands", "Germany", "Brazil"],
+      "answer": 2,
+      "explain": "Germany won 1–0 after extra time in Brazil."
+    },
+    {
+      "q": "Who is Argentina's all-time leading World Cup goalscorer?",
+      "options": ["Gabriel Batistuta", "Diego Maradona", "Lionel Messi", "Mario Kempes"],
+      "answer": 2,
+      "explain": "Messi overtook Batistuta to become Argentina's top World Cup scorer."
+    }
+  ]
+}

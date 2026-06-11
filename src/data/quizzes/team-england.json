@@ -1,0 +1,59 @@
+{
+  "slug": "team-england",
+  "title": "England at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+  "category": "Teams",
+  "description": "1966 and all that — England's World Cup highs and heartbreaks.",
+  "questions": [
+    {
+      "q": "In which year did England win the World Cup?",
+      "options": ["1962", "1966", "1970", "1990"],
+      "answer": 1,
+      "explain": "England won on home soil in 1966."
+    },
+    {
+      "q": "Who scored a hat-trick in the 1966 final against West Germany?",
+      "options": ["Bobby Charlton", "Geoff Hurst", "Roger Hunt", "Martin Peters"],
+      "answer": 1,
+      "explain": "Hurst's three goals secured a 4–2 win after extra time."
+    },
+    {
+      "q": "Who captained England to the 1966 title?",
+      "options": ["Bobby Moore", "Bobby Charlton", "Jack Charlton", "Alan Ball"],
+      "answer": 0,
+      "explain": "Bobby Moore lifted the Jules Rimet trophy."
+    },
+    {
+      "q": "England lost the 1990 semi-final to West Germany how?",
+      "options": ["1–0", "On penalties", "In extra time", "3–1"],
+      "answer": 1,
+      "explain": "West Germany won the shootout after a 1–1 draw."
+    },
+    {
+      "q": "Who won the Golden Boot at the 2018 World Cup with six goals?",
+      "options": ["Harry Kane", "Raheem Sterling", "Dele Alli", "Jesse Lingard"],
+      "answer": 0,
+      "explain": "Harry Kane top-scored as England reached the semi-finals."
+    },
+    {
+      "q": "England were knocked out of the 2018 semi-final by which team?",
+      "options": ["Belgium", "Croatia", "France", "Sweden"],
+      "answer": 1,
+      "explain": "Croatia came from behind to win 2–1 in extra time."
+    },
+    {
+      "q": "Which England striker won the Golden Boot at the 1986 World Cup?",
+      "options": ["Gary Lineker", "Peter Beardsley", "Kerry Dixon", "Mark Hateley"],
+      "answer": 0,
+      "explain": "Lineker scored six goals in Mexico 1986."
+    },
+    {
+      "q": "Whose tears in the 1990 semi-final became an iconic image?",
+      "options": ["Chris Waddle", "Paul Gascoigne", "Gary Lineker", "Stuart Pearce"],
+      "answer": 1,
+      "explain": "Gascoigne cried after a booking that would have ruled him out of the final."
+    }
+  ]
+}

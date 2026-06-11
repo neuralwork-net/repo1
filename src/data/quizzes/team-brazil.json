@@ -1,0 +1,59 @@
+{
+  "slug": "team-brazil",
+  "title": "Brazil at the World Cup",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🇧🇷",
+  "category": "Teams",
+  "description": "The Seleção — five-time winners and the only ever-present nation.",
+  "questions": [
+    {
+      "q": "How many World Cups have Brazil won?",
+      "options": ["3", "4", "5", "6"],
+      "answer": 2,
+      "explain": "Brazil are record five-time champions."
+    },
+    {
+      "q": "Which World Cup did Brazil NOT win?",
+      "options": ["1970", "1994", "2002", "2006"],
+      "answer": 3,
+      "explain": "Brazil won in 1958, 1962, 1970, 1994 and 2002 — not 2006."
+    },
+    {
+      "q": "Brazil are the only country to have done what?",
+      "options": ["Won three in a row", "Appeared at every World Cup", "Hosted three times", "Won on every continent"],
+      "answer": 1,
+      "explain": "Brazil have featured in every World Cup finals tournament."
+    },
+    {
+      "q": "Who captained Brazil to the trophy in 2002, lifting it as a full-back?",
+      "options": ["Cafu", "Roberto Carlos", "Lúcio", "Dunga"],
+      "answer": 0,
+      "explain": "Cafu captained the 2002 winners and played in three finals."
+    },
+    {
+      "q": "Brazil hosted the 2014 World Cup but suffered which famous semi-final defeat?",
+      "options": ["1–0 to Argentina", "7–1 to Germany", "3–0 to Netherlands", "2–1 to Chile"],
+      "answer": 1,
+      "explain": "Germany hammered the hosts 7–1."
+    },
+    {
+      "q": "Who won the Golden Boot for Brazil at the 2002 World Cup?",
+      "options": ["Rivaldo", "Ronaldinho", "Ronaldo", "Romário"],
+      "answer": 2,
+      "explain": "Ronaldo scored eight goals in 2002."
+    },
+    {
+      "q": "Which Brazilian forward was named best player of the 1994 World Cup?",
+      "options": ["Bebeto", "Romário", "Dunga", "Taffarel"],
+      "answer": 1,
+      "explain": "Romário starred as Brazil won in the USA in 1994."
+    },
+    {
+      "q": "In which two consecutive World Cups did Brazil win back-to-back titles?",
+      "options": ["1958 & 1962", "1962 & 1966", "1970 & 1974", "1994 & 1998"],
+      "answer": 0,
+      "explain": "Brazil won in 1958 and 1962."
+    }
+  ]
+}

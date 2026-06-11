@@ -1,0 +1,59 @@
+{
+  "slug": "wc-finals",
+  "title": "Every World Cup Final",
+  "sport": "football",
+  "tournament": "world-cup-2026",
+  "emoji": "🥇",
+  "category": "History",
+  "description": "The biggest game in football. How many World Cup finals can you call?",
+  "questions": [
+    {
+      "q": "Who beat France on penalties in the 2022 final?",
+      "options": ["Brazil", "Argentina", "Croatia", "Spain"],
+      "answer": 1,
+      "explain": "Argentina won 4–2 on penalties after a 3–3 draw in Qatar."
+    },
+    {
+      "q": "France beat which team 4–2 in the 2018 final?",
+      "options": ["Belgium", "England", "Croatia", "Brazil"],
+      "answer": 2,
+      "explain": "France beat Croatia 4–2 in Moscow."
+    },
+    {
+      "q": "Who scored the extra-time winner in the 2014 final for Germany?",
+      "options": ["Thomas Müller", "Mario Götze", "Toni Kroos", "Miroslav Klose"],
+      "answer": 1,
+      "explain": "Götze volleyed home to beat Argentina 1–0."
+    },
+    {
+      "q": "Whose goal won Spain the 2010 final against the Netherlands?",
+      "options": ["David Villa", "Xavi", "Andrés Iniesta", "Carles Puyol"],
+      "answer": 2,
+      "explain": "Iniesta scored in extra time for a 1–0 win."
+    },
+    {
+      "q": "Which match ended with Zidane's headbutt on Marco Materazzi?",
+      "options": ["2006 final", "1998 final", "2002 final", "2010 final"],
+      "answer": 0,
+      "explain": "Italy beat France on penalties in the 2006 final."
+    },
+    {
+      "q": "Who scored twice as Brazil beat Germany 2–0 in the 2002 final?",
+      "options": ["Rivaldo", "Ronaldinho", "Ronaldo", "Cafu"],
+      "answer": 2,
+      "explain": "Ronaldo's two goals sealed Brazil's fifth title."
+    },
+    {
+      "q": "Who scored twice in France's 3–0 win over Brazil in the 1998 final?",
+      "options": ["Thierry Henry", "Zinedine Zidane", "Emmanuel Petit", "Youri Djorkaeff"],
+      "answer": 1,
+      "explain": "Zidane headed in two; Petit added the third."
+    },
+    {
+      "q": "Who missed the decisive penalty as Brazil beat Italy in the 1994 final?",
+      "options": ["Franco Baresi", "Roberto Baggio", "Daniele Massaro", "Paolo Maldini"],
+      "answer": 1,
+      "explain": "Baggio skied his penalty; Brazil won the first final decided on spot-kicks."
+    }
+  ]
+}
