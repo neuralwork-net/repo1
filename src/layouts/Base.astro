@@ -6,8 +6,9 @@ import { SITE, INTEGRATIONS } from '../lib/site';
 interface Props {
   title?: string;
   description?: string;
+  image?: string;
 }
-const { title, description = SITE.description } = Astro.props;
+const { title, description = SITE.description, image = `${SITE.url}/og.png` } = Astro.props;
 const fullTitle = title ? `${title} · ${SITE.name}` : `${SITE.name} — ${SITE.tagline}`;
 const { adsenseClient } = INTEGRATIONS;
 const canonical = new URL(Astro.url.pathname, SITE.url).href;
@@ -26,7 +27,9 @@ const canonical = new URL(Astro.url.pathname, SITE.url).href;
     <meta property="og:url" content={canonical} />
     <meta property="og:site_name" content={SITE.name} />
     <meta property="og:type" content="website" />
+    <meta property="og:image" content={image} />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content={image} />
     {adsenseClient && (
       <script
         is:inline

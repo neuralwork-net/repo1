@@ -1,0 +1,23 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { QUIZZES, getQuiz } from '../../../lib/quizzes';
+import { SITE } from '../../../lib/site';
+
+export function getStaticPaths() {
+  return QUIZZES.map((quiz) => ({ params: { slug: quiz.slug } }));
+}
+
+const { slug } = Astro.params;
+const quiz = getQuiz(slug!)!;
+const playHref = `/quiz/${quiz.slug}/1/`;
+---
+<Base
+  title={`Can you beat the ${quiz.title} quiz?`}
+  description={`${quiz.description} Test yourself and share your score!`}
+  image={`${SITE.url}/og.png`}
+>
+  <p class="text-center text-slate-400">Loading…</p>
+  <script is:inline define:vars={{ playHref }}>
+    window.location.replace(playHref);
+  </script>
+</Base>
