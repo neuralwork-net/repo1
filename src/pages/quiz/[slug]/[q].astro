@@ -29,14 +29,15 @@ const tData = findTournament(quiz.sport, quiz.tournament);
 const breadcrumbs = [
   { label: sportData?.name ?? 'Quizzes', href: `/${quiz.sport}/` },
   { label: tData?.name ?? 'World Cup 2026', href: `/${quiz.sport}/${quiz.tournament}/` },
-  { label: quiz.title, href: '' },
+  { label: quiz.title, href: `/quiz/${quiz.slug}/` },
+  { label: `Question ${idx + 1}`, href: '' },
 ];
 
 const quizSchema = {
   '@context': 'https://schema.org',
   '@type': 'Quiz',
   name: quiz.title,
-  url: `${SITE.url}/quiz/${quiz.slug}/1/`,
+  url: `${SITE.url}/quiz/${quiz.slug}/`,
   hasPart: {
     '@type': 'Question',
     name: question.q,
@@ -51,6 +52,7 @@ const quizSchema = {
 <Base
   title={`${quiz.title} — Q${idx + 1}`}
   description={`Test your knowledge of ${quiz.title}. ${total} questions — how many can you get right?`}
+  image={`${SITE.url}/og/${quiz.slug}.png`}
   breadcrumbs={breadcrumbs}
 >
   <script slot="head" type="application/ld+json" set:html={JSON.stringify(quizSchema)} />

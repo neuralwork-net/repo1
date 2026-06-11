@@ -36,6 +36,15 @@ const orgSchema = isHome ? {
   url: SITE.url,
   logo: { '@type': 'ImageObject', url: `${SITE.url}/og.png` },
 } : null;
+
+const websiteSchema = isHome ? {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: SITE.name,
+  alternateName: 'WSQ',
+  url: SITE.url,
+  description: SITE.description,
+} : null;
 ---
 <!doctype html>
 <html lang="en">
@@ -43,6 +52,10 @@ const orgSchema = isHome ? {
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="alternate" type="application/rss+xml" title={SITE.name} href="/rss.xml" />
+    <link rel="apple-touch-icon" href="/og/icon-192.png" />
+    <meta name="theme-color" content="#0b6b3a" />
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
@@ -59,6 +72,7 @@ const orgSchema = isHome ? {
     <meta name="twitter:image" content={image} />
     {crumbSchema && <script type="application/ld+json" set:html={JSON.stringify(crumbSchema)} />}
     {orgSchema && <script type="application/ld+json" set:html={JSON.stringify(orgSchema)} />}
+    {websiteSchema && <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />}
     <slot name="head" />
     {adsenseClient && (
       <script
@@ -104,6 +118,7 @@ const orgSchema = isHome ? {
     <footer class="border-t border-slate-200 bg-white">
       <div class="mx-auto max-w-5xl px-4 py-6 text-center text-xs text-slate-400">
         © {new Date().getFullYear()} {SITE.name} · Just for fun.
+        <a href="/faq/" class="ml-2 underline">FAQ</a>
         <a href="/sponsor/" class="ml-2 underline">Advertise</a>
       </div>
     </footer>

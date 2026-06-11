@@ -4,8 +4,9 @@ interface Props { quiz: Quiz; }
 const { quiz } = Astro.props;
 ---
 <a
-  href={`/quiz/${quiz.slug}/1/`}
-  class="group block rounded-2xl border border-slate-200 bg-white p-5 transition hover:-translate-y-0.5 hover:border-pitch hover:shadow-md"
+  href={`/quiz/${quiz.slug}/`}
+  class="quiz-card group block rounded-2xl border border-slate-200 bg-white p-5 transition hover:-translate-y-0.5 hover:border-pitch hover:shadow-md"
+  data-category={quiz.category ?? 'Other'}
 >
   <div class="flex items-center gap-3">
     <span class="text-3xl">{quiz.emoji ?? '⚽'}</span>

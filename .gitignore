@@ -16,3 +16,9 @@ worker/.wrangler/
 # os / editor
 .DS_Store
 *.log
+
+# internal planning notes
+planning.md
+
+# generated at build time by scripts/gen-og.mjs
+public/og/

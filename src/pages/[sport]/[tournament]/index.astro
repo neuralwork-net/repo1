@@ -17,6 +17,7 @@ const { sport, tournament } = Astro.params;
 const sportData = findSport(sport!)!;
 const tData = findTournament(sport!, tournament!)!;
 const quizzes = quizzesFor(sport!, tournament!);
+const categories = [...new Set(quizzes.map((q) => q.category ?? 'Other'))].sort();
 const breadcrumbs = [
   { label: sportData.name, href: `/${sportData.id}/` },
   { label: tData.name, href: '' },
@@ -42,6 +43,15 @@ const breadcrumbs = [
 
   <AdSlot label="Top ad" />
 
+  {quizzes.length > 0 && categories.length > 1 && (
+    <div id="quiz-filters" class="mt-5 flex flex-wrap gap-2">
+      <button type="button" data-category="all" class="filter-chip rounded-full bg-pitch px-4 py-1.5 text-sm font-semibold text-white">All</button>
+      {categories.map((c) => (
+        <button type="button" data-category={c} class="filter-chip rounded-full border border-slate-300 bg-white px-4 py-1.5 text-sm font-semibold text-slate-600 hover:border-pitch">{c}</button>
+      ))}
+    </div>
+  )}
+
   {quizzes.length ? (
     <div class="mt-4 grid gap-4 sm:grid-cols-2">
       {quizzes.map((quiz) => <QuizCard quiz={quiz} />)}
@@ -49,4 +59,22 @@ const breadcrumbs = [
   ) : (
     <p class="mt-6 text-slate-500">Quizzes coming soon — check back at kickoff.</p>
   )}
+
+  <script is:inline>
+    const chips = document.querySelectorAll('#quiz-filters .filter-chip');
+    const active = ['bg-pitch', 'text-white'];
+    const inactive = ['border', 'border-slate-300', 'bg-white', 'text-slate-600'];
+    chips.forEach((chip) => {
+      chip.addEventListener('click', () => {
+        chips.forEach((c) => {
+          c.classList.remove(...active, ...inactive);
+          c.classList.add(...(c === chip ? active : inactive));
+        });
+        const cat = chip.dataset.category;
+        document.querySelectorAll('.quiz-card').forEach((card) => {
+          card.style.display = cat === 'all' || card.dataset.category === cat ? '' : 'none';
+        });
+      });
+    });
+  </script>
 </Base>

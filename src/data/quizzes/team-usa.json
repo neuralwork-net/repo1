@@ -6,65 +6,117 @@
   "emoji": "🇺🇸",
   "category": "Teams",
   "description": "From the Miracle on Grass to 2026 co-hosts — how much do you know about the US Men's National Team at the World Cup?",
-  "teams": ["United States"],
+  "teams": [
+    "USA"
+  ],
   "questions": [
     {
       "q": "The USA famously beat England 1–0 at the 1950 World Cup. Who scored that iconic goal?",
-      "options": ["Joe Gaetjens", "Walter Bahr", "Frank Wallace", "Charley Colombo"],
+      "options": [
+        "Joe Gaetjens",
+        "Walter Bahr",
+        "Frank Wallace",
+        "Charley Colombo"
+      ],
       "answer": 0,
       "explain": "Joe Gaetjens scored with a header in the 37th minute, creating one of the biggest upsets in World Cup history — dubbed the 'Miracle on Grass'."
     },
     {
       "q": "What is the USA's best World Cup result?",
-      "options": ["Winners", "Runners-up", "Semi-finals", "Quarter-finals"],
+      "options": [
+        "Winners",
+        "Runners-up",
+        "Semi-finals",
+        "Quarter-finals"
+      ],
       "answer": 2,
       "explain": "The USA reached the semi-finals at the inaugural 1930 World Cup in Uruguay, losing to Argentina 6–1."
     },
     {
       "q": "The USA hosted a memorable World Cup that introduced football to millions. In which year?",
-      "options": ["1986", "1990", "1994", "1998"],
+      "options": [
+        "1986",
+        "1990",
+        "1994",
+        "1998"
+      ],
       "answer": 2,
       "explain": "The 1994 World Cup in the USA set attendance records that stood for decades. Brazil won the tournament, beating Italy on penalties in the final."
     },
     {
       "q": "Landon Donovan's 91st-minute goal against Algeria in 2010 kept the USA alive. What did it mean?",
-      "options": ["It knocked Algeria out", "It won the USA's group", "It sent the USA to the semis", "It secured a draw"],
+      "options": [
+        "It knocked Algeria out",
+        "It won the USA's group",
+        "It sent the USA to the semis",
+        "It secured a draw"
+      ],
       "answer": 1,
       "explain": "Donovan's last-gasp goal gave the USA a 1–0 win, enough to top Group C ahead of England on goal difference."
     },
     {
       "q": "Which team did the USA famously beat 3–2 in the 2002 World Cup group stage?",
-      "options": ["Germany", "Portugal", "Brazil", "Spain"],
+      "options": [
+        "Germany",
+        "Portugal",
+        "Brazil",
+        "Spain"
+      ],
       "answer": 1,
       "explain": "The USA stunned heavily favoured Portugal 3–2, with goals from McBride, Mathis and Donovan in a landmark American win."
     },
     {
       "q": "The USA was knocked out of the 2014 World Cup in the round of 16 in extra time. Which team did it?",
-      "options": ["Germany", "Belgium", "France", "Colombia"],
+      "options": [
+        "Germany",
+        "Belgium",
+        "France",
+        "Colombia"
+      ],
       "answer": 1,
       "explain": "Belgium beat the USA 2–1 in extra time. Goalkeeper Tim Howard set a World Cup record with 16 saves in that match."
     },
     {
       "q": "Who is the USA's all-time top scorer at World Cups?",
-      "options": ["Brian McBride", "Clint Dempsey", "Landon Donovan", "Eric Wynalda"],
+      "options": [
+        "Brian McBride",
+        "Clint Dempsey",
+        "Landon Donovan",
+        "Eric Wynalda"
+      ],
       "answer": 2,
       "explain": "Landon Donovan scored 5 World Cup goals — 2 in 2002 and 3 in 2010 — making him the USA's all-time leading scorer at the tournament."
     },
     {
       "q": "The USA shockingly failed to qualify for which World Cup?",
-      "options": ["2010", "2014", "2018", "2022"],
+      "options": [
+        "2010",
+        "2014",
+        "2018",
+        "2022"
+      ],
       "answer": 2,
       "explain": "The USA lost to Trinidad & Tobago in their final qualifier in 2017, missing out on the 2018 World Cup and ending an unbroken run of appearances."
     },
     {
       "q": "Which goalkeeper set a World Cup record with 16 saves in a single match against Belgium in 2014?",
-      "options": ["Brad Friedel", "Kasey Keller", "Tim Howard", "Brad Guzan"],
+      "options": [
+        "Brad Friedel",
+        "Kasey Keller",
+        "Tim Howard",
+        "Brad Guzan"
+      ],
       "answer": 2,
       "explain": "Tim Howard's heroic performance against Belgium became iconic — despite the loss, his save tally remains the most in a single World Cup match."
     },
     {
       "q": "The 2026 World Cup final is scheduled to be held in which venue?",
-      "options": ["AT&T Stadium, Dallas", "SoFi Stadium, Los Angeles", "MetLife Stadium, East Rutherford NJ", "Levi's Stadium, San Francisco"],
+      "options": [
+        "AT&T Stadium, Dallas",
+        "SoFi Stadium, Los Angeles",
+        "MetLife Stadium, East Rutherford NJ",
+        "Levi's Stadium, San Francisco"
+      ],
       "answer": 2,
       "explain": "MetLife Stadium in East Rutherford, New Jersey (the New York/New Jersey area) is set to host the 2026 World Cup final."
     }

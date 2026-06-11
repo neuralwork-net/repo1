@@ -21,6 +21,9 @@ const ALLOWED_ORIGINS = new Set([
 // Guardrails so a single client can't bloat the DB with junk polls/options.
 const MAX_POLL_LEN = 64;
 const MAX_OPTION_LEN = 64;
+const MAX_QUIZ_LEN = 64;
+const MAX_QUIZ_QUESTIONS = 50;
+const DEVICE_ID_RE = /^[a-z0-9-]{8,40}$/;
 
 function corsHeaders(origin: string | null): HeadersInit {
   const allow = origin && ALLOWED_ORIGINS.has(origin) ? origin : '';
@@ -91,6 +94,60 @@ export default {
         .bind(poll, option)
         .run();
       return json(await tally(env, poll), origin);
+    }
+
+    if (request.method === 'POST' && url.pathname === '/record') {
+      let body: { device?: string; quiz?: string; score?: number; total?: number };
+      try {
+        body = await request.json();
+      } catch {
+        return json({ error: 'bad json' }, origin, 400);
+      }
+      const device = (body.device || '').trim();
+      const quiz = (body.quiz || '').trim();
+      const score = Number(body.score);
+      const total = Number(body.total);
+      if (!DEVICE_ID_RE.test(device) || !quiz || quiz.length > MAX_QUIZ_LEN) {
+        return json({ error: 'bad device/quiz' }, origin, 400);
+      }
+      if (
+        !Number.isInteger(score) || !Number.isInteger(total) ||
+        total < 1 || total > MAX_QUIZ_QUESTIONS || score < 0 || score > total
+      ) {
+        return json({ error: 'bad score' }, origin, 400);
+      }
+      // One row per device per quiz; re-plays keep the best score.
+      await env.wsq_votes.prepare(
+        `INSERT INTO scores (device_id, quiz, score, total) VALUES (?, ?, ?, ?)
+         ON CONFLICT(device_id, quiz) DO UPDATE SET
+           score = MAX(score, excluded.score),
+           updated_at = datetime('now')`,
+      )
+        .bind(device, quiz, score, total)
+        .run();
+      const row = await env.wsq_votes.prepare(
+        'SELECT SUM(score) AS points, COUNT(*) AS quizzes FROM scores WHERE device_id = ?',
+      )
+        .bind(device)
+        .first<{ points: number; quizzes: number }>();
+      return json({ points: row?.points ?? score, quizzes: row?.quizzes ?? 1 }, origin);
+    }
+
+    if (request.method === 'GET' && url.pathname === '/leaderboard') {
+      const limit = Math.min(Number(url.searchParams.get('limit')) || 10, 25);
+      const { results } = await env.wsq_votes.prepare(
+        `SELECT device_id, SUM(score) AS points, COUNT(*) AS quizzes
+         FROM scores GROUP BY device_id ORDER BY points DESC LIMIT ?`,
+      )
+        .bind(limit)
+        .all<{ device_id: string; points: number; quizzes: number }>();
+      const board = (results ?? []).map((r) => ({
+        // Don't leak full device ids — show an anonymised handle.
+        player: `Player-${r.device_id.slice(-4)}`,
+        points: r.points,
+        quizzes: r.quizzes,
+      }));
+      return json(board, origin);
     }
 
     return json({ error: 'not found' }, origin, 404);

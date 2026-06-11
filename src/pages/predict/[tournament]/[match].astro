@@ -7,6 +7,7 @@ import { FIXTURES, getFixtureByMatchSlug, fixtureUrl, ROUND_LABELS, isFinished, 
 import { SITE } from '../../../lib/site';
 import { fixtureSlug } from '../../../lib/predictions';
 import { quizzesForTeams } from '../../../lib/quizzes';
+import { buildMatchContent, matchDescription } from '../../../lib/match-content';
 
 export function getStaticPaths() {
   return FIXTURES.map((f) => ({
@@ -46,8 +47,12 @@ const options =
 
 const title = f.tbd
   ? `${heading}: ${f.home} v ${f.away}`
-  : `Predict: ${f.home} vs ${f.away} — FIFA World Cup 2026`;
-const description = `Make your prediction for ${f.home} vs ${f.away} — ${heading}, ${dateLabel} at ${f.venue}. FIFA World Cup 2026.`;
+  : finished
+    ? `${f.home} vs ${f.away} Result & Predictions — FIFA World Cup 2026`
+    : `${f.home} vs ${f.away} Prediction — FIFA World Cup 2026`;
+const description = matchDescription(f);
+const content = buildMatchContent(f);
+const ogImage = f.tbd ? `${SITE.url}/og.png` : `${SITE.url}/og/match-${fixtureSlug(f)}.png`;
 const shareUrl = `${SITE.url}${fixtureUrl(f)}`;
 const relatedQuizzes = f.tbd ? [] : quizzesForTeams([f.home, f.away]);
 
@@ -60,7 +65,9 @@ const sportsEventSchema = f.tbd ? null : {
   '@context': 'https://schema.org',
   '@type': 'SportsEvent',
   name: `${f.home} vs ${f.away}`,
+  description,
   startDate: f.kickoff,
+  eventStatus: 'https://schema.org/EventScheduled',
   location: { '@type': 'Place', name: f.venue },
   sport: 'Football',
   homeTeam: { '@type': 'SportsTeam', name: f.home },
@@ -68,7 +75,7 @@ const sportsEventSchema = f.tbd ? null : {
   url: shareUrl,
 };
 ---
-<Base title={title} description={description} breadcrumbs={breadcrumbs}>
+<Base title={title} description={description} image={ogImage} breadcrumbs={breadcrumbs}>
   {sportsEventSchema && <script slot="head" type="application/ld+json" set:html={JSON.stringify(sportsEventSchema)} />}
   <a href="/predict/" class="text-sm text-slate-400 hover:text-pitch">← All predictions</a>
 
@@ -93,17 +100,52 @@ const sportsEventSchema = f.tbd ? null : {
 
   <AdSlot label="Top ad" />
 
+  {content && (
+    <section class="mt-5">
+      <h1 class="text-lg font-bold text-slate-900">{content.question}</h1>
+      <p class="mt-2 text-sm leading-relaxed text-slate-600">{content.answer}</p>
+    </section>
+  )}
+
   {f.tbd ? (
     <div class="mt-5 rounded-xl border border-dashed border-slate-300 bg-white/60 p-6 text-center text-sm text-slate-500">
       Teams to be decided. Check back once the bracket fills in — then make your call.
     </div>
   ) : (
     <>
-      <h1 class="text-lg font-bold text-slate-900">
+      <p class="mt-5 text-lg font-bold text-slate-900">
         {finished ? 'How the world predicted it' : 'Who wins? Make your prediction'}
-      </h1>
+      </p>
       <PollWidget poll={f.id} options={options} correct={finished ? result : null} />
     </>
+  )}
+
+  {content && (
+    <section class="mt-6">
+      <h2 class="text-sm font-semibold text-slate-600">Match facts</h2>
+      <dl class="mt-2 divide-y divide-slate-100 rounded-xl border border-slate-200 bg-white text-sm">
+        {content.facts.map((row) => (
+          <div class="flex gap-3 px-4 py-2.5">
+            <dt class="w-28 shrink-0 font-medium text-slate-400">{row.label}</dt>
+            <dd class="text-slate-700">{row.value}</dd>
+          </div>
+        ))}
+      </dl>
+    </section>
+  )}
+
+  {content && content.teamNotes.length > 0 && (
+    <section class="mt-6">
+      <h2 class="text-sm font-semibold text-slate-600">Know the teams</h2>
+      <div class="mt-2 grid gap-2">
+        {content.teamNotes.map((tn) => (
+          <div class="rounded-xl border border-slate-200 bg-white p-4">
+            <p class="text-sm font-bold text-slate-900">{tn.team}</p>
+            <p class="mt-1 text-sm leading-relaxed text-slate-600">{tn.note}</p>
+          </div>
+        ))}
+      </div>
+    </section>
   )}
 
   <AdSlot label="After-pick ad" />
@@ -126,7 +168,7 @@ const sportsEventSchema = f.tbd ? null : {
         <p class="mb-2 text-sm font-semibold text-slate-600">🎯 Test your knowledge</p>
         <div class="grid gap-2">
           {relatedQuizzes.map((q) => (
-            <a href={`/quiz/${q.slug}/1/`} class="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-3 hover:border-pitch">
+            <a href={`/quiz/${q.slug}/`} class="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-3 hover:border-pitch">
               <span class="text-2xl">{q.emoji ?? '⚽'}</span>
               <div>
                 <p class="text-sm font-semibold">{q.title}</p>

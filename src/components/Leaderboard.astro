@@ -1,0 +1,37 @@
+---
+import { INTEGRATIONS } from '../lib/site';
+const { voteApi } = INTEGRATIONS;
+---
+{voteApi && (
+  <section id="leaderboard" class="mt-8 hidden">
+    <h2 class="text-xl font-bold">🏅 Top players</h2>
+    <p class="text-sm text-slate-500">Total points across all quizzes — play more to climb.</p>
+    <ol id="leaderboard-list" class="mt-3 divide-y divide-slate-100 rounded-xl border border-slate-200 bg-white text-sm"></ol>
+  </section>
+)}
+
+{voteApi && (
+  <script is:inline define:vars={{ voteApi }}>
+    fetch(voteApi + '/leaderboard?limit=10')
+      .then((r) => (r.ok ? r.json() : Promise.reject()))
+      .then((board) => {
+        if (!Array.isArray(board) || board.length === 0) return;
+        const me = localStorage.getItem('wsq:device') || '';
+        const myHandle = me ? `Player-${me.slice(-4)}` : '';
+        const list = document.getElementById('leaderboard-list');
+        board.forEach((row, i) => {
+          const li = document.createElement('li');
+          li.className = 'flex items-center gap-3 px-4 py-2.5';
+          const isMe = row.player === myHandle;
+          li.innerHTML =
+            `<span class="w-6 font-bold text-slate-400">${i + 1}</span>` +
+            `<span class="flex-1 font-semibold ${isMe ? 'text-pitch' : 'text-slate-700'}">${row.player}${isMe ? ' (you)' : ''}</span>` +
+            `<span class="text-xs text-slate-400">${row.quizzes} quizzes</span>` +
+            `<span class="font-bold text-slate-900">${row.points} pts</span>`;
+          list.appendChild(li);
+        });
+        document.getElementById('leaderboard').classList.remove('hidden');
+      })
+      .catch(() => {});
+  </script>
+)}

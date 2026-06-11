@@ -40,6 +40,25 @@ Commit + push → GitHub Pages redeploys and the community bars go live.
 If the domain is on Cloudflare, uncomment the `routes` block in `wrangler.toml`,
 redeploy, and set `voteApi: 'https://api.worldsportsquiz.com'`.
 
+## Leaderboard endpoints
+
+The worker also powers the anonymous quiz leaderboard:
+
+- `POST /record` `{ device, quiz, score, total }` — saves a quiz result
+  (one row per device per quiz; re-plays keep the best score)
+- `GET /leaderboard?limit=10` — top players by total points
+
+After pulling these changes, apply the new `scores` table and redeploy:
+
+```bash
+cd worker
+wrangler d1 execute wsq-votes --remote --file=./schema.sql
+wrangler deploy
+```
+
+The site degrades gracefully until then — the homepage leaderboard stays
+hidden and score recording fails silently.
+
 ## Free-tier limits
 
 Workers 100k requests/day, D1 ~100k writes/day — ample for this traffic.

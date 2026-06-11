@@ -13,9 +13,10 @@ export default defineConfig({
   integrations: [
     sitemap({
       filter: (page) => {
-        // Quiz: only keep question 1 as the entry point; drop q2+, result pages
-        const quizMidOrResult = /\/quiz\/[^/]+\/(result\/|[2-9]\/|[1-9]\d+\/)$/;
-        return !quizMidOrResult.test(page);
+        // Quiz: the landing page /quiz/[slug]/ is the canonical entry point;
+        // drop individual question pages and result pages from the sitemap.
+        const quizQuestionOrResult = /\/quiz\/[^/]+\/(result\/|\d+\/)$/;
+        return !quizQuestionOrResult.test(page);
       },
     }),
   ],

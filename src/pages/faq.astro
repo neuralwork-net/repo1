@@ -1,0 +1,100 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../lib/site';
+
+const faqs = [
+  {
+    q: 'When does the 2026 FIFA World Cup start and end?',
+    a: 'The FIFA World Cup 2026 runs from June 11 to July 19, 2026. The opening match is Mexico vs South Africa in Mexico City, and the final is on July 19 at MetLife Stadium in New Jersey.',
+    links: [{ label: 'See the full match schedule', href: '/predict/' }],
+  },
+  {
+    q: 'How many teams play at the 2026 World Cup?',
+    a: '48 teams — the biggest World Cup ever, expanded from 32. They are split into 12 groups of four (Groups A to L). The top two in each group plus the eight best third-placed teams advance to a new Round of 32.',
+    links: [{ label: 'Take the 2026 groups quiz', href: '/quiz/wc-2026-groups/' }],
+  },
+  {
+    q: 'Who is hosting the 2026 World Cup?',
+    a: 'Three countries co-host for the first time: the United States, Canada and Mexico. Matches are played across 16 venues in 11 US cities, plus Toronto, Vancouver, Mexico City, Guadalajara and Monterrey.',
+    links: [{ label: 'Host cities quiz', href: '/football/world-cup-2026/' }],
+  },
+  {
+    q: 'How many matches are played at the 2026 World Cup?',
+    a: '104 matches in total — up from 64 in the 32-team format. The group stage has 72 matches, followed by 32 knockout matches from the Round of 32 through to the final.',
+    links: [{ label: 'Predict every match', href: '/predict/' }],
+  },
+  {
+    q: 'Where is the 2026 World Cup final?',
+    a: 'The final is at MetLife Stadium in East Rutherford, New Jersey (the New York area) on July 19, 2026. The stadium holds around 82,500 fans.',
+    links: [],
+  },
+  {
+    q: 'Who are the defending World Cup champions?',
+    a: 'Argentina, who beat France on penalties in the 2022 final in Qatar after a 3–3 draw — with Lionel Messi finally lifting the trophy. Argentina play in Group J in 2026.',
+    links: [{ label: 'Argentina quiz', href: '/quiz/team-argentina/' }],
+  },
+  {
+    q: 'Which countries are making their World Cup debut in 2026?',
+    a: 'Jordan, Uzbekistan, Cabo Verde and Curaçao all make their first World Cup appearance in 2026. Several others return after long absences, including DR Congo (first since 1974 as Zaire) and Scotland.',
+    links: [],
+  },
+  {
+    q: 'How does the new Round of 32 work?',
+    a: 'The 12 group winners, 12 runners-up and the 8 best third-placed teams (32 teams total) enter a straight knockout bracket: Round of 32, Round of 16, quarter-finals, semi-finals and the final.',
+    links: [{ label: 'Build your own bracket', href: '/predict/bracket/' }],
+  },
+  {
+    q: 'How do I predict World Cup 2026 matches on this site?',
+    a: 'Every one of the 104 matches has its own free prediction page — pick a winner (or a draw in the group stage) and instantly see how fans worldwide voted. You can also pick all 12 group qualifiers, build a full knockout bracket and choose your champion. No sign-up needed.',
+    links: [
+      { label: 'Match predictions', href: '/predict/' },
+      { label: 'Pick the champion', href: '/predict/champion/' },
+    ],
+  },
+  {
+    q: 'Are the quizzes free?',
+    a: 'Yes — all quizzes on World Sports Quiz are completely free, with no sign-up. There are quizzes for every qualified team, star players, World Cup history and the 2026 tournament itself.',
+    links: [{ label: 'Browse all quizzes', href: '/football/world-cup-2026/' }],
+  },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+
+const breadcrumbs = [{ label: 'FAQ', href: '' }];
+---
+<Base
+  title="World Cup 2026 FAQ — Dates, Format, Teams & How to Play"
+  description="Quick answers about the FIFA World Cup 2026: start date, 48-team format, host cities, the new Round of 32, and how to play free quizzes and predictions."
+  breadcrumbs={breadcrumbs}
+>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <h1 class="text-2xl font-bold text-slate-900">World Cup 2026 — Frequently Asked Questions</h1>
+  <p class="mt-2 text-sm text-slate-500">
+    Everything you need to know about the biggest World Cup ever — and how to play along on {SITE.name}.
+  </p>
+
+  <div class="mt-6 space-y-4">
+    {faqs.map((f) => (
+      <section class="rounded-2xl border border-slate-200 bg-white p-5">
+        <h2 class="font-bold text-slate-900">{f.q}</h2>
+        <p class="mt-2 text-sm leading-relaxed text-slate-600">{f.a}</p>
+        {f.links.length > 0 && (
+          <p class="mt-2 flex flex-wrap gap-3 text-sm font-semibold text-pitch">
+            {f.links.map((l) => (
+              <a href={l.href} class="hover:underline">{l.label} →</a>
+            ))}
+          </p>
+        )}
+      </section>
+    ))}
+  </div>
+</Base>

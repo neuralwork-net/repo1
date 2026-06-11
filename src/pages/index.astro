@@ -2,13 +2,13 @@
 import Base from '../layouts/Base.astro';
 import AdSlot from '../components/AdSlot.astro';
 import QuizCard from '../components/QuizCard.astro';
+import Leaderboard from '../components/Leaderboard.astro';
 import { SPORTS } from '../data/sports';
 import { QUIZZES, dailyQuiz } from '../lib/quizzes';
 import { SITE } from '../lib/site';
 import { fixturesByDate, fixtureUrl, ROUND_LABELS, isFinished } from '../lib/predictions';
 
 const daily = dailyQuiz();
-const featured = QUIZZES.slice(0, 6);
 
 const todayStr = new Date().toISOString().slice(0, 10);
 const allDays = fixturesByDate();
@@ -17,6 +17,16 @@ const sevenDaysMs = 7 * 24 * 60 * 60 * 1000;
 const withinWeek = upcomingDay &&
   new Date(upcomingDay.date + 'T00:00:00Z').getTime() - new Date(todayStr + 'T00:00:00Z').getTime() <= sevenDaysMs;
 const upcomingFixtures = withinWeek ? upcomingDay!.fixtures.filter((f) => !isFinished(f)).slice(0, 4) : [];
+
+// Curated quiz picks: quizzes for teams playing on the next match day first,
+// then a mix of other categories — instead of an A-Z slice.
+const playingTeams = new Set(
+  (withinWeek ? upcomingDay!.fixtures : []).filter((f) => !f.tbd).flatMap((f) => [f.home, f.away]),
+);
+const playingToday = QUIZZES.filter((q) => !q.daily && q.teams?.some((t) => playingTeams.has(t)));
+const fillers = QUIZZES.filter((q) => !q.daily && !playingToday.includes(q) && q.category !== 'Teams');
+const featured = [...playingToday, ...fillers].slice(0, 6);
+const featuredLabel = playingToday.length > 0 ? '🔥 Teams playing now' : 'Featured quizzes';
 
 function fmtShortDate(d: string) {
   return new Date(d + 'T00:00:00Z').toLocaleDateString('en-US', {
@@ -29,6 +39,7 @@ const upcomingLabel = upcomingDay?.date === todayStr ? "Today's matches" : `Comi
   <section class="rounded-3xl bg-gradient-to-br from-pitch to-pitch-dark px-6 py-12 text-center text-white">
     <h1 class="text-3xl font-extrabold sm:text-4xl">{SITE.name}</h1>
     <p class="mx-auto mt-3 max-w-md text-pitch-50/90 text-white/80">{SITE.tagline}</p>
+    <p id="streak-banner" class="mx-auto mt-2 hidden text-sm font-semibold text-gold"></p>
     <div class="mt-6 flex flex-wrap justify-center gap-3">
       {daily && (
         <a href={`/quiz/${daily.slug}/1/`} class="inline-block rounded-xl bg-gold px-6 py-3 font-bold text-slate-900 hover:brightness-105">
@@ -84,11 +95,28 @@ const upcomingLabel = upcomingDay?.date === todayStr ? "Today's matches" : `Comi
   <AdSlot label="Top ad" />
 
   <section class="mt-8">
-    <h2 class="text-xl font-bold">Featured quizzes</h2>
+    <h2 class="text-xl font-bold">{featuredLabel}</h2>
     <div class="mt-4 grid gap-4 sm:grid-cols-2">
       {featured.map((quiz) => <QuizCard quiz={quiz} />)}
     </div>
   </section>
+
+  <Leaderboard />
+
+  <script is:inline>
+    try {
+      const s = JSON.parse(localStorage.getItem('wsq:streak') || 'null');
+      if (s && s.count > 0) {
+        const today = new Date().toISOString().slice(0, 10);
+        const yest = new Date(Date.now() - 864e5).toISOString().slice(0, 10);
+        if (s.lastDate === today || s.lastDate === yest) {
+          const el = document.getElementById('streak-banner');
+          el.textContent = `🔥 ${s.count}-day quiz streak — keep it alive!`;
+          el.classList.remove('hidden');
+        }
+      }
+    } catch {}
+  </script>
 
   <section class="mt-10">
     <h2 class="text-xl font-bold">Browse by sport</h2>
