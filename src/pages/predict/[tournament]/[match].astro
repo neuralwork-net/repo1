@@ -90,36 +90,38 @@ const relatedQuizzes = f.tbd ? [] : quizzesForTeams([f.home, f.away]);
 
   <AdSlot label="After-pick ad" />
 
-  <div class="mt-6 grid gap-2">
-    <p class="text-center text-sm font-medium text-slate-600">Challenge your friends 👇</p>
-    <div class="grid grid-cols-2 gap-2 sm:grid-cols-4">
-      <a id="sh-wa" target="_blank" rel="noopener" class="rounded-lg bg-green-600 px-3 py-2 text-center text-sm font-semibold text-white">WhatsApp</a>
-      <a id="sh-x" target="_blank" rel="noopener" class="rounded-lg bg-slate-900 px-3 py-2 text-center text-sm font-semibold text-white">X</a>
-      <a id="sh-tg" target="_blank" rel="noopener" class="rounded-lg bg-sky-500 px-3 py-2 text-center text-sm font-semibold text-white">Telegram</a>
-      <a id="sh-fb" target="_blank" rel="noopener" class="rounded-lg bg-blue-600 px-3 py-2 text-center text-sm font-semibold text-white">Facebook</a>
+  <div class="mt-6 space-y-6">
+    <div class="grid gap-2">
+      <p class="text-center text-sm font-medium text-slate-600">Challenge your friends 👇</p>
+      <div class="grid grid-cols-2 gap-2 sm:grid-cols-4">
+        <a id="sh-wa" target="_blank" rel="noopener" class="rounded-lg bg-green-600 px-3 py-2 text-center text-sm font-semibold text-white">WhatsApp</a>
+        <a id="sh-x" target="_blank" rel="noopener" class="rounded-lg bg-slate-900 px-3 py-2 text-center text-sm font-semibold text-white">X</a>
+        <a id="sh-tg" target="_blank" rel="noopener" class="rounded-lg bg-sky-500 px-3 py-2 text-center text-sm font-semibold text-white">Telegram</a>
+        <a id="sh-fb" target="_blank" rel="noopener" class="rounded-lg bg-blue-600 px-3 py-2 text-center text-sm font-semibold text-white">Facebook</a>
+      </div>
     </div>
+
+    <EmailCapture />
+
+    {relatedQuizzes.length > 0 && (
+      <section>
+        <p class="mb-2 text-sm font-semibold text-slate-600">🎯 Test your knowledge</p>
+        <div class="grid gap-2">
+          {relatedQuizzes.map((q) => (
+            <a href={`/quiz/${q.slug}/1/`} class="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-3 hover:border-pitch">
+              <span class="text-2xl">{q.emoji ?? '⚽'}</span>
+              <div>
+                <p class="text-sm font-semibold">{q.title}</p>
+                <p class="text-xs text-slate-400">{q.questions.length} questions</p>
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
   </div>
 
-  <EmailCapture />
-
-  {relatedQuizzes.length > 0 && (
-    <section class="mt-6">
-      <p class="mb-2 text-sm font-semibold text-slate-600">🎯 Test your knowledge</p>
-      <div class="grid gap-2">
-        {relatedQuizzes.map((q) => (
-          <a href={`/quiz/${q.slug}/1/`} class="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-3 hover:border-pitch">
-            <span class="text-2xl">{q.emoji ?? '⚽'}</span>
-            <div>
-              <p class="text-sm font-semibold">{q.title}</p>
-              <p class="text-xs text-slate-400">{q.questions.length} questions</p>
-            </div>
-          </a>
-        ))}
-      </div>
-    </section>
-  )}
-
-  <nav class="mt-8 flex justify-between text-sm font-semibold text-pitch">
+  <nav class="mt-6 flex justify-between text-sm font-semibold text-pitch">
     {prev ? <a href={fixtureUrl(prev)}>← Match {prev.match}</a> : <span></span>}
     {next ? <a href={fixtureUrl(next)}>Match {next.match} →</a> : <span></span>}
   </nav>
