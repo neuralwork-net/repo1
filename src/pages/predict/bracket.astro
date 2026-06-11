@@ -29,6 +29,8 @@ const shareUrl = `${SITE.url}/predict/bracket/`;
 
   <AdSlot label="Top ad" />
 
+  <div id="groups-banner" class="hidden"></div>
+
   <div class="-mx-4 overflow-x-auto px-4">
     <div id="bracket" class="flex min-w-max gap-4 pb-4"></div>
   </div>
@@ -47,6 +49,7 @@ const shareUrl = `${SITE.url}/predict/bracket/`;
 
   <script is:inline define:vars={{ ko, shareUrl }}>
     const KEY = 'wsq:bracket';
+    const GROUPS_KEY = 'wsq:groups';
     const ROUNDS = [
       ['r32', 'Round of 32'],
       ['r16', 'Round of 16'],
@@ -56,13 +59,21 @@ const shareUrl = `${SITE.url}/predict/bracket/`;
     ];
     const byMatch = Object.fromEntries(ko.map((m) => [m.match, m]));
     let picks = {};
+    let groups = {};
     try { picks = JSON.parse(localStorage.getItem(KEY) || '{}'); } catch {}
+    try { groups = JSON.parse(localStorage.getItem(GROUPS_KEY) || '{}'); } catch {}
 
     const refWinner = (s) => (s.match(/^Winner Match (\d+)$/) || [])[1];
     const refRunner = (s) => (s.match(/^Runner-up Match (\d+)$/) || [])[1];
 
     // Resolve a slot label to the team/descriptor currently occupying it.
     function resolve(label, seen = new Set()) {
+      // Resolve group-stage qualifiers from wsq:groups picks
+      const gW = label.match(/^Group ([A-L]) winners$/);
+      if (gW) return groups[gW[1]]?.w || label;
+      const gR = label.match(/^Group ([A-L]) runners-up$/);
+      if (gR) return groups[gR[1]]?.r || label;
+
       const w = refWinner(label);
       if (w) {
         if (seen.has('w' + w)) return label;
@@ -82,7 +93,7 @@ const shareUrl = `${SITE.url}/predict/bracket/`;
 
     function pick(match, slotLabel) {
       const team = resolve(slotLabel);
-      if (refWinner(slotLabel) && !picks[refWinner(slotLabel)]) return; // upstream undecided
+      if (team === slotLabel) return; // slot not yet resolved
       picks[match] = team;
       localStorage.setItem(KEY, JSON.stringify(picks));
       render();
@@ -90,6 +101,19 @@ const shareUrl = `${SITE.url}/predict/bracket/`;
     }
 
     function render() {
+      // Re-read groups on each render in case user just came from groups page
+      try { groups = JSON.parse(localStorage.getItem(GROUPS_KEY) || '{}'); } catch {}
+
+      const groupsDone = Object.keys(groups).filter((g) => groups[g]?.w && groups[g]?.r).length;
+      const banner = document.getElementById('groups-banner');
+      if (groupsDone < 12) {
+        banner.className = 'mb-4 flex items-center justify-between rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm';
+        banner.innerHTML = '<span class="text-amber-800">Pick your group qualifiers to see team names in the bracket.</span>' +
+          '<a href="/predict/groups/" class="ml-3 shrink-0 font-semibold text-pitch hover:underline">Pick groups →</a>';
+      } else {
+        banner.className = 'hidden';
+      }
+
       const root = document.getElementById('bracket');
       root.innerHTML = '';
       for (const [round, label] of ROUNDS) {
@@ -104,7 +128,7 @@ const shareUrl = `${SITE.url}/predict/bracket/`;
           box.className = 'rounded-lg border border-slate-200 bg-white text-sm';
           [m.home, m.away].forEach((slot) => {
             const team = resolve(slot);
-            const decided = !refWinner(slot) || picks[refWinner(slot)];
+            const decided = team !== slot;
             const chosen = picks[m.match] === team && decided;
             const btn = document.createElement('button');
             btn.type = 'button';
