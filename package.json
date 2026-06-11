@@ -7,9 +7,11 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "gen:daily": "node scripts/generate-daily.mjs"
+    "gen:daily": "node scripts/generate-daily.mjs",
+    "gen:fixtures": "node scripts/generate-fixtures.mjs"
   },
   "dependencies": {
+    "@astrojs/sitemap": "^3.7.3",
     "astro": "^5.13.0"
   },
   "devDependencies": {
