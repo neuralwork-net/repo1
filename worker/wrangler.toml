@@ -5,9 +5,10 @@ compatibility_date = "2024-11-01"
 # D1 binding. Create the DB first (see worker/README.md), then paste the
 # database_id printed by `wrangler d1 create` below.
 [[d1_databases]]
-binding = "DB"
+binding = "wsq_votes"
 database_name = "wsq-votes"
-database_id = "REPLACE_WITH_D1_DATABASE_ID"
+database_id = "89be0d8a-9226-49ff-a0c1-8a22d0ccc2ce"
+
 
 # Optional: serve from a custom subdomain instead of *.workers.dev.
 # Requires the zone to be on Cloudflare. Then set INTEGRATIONS.voteApi to

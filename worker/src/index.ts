@@ -7,7 +7,7 @@
 // CORS is locked to ALLOWED_ORIGINS. Deploy with `wrangler deploy` (see README).
 
 export interface Env {
-  DB: D1Database;
+  wsq_votes: D1Database;
 }
 
 // Origins allowed to call the API. Add localhost for local testing if needed.
@@ -39,7 +39,7 @@ function json(data: unknown, origin: string | null, status = 200): Response {
 }
 
 async function tally(env: Env, poll: string): Promise<Record<string, number>> {
-  const { results } = await env.DB.prepare(
+  const { results } = await env.wsq_votes.prepare(
     'SELECT option, count FROM votes WHERE poll_id = ?',
   )
     .bind(poll)
@@ -82,7 +82,7 @@ export default {
       if (poll.length > MAX_POLL_LEN || option.length > MAX_OPTION_LEN) {
         return json({ error: 'too long' }, origin, 400);
       }
-      await env.DB.prepare(
+      await env.wsq_votes.prepare(
         `INSERT INTO votes (poll_id, option, count) VALUES (?, ?, 1)
          ON CONFLICT(poll_id, option) DO UPDATE SET count = count + 1`,
       )
