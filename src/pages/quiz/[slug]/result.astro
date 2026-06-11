@@ -31,10 +31,11 @@ const shareUrl = `${SITE.url}/quiz/${quiz.slug}/`;
       <a id="sh-wa" target="_blank" rel="noopener" class="rounded-lg bg-green-600 px-3 py-2 text-center text-sm font-semibold text-white">WhatsApp</a>
       <a id="sh-x" target="_blank" rel="noopener" class="rounded-lg bg-slate-900 px-3 py-2 text-center text-sm font-semibold text-white">X</a>
       <a id="sh-tg" target="_blank" rel="noopener" class="rounded-lg bg-sky-500 px-3 py-2 text-center text-sm font-semibold text-white">Telegram</a>
-      <a id="sh-fb" target="_blank" rel="noopener" class="rounded-lg bg-blue-600 px-3 py-2 text-center text-sm font-semibold text-white">Facebook</a>
+      <button id="sh-fb" class="rounded-lg bg-blue-600 px-3 py-2 text-center text-sm font-semibold text-white">Facebook</button>
     </div>
     <button id="copy" class="mt-1 rounded-lg border border-slate-300 px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50">Copy link</button>
   </div>
+  <p id="fb-toast" class="hidden mt-2 text-center text-xs text-blue-600 font-medium"></p>
 
   <EmailCapture />
 
@@ -63,7 +64,18 @@ const shareUrl = `${SITE.url}/quiz/${quiz.slug}/`;
     document.getElementById('sh-wa').href = `https://wa.me/?text=${t}%20${u}`;
     document.getElementById('sh-x').href = `https://twitter.com/intent/tweet?text=${t}&url=${u}`;
     document.getElementById('sh-tg').href = `https://t.me/share/url?url=${u}&text=${t}`;
-    document.getElementById('sh-fb').href = `https://www.facebook.com/sharer/sharer.php?u=${u}`;
+    document.getElementById('sh-fb').addEventListener('click', async () => {
+      const toast = document.getElementById('fb-toast');
+      try {
+        await navigator.clipboard.writeText(text);
+        toast.textContent = '✅ Score copied! Paste it into your Facebook post.';
+      } catch {
+        toast.textContent = 'Opening Facebook — paste your score manually.';
+      }
+      toast.classList.remove('hidden');
+      setTimeout(() => toast.classList.add('hidden'), 5000);
+      window.open(`https://www.facebook.com/sharer/sharer.php?u=${u}`, '_blank', 'noopener');
+    });
 
     document.getElementById('copy').addEventListener('click', async (e) => {
       try {
