@@ -2,6 +2,7 @@
 import Base from '../../../layouts/Base.astro';
 import AdSlot from '../../../components/AdSlot.astro';
 import EmailCapture from '../../../components/EmailCapture.astro';
+import ShareBar from '../../../components/ShareBar.astro';
 import { QUIZZES, getQuiz } from '../../../lib/quizzes';
 import { findSport, findTournament } from '../../../data/sports';
 import { SITE, INTEGRATIONS } from '../../../lib/site';
@@ -52,17 +53,7 @@ const breadcrumbs = [
 
   <AdSlot label="Results ad" />
 
-  <div class="mt-6 grid gap-2">
-    <p class="text-center text-sm font-medium text-slate-600">Challenge your friends 👇</p>
-    <div class="grid grid-cols-2 gap-2 sm:grid-cols-4">
-      <a id="sh-wa" target="_blank" rel="noopener" class="rounded-lg bg-green-600 px-3 py-2 text-center text-sm font-semibold text-white">WhatsApp</a>
-      <a id="sh-x" target="_blank" rel="noopener" class="rounded-lg bg-slate-900 px-3 py-2 text-center text-sm font-semibold text-white">X</a>
-      <a id="sh-tg" target="_blank" rel="noopener" class="rounded-lg bg-sky-500 px-3 py-2 text-center text-sm font-semibold text-white">Telegram</a>
-      <button id="sh-fb" class="rounded-lg bg-blue-600 px-3 py-2 text-center text-sm font-semibold text-white">Facebook</button>
-    </div>
-    <button id="copy" class="mt-1 rounded-lg border border-slate-300 px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50">Copy link</button>
-  </div>
-  <p id="fb-toast" class="hidden mt-2 text-center text-xs text-blue-600 font-medium"></p>
+  <ShareBar id="share-result" />
 
   <EmailCapture />
 
@@ -123,31 +114,12 @@ const breadcrumbs = [
       state.answers && (i + 1) in state.answers ? (state.answers[i + 1] ? '✅' : '❌') : '⬜'
     ).join('');
     const text = `⚽ I scored ${score}/${total} on the "${title}" quiz! ${emoji}\n${grid}\nCan you beat me? 🏆`;
-    const u = encodeURIComponent(shareUrl);
-    const t = encodeURIComponent(text);
-    document.getElementById('sh-wa').href = `https://wa.me/?text=${t}%20${u}`;
-    document.getElementById('sh-x').href = `https://twitter.com/intent/tweet?text=${t}&url=${u}`;
-    document.getElementById('sh-tg').href = `https://t.me/share/url?url=${u}&text=${t}`;
-    document.getElementById('sh-fb').addEventListener('click', () => {
-      const fbWin = window.open(`https://www.facebook.com/sharer/sharer.php?u=${u}`, '_blank', 'noopener');
-      const toast = document.getElementById('fb-toast');
-      navigator.clipboard.writeText(text).then(() => {
-        toast.textContent = '✅ Score copied to clipboard! Paste it into your Facebook post.';
-      }).catch(() => {
-        toast.textContent = '📋 Copy your score above and paste it into your Facebook post.';
-      }).finally(() => {
-        toast.classList.remove('hidden');
-        setTimeout(() => toast.classList.add('hidden'), 6000);
-      });
-    });
-
-    document.getElementById('copy').addEventListener('click', async (e) => {
-      try {
-        await navigator.clipboard.writeText(text + ' ' + shareUrl);
-        e.target.textContent = 'Copied! ✅';
-        setTimeout(() => (e.target.textContent = 'Copy link'), 1500);
-      } catch {}
-    });
+    // Carry the score on the shared link so the recipient sees a beat-my-score hook.
+    const challengeUrl = shareUrl + '?c=' + score + '-' + total;
+    (window.__wsqShareQueue = window.__wsqShareQueue || []).push([
+      '#share-result',
+      { text, url: challengeUrl, contentType: 'quiz_result', itemId: slug },
+    ]);
 
     if (window.gtag) window.gtag('event', 'quiz_complete', { quiz: slug, score });
 

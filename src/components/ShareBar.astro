@@ -1,0 +1,115 @@
+---
+// Unified share row. Pages compute their dynamic text/url client-side, then wire
+// this bar via the queue: window.__wsqShareQueue.push(['#id', { text, url, ... }]).
+// The bundled script below defines window.wsqWireShare and drains that queue, so
+// page inline scripts can run before this module loads without races.
+interface Props {
+  id: string;
+  prompt?: string;
+}
+const { id, prompt = 'Challenge your friends 👇' } = Astro.props;
+---
+<div class="mt-2 grid gap-2" id={id} data-sharebar>
+  <p class="text-center text-sm font-medium text-slate-600">{prompt}</p>
+  <button data-sh="native" hidden class="rounded-xl bg-pitch px-3 py-2.5 text-center text-sm font-bold text-white hover:bg-pitch-dark">
+    📲 Share
+  </button>
+  <div class="grid grid-cols-2 gap-2 sm:grid-cols-4">
+    <a data-sh="wa" target="_blank" rel="noopener" class="rounded-lg bg-green-600 px-3 py-2 text-center text-sm font-semibold text-white">WhatsApp</a>
+    <a data-sh="x" target="_blank" rel="noopener" class="rounded-lg bg-slate-900 px-3 py-2 text-center text-sm font-semibold text-white">X</a>
+    <a data-sh="tg" target="_blank" rel="noopener" class="rounded-lg bg-sky-500 px-3 py-2 text-center text-sm font-semibold text-white">Telegram</a>
+    <button data-sh="fb" class="rounded-lg bg-blue-600 px-3 py-2 text-center text-sm font-semibold text-white">Facebook</button>
+  </div>
+  <button data-sh="copy" class="rounded-lg border border-slate-300 px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50">Copy link</button>
+  <p data-sh="toast" class="hidden text-center text-xs font-medium text-blue-600"></p>
+</div>
+
+<script>
+  import { networkHrefs } from '../lib/share';
+
+  function track(method, payload) {
+    if ((window as any).gtag) {
+      (window as any).gtag('event', 'share', {
+        method,
+        content_type: payload.contentType || '',
+        item_id: payload.itemId || '',
+      });
+    }
+  }
+
+  async function nativeShare(payload) {
+    const data: any = { title: document.title, text: payload.text, url: payload.url };
+    if (payload.image && (navigator as any).canShare) {
+      try {
+        const res = await fetch(payload.image);
+        const blob = await res.blob();
+        const file = new File([blob], 'worldsportsquiz.png', { type: blob.type || 'image/png' });
+        if ((navigator as any).canShare({ files: [file] })) data.files = [file];
+      } catch {}
+    }
+    try {
+      await (navigator as any).share(data);
+      track('native', payload);
+    } catch {}
+  }
+
+  function wire(target, payload) {
+    const root: any = typeof target === 'string' ? document.querySelector(target) : target;
+    if (!root) return;
+    const q = (sel) => root.querySelector(`[data-sh="${sel}"]`);
+
+    // Store the latest payload; click handlers read it live so callers can
+    // re-wire with updated text/url (e.g. the bracket as the champion changes).
+    root.__payload = payload;
+    const h = networkHrefs(payload.text, payload.url);
+    const wa = q('wa'); if (wa) wa.href = h.wa;
+    const x = q('x'); if (x) x.href = h.x;
+    const tg = q('tg'); if (tg) tg.href = h.tg;
+
+    if (root.__wired) return; // attach listeners only once
+    root.__wired = true;
+    const toast = q('toast');
+
+    const native = q('native');
+    if (native && (navigator as any).share) {
+      native.hidden = false;
+      native.addEventListener('click', () => nativeShare(root.__payload));
+    }
+    if (wa) wa.addEventListener('click', () => track('whatsapp', root.__payload));
+    if (x) x.addEventListener('click', () => track('twitter', root.__payload));
+    if (tg) tg.addEventListener('click', () => track('telegram', root.__payload));
+
+    const fb = q('fb');
+    if (fb) {
+      fb.addEventListener('click', () => {
+        const p = root.__payload;
+        window.open(networkHrefs(p.text, p.url).fb, '_blank', 'noopener');
+        track('facebook', p);
+        navigator.clipboard?.writeText(p.text + ' ' + p.url).then(() => {
+          if (toast) { toast.textContent = '✅ Copied! Paste it into your Facebook post.'; toast.classList.remove('hidden'); setTimeout(() => toast.classList.add('hidden'), 6000); }
+        }).catch(() => {});
+      });
+    }
+
+    const copy = q('copy');
+    if (copy) {
+      copy.addEventListener('click', async () => {
+        const p = root.__payload;
+        try {
+          await navigator.clipboard.writeText(p.text + ' ' + p.url);
+          const prev = copy.textContent;
+          copy.textContent = 'Copied! ✅';
+          track('copy', p);
+          setTimeout(() => (copy.textContent = prev), 1500);
+        } catch {}
+      });
+    }
+  }
+
+  // Drain anything queued before this module loaded, then make future pushes
+  // wire immediately.
+  const existing = (window as any).__wsqShareQueue;
+  if (Array.isArray(existing)) existing.forEach((args) => wire(args[0], args[1]));
+  (window as any).__wsqShareQueue = { push: (args) => wire(args[0], args[1]) };
+  (window as any).wsqWireShare = (target, payload) => wire(target, payload);
+</script>

@@ -4,6 +4,8 @@ import AdSlot from '../../components/AdSlot.astro';
 import { knockoutFixtures } from '../../lib/predictions';
 import { SITE } from '../../lib/site';
 import { globalStats, formatCompact } from '../../lib/social-proof';
+import ShareBar from '../../components/ShareBar.astro';
+import { FLAGS } from '../../lib/share';
 
 // Feed the knockout structure to the client; it builds an interactive bracket.
 const ko = knockoutFixtures().map((f) => ({
@@ -35,25 +37,19 @@ const stats = globalStats(new Date().toLocaleDateString('en-CA'));
 
   <AdSlot label="Top ad" />
 
+  <p id="challenge-banner" class="mb-4 hidden rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-center text-sm font-semibold text-amber-800"></p>
+
   <div id="groups-banner" class="hidden"></div>
 
   <div class="-mx-4 overflow-x-auto px-4">
     <div id="bracket" class="flex min-w-max gap-4 pb-4"></div>
   </div>
 
-  <div class="mt-6 grid gap-2">
-    <p class="text-center text-sm font-medium text-slate-600">Share your bracket 👇</p>
-    <div class="grid grid-cols-2 gap-2 sm:grid-cols-4">
-      <a id="sh-wa" target="_blank" rel="noopener" class="rounded-lg bg-green-600 px-3 py-2 text-center text-sm font-semibold text-white">WhatsApp</a>
-      <a id="sh-x" target="_blank" rel="noopener" class="rounded-lg bg-slate-900 px-3 py-2 text-center text-sm font-semibold text-white">X</a>
-      <a id="sh-tg" target="_blank" rel="noopener" class="rounded-lg bg-sky-500 px-3 py-2 text-center text-sm font-semibold text-white">Telegram</a>
-      <button id="copy" class="rounded-lg border border-slate-300 px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50">Copy</button>
-    </div>
-  </div>
+  <ShareBar id="share-bracket" prompt="Share your bracket 👇" />
 
   <AdSlot label="Bottom ad" />
 
-  <script is:inline define:vars={{ ko, shareUrl }}>
+  <script is:inline define:vars={{ ko, shareUrl, flags: FLAGS }}>
     const KEY = 'wsq:bracket';
     const GROUPS_KEY = 'wsq:groups';
     const ROUNDS = [
@@ -162,21 +158,15 @@ const stats = globalStats(new Date().toLocaleDateString('en-CA'));
     }
 
     function updateShare(champ) {
+      const named = champ && flags[champ] ? flags[champ] + ' ' + champ : champ;
       const text = champ
-        ? `I've got ${champ} winning the World Cup 2026 🏆 Build your bracket:`
+        ? `I've got ${named} winning the World Cup 2026 🏆 Build your bracket:`
         : `I'm building my World Cup 2026 bracket 🗺️ Make yours:`;
-      const u = encodeURIComponent(shareUrl);
-      const t = encodeURIComponent(text);
-      document.getElementById('sh-wa').href = `https://wa.me/?text=${t}%20${u}`;
-      document.getElementById('sh-x').href = `https://twitter.com/intent/tweet?text=${t}&url=${u}`;
-      document.getElementById('sh-tg').href = `https://t.me/share/url?url=${u}&text=${t}`;
-      document.getElementById('copy').onclick = async (e) => {
-        try {
-          await navigator.clipboard.writeText(text + ' ' + shareUrl);
-          e.target.textContent = 'Copied! ✅';
-          setTimeout(() => (e.target.textContent = 'Copy'), 1500);
-        } catch {}
-      };
+      const url = champ ? shareUrl + '?champ=' + encodeURIComponent(champ) : shareUrl;
+      (window.__wsqShareQueue = window.__wsqShareQueue || []).push([
+        '#share-bracket',
+        { text, url, contentType: 'bracket', itemId: champ || '' },
+      ]);
     }
 
     document.getElementById('reset').addEventListener('click', () => {
@@ -184,6 +174,16 @@ const stats = globalStats(new Date().toLocaleDateString('en-CA'));
       localStorage.removeItem(KEY);
       render();
     });
+
+    // Challenge banner from a shared bracket link (?champ=Team), known nations only.
+    const friendChamp = new URLSearchParams(location.search).get('champ');
+    if (friendChamp && flags[friendChamp]) {
+      const banner = document.getElementById('challenge-banner');
+      if (banner) {
+        banner.textContent = `👀 A friend has ${flags[friendChamp]} ${friendChamp} winning it all — build your own bracket.`;
+        banner.classList.remove('hidden');
+      }
+    }
 
     render();
   </script>

@@ -2,6 +2,7 @@
 import Base from '../../../layouts/Base.astro';
 import AdSlot from '../../../components/AdSlot.astro';
 import EmailCapture from '../../../components/EmailCapture.astro';
+import ShareBar from '../../../components/ShareBar.astro';
 import { SITE } from '../../../lib/site';
 import players from '../../../data/players.json';
 
@@ -50,15 +51,7 @@ const description = `Guess the hidden World Cup 2026 player in 6 tries. A new my
     <p id="result-answer" class="mt-1 text-slate-600"></p>
     <p id="countdown" class="mt-2 text-sm text-slate-400"></p>
 
-    <div class="mt-4 grid gap-2">
-      <p class="text-sm font-medium text-slate-600">Challenge your friends 👇</p>
-      <div class="grid grid-cols-2 gap-2 sm:grid-cols-4">
-        <a id="sh-wa" target="_blank" rel="noopener" class="rounded-lg bg-green-600 px-3 py-2 text-center text-sm font-semibold text-white">WhatsApp</a>
-        <a id="sh-x" target="_blank" rel="noopener" class="rounded-lg bg-slate-900 px-3 py-2 text-center text-sm font-semibold text-white">X</a>
-        <a id="sh-tg" target="_blank" rel="noopener" class="rounded-lg bg-sky-500 px-3 py-2 text-center text-sm font-semibold text-white">Telegram</a>
-        <button id="copy" class="rounded-lg border border-slate-300 px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50">Copy result</button>
-      </div>
-    </div>
+    <ShareBar id="share-mystery" prompt="Challenge your friends 👇" />
 
     <!-- Stats -->
     <div class="mt-5 border-t border-slate-100 pt-4">
@@ -260,22 +253,12 @@ const description = `Guess the hidden World Cup 2026 player in 6 tries. A new my
       </div>`;
     }).join('');
 
-    // Share links
+    // Share via the unified ShareBar.
     const text = shareText(won);
-    const u = encodeURIComponent(SITE_URL);
-    const t = encodeURIComponent(text);
-    ($('sh-wa') as HTMLAnchorElement).href = `https://wa.me/?text=${t}%20${u}`;
-    ($('sh-x') as HTMLAnchorElement).href = `https://twitter.com/intent/tweet?text=${t}&url=${u}`;
-    ($('sh-tg') as HTMLAnchorElement).href = `https://t.me/share/url?url=${u}&text=${t}`;
-    $('copy').addEventListener('click', async (e) => {
-      try {
-        await navigator.clipboard.writeText(text + '\n' + SITE_URL);
-        (e.target as HTMLElement).textContent = 'Copied! ✅';
-        setTimeout(() => ((e.target as HTMLElement).textContent = 'Copy result'), 1500);
-        const w = window as any;
-        if (w.gtag) w.gtag('event', 'mystery_share', { puzzle: puzzleNo });
-      } catch {}
-    });
+    ((window as any).__wsqShareQueue = (window as any).__wsqShareQueue || []).push([
+      '#share-mystery',
+      { text, url: SITE_URL, contentType: 'mystery_player', itemId: String(puzzleNo) },
+    ]);
 
     // Countdown to local midnight
     const cd = $('countdown');

@@ -56,6 +56,8 @@ const quizSchema = {
       <span class="rounded-full bg-slate-100 px-3 py-1 font-medium">Free · no sign-up</span>
     </div>
 
+    <p id="challenge-banner" class="mx-auto mt-6 hidden max-w-md rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm font-semibold text-amber-800"></p>
+
     <a
       href={playHref}
       class="mt-8 inline-block rounded-xl bg-pitch px-10 py-3.5 text-lg font-bold text-white shadow-sm hover:bg-pitch-dark"
@@ -82,4 +84,19 @@ const quizSchema = {
       </div>
     </section>
   )}
+
+  <script is:inline define:vars={{ max: total }}>
+    // Beat-my-score hook when arriving from a shared result link (?c=score-total).
+    const raw = new URLSearchParams(location.search).get('c');
+    if (raw && /^\d+-\d+$/.test(raw)) {
+      const [score, total] = raw.split('-').map(Number);
+      if (total > 0 && score >= 0 && score <= total && total <= max) {
+        const banner = document.getElementById('challenge-banner');
+        if (banner) {
+          banner.textContent = `🔥 A friend scored ${score}/${total} — can you beat them?`;
+          banner.classList.remove('hidden');
+        }
+      }
+    }
+  </script>
 </Base>

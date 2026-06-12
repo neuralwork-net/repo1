@@ -3,11 +3,13 @@ import Base from '../../../layouts/Base.astro';
 import AdSlot from '../../../components/AdSlot.astro';
 import PollWidget from '../../../components/PollWidget.astro';
 import EmailCapture from '../../../components/EmailCapture.astro';
+import ShareBar from '../../../components/ShareBar.astro';
 import { FIXTURES, getFixtureByMatchSlug, fixtureUrl, ROUND_LABELS, isFinished, outcome } from '../../../lib/predictions';
 import { SITE } from '../../../lib/site';
 import { fixtureSlug } from '../../../lib/predictions';
 import { quizzesForTeams } from '../../../lib/quizzes';
 import { buildMatchContent, matchDescription } from '../../../lib/match-content';
+import { predictionShareText, flag } from '../../../lib/share';
 
 export function getStaticPaths() {
   return FIXTURES.map((f) => ({
@@ -55,6 +57,17 @@ const content = buildMatchContent(f);
 const ogImage = f.tbd ? `${SITE.url}/og.png` : `${SITE.url}/og/match-${fixtureSlug(f)}.png`;
 const shareUrl = `${SITE.url}${fixtureUrl(f)}`;
 const relatedQuizzes = f.tbd ? [] : quizzesForTeams([f.home, f.away]);
+// Precompute the personalized share text for each possible pick (pure helper);
+// the inline script picks the right one from the user's stored vote.
+const shareTexts = {
+  home: predictionShareText(f.home, f.away, 'home'),
+  away: predictionShareText(f.home, f.away, 'away'),
+  draw: predictionShareText(f.home, f.away, 'draw'),
+  none: predictionShareText(f.home, f.away, null),
+};
+// Map for the challenge banner: pick value -> team name (draw handled inline).
+const homeFlag = flag(f.home);
+const awayFlag = flag(f.away);
 
 const breadcrumbs = [
   { label: 'Predict', href: '/predict/' },
@@ -113,6 +126,7 @@ const sportsEventSchema = f.tbd ? null : {
     </div>
   ) : (
     <>
+      <p id="challenge-banner" class="mt-5 hidden rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-center text-sm font-semibold text-amber-800"></p>
       <p class="mt-5 text-lg font-bold text-slate-900">
         {finished ? 'How the world predicted it' : 'Who wins? Make your prediction'}
       </p>
@@ -151,15 +165,7 @@ const sportsEventSchema = f.tbd ? null : {
   <AdSlot label="After-pick ad" />
 
   <div class="mt-6 space-y-6">
-    <div class="grid gap-2">
-      <p class="text-center text-sm font-medium text-slate-600">Challenge your friends 👇</p>
-      <div class="grid grid-cols-2 gap-2 sm:grid-cols-4">
-        <a id="sh-wa" target="_blank" rel="noopener" class="rounded-lg bg-green-600 px-3 py-2 text-center text-sm font-semibold text-white">WhatsApp</a>
-        <a id="sh-x" target="_blank" rel="noopener" class="rounded-lg bg-slate-900 px-3 py-2 text-center text-sm font-semibold text-white">X</a>
-        <a id="sh-tg" target="_blank" rel="noopener" class="rounded-lg bg-sky-500 px-3 py-2 text-center text-sm font-semibold text-white">Telegram</a>
-        <a id="sh-fb" target="_blank" rel="noopener" class="rounded-lg bg-blue-600 px-3 py-2 text-center text-sm font-semibold text-white">Facebook</a>
-      </div>
-    </div>
+    {!f.tbd && <ShareBar id="share-match" />}
 
     <EmailCapture />
 
@@ -186,13 +192,34 @@ const sportsEventSchema = f.tbd ? null : {
     {next ? <a href={fixtureUrl(next)}>Match {next.match} →</a> : <span></span>}
   </nav>
 
-  <script is:inline define:vars={{ home: f.home, away: f.away, shareUrl }}>
-    const text = `My World Cup 2026 prediction: ${home} vs ${away}. What's yours?`;
-    const u = encodeURIComponent(shareUrl);
-    const t = encodeURIComponent(text);
-    document.getElementById('sh-wa').href = `https://wa.me/?text=${t}%20${u}`;
-    document.getElementById('sh-x').href = `https://twitter.com/intent/tweet?text=${t}&url=${u}`;
-    document.getElementById('sh-tg').href = `https://t.me/share/url?url=${u}&text=${t}`;
-    document.getElementById('sh-fb').href = `https://www.facebook.com/sharer/sharer.php?u=${u}`;
-  </script>
+  {!f.tbd && (
+    <script is:inline define:vars={{ fid: f.id, shareUrl, ogImage, shareTexts, home: f.home, away: f.away, homeFlag, awayFlag }}>
+      const pick = localStorage.getItem('wsq:voted:' + fid);
+      const text = pick === 'home' ? shareTexts.home
+        : pick === 'away' ? shareTexts.away
+        : pick === 'draw' ? shareTexts.draw
+        : shareTexts.none;
+      const url = pick ? shareUrl + '?p=' + pick : shareUrl;
+      (window.__wsqShareQueue = window.__wsqShareQueue || []).push([
+        '#share-match',
+        { text, url, image: ogImage, contentType: 'match_prediction', itemId: fid },
+      ]);
+
+      // Challenge banner: if arriving from a shared link (?p=), show the sender's call.
+      const params = new URLSearchParams(location.search);
+      const friendPick = params.get('p');
+      if (friendPick === 'home' || friendPick === 'away' || friendPick === 'draw') {
+        const who = friendPick === 'home' ? (homeFlag ? homeFlag + ' ' + home : home)
+          : friendPick === 'away' ? (awayFlag ? awayFlag + ' ' + away : away)
+          : 'a draw';
+        const banner = document.getElementById('challenge-banner');
+        if (banner) {
+          banner.textContent = friendPick === 'draw'
+            ? '👀 A friend is calling this a draw — make your call.'
+            : '👀 A friend is backing ' + who + ' — make your call.';
+          banner.classList.remove('hidden');
+        }
+      }
+    </script>
+  )}
 </Base>

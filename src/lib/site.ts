@@ -32,6 +32,3 @@ export const AFFILIATES = {
   streaming: '', // streaming service referral
   tickets: '', // ticket resale referral
 };
-
-export const SHARE_TEXT = (score: number, total: number, title: string) =>
-  `I scored ${score}/${total} on the "${title}" quiz! Can you beat me?`;
