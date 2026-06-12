@@ -116,7 +116,7 @@ const sportsEventSchema = f.tbd ? null : {
       <p class="mt-5 text-lg font-bold text-slate-900">
         {finished ? 'How the world predicted it' : 'Who wins? Make your prediction'}
       </p>
-      <PollWidget poll={f.id} options={options} correct={finished ? result : null} />
+      <PollWidget poll={f.id} options={options} correct={finished ? result : null} favor={finished ? result : null} />
     </>
   )}
 

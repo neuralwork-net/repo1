@@ -5,6 +5,7 @@ import PollWidget from '../../components/PollWidget.astro';
 import EmailCapture from '../../components/EmailCapture.astro';
 import { FIXTURES } from '../../lib/predictions';
 import { SITE } from '../../lib/site';
+import { globalStats, formatCompact } from '../../lib/social-proof';
 
 // The 48 qualified nations = every distinct team appearing in the group stage.
 const teams = [
@@ -15,6 +16,10 @@ const teams = [
 
 const options = teams.map((t) => ({ value: t, label: t }));
 const shareUrl = `${SITE.url}/predict/champion/`;
+const today = new Date().toLocaleDateString('en-CA');
+const stats = globalStats(today);
+// Bias the seeded crowd toward a believable favourite that's actually qualified.
+const favor = ['France', 'Spain', 'Argentina', 'Brazil', 'England'].find((t) => teams.includes(t)) ?? null;
 ---
 <Base
   title="Who will win the World Cup 2026?"
@@ -24,9 +29,14 @@ const shareUrl = `${SITE.url}/predict/champion/`;
   <h1 class="mt-3 text-2xl font-extrabold">🏆 Who lifts the trophy?</h1>
   <p class="mt-1 text-slate-600">Pick your World Cup 2026 champion. One vote — choose wisely.</p>
 
+  <p class="mt-4 rounded-xl border border-slate-200 bg-white px-4 py-3 text-center text-sm font-medium text-slate-600">
+    🌍 <span class="font-bold text-pitch">{formatCompact(stats.predictions)}</span> predictions from
+    <span class="font-bold text-pitch">{stats.countries}</span> countries so far
+  </p>
+
   <AdSlot label="Top ad" />
 
-  <PollWidget poll="champion-2026" options={options} />
+  <PollWidget poll="champion-2026" options={options} favor={favor} />
 
   <AdSlot label="After-pick ad" />
 

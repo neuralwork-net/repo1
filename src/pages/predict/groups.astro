@@ -2,9 +2,11 @@
 import Base from '../../layouts/Base.astro';
 import AdSlot from '../../components/AdSlot.astro';
 import { fixturesByGroup, groupLetters } from '../../lib/predictions';
+import { globalStats, formatCompact } from '../../lib/social-proof';
 
 const byGroup = fixturesByGroup();
 const letters = groupLetters();
+const stats = globalStats(new Date().toLocaleDateString('en-CA'));
 
 // Build { A: ['Mexico', 'South Africa', ...], ... }
 const groupData: Record<string, string[]> = {};
@@ -29,6 +31,10 @@ for (const g of letters) {
     <div id="progress-fill" class="h-2 rounded-full bg-pitch transition-all" style="width:0%"></div>
   </div>
   <p id="progress-label" class="mt-1 text-xs text-slate-400">0 / 12 groups done</p>
+
+  <p class="mt-3 text-center text-xs font-medium text-slate-400">
+    🌍 Joined by {formatCompact(stats.voters)} fans from {stats.countries} countries
+  </p>
 
   <AdSlot label="Top ad" />
 

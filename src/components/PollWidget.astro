@@ -18,16 +18,21 @@ interface Props {
   options: Option[];
   /** value of the correct option once known; locks voting + reveals result */
   correct?: string | null;
+  /** option value to bias the seeded crowd toward (favourite / result) */
+  favor?: string | null;
   locked?: boolean; // force read-only (e.g. teams TBD)
 }
-const { poll, options, correct = null, locked = false } = Astro.props;
+const { poll, options, correct = null, favor = null, locked = false } = Astro.props;
 const { voteApi } = INTEGRATIONS;
+const today = new Date().toLocaleDateString('en-CA');
 ---
 <div
   class="poll mt-5 grid gap-3"
   data-poll={poll}
   data-api={voteApi}
   data-correct={correct ?? ''}
+  data-favor={favor ?? correct ?? ''}
+  data-today={today}
   data-locked={locked ? '1' : ''}
 >
   {options.map((o) => (
@@ -49,19 +54,37 @@ const { voteApi } = INTEGRATIONS;
   ))}
 </div>
 <p class="poll-note mt-3 text-center text-sm font-medium text-slate-500"></p>
+<p class="poll-countries text-center text-xs font-medium text-slate-400"></p>
 
 <script>
+  import { pollStats } from '../lib/social-proof';
+
   document.querySelectorAll('.poll').forEach((el) => {
     const poll = el.dataset.poll;
     const api = (el.dataset.api || '').replace(/\/$/, '');
     const correct = el.dataset.correct || '';
+    const favor = el.dataset.favor || '';
+    const today = el.dataset.today || new Date().toLocaleDateString('en-CA');
     const locked = el.dataset.locked === '1';
     const buttons = [...el.querySelectorAll('.poll-opt')];
     const note = el.parentElement.querySelector('.poll-note');
+    const countriesNote = el.parentElement.querySelector('.poll-countries');
     const VKEY = 'wsq:voted:' + poll;
+
+    // Seeded baseline crowd, blended on top of any real worker tally so bars
+    // are never empty and the numbers feel busy.
+    const values = buttons.map((b) => b.dataset.value);
+    const baseline = pollStats(poll, today, values, { favor: favor || null });
+
+    function mergeCounts(real) {
+      const merged = { ...baseline.counts };
+      if (real) for (const k of Object.keys(real)) merged[k] = (merged[k] || 0) + Number(real[k] || 0);
+      return merged;
+    }
 
     let myPick = localStorage.getItem(VKEY);
     let voted = !!myPick;
+    let verdictPrefix = '';
 
     const SELECTED = ['border-pitch', 'bg-pitch/5', 'font-bold', 'text-pitch'];
     const WRONG = ['border-red-400', 'bg-red-50', 'text-red-600'];
@@ -83,7 +106,10 @@ const { voteApi } = INTEGRATIONS;
       });
       if (note) {
         const n = total.toLocaleString();
-        note.textContent = `${n} prediction${total === 1 ? '' : 's'} so far`;
+        note.textContent = verdictPrefix + `${n} prediction${total === 1 ? '' : 's'} so far`;
+      }
+      if (countriesNote) {
+        countriesNote.textContent = `🌍 from ${baseline.countries} countries`;
       }
     }
 
@@ -111,14 +137,11 @@ const { voteApi } = INTEGRATIONS;
           b.classList.add(...WRONG);
         }
       });
-      if (note) {
-        const verdict = myPick
-          ? myPick === correct
-            ? '✅ You called it! '
-            : '❌ Not this time. '
-          : '';
-        note.textContent = verdict + (note.textContent || '');
-      }
+      verdictPrefix = myPick
+        ? myPick === correct
+          ? '✅ You called it! '
+          : '❌ Not this time. '
+        : '';
     }
 
     function lock() {
@@ -164,14 +187,16 @@ const { voteApi } = INTEGRATIONS;
           highlightPick();
           lock();
           if (window.gtag) window.gtag('event', 'predict', { poll, option: myPick });
-          // Optimistic: if API is unreachable, still show the user's own pick at 100%.
-          const counts = (await sendVote(myPick)) || (await getTally()) || { [myPick]: 1 };
-          renderTally(counts);
+          // Blend the user's pick + any real tally on top of the seeded baseline.
+          const real = (await sendVote(myPick)) || (await getTally()) || { [myPick]: 1 };
+          renderTally(mergeCounts(real));
         });
       });
     }
 
-    // Show any existing community tally on load.
-    getTally().then(renderTally);
+    // Always show the blended bars + counts immediately (seeded baseline), then
+    // upgrade with the real tally when it arrives.
+    renderTally(mergeCounts(null));
+    getTally().then((real) => renderTally(mergeCounts(real)));
   });
 </script>

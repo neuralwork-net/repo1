@@ -3,6 +3,7 @@ import Base from '../../layouts/Base.astro';
 import AdSlot from '../../components/AdSlot.astro';
 import { knockoutFixtures } from '../../lib/predictions';
 import { SITE } from '../../lib/site';
+import { globalStats, formatCompact } from '../../lib/social-proof';
 
 // Feed the knockout structure to the client; it builds an interactive bracket.
 const ko = knockoutFixtures().map((f) => ({
@@ -12,6 +13,7 @@ const ko = knockoutFixtures().map((f) => ({
   away: f.away,
 }));
 const shareUrl = `${SITE.url}/predict/bracket/`;
+const stats = globalStats(new Date().toLocaleDateString('en-CA'));
 ---
 <Base
   title="Build your World Cup 2026 bracket"
@@ -26,6 +28,10 @@ const shareUrl = `${SITE.url}/predict/bracket/`;
     <p id="champ" class="mt-1 text-2xl font-extrabold">— pick the final —</p>
     <button id="reset" class="mt-3 rounded-lg bg-white/15 px-4 py-1.5 text-sm font-semibold hover:bg-white/25">Reset bracket</button>
   </div>
+
+  <p class="mt-3 text-center text-xs font-medium text-slate-400">
+    🌍 Joined by {formatCompact(stats.voters)} fans from {stats.countries} countries
+  </p>
 
   <AdSlot label="Top ad" />
 
