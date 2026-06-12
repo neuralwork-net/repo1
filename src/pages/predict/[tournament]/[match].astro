@@ -4,7 +4,7 @@ import AdSlot from '../../../components/AdSlot.astro';
 import PollWidget from '../../../components/PollWidget.astro';
 import EmailCapture from '../../../components/EmailCapture.astro';
 import ShareBar from '../../../components/ShareBar.astro';
-import { FIXTURES, getFixtureByMatchSlug, fixtureUrl, ROUND_LABELS, isFinished, outcome } from '../../../lib/predictions';
+import { FIXTURES, getFixtureByMatchSlug, fixtureUrl, ROUND_LABELS, isFinished, outcome, VENUE_INFO } from '../../../lib/predictions';
 import { SITE } from '../../../lib/site';
 import { fixtureSlug } from '../../../lib/predictions';
 import { quizzesForTeams } from '../../../lib/quizzes';
@@ -74,17 +74,44 @@ const breadcrumbs = [
   { label: f.tbd ? `${f.home} vs ${f.away}` : `${f.home} vs ${f.away}`, href: '' },
 ];
 
+const venueInfo = VENUE_INFO[f.venue];
+const teamPerformers = [
+  { '@type': 'SportsTeam', name: f.home },
+  { '@type': 'SportsTeam', name: f.away },
+];
 const sportsEventSchema = f.tbd ? null : {
   '@context': 'https://schema.org',
   '@type': 'SportsEvent',
   name: `${f.home} vs ${f.away}`,
   description,
   startDate: f.kickoff,
+  endDate: f.kickoff,
   eventStatus: 'https://schema.org/EventScheduled',
-  location: { '@type': 'Place', name: f.venue },
+  eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+  image: [ogImage],
+  location: {
+    '@type': 'Place',
+    name: f.venue,
+    address: {
+      '@type': 'PostalAddress',
+      ...(venueInfo ? { addressLocality: venueInfo.city } : {}),
+      addressCountry: venueInfo?.country ?? 'US',
+    },
+  },
   sport: 'Football',
   homeTeam: { '@type': 'SportsTeam', name: f.home },
   awayTeam: { '@type': 'SportsTeam', name: f.away },
+  competitor: teamPerformers,
+  performer: teamPerformers,
+  organizer: { '@type': 'Organization', name: 'FIFA', url: 'https://www.fifa.com/' },
+  offers: {
+    '@type': 'Offer',
+    url: shareUrl,
+    price: '0',
+    priceCurrency: 'USD',
+    availability: 'https://schema.org/InStock',
+    validFrom: f.kickoff,
+  },
   url: shareUrl,
 };
 ---
